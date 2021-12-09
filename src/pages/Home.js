@@ -6,9 +6,9 @@ import FindSection from "../components/Home/FindSection/FindSection";
 const Home = () => {
   return (
     <div>
-      <Slider />
-      <Department />
-      <FindSection />
+        <Slider />
+        <Department />
+        <FindSection />
     </div>
   );
 };
