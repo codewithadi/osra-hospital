@@ -7,8 +7,9 @@ const Home = () => {
   return (
     <div>
         <Slider />
-        <Department />
         <FindSection />
+        <Department />
+
     </div>
   );
 };
