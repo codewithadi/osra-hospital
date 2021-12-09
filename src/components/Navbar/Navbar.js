@@ -77,9 +77,9 @@ export default function Navbar() {
           id="nav_parent"
           onClick={handleClick}
         >
-          <div id="div1" className="h-1 w-6 m-1 bg-black"></div>
-          <div id="div2" className="h-1 w-6 m-1 bg-black"></div>
-          <div id="div3" className="h-1 w-6 m-1 bg-black"></div>
+          <div id="div1" className="h-1 w-6 m-1 bg-blue-500"></div>
+          <div id="div2" className="h-1 w-6 m-1 bg-blue-500"></div>
+          <div id="div3" className="h-1 w-6 m-1 bg-blue-500"></div>
         </div>
       </div>
       <div
