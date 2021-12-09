@@ -7,8 +7,8 @@ function Footer() {
   };
 
   return (
-    <div className="md:pt-8 pt-4 bg-header" style={{ color: "#F8CF2C" }}>
-      <footer className="dark:bg-gray-300 bg-header">
+    <div className="md:pt-8 pt-4 text-white" style={{background: "#484848"}}>
+      <footer className="dark:bg-gray-300">
         <div className="container px-6 py-2 mx-auto bg-transparent">
           <div className="lg:flex bg-transparent">
             <div className="w-full -mx-6 lg:w-2/5 bg-transparent">
@@ -21,7 +21,7 @@ function Footer() {
                   >
                     <img
                       className="h-14 w-28 md:h-24 md:w-26 bg-transparent"
-                      src="/logo192.png"
+                      src="/hospitalLogo.jpeg"
                       alt=""
                     />
                     {/* Company Name */}
@@ -29,9 +29,7 @@ function Footer() {
                 </div>
 
                 <div className="max-w-md mt-2 dark:text-gray-800 bg-transparent px-2 md:pr-32">
-                  Till now, you have only seen tea as a beverage...
-                  <br /> ... Now let us show you how tea can work as a medicine
-                  leveraging technology as an enabler!
+                  Hospital
                 </div>
               </div>
             </div>
@@ -51,31 +49,31 @@ function Footer() {
                   </Link>
                   <Link
                     onClick={scrollToTop}
-                    to="/health_analysis"
+                    to="/about"
                     className="block mt-2 text-sm  dark: hover:underline bg-transparent"
-                  >
-                    Health Analysis
-                  </Link>
-                  <Link
-                    onClick={scrollToTop}
-                    to="/ingredient_analysis"
-                    className="block mt-2 text-sm  dark: hover:underline bg-transparent"
-                  >
-                    Ingredient Analysis
-                  </Link>
-                  <Link
-                    onClick={scrollToTop}
-                    to="/tea_tannin_analysis"
-                    className="block mt-2 text-sm  dark: hover:underline bg-transparent"
-                  >
-                    Tea Tannin Analysis
-                  </Link>
-                  <Link
-                    onClick={scrollToTop}
-                    to="/about_us"
-                    className="block mt-2 text-sm hover:underline bg-transparent"
                   >
                     About
+                  </Link>
+                  <Link
+                    onClick={scrollToTop}
+                    to="/services"
+                    className="block mt-2 text-sm  dark: hover:underline bg-transparent"
+                  >
+                    Services
+                  </Link>
+                  <Link
+                    onClick={scrollToTop}
+                    to="/media"
+                    className="block mt-2 text-sm  dark: hover:underline bg-transparent"
+                  >
+                    Media
+                  </Link>
+                  <Link
+                    onClick={scrollToTop}
+                    to="/blog"
+                    className="block mt-2 text-sm hover:underline bg-transparent"
+                  >
+                    Blog
                   </Link>
                   <Link
                     onClick={scrollToTop}
@@ -104,33 +102,13 @@ function Footer() {
                         <a
                           target="_blank"
                           rel="noreferrer"
-                          href="tel: +919832044477"
+                          href="tel: +11234567890"
                           className="bg-transparent"
                         >
-                          +91 98320 44477
+                          +1 12345 67890
                         </a>{" "}
                       </div>
                     </div>
-                    {/* <div className="inline-flex md:pr-4 mb-2 hover:underline bg-transparent">
-                      <svg
-                        className=" w-4 h-4 rounded-md bg-transparent"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                      </svg>{" "}
-                      <div className="pl-1 bg-transparent">
-                        <a
-                          target="_blank"
-                          rel="noreferrer"
-                          href="tel: +919713063623"
-                          className="bg-transparent"
-                        >
-                          +91 xxxx
-                        </a>{" "}
-                      </div>
-                    </div> */}
                   </div>
                   <div className="block mt-2 text-sm  dark: hover:underline bg-transparent">
                     <div className="inline-flex bg-transparent">
@@ -147,10 +125,10 @@ function Footer() {
                         <a
                           target="_blank"
                           rel="noreferrer"
-                          href="mailto:theteatechnology@gmail.com"
+                          href="mailto:hospitalmail@gmail.com"
                           className="bg-transparent"
                         >
-                          theteatechnology@gmail.com
+                          hospitalmail@gmail.com
                         </a>{" "}
                       </div>
                     </div>
@@ -176,8 +154,7 @@ function Footer() {
                           rel="noreferrer"
                           href="https://www.google.com/maps/place/Ominvest+Business+Center/@23.5746516,58.2950687,17z/data=!3m1!4b1!4m5!3m4!1s0x3e8e016752655811:0x2b30e06b8368993f!8m2!3d23.5746467!4d58.2972574"
                         >
-                          106, I block southcity 2, Sector 50, Gurugram, Haryana
-                          122018
+                          Address of hospital
                         </a>{" "}
                       </div>
                     </div>
@@ -190,7 +167,7 @@ function Footer() {
                   </h3>
                   <div className="flex mt-4 -mx-2 bg-transparent">
                     <a
-                      href="https://www.linkedin.com/in/payalhagarwwal/"
+                      href="https://www.linkedin.com"
                       target="_blank"
                       rel="noreferrer"
                       className="mx-2 bg-transparent cursor-pointer text-gray-200 dark:text-gray-200 hover:text-gray-200 dark:hover:text-gray-400"
@@ -204,7 +181,7 @@ function Footer() {
                     </a>
 
                     <a
-                      href="https://instagram.com/chaiomt?utm_medium=copy_link"
+                      href="https://instagram.com"
                       target="_blank"
                       rel="noreferrer"
                       className="mx-2 bg-transparent cursor-pointer text-gray-200 dark:text-gray-200 hover:text-gray-200 dark:hover:text-gray-400"
@@ -216,7 +193,7 @@ function Footer() {
                         alt="instagram"
                       />
                     </a>
-                    {/* <a
+                    <a
                       href="https://www.facebook.com/"
                       target="_blank"
                       rel="noreferrer"
@@ -228,7 +205,7 @@ function Footer() {
                         src="https://image.flaticon.com/icons/png/512/1384/1384053.png"
                         alt="facebook"
                       />
-                    </a> */}
+                    </a>
                   </div>
                 </div>
               </div>

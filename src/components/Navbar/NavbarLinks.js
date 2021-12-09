@@ -1,9 +1,16 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Dropdown from "./Dropdown";
 
 function NavLinks({ colorchange }) {
   const [dropdown, setDropdown] = useState(false);
+  //assigning location variable
+  const location = useLocation();
+  //destructuring pathname from location
+  const { pathname } = location;
+  //Javascript split method to get the name of the path in array
+  const splitLocation = pathname.split("/");
+
   const onMouseEnter = () => {
     if (window.innerWidth < 768) {
       setDropdown(false);
@@ -27,135 +34,113 @@ function NavLinks({ colorchange }) {
     <div className="bg-transparent">
       <ul className="flex flex-col justify-center items-center md:bg-transparent md:inline-block bg-transparent">
         <li className="inline-block bg-transparent">
-          <NavLink
+          <Link
             exact
             to="/"
-            activeClassName=""
-            className="navbar-link-hover font-semibold bg-transparent"
-            activeStyle={{
-              fontWeight: "bold",
-              color: "#EFFD5F",
-              // color: "#145DA0",
-            }}
+            className={
+              splitLocation[1] === ""
+                ? "activeLink md:pb-11 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium uppercase bg-transparent"
+                : "navbar-link-hover font-medium uppercase bg-transparent"
+            }
             onClick={scrollToTop}
           >
-            <h1 className="mx-2 md:px-1 py-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
+            <h1 className="mx-2 md:px-1 pt-1 pb-1 md:pb-11 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
               Home
             </h1>
-          </NavLink>
+          </Link>
         </li>
         <li className="inline-block bg-transparent">
-          <NavLink
+          <Link
             exact
             to="/about"
-            activeClassName=""
-            className="navbar-link-hover font-semibold bg-transparent"
-            activeStyle={{
-              fontWeight: "bold",
-              color: "#EFFD5F",
-              // color: "#145DA0",
-            }}
+            className={
+              splitLocation[1] === "about"
+                ? "activeLink md:pb-11 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium uppercase bg-transparent"
+                : "navbar-link-hover font-medium uppercase bg-transparent"
+            }
             onClick={scrollToTop}
           >
-            <h1 className="mx-2 md:px-1 py-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
+            <h1 className="mx-2 md:px-1 pt-1 pb-1 md:pb-11 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
               About
             </h1>
-          </NavLink>
+          </Link>
         </li>
         <li
           className="inline-block bg-transparent"
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         >
-          <NavLink
+          <Link
             exact
             to="/services"
-            activeClassName=""
-            className="navbar-link-hover font-semibold bg-transparent"
-            activeStyle={{
-              fontWeight: "bold",
-              color: "#145DA0",
-            }}
+            className={
+              splitLocation[1] === "services"
+                ? "activeLink md:pb-11 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium uppercase bg-transparent"
+                : "navbar-link-hover font-medium uppercase bg-transparent"
+            }
             onClick={scrollToTop}
           >
-          <div className="navbar-link-hover font-semibold bg-transparent">
-            <h1 className="mx-2 navbar-link-hover md:px-1 py-1 lg:mx-2 bg-transparent font-semibold cursor-pointer hoverColor block sm:inline-block customNav navbar-link">
-              Services
-            </h1>
-          </div>
-          
-          {dropdown && <div classname="z-50"><Dropdown /></div>}
-          </NavLink>
+            <div className="navbar-link-hover font-semibold bg-transparent">
+              <h1 className="mx-2 md:px-1 pt-1 pb-1 uppercase md:pb-11 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
+                Services
+              </h1>
+            </div>
+
+            {dropdown && (
+              <div classname="z-50 shadow-md">
+                <Dropdown />
+              </div>
+            )}
+          </Link>
         </li>
         <li className="inline-block bg-transparent">
-          <NavLink
+          <Link
             exact
             to="/media"
-            activeClassName=""
-            className="navbar-link-hover font-semibold bg-transparent"
-            activeStyle={{
-              fontWeight: "bold",
-              color: "#EFFD5F",
-            }}
+            className={
+              splitLocation[1] === "media"
+                ? "activeLink md:pb-11 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium uppercase bg-transparent"
+                : "navbar-link-hover font-medium uppercase bg-transparent"
+            }
             onClick={scrollToTop}
           >
-            <h1 className="mx-2 md:px-1 py-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
+            <h1 className="mx-2 md:px-1 pt-1 pb-1 md:pb-11 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
               Media
             </h1>
-          </NavLink>
+          </Link>
         </li>
         <li className="inline-block bg-transparent">
-          <NavLink
+          <Link
             exact
             to="/blog"
-            activeClassName=""
-            className="navbar-link-hover font-semibold bg-transparent"
-            activeStyle={{
-              fontWeight: "bold",
-              color: "#EFFD5F",
-            }}
+            className={
+              splitLocation[1] === "blog"
+                ? "activeLink md:pb-11 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium uppercase bg-transparent"
+                : "navbar-link-hover font-medium uppercase bg-transparent"
+            }
             onClick={scrollToTop}
           >
-            <h1 className="mx-2 md:px-1 py-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
+            <h1 className="mx-2 md:px-1 pt-1 pb-1 md:pb-11 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
               Blog
             </h1>
-          </NavLink>
+          </Link>
         </li>
         <li className="inline-block bg-transparent">
-          <NavLink
+          <Link
             exact
-            to="/contact_us"
-            activeClassName=""
-            className="navbar-link-hover font-semibold bg-transparent"
-            activeStyle={{
-              fontWeight: "bold",
-              color: "#EFFD5F",
-            }}
+            to="/contact"
+            className={
+              splitLocation[1] === "contact"
+                ? "activeLink md:pb-11 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium uppercase bg-transparent"
+                : "navbar-link-hover font-medium uppercase bg-transparent"
+            }
             onClick={scrollToTop}
           >
-            <h1 className="mx-2 md:px-1 py-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
+            <h1 className="mx-2 md:px-1 pt-1 pb-1 md:pb-11 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
               Contact
             </h1>
-          </NavLink>
+          </Link>
         </li>
-        
-        {/* <li className="inline-block">
-          <NavLink
-            exact
-            to="/login"
-            activeClassName=""
-            className="navbar-link-hover font-semibold"
-            activeStyle={{
-              fontWeight: "bold",
-              color: "#ffa000",
-            }}
-            onClick={scrollToTop}
-          >
-            <h1 className="mx-2 md:px-1 py-1 lg:mx-2 hoverColor block sm:inline-block navbar-link">
-              Login
-            </h1>
-          </NavLink>
-        </li> */}
       </ul>
     </div>
   );

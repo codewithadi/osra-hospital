@@ -51,8 +51,8 @@ export default function Navbar() {
     <div
       className={
         !colorChange
-          ? `block headerText lg:px-12 md:px-8 px-4 lg:py-6 z-50 top-0 md:bg-transparent bg-header `
-          : `block headerText lg:px-12 md:px-8 px-4 lg:py-6 z-50 top-0 bg-header `
+          ? `block headerText lg:px-12 md:px-8 px-4 lg:py-6 z-50 top-0 md:bg-transparent bg-header shadow`
+          : `block headerText lg:px-12 md:px-8 px-4 lg:py-6 z-50 top-0 bg-header shadow`
       }
     >
       {/* <div className="bg-white w-full h-20 pb-2 md:pb-6">
@@ -62,7 +62,7 @@ export default function Navbar() {
         <div className="inline-flex md:pt-0 bg-transparent" style={{ width: "20%" }}>
           <div className="md:-mt-5 bg-transparent">
             <Link className="bg-transparent" to="/" onClick={scrollToTop}>
-              <img className="h-14 w-28 md:h-24 md:w-26 bg-transparent" src="/logo192.png" alt="" />
+              <img className="h-14 w-14 md:h-24 md:w-24 bg-transparent" src="/hospitalLogo.jpeg" alt="brandlogo" />
             </Link>
           </div>
           {/* <div className="text-md lg:text-3xl pl-2 align-middle select-none font-bold pt-2">
