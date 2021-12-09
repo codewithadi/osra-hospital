@@ -15,21 +15,33 @@ const Stories = () => {
       </div>
       {/* content */}
       {/* content 1 */}
-      <div className="px-2 grid grid-cols-1 gap-6 md:grid-cols-3 md:px-20 justify-center">
-        <div className="p-2">
-          <img className="h-48" src="/assets/home-stories/s1.jpg" alt="weweew"/>
-        </div>
-        <div className="p-2">
-          <img className="h-48" src="/assets/home-stories/s1.jpg" alt="weweew"/>
-        </div>
-        <div className="p-2">
-          <img className="h-48" src="/assets/home-stories/s1.jpg" alt="weweew"/>
+      <div className="">
+        <div className="grid gap-8 mx-20 justify-center grid-cols-1 md:grid-cols-3">
+          <div className="">
+            <img
+              className="px-4"
+              src="/assets/home-stories/s1.jpg"
+              alt="weweew"
+            />
+          </div>
+          <div className="">
+            <img
+              className="px-4"
+              src="/assets/home-stories/s1.jpg"
+              alt="weweew"
+            />
+          </div>
+          <div className="">
+            <img
+              className="px-4"
+              src="/assets/home-stories/s1.jpg"
+              alt="weweew"
+            />
+          </div>
         </div>
       </div>
 
-      <div>
-
-      </div>
+      <div></div>
     </div>
   );
 };
