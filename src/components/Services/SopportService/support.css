@@ -1,0 +1,15 @@
+.img-div{
+width: 100%
+}
+.content-div{
+width: 100%
+}
+
+@media (min-width: 768px) {
+    .img-div{
+        width: 45%
+        }
+        .content-div{
+        width: 55%
+        }
+}
