@@ -7,7 +7,7 @@ const SupportGrid = ({ imgUrl, title, desc }) => {
       <div className="img-div">
         <img className="w-full h-full" src={imgUrl} alt="service" />
       </div>
-      <div className="content-div pl-2 md:pl-5 pr-2 py-2 md:py-5">
+      <div className="content-div pl-2 md:pl-5 pr-2 py-2 md:py-3">
         <h2 className="text-base md:text-2xl mb-2 md:mb-4 text-blue-600">{title}</h2>
         <p className="text-sm md:text-lg">{desc}</p>
       </div>
