@@ -50,7 +50,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 gap-10 mt-6 md:grid-cols-2 lg:grid-cols-3">
             <div
               style={{ boxShadow: "0 0 10px grey" }}
-              className="flex xl:flex-row flex-col cursor-pointer items-center p-8 px-10 text-black shadow-md border border-gray-100 rounded-md dark:text-gray-800 hover:shadow-2xl hover:bg-green-200"
+              className="flex cursor-pointer items-center p-8 px-10 text-black shadow-md border border-gray-100 rounded-md dark:text-gray-800 hover:shadow-2xl hover:bg-green-200"
             >
               <div className="w-1/3 flex justify-center items-center">
                 <img
@@ -115,7 +115,7 @@ const Contact = () => {
             </div>
             <div
               style={{ boxShadow: "0 0 10px grey" }}
-              className="flex  flex-col xl:flex-row cursor-pointer items-center p-8 px-10 text-black shadow-md border border-gray-100 rounded-md dark:text-gray-800 hover:shadow-2xl hover:bg-green-200"
+              className="flex flex-col xl:flex-row cursor-pointer items-center p-8 px-10 text-black shadow-md border border-gray-100 rounded-md dark:text-gray-800 hover:shadow-2xl hover:bg-green-200"
             >
               <div className="w-1/3 flex justify-center items-center">
                 <img

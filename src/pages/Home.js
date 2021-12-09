@@ -1,12 +1,16 @@
-import React from 'react'
-import Slider from "../components/HomeComponents/Slider"
+import React from "react";
+import Slider from "../components/Home/Slider/Slider";
+import Department from "../components/Home/Department/Department";
+import FindSection from "../components/Home/FindSection/FindSection";
 
 const Home = () => {
-    return (
-        <div>
-            <Slider />
-        </div>
-    )
-}
+  return (
+    <div>
+      <Slider />
+      <Department />
+      <FindSection />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
