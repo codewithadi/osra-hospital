@@ -107,7 +107,7 @@ function Footer() {
                           href="tel: +1011431111"
                           className="bg-transparent"
                         >
-                          +1 011431111
+                          +1 
                         </a>{" "}
                       </div>
                     </div>

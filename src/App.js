@@ -13,6 +13,7 @@ import Pediatrics from "./components/Departments/Pediatrics";
 import Dentistry from "./components/Departments/Dentistry";
 import Urology from "./components/Departments/Urology";
 import Dermatology from "./components/Departments/Dermatology";
+import TopBar from "./components/TopBar/TopBar";
 import EarNose from "./components/Departments/EarNose";
 import BlogList from "./components/BlogList/BlogList";
 import Services from "./pages/Services";
@@ -21,6 +22,7 @@ import Media from "./pages/Media";
 function App() {
   return (
     <>
+      <TopBar />
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
