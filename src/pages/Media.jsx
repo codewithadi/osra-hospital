@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import MediaImages from "../components/Media/MediaImages";
+import MediaVideo from "../components/Media/MediaVideo";
 
 const Media = () => {
+  const [dispImg, setDispImg] = useState(true);
+  const [dispVideo, setDispVideo] = useState(false);
   return (
     <div>
       <div
@@ -17,6 +21,39 @@ const Media = () => {
           </div>
         </div>
       </div>
+      <div className="py-4 flex justify-center items-center gap-6 md:gap-14 bg-green-300">
+        <div
+          onClick={(e) => {
+            e.preventDefault();
+            setDispImg(true);
+            setDispVideo(false);
+          }}
+          className={
+            dispImg
+              ? "text-xl md:text-2xl font-semibold cursor-pointer text-blue-600"
+              : "text-white text-xl md:text-2xl font-semibold cursor-pointer hover:text-blue-600"
+          }
+        >
+          Photos
+        </div>
+        <div
+          onClick={(e) => {
+            e.preventDefault();
+            setDispImg(false);
+            setDispVideo(true);
+          }}
+          className={
+            dispVideo
+              ? "text-xl md:text-2xl font-semibold cursor-pointer text-blue-600"
+              : "text-white text-xl md:text-2xl font-semibold cursor-pointer hover:text-blue-600"
+          }
+        >
+          Videos
+        </div>
+      </div>
+      {dispImg && <MediaImages />}
+      {dispVideo && <MediaVideo />}
+      
     </div>
   );
 };
