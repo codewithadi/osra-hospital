@@ -11,8 +11,8 @@ const Facts = () => {
         alt="prod1"
       />
       <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
-      <div className="main-text-fact bg-transparent text-grey-300">
-        <h1 className="text-white text-center font-semibold text-3xl md:text-2xl bg-transparent mt-20">
+      <div className="main-text-about bg-transparent text-grey-300">
+        <h1 className="text-white text-center font-semibold text-4xl md:text-3xl bg-transparent mt-20">
           Serving the World <br />
           <i>since 1985</i>
         </h1>

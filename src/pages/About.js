@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
+import AboutHead from '../components/About/AboutHead';
 
 const About = () => {
-    return (
-        <div>
-            {/* about-header.jpg */}
-        </div>
-    )
+
+     return (
+       <AboutHead/>
+     )
 }
 
 export default About
