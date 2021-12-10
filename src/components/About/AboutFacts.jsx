@@ -11,7 +11,7 @@ const Facts = () => {
         alt="prod1"
       />
       <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
-      <div className="main-text-fact bg-transparent text-grey-300">
+      <div className="main-text-fact w-full bg-transparent text-grey-300">
         <h1 className="text-white text-center font-semibold text-lg md:text-2xl bg-transparent mt-20">
           Serving the World <br />
           <i>since 1985</i>
@@ -22,8 +22,8 @@ const Facts = () => {
             <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
               912+
             </h2>
-            <h3 className="text-white text-center font-semibold text-base md:text-lg">
-            Dental Tourism Clients
+            <h3 className="text-white text-center font-semibold text-sm md:text-lg">
+              Dental Tourism Clients
             </h3>
           </div>
 
@@ -31,8 +31,8 @@ const Facts = () => {
             <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
               20+
             </h2>
-            <h3 className="pl-2 text-white font-semibold text-base md:text-lg">
-            International Branches
+            <h3 className="text-white text-center font-semibold text-sm md:text-lg">
+              International Branches
             </h3>
           </div>
 
@@ -40,17 +40,17 @@ const Facts = () => {
             <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
               912+
             </h2>
-            <h3 className="pl-4 text-white font-semibold text-base md:text-lg">
-            Dental Tourism Clients
+            <h3 className="text-white text-center font-semibold text-sm md:text-lg">
+              Dental Tourism Clients
             </h3>
           </div>
 
           <div className="text-lg">
             <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
-              912+
+              20+
             </h2>
-            <h3 className="pl-4 text-white font-semibold text-base md:text-lg">
-            Dental Tourism Clients
+            <h3 className="text-white text-center font-semibold text-sm md:text-lg">
+              International Branches
             </h3>
           </div>
         </div>

@@ -29,7 +29,9 @@ function Footer() {
                 </div>
 
                 <div className="max-w-md mt-2 dark:text-gray-800 bg-transparent px-2 md:pr-32">
-                  Hospital
+                  AlOsrah international Hospital is a Secondary level facility
+                  with 50 bed-Capacities situated in the middle of Riyadh city,
+                  Saudi Arabia.
                 </div>
               </div>
             </div>
@@ -163,7 +165,7 @@ function Footer() {
                 {/* -------------------- */}
                 <div>
                   <h3 className=" font-semibold uppercase dark: bg-transparent">
-                  OPD Hours
+                    OPD Hours
                   </h3>
                   <div>Mon to Fri : 10am to 6pm</div>
                   <div>Sat & Sun : 12am to 3pm</div>

@@ -15,7 +15,7 @@ const AboutHead = () => {
         <h3 className="text-white font-semibold text-left text-4xl md:text-5xl bg-transparent mb-2">
           Why Us
         </h3>
-        <div className="absolute text-2xl text-white font-light mt-20">Home / Why Us</div>
+        <div className="absolute text-lg md:text-2xl text-white font-light mt-28 md:mt-20">Home / Why Us</div>
       </div>
     </div>
   );
