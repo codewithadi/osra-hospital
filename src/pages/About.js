@@ -3,6 +3,7 @@ import AboutHead from "../components/About/AboutHead";
 import BrandSlider from "../components/About/BrandSlider";
 import WhyChooseUs from "../components/About/WhyChooseUs";
 import AboutFacts from "../components/About/AboutFacts";
+import Testimonials from "../components/About/Testimonials";
 // import { Link } from "react-router-dom";
 import "../components/About/About.css";
 
@@ -71,9 +72,9 @@ const About = () => {
         </div>
       </div>
       {/*About Content Closed */}
-
       <AboutFacts />
       <WhyChooseUs />
+      <Testimonials/>
       <BrandSlider />
     </>
   );
