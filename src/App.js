@@ -6,6 +6,8 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import SupportService from "./components/Services/SopportService/SupportService";
+import Services from "./pages/Services";
+import Media from "./pages/Media";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/media" element={<Media />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/supporting-medical-services" element={<SupportService />} />
