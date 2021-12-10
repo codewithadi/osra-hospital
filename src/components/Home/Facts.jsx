@@ -12,45 +12,45 @@ const Facts = () => {
       />
       <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
       <div className="main-text-fact bg-transparent text-grey-300">
-        <h1 className="text-white text-center font-semibold text-3xl md:text-2xl bg-transparent mt-20">
+        <h1 className="text-white text-center font-semibold text-lg md:text-2xl bg-transparent mt-20">
           Serving the World <br />
           <i>since 1985</i>
         </h1>
-        
-        <div className="flex my-4">
+
+        <div className="grid grid-cols-2 gap-4 md:gap-4 md:grid-cols-4 my-2 md:my-4">
           <div className="text-lg">
-            <h2 className="text-center text-blue-700 font-bold text-5xl">
+            <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
               912+
             </h2>
-            <h3 className="text-white font-semibold text-lg mx-8">
+            <h3 className="text-white text-center font-semibold text-base md:text-lg">
               Successful Surgeries
             </h3>
           </div>
 
           <div className="text-lg">
-            <h2 className="text-center text-blue-700 font-bold text-5xl">
-              912+
+            <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
+              245+
             </h2>
-            <h3 className="text-white font-semibold text-lg mx-8">
-              Successful Surgeries
+            <h3 className="pl-2 text-white font-semibold text-base md:text-lg">
+              Doctors on Panel
             </h3>
           </div>
 
           <div className="text-lg">
-            <h2 className="text-center text-blue-700 font-bold text-5xl">
-              912+
+            <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
+              930+
             </h2>
-            <h3 className="text-white font-semibold text-lg mx-8">
-              Successful Surgeries
+            <h3 className="pl-4 text-white font-semibold text-base md:text-lg">
+              Meals Served
             </h3>
           </div>
 
           <div className="text-lg">
-            <h2 className="text-center text-blue-700 font-bold text-5xl">
-              912+
+            <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
+              120+
             </h2>
-            <h3 className="text-white font-semibold text-lg mx-8">
-              Successful Surgeries
+            <h3 className="text-white font-semibold text-base md:text-lg">
+              Emergency Vehicles
             </h3>
           </div>
         </div>
