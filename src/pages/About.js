@@ -8,11 +8,10 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <>
-      <AboutHead /> 
-                    {/*About Content  */}
-      <div className="p-5 flex">
+      <AboutHead /> {/*About Content  */}
+      <div className="p-2 md:p-5 md:flex">
         <img
-          className="p-20"
+          className="md:p-20"
           style={{
             width: "50rem",
             height: "40rem",
@@ -20,9 +19,9 @@ const About = () => {
           src="/assets/about/about.jpeg"
           alt="About Home"
         />
-        <div className="p-8 mt-16">
-          <h2 className="text-5xl font-semibold titleColor">Our Philosophy</h2>
-          <p className="mt-10 text-xl font-semibold w-4/5 text-gray-200 textColor">
+        <div className="p-2 md:p-8 mt-16">
+          <h2 className="m-4 text-3xl md:text-5xl font-semibold">Our Philosophy</h2>
+          <p className="md:mt-10 text-xl font-semibold w-4/5 text-gray-200 textColor">
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
             officia deserunt mollit anim id est laborum....
           </p>
@@ -40,7 +39,7 @@ const About = () => {
                   src="/assets/about/tick.png"
                   alt="tick"
                 />
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
               </li>
               <li className="flex">
                 <img
@@ -48,7 +47,9 @@ const About = () => {
                   src="/assets/about/tick.png"
                   alt="tick"
                 />
-               <p> Assumenda, quia temporibus eveniet a libero incidunt suscipit</p>
+                <p>
+                  Assumenda, quia temporibus eveniet a libero incidunt suscipit
+                </p>
               </li>
               <li className="flex">
                 <img
@@ -56,7 +57,9 @@ const About = () => {
                   src="/assets/about/tick.png"
                   alt="tick"
                 />
-               <p>   Quidem, ipsam illum quis sed voluptatum quae eum fugit earum</p>
+                <p>
+                  Quidem, ipsam illum quis sed voluptatum quae eum fugit earum
+                </p>
               </li>
             </ul>
           </p>
@@ -66,10 +69,9 @@ const About = () => {
           </button>
         </div>
       </div>
-       {/*About Content Closed */}
-
-       <AboutFacts/>
-       <WhyChooseUs/>
+      {/*About Content Closed */}
+      <AboutFacts />
+      <WhyChooseUs />
       <BrandSlider />
     </>
   );
