@@ -8,6 +8,7 @@ function FindSection() {
             headTwo:"200+ doctors on panel",
             detailPara:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.",
             buttonText:"See Doctors",
+            linkTo:"/departments",
             boxClass:"findBox"
         },
         {
@@ -15,6 +16,7 @@ function FindSection() {
             headTwo:"Symptoms & Treatment",
             detailPara:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.",
             buttonText:"See Ailment",
+            linkTo:"/departments",
             boxClass:"findBox findBox2"
         },
         {
@@ -22,6 +24,7 @@ function FindSection() {
             headTwo:"Get assistance on call",
             detailPara:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.",
             buttonText:"Get Help",
+            linkTo:"/contact",
             boxClass:"findBox"
         }
     ];
@@ -36,7 +39,7 @@ function FindSection() {
                                 <h3 className='findHeadTwo'>{val.headTwo}</h3>
                                 <p className='findPara'>{val.detailPara}</p>
                                 <div className='findButton'>
-                                    <span className='findBtnText'>{val.buttonText}</span>
+                                    <a href={val.linkTo} className='findBtnText'>{val.buttonText}</a>
                                 </div>
                             </div>
                         )

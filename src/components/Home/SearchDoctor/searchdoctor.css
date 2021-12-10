@@ -1,0 +1,124 @@
+.searchDoctorWrapper{
+    width:100%;
+    height:400px;
+    position: relative;
+}
+.searchDoctorBack{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.searchDoctorOverlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+.searchDoctorCol{
+    width:40%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+}
+.searchDoctorHead{
+    font-size:30px;
+    width:90%;
+    font-weight: 700;
+}
+.searchDoctorAbout{
+    font-size:20px;
+    font-weight: 400;
+    margin:20px 0;
+}
+.searchDoctorPara{
+    font-size:17px;
+    font-weight: 400;
+    width:80%;
+    color:#8ea1ae;
+}
+.seachDoctorImg{
+    width:500px;
+    height:100%;
+    object-fit: contain;
+}
+.searchDoctorButton{
+    margin-top:40px;
+    margin-bottom:50px;
+}
+.searchDoctorInput{
+    padding:15px;
+    color:#fff;
+    width:60%;
+}
+.searchDoctorBtn{
+    background-color: #427cc5;
+    padding:15px 30px;
+    color:#fff;
+    text-align: center;
+    margin:30px 0;
+    text-decoration: none;
+    outline: none;
+}
+
+@media (max-width:1000px){
+    .searchDoctorWrapper{
+        height:700px;
+    }
+    .searchDoctorOverlay{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .searchDoctorCol{
+        width:80%;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width:500px){
+    .searchDoctorWrapper{
+        height:600px;
+    }
+    .searchDoctorHead{
+        font-size:25px;
+    }
+    .searchDoctorAbout{
+        font-size:18px;
+        font-weight: 400;
+        margin:10px 0;
+    }
+    .searchDoctorPara{
+        width:90%;
+        color:#8ea1ae;
+    }
+    .seachDoctorImg{
+        width:300px;
+    }
+    .searchDoctorButton{
+        margin-top:30px;
+        margin-bottom:20px;
+    }
+    .searchDoctorInput{
+        padding:15px;
+        color:#fff;
+        width:50%;
+    }
+    .searchDoctorBtn{
+        background-color: #427cc5;
+        padding:15px 10px;
+        color:#fff;
+        text-align: center;
+        margin:30px 0;
+        text-decoration: none;
+        outline: none;
+    }
+}

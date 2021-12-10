@@ -11,51 +11,51 @@ function Department() {
             </div>
             <div className='depContainer'>
                 <div className='depCard'>
-                    <div className='depIcon'></div>
+                    <div className='depIcon'><img className="depIconImg" src="assets/department/surgery.png" /></div>
                     <h1 className='depHead'>Surgery</h1>
                     <h3 className='depAbout'>Operations & surgeries</h3>
-                    <p className='depDetail'>Behind the word mountains, far from the countries Vokalia.</p>
-                    <a href="https://www.google.com" className='depLink'>Get Details..</a>
+                    <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
+                    <a href="/departments" className='depLink'>Get Details..</a>
                 </div>
 
                 <div className='depCard'>
-                    <div className='depIcon'></div>
-                    <h1 className='depHead'>Surgery</h1>
-                    <h3 className='depAbout'>Operations & surgeries</h3>
-                    <p className='depDetail'>Behind the word mountains, far from the countries Vokalia.</p>
-                    <a href="https://www.google.com" className='depLink'>Get Details..</a>
+                    <div className='depIcon'><img className="depIconImg" src="assets/department/neurology.png" /></div>
+                    <h1 className='depHead'>Neurology</h1>
+                    <h3 className='depAbout'>Neuro Disorders</h3>
+                    <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
+                    <a href="/departments" className='depLink'>Get Details..</a>
                 </div>
 
                 <div className='depCard'>
-                    <div className='depIcon'></div>
-                    <h1 className='depHead'>Surgery</h1>
-                    <h3 className='depAbout'>Operations & surgeries</h3>
-                    <p className='depDetail'>Behind the word mountains, far from the countries Vokalia.</p>
-                    <a href="https://www.google.com" className='depLink'>Get Details..</a>
+                    <div className='depIcon'><img className="depIconImg" src="assets/department/magnifying-glass.png" /></div>
+                    <h1 className='depHead'>Dermatology</h1>
+                    <h3 className='depAbout'>Skin Problems</h3>
+                    <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
+                    <a href="/departments" className='depLink'>Get Details..</a>
                 </div>
 
                 <div className='depCard'>
-                    <div className='depIcon'></div>
-                    <h1 className='depHead'>Surgery</h1>
-                    <h3 className='depAbout'>Operations & surgeries</h3>
-                    <p className='depDetail'>Behind the word mountains, far from the countries Vokalia.</p>
-                    <a href="https://www.google.com" className='depLink'>Get Details..</a>
+                    <div className='depIcon'><img className="depIconImg" src="assets/department/surgery.png" /></div>
+                    <h1 className='depHead'>Dispensary</h1>
+                    <h3 className='depAbout'>Medicine & Pharmacy</h3>
+                    <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
+                    <a href="/departments" className='depLink'>Get Details..</a>
                 </div>
 
                 <div className='depCard'>
-                    <div className='depIcon'></div>
-                    <h1 className='depHead'>Surgery</h1>
-                    <h3 className='depAbout'>Operations & surgeries</h3>
-                    <p className='depDetail'>Behind the word mountains, far from the countries Vokalia.</p>
-                    <a href="https://www.google.com" className='depLink'>Get Details..</a>
+                    <div className='depIcon'><img className="depIconImg" src="assets/department/neurology.png" /></div>
+                    <h1 className='depHead'>Haematology</h1>
+                    <h3 className='depAbout'>Research & Lab</h3>
+                    <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
+                    <a href="/departments" className='depLink'>Get Details..</a>
                 </div>
 
                 <div className='depCard'>
-                    <div className='depIcon'></div>
-                    <h1 className='depHead'>Surgery</h1>
-                    <h3 className='depAbout'>Operations & surgeries</h3>
-                    <p className='depDetail'>Behind the word mountains, far from the countries Vokalia.</p>
-                    <a href="https://www.google.com" className='depLink'>Get Details..</a>
+                    <div className='depIcon'><img className="depIconImg" src="assets/department/magnifying-glass.png" /></div>
+                    <h1 className='depHead'>Orthopaedics</h1>
+                    <h3 className='depAbout'>Bones & Joints</h3>
+                    <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
+                    <a href="/departments" className='depLink'>Get Details..</a>
                 </div>
             </div>
         </div>
