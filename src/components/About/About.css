@@ -29,6 +29,10 @@
   transform: translate(-50%, -60%);
 }
 
+.border-color{
+  border-color: #538dd4;
+}
+
 @media (min-width: 768px) {
   .main-text-about {
     position: absolute;
