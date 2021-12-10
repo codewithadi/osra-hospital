@@ -21,7 +21,7 @@ const Media = () => {
           </div>
         </div>
       </div>
-      <div className="py-4 flex justify-center items-center gap-6 md:gap-14 bg-green-300">
+      <div className="py-4 flex justify-center items-center gap-6 md:gap-14 bg-blue-800">
         <div
           onClick={(e) => {
             e.preventDefault();
@@ -30,8 +30,8 @@ const Media = () => {
           }}
           className={
             dispImg
-              ? "text-xl md:text-2xl font-semibold cursor-pointer text-blue-600"
-              : "text-white text-xl md:text-2xl font-semibold cursor-pointer hover:text-blue-600"
+              ? "text-xl md:text-2xl font-semibold cursor-pointer text-green-300"
+              : "text-white text-xl md:text-2xl font-semibold cursor-pointer hover:text-green-300"
           }
         >
           Photos
@@ -44,8 +44,8 @@ const Media = () => {
           }}
           className={
             dispVideo
-              ? "text-xl md:text-2xl font-semibold cursor-pointer text-blue-600"
-              : "text-white text-xl md:text-2xl font-semibold cursor-pointer hover:text-blue-600"
+              ? "text-xl md:text-2xl font-semibold cursor-pointer text-green-300"
+              : "text-white text-xl md:text-2xl font-semibold cursor-pointer hover:text-green-300"
           }
         >
           Videos
