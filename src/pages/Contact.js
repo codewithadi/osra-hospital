@@ -50,7 +50,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 gap-10 mt-6 md:grid-cols-2 lg:grid-cols-3">
             <div
               style={{ boxShadow: "0 0 10px grey" }}
-              className="flex cursor-pointer items-center p-8 px-10 text-black shadow-md border border-gray-100 rounded-md dark:text-gray-800 hover:shadow-2xl hover:bg-green-200"
+              className="flex xl:flex-row flex-col cursor-pointer items-center p-8 px-10 text-black shadow-md border border-gray-100 rounded-md dark:text-gray-800 hover:shadow-2xl hover:bg-green-200"
             >
               <div className="w-1/3 flex justify-center items-center">
                 <img
@@ -72,7 +72,7 @@ const Contact = () => {
                   style={{ color: "#778696" }}
                   className="mt-2 mb-4 font-normal text-lg"
                 >
-                  Ameritrunk Building, California, United States - 92680
+                  Exit 29 - Riyadh
                 </span>
               </div>
             </div>
@@ -100,7 +100,7 @@ const Contact = () => {
                     style={{ color: "#778696" }}
                     className="mt-2 mb-4 font-normal text-lg"
                   >
-                    Phone : 213-562-5625
+                    Phone : 011431111
                   </span>
                 </a>
                 <a href="tel:+94766300033">
@@ -244,7 +244,7 @@ const Contact = () => {
             {/* .......MAP......... */}
             <div className="md:p-5 p-0 mt-24 mb-24">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0782335331664!2d79.9156561142676!3d6.881231220811446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a0af53b58a5%3A0xc01bc6553d80f92f!2s341%20Pitakotte%20-%20Talawatugoda%20Rd%2C%20Sri%20Jayawardenepura%20Kotte%2010100%2C%20Sri%20Lanka!5e0!3m2!1sen!2sbd!4v1635093969856!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.147329415484!2d46.59436991499743!3d24.584111184185087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f198a70eb0c97%3A0x78e1d83094c785a9!2sAl%20Osrah%20International%20Hospital!5e0!3m2!1sen!2sin!4v1639135132397!5m2!1sen!2sin"
                 title="office address"
                 style={{ border: "0", width: "100%", height: "75vh" }}
                 allowfullscreen=""

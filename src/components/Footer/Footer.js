@@ -7,11 +7,11 @@ function Footer() {
   };
 
   return (
-    <div className="md:pt-8 pt-4 text-white" style={{background: "#484848"}}>
+    <div className="md:pt-8 pt-4 text-white" style={{ background: "#484848" }}>
       <footer className="dark:bg-gray-300">
         <div className="container px-6 py-2 mx-auto bg-transparent">
           <div className="lg:flex bg-transparent">
-            <div className="w-full -mx-6 lg:w-2/5 bg-transparent">
+            <div className="w-full -mx-7 lg:w-2/5 bg-transparent">
               <div className="px-6 bg-transparent">
                 <div className="bg-transparent">
                   <Link
@@ -29,13 +29,15 @@ function Footer() {
                 </div>
 
                 <div className="max-w-md mt-2 dark:text-gray-800 bg-transparent px-2 md:pr-32">
-                  Hospital
+                  AlOsrah international Hospital is a Secondary level facility
+                  with 50 bed-Capacities situated in the middle of Riyadh city,
+                  Saudi Arabia.
                 </div>
               </div>
             </div>
 
             <div className="mt-6 lg:mt-0 lg:flex-1 lg:ml-4 bg-transparent">
-              <div className="grid grid-cols-2 md:gap-6 gap-2 sm:grid-cols-3 md:grid-cols-3 bg-transparent">
+              <div className="grid grid-cols-1 md:gap-6 gap-2 sm:grid-cols-4 md:grid-cols-4 bg-transparent">
                 <div className="bg-transparent">
                   <h3 className=" font-semibold uppercase dark: bg-transparent">
                     Quick Links
@@ -77,7 +79,7 @@ function Footer() {
                   </Link>
                   <Link
                     onClick={scrollToTop}
-                    to="/contact_us"
+                    to="/contact"
                     className="block mt-2 text-sm  dark: hover:underline bg-transparent"
                   >
                     Contact
@@ -102,10 +104,10 @@ function Footer() {
                         <a
                           target="_blank"
                           rel="noreferrer"
-                          href="tel: +11234567890"
+                          href="tel: +1011431111"
                           className="bg-transparent"
                         >
-                          +1 12345 67890
+                          +1 011431111
                         </a>{" "}
                       </div>
                     </div>
@@ -154,34 +156,42 @@ function Footer() {
                           rel="noreferrer"
                           href="https://www.google.com/maps/place/Ominvest+Business+Center/@23.5746516,58.2950687,17z/data=!3m1!4b1!4m5!3m4!1s0x3e8e016752655811:0x2b30e06b8368993f!8m2!3d23.5746467!4d58.2972574"
                         >
-                          Address of hospital
+                          Exit 29 - Riyadh
                         </a>{" "}
                       </div>
                     </div>
                   </div>
                 </div>
-
+                {/* -------------------- */}
+                <div>
+                  <h3 className=" font-semibold uppercase dark: bg-transparent">
+                    OPD Hours
+                  </h3>
+                  <div>Mon to Fri : 10am to 6pm</div>
+                  <div>Sat & Sun : 12am to 3pm</div>
+                </div>
+                {/* ------------------------- */}
                 <div className="bg-transparent">
                   <h3 className=" font-semibold uppercase dark: bg-transparent">
                     Find Us
                   </h3>
                   <div className="flex mt-4 -mx-2 bg-transparent">
                     <a
-                      href="https://www.linkedin.com"
+                      href="https://twitter.com/alosrahhospital"
                       target="_blank"
                       rel="noreferrer"
                       className="mx-2 bg-transparent cursor-pointer text-gray-200 dark:text-gray-200 hover:text-gray-200 dark:hover:text-gray-400"
-                      aria-label="Linkden"
+                      aria-label="twitter"
                     >
                       <img
                         className="w-10 h-10 bg-transparent"
-                        src="https://image.flaticon.com/icons/png/512/145/145807.png"
-                        alt="linkedin"
+                        src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                        alt="twitter"
                       />
                     </a>
 
                     <a
-                      href="https://instagram.com"
+                      href="https://www.instagram.com/alosrah.hospital/"
                       target="_blank"
                       rel="noreferrer"
                       className="mx-2 bg-transparent cursor-pointer text-gray-200 dark:text-gray-200 hover:text-gray-200 dark:hover:text-gray-400"
@@ -194,7 +204,7 @@ function Footer() {
                       />
                     </a>
                     <a
-                      href="https://www.facebook.com/"
+                      href="https://www.facebook.com/alosrah.hospital"
                       target="_blank"
                       rel="noreferrer"
                       className="mx-2 cursor-pointer text-gray-200 dark:text-gray-200 bg-transparent hover:text-gray-200 dark:hover:text-gray-400"
@@ -217,7 +227,7 @@ function Footer() {
           <div className="bg-transparent">
             <div className="md:flex-row flex flex-col text-center  dark:text-white justify-center bg-transparent">
               <p className="md:border-r-2 px-2 bg-transparent">
-                © Hospital - All rights reserved
+                © Al-Osrah International Hospital - All rights reserved
               </p>{" "}
               <p className="px-2 bg-transparent"> Developed by EnR Team</p>
             </div>

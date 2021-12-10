@@ -3,7 +3,7 @@ import './department.css'
 
 function Department() {
     return (
-        <div className='department'>
+        <div className='department py-6'>
             <div className='depMain'>
                 <h1 className='depMainHead'>Hospital Departments</h1>
                 <p className='depMainPara'>There live the blind texts separated they right at the coast of the Semantics.</p>
