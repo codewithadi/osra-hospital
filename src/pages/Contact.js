@@ -72,7 +72,7 @@ const Contact = () => {
                   style={{ color: "#778696" }}
                   className="mt-2 mb-4 font-normal text-lg"
                 >
-                  Ameritrunk Building, California, United States - 92680
+                  Exit 29 - Riyadh
                 </span>
               </div>
             </div>
@@ -100,7 +100,7 @@ const Contact = () => {
                     style={{ color: "#778696" }}
                     className="mt-2 mb-4 font-normal text-lg"
                   >
-                    Phone : 213-562-5625
+                    Phone : 011431111
                   </span>
                 </a>
                 <a href="tel:+94766300033">
