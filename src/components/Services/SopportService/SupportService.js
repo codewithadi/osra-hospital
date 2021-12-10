@@ -30,7 +30,7 @@ const SupportService = () => {
           desc="where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease."
         />
         <SupportGrid
-          imgUrl="/assets/images/physiotherapy.jpg"
+          imgUrl="/assets/images/Physiotherapy.jpg"
           title="Physiotherapy"
           desc="Healthcare profession concerned with the assessment, maintenance, and restoration of the physical function and performance of the body by physical."
         />
