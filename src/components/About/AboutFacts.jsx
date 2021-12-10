@@ -1,5 +1,5 @@
 import React from "react";
-import "../../App.css";
+import "./About.css";
 
 const Facts = () => {
   return (
@@ -7,7 +7,7 @@ const Facts = () => {
       <img
         className="h-full w-full bg-cover bg-center"
         style={{ objectFit: "cover" }}
-        src="/assets/slider/sliderImg1.jpg"
+        src="/assets/about/globe.jpg"
         alt="prod1"
       />
       <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
@@ -23,34 +23,34 @@ const Facts = () => {
               912+
             </h2>
             <h3 className="text-white text-center font-semibold text-base md:text-lg">
-              Successful Surgeries
+            Dental Tourism Clients
             </h3>
           </div>
 
           <div className="text-lg">
             <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
-              245+
+              20+
             </h2>
             <h3 className="pl-2 text-white font-semibold text-base md:text-lg">
-              Doctors on Panel
+            International Branches
             </h3>
           </div>
 
           <div className="text-lg">
             <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
-              930+
+              912+
             </h2>
             <h3 className="pl-4 text-white font-semibold text-base md:text-lg">
-              Meals Served
+            Dental Tourism Clients
             </h3>
           </div>
 
           <div className="text-lg">
             <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
-              120+
+              912+
             </h2>
-            <h3 className="text-white font-semibold text-base md:text-lg">
-              Emergency Vehicles
+            <h3 className="pl-4 text-white font-semibold text-base md:text-lg">
+            Dental Tourism Clients
             </h3>
           </div>
         </div>

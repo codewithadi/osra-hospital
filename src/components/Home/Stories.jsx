@@ -48,7 +48,7 @@ const Stories = () => {
         </div>
       </div>
       {/* contents */}
-      <div className="grid gap-8 mx-20 justify-center grid-cols-1 md:grid-cols-3">
+      <div className="grid gap-4 md:gap-8 mx-4 md:mx-20 justify-center grid-cols-1 md:grid-cols-3">
         {stories.map((story) => {
           return (
             <div  className="mb-12">
