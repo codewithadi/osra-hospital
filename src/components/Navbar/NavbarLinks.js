@@ -39,12 +39,12 @@ function NavLinks({ colorchange }) {
             to="/"
             className={
               splitLocation[1] === ""
-                ? "activeLink md:pb-11 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium bg-transparent"
+                ? "activeLink md:pb-10 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium bg-transparent"
                 : "navbar-link-hover font-medium bg-transparent"
             }
             onClick={scrollToTop}
           >
-            <h1 className="uppercase mx-2 md:px-1 pt-1 pb-1 md:pb-11 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
+            <h1 className="uppercase mx-2 md:px-1 pt-1 pb-1 md:pb-10 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
               Home
             </h1>
           </Link>
@@ -55,12 +55,12 @@ function NavLinks({ colorchange }) {
             to="/about"
             className={
               splitLocation[1] === "about"
-                ? "activeLink md:pb-11 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium bg-transparent"
+                ? "activeLink md:pb-10 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium bg-transparent"
                 : "navbar-link-hover font-medium bg-transparent"
             }
             onClick={scrollToTop}
           >
-            <h1 className="uppercase mx-2 md:px-1 pt-1 pb-1 md:pb-11 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
+            <h1 className="uppercase mx-2 md:px-1 pt-1 pb-1 md:pb-10 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
               About
             </h1>
           </Link>

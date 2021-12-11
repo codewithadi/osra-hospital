@@ -5,7 +5,7 @@ function SearchDoctor() {
     return (
         <div className='search-doctor'>
             <div className='searchDoctorWrapper'>
-                <img class="searchDoctorBack" src="/assets/department/depLastBack.jpg" />
+                <img class="searchDoctorBack" src="/assets/department/depLastBack.jpg" alt="hmsearch" />
                 <div className='searchDoctorOverlay'>
                     <div className='searchDoctorCol'>
                         <h1 className='searchDoctorHead'>Find a Doctor</h1>
@@ -17,7 +17,7 @@ function SearchDoctor() {
                         </div>
                     </div>
                     <div className='searchDoctorCol'>
-                        <img className='seachDoctorImg' src="assets/images/findDoctor.png" />
+                        <img className='seachDoctorImg' src="assets/images/findDoctor.png" alt="hmsearch"/>
                     </div>
                 </div>
             </div>

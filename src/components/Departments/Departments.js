@@ -33,7 +33,7 @@ function Departments() {
 
                 <div className='treatmentWrapper'>
                     <div className='treatmentCard'>
-                        <div className='treatmentLogo'><img src="assets/department/surgery.png" /></div>
+                        <div className='treatmentLogo'><img src="assets/department/surgery.png" alt="svdept"/></div>
                         <div className='treatmentText'>
                             <h2 className='treatmentTitle'>Neurology</h2>
                             <p className='treatmentAbout'>Dunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -41,7 +41,7 @@ function Departments() {
                     </div>
 
                     <div className='treatmentCard'>
-                        <div className='treatmentLogo'><img src="assets/department/surgery.png" /></div>
+                        <div className='treatmentLogo'><img src="assets/department/surgery.png" alt="svdept" /></div>
                         <div className='treatmentText'>
                             <h2 className='treatmentTitle'>Plastic Surgery</h2>
                             <p className='treatmentAbout'>Dunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -49,7 +49,7 @@ function Departments() {
                     </div>
 
                     <div className='treatmentCard'>
-                        <div className='treatmentLogo'><img src="assets/department/blood-bank.png" /></div>
+                        <div className='treatmentLogo'><img src="assets/department/blood-bank.png" alt="svdept" /></div>
                         <div className='treatmentText'>
                             <h2 className='treatmentTitle'>Blood Bank</h2>
                             <p className='treatmentAbout'>Dunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -57,7 +57,7 @@ function Departments() {
                     </div>
 
                     <div className='treatmentCard'>
-                        <div className='treatmentLogo'><img src="assets/department/surgery.png" /></div>
+                        <div className='treatmentLogo'><img src="assets/department/surgery.png" alt="svdept" /></div>
                         <div className='treatmentText'>
                             <h2 className='treatmentTitle'>Vaccination</h2>
                             <p className='treatmentAbout'>Dunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -65,7 +65,7 @@ function Departments() {
                     </div>
 
                     <div className='treatmentCard'>
-                        <div className='treatmentLogo'><img src="assets/department/blood-bank.png" /></div>
+                        <div className='treatmentLogo'><img src="assets/department/blood-bank.png" alt="svdept" /></div>
                         <div className='treatmentText'>
                             <h2 className='treatmentTitle'>Neurology</h2>
                             <p className='treatmentAbout'>Dunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -73,7 +73,7 @@ function Departments() {
                     </div>
 
                     <div className='treatmentCard'>
-                        <div className='treatmentLogo'><img src="assets/department/surgery.png" /></div>
+                        <div className='treatmentLogo'><img src="assets/department/surgery.png" alt="svdept" /></div>
                         <div className='treatmentText'>
                             <h2 className='treatmentTitle'>Medicines</h2>
                             <p className='treatmentAbout'>Dunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -91,7 +91,7 @@ function Departments() {
                 </div>
                 <div className='depDoctorWrapper'>
                     <div className='depDoctorCard'>
-                        <div className='depDoctorImg'><img className='doctorImg' src="assets/department/doctor1.jpg" /></div>
+                        <div className='depDoctorImg'><img className='doctorImg' src="assets/department/doctor1.jpg" alt="doc" /></div>
                         <h2 className='depDoctorName'>David Paulson</h2>
                         <p className='depDoctorAbout'>Head Of Department</p>
                         <p className='depDoctorMob'> +00 0000 0000 00</p>
@@ -101,7 +101,7 @@ function Departments() {
 
 
                     <div className='depDoctorCard'>
-                    <div className='depDoctorImg'><img className='doctorImg' src="assets/department/doctor2.jpg" /></div>
+                    <div className='depDoctorImg'><img className='doctorImg' src="assets/department/doctor2.jpg" alt="doc" /></div>
                         <h2 className='depDoctorName'>Merri Hoffman</h2>
                         <p className='depDoctorAbout'>Head Of Department</p>
                         <p className='depDoctorMob'> +00 0000 0000 00</p>
@@ -110,7 +110,7 @@ function Departments() {
                     </div>
 
                     <div className='depDoctorCard'>
-                    <div className='depDoctorImg'><img className='doctorImg' src="assets/department/doctor1.jpg" /></div>
+                    <div className='depDoctorImg'><img className='doctorImg' src="assets/department/doctor1.jpg" alt="doc" /></div>
                         <h2 className='depDoctorName'>Kathy Cruse</h2>
                         <p className='depDoctorAbout'>Head Of Department</p>
                         <p className='depDoctorMob'> +00 0000 0000 00</p>
@@ -119,7 +119,7 @@ function Departments() {
                     </div>
 
                     <div className='depDoctorCard'>
-                    <div className='depDoctorImg'><img className='doctorImg' src="assets/department/doctor2.jpg" /></div>
+                    <div className='depDoctorImg'><img className='doctorImg' src="assets/department/doctor2.jpg" alt="doc" /></div>
                         <h2 className='depDoctorName'>Floyd Birdsong</h2>
                         <p className='depDoctorAbout'>Head Of Department</p>
                         <p className='depDoctorMob'> +00 0000 0000 00</p>
@@ -132,7 +132,7 @@ function Departments() {
             </div>
 
             <div className='depBanner'>
-                <img class="depBannerImg" src="/assets/department/depLastBack.jpg" />
+                <img class="depBannerImg" src="/assets/department/depLastBack.jpg" alt="banner"/>
                 <div className='depBannerOverlay'>
                     <h3 className='depBannerText'>Reliable & Trusted</h3>
                     <h1 className='depBannerHead'>Get the Best Ortho Treatment</h1>

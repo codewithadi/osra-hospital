@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom"
 import './department.css'
 
-function Department() {
+function AllDepartment() {
     const scrollToTop = () => {
         window.scrollTo(0, 0);
       };
@@ -39,7 +39,7 @@ function Department() {
                 </div>
 
                 <div className='depCard'>
-                    <div className='depIcon'><img className="depIconImg" src="assets/department/surgery.png" alt="dept"/></div>
+                    <div className='depIcon'><img className="depIconImg" src="assets/department/surgery.png" alt="dept" /></div>
                     <h1 className='depHead'>Dispensary</h1>
                     <h3 className='depAbout'>Medicine & Pharmacy</h3>
                     <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
@@ -66,4 +66,4 @@ function Department() {
     )
 }
 
-export default Department
+export default AllDepartment
