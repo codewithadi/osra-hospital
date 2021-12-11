@@ -8,6 +8,7 @@ import Contact from "./pages/Contact"
 import SupportService from "./components/Services/SopportService/SupportService";
 
 // departments and its routes 
+import Insurance from "./components/Services/Insurance/Insurance";
 import AllDepartments from "./components/Services/AllDepartments/AllDepartments";
 import Ophthalmology from "./components/Departments/Ophthalmology";
 import BariaticSurgery from "./components/Departments/BariaticSurgery";
@@ -41,6 +42,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/supporting-medical-services" element={<SupportService />} />
         <Route path="/departments" element={<AllDepartments />} />
+        <Route path="/insurance" element={<Insurance />} />
         <Route path="/departments/ophthalmology" element={<Ophthalmology />} />
         <Route path="/departments/urology" element={<Urology />} />
         <Route path="/departments/bariatic-surgery" element={<BariaticSurgery />} />

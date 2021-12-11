@@ -19,7 +19,12 @@ function AllDepartment() {
                     <h1 className='depHead'>General Surgery</h1>
                     {/* <h3 className='depAbout'>Operations & surgeries</h3> */}
                     <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
-                    <Link onClick={scrollToTop} to="/departments/general-sergery" className='depLink'>Get Details..</Link>
+                    <Link 
+                        // onClick={scrollToTop} 
+                        // to="/departments/general-sergery" 
+                        className='depLink'>
+                            Get Details..
+                    </Link>
                 </div>
 
                 <div className='depCard'>
@@ -51,7 +56,12 @@ function AllDepartment() {
                     <h1 className='depHead'>Neuro</h1>
                     {/* <h3 className='depAbout'>Research & Lab</h3> */}
                     <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
-                    <Link onClick={scrollToTop} to="/departments/neuro" className='depLink'>Get Details..</Link>
+                    <Link 
+                        onClick={scrollToTop} 
+                        to="/departments/neuro" 
+                        className='depLink'>
+                            Get Details..
+                    </Link>
                 </div>
 
                 <div className='depCard'>
@@ -59,15 +69,25 @@ function AllDepartment() {
                     <h1 className='depHead'>Pshyciatric</h1>
                     {/* <h3 className='depAbout'>Bones & Joints</h3> */}
                     <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
-                    <Link onClick={scrollToTop} to="/departments/pshyciatric" className='depLink'>Get Details..</Link>
+                    <Link 
+                        onClick={scrollToTop} 
+                        to="/departments/pshyciatric" 
+                        className='depLink'>
+                            Get Details..
+                    </Link>
                 </div>
 
                 <div className='depCard'>
                     <div className='depIcon'><img className="depIconImg" src="assets/department/magnifying-glass.png" alt="dept" /></div>
                     <h1 className='depHead'>Bariatic Surgery</h1>
-                    <h3 className='depAbout'>Bones & Joints</h3>
+                    {/* <h3 className='depAbout'>Bones & Joints</h3> */}
                     <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
-                    <Link onClick={scrollToTop} to="/departments/bariatic-surgery" className='depLink'>Get Details..</Link>
+                    <Link 
+                        onClick={scrollToTop} 
+                        to="/departments/bariatic-surgery" 
+                        className='depLink'>
+                            Get Details..
+                    </Link>
                 </div>
                 
                 <div className='depCard'>
@@ -83,7 +103,12 @@ function AllDepartment() {
                     <h1 className='depHead'>OB/Gyne</h1>
                     {/* <h3 className='depAbout'>Bones & Joints</h3> */}
                     <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
-                    <Link onClick={scrollToTop} to="/departments/ob-gyne" className='depLink'>Get Details..</Link>
+                    <Link 
+                        onClick={scrollToTop} 
+                        to="/departments/ob-gyne" 
+                        className='depLink'>
+                            Get Details..
+                    </Link>
                 </div>
                 
                 <div className='depCard'>
@@ -91,7 +116,11 @@ function AllDepartment() {
                     <h1 className='depHead'>Physiotherapist </h1>
                     {/* <h3 className='depAbout'>Bones & Joints</h3> */}
                     <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
-                    <Link onClick={scrollToTop} to="/departments/physiotherapist" className='depLink'>Get Details..</Link>
+                    <Link onClick={scrollToTop} 
+                        to="/departments/physiotherapist" 
+                        className='depLink'>
+                            Get Details..
+                    </Link>
                 </div>
                 
                 <div className='depCard'>
