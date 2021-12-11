@@ -51,8 +51,8 @@ export default function Navbar() {
     <div
       className={
         !colorChange
-          ? `block headerText lg:px-12 md:px-8 px-4 lg:py-6 z-50 sticky top-0 md:bg-transparent bg-header shadow`
-          : `block headerText lg:px-12 md:px-8 px-4 lg:py-6 z-50 sticky top-0 bg-header shadow`
+          ? `block headerText lg:px-12 md:px-8 px-4 lg:py-6 z-100 sticky top-0 md:bg-transparent bg-header shadow`
+          : `block headerText lg:px-12 md:px-8 px-4 lg:py-6 z-100 sticky top-0 bg-header shadow`
       }
     >
       {/* <div className="bg-white w-full h-20 pb-2 md:pb-6">
