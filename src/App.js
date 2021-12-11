@@ -22,6 +22,8 @@ import Gastroenterology from "./components/Departments/Gastroenterology ";
 import Neuro from "./components/Departments/Neuro";
 import Pshyciatric from "./components/Departments/Pshyciatric";
 import Physiotherapist from "./components/Departments/Physiotherapist";
+import Gen_surgery from "./components/Departments/GenSurgury";
+import OBGyne from "./components/Departments/OBGyne";
 
 // departments and its routes finished
 import BlogList from "./components/BlogList/BlogList";
@@ -53,7 +55,8 @@ function App() {
         <Route path="/departments/neuro" element={<Neuro />} />
         <Route path="/departments/pshyciatric" element={<Pshyciatric />} />
         <Route path="/departments/physiotherapist" element={<Physiotherapist />} />
-        
+        <Route path="/departments/general-sergery" element={<Gen_surgery />} />
+        <Route path="/departments/ob-gyne" element={<OBGyne />} />
        
         <Route path="/blog" element={<BlogList />} />
       </Routes>
