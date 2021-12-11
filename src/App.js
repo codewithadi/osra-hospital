@@ -29,7 +29,6 @@ import OBGyne from "./components/Departments/OBGyne";
 import BlogList from "./components/BlogList/BlogList";
 import Services from "./pages/Services";
 import Media from "./pages/Media";
-<<<<<<< HEAD
 import BookAppointment from "./components/BookAppointment/BookAppointment";
 import ER from "./components/Departments/ER";
 import Dietitian from './components/Departments/Dietitian';
@@ -38,9 +37,7 @@ import Orthopedics from "./components/Departments/Orthopedics";
 import Laboratory from "./components/Departments/Laboratory";
 import SpecialTests from "./components/Departments/SpecialTests";
 import Serology from "./components/Departments/Serology";
-=======
 import Insurance from "./components/Services/Insurance/Insurance";
->>>>>>> a75872cd9e9a5fd950f4067f7d3a552a8003961c
 
 function App() {
   return (
@@ -64,7 +61,6 @@ function App() {
         <Route path="/departments/dentistry" element={<Dentistry />} />
         <Route path="/departments/dermatology" element={<Dermatology />} />
         <Route path="/departments/ear-nose-throat" element={<EarNose />} />
-<<<<<<< HEAD
         <Route path="/departments/er" element={<ER />} />
         <Route path="/departments/dietitian" element={<Dietitian />} />
         <Route path="/departments/cardiologist-and-internal-medicine" element={<Cardiologist />} />
@@ -72,16 +68,13 @@ function App() {
         <Route path="/departments/laboratory" element={<Laboratory />} />
         <Route path="/departments/special-tests" element={<SpecialTests />} />
         <Route path="/departments/serology" element={<Serology />} />
-=======
         <Route path="/departments/radiologic" element={<Radiology />} />
         <Route path="/departments/gastroenterology" element={<Gastroenterology />} />
         <Route path="/departments/neuro" element={<Neuro />} />
         <Route path="/departments/pshyciatric" element={<Pshyciatric />} />
         <Route path="/departments/physiotherapist" element={<Physiotherapist />} />
         <Route path="/departments/general-sergery" element={<Gen_surgery />} />
-        <Route path="/departments/ob-gyne" element={<OBGyne />} />
-       
->>>>>>> a75872cd9e9a5fd950f4067f7d3a552a8003961c
+        <Route path="/departments/ob-gyne" element={<OBGyne />} />  
         <Route path="/blog" element={<BlogList />} />
         <Route path="/appointment" element={<BookAppointment />} />
       </Routes>
