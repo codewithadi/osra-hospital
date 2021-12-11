@@ -104,10 +104,10 @@ function Footer() {
                         <a
                           target="_blank"
                           rel="noreferrer"
-                          href="tel: +1011431111"
+                          href="tel: 011431111"
                           className="bg-transparent"
                         >
-                          +1 
+                          011431111
                         </a>{" "}
                       </div>
                     </div>
