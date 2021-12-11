@@ -18,6 +18,14 @@ import EarNose from "./components/Departments/EarNose";
 import BlogList from "./components/BlogList/BlogList";
 import Services from "./pages/Services";
 import Media from "./pages/Media";
+import BookAppointment from "./components/BookAppointment/BookAppointment";
+import ER from "./components/Departments/ER";
+import Dietitian from './components/Departments/Dietitian';
+import Cardiologist from "./components/Departments/Cardiologist";
+import Orthopedics from "./components/Departments/Orthopedics";
+import Laboratory from "./components/Departments/Laboratory";
+import SpecialTests from "./components/Departments/SpecialTests";
+import Serology from "./components/Departments/Serology";
 
 function App() {
   return (
@@ -39,7 +47,15 @@ function App() {
         <Route path="/departments/dentistry" element={<Dentistry />} />
         <Route path="/departments/dermatology" element={<Dermatology />} />
         <Route path="/departments/ear-nose-throat" element={<EarNose />} />
+        <Route path="/departments/er" element={<ER />} />
+        <Route path="/departments/dietitian" element={<Dietitian />} />
+        <Route path="/departments/cardiologist-and-internal-medicine" element={<Cardiologist />} />
+        <Route path="/departments/orthopedics" element={<Orthopedics />} />
+        <Route path="/departments/laboratory" element={<Laboratory />} />
+        <Route path="/departments/special-tests" element={<SpecialTests />} />
+        <Route path="/departments/serology" element={<Serology />} />
         <Route path="/blog" element={<BlogList />} />
+        <Route path="/appointment" element={<BookAppointment />} />
       </Routes>
       <Footer />
     </>

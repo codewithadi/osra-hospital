@@ -150,13 +150,6 @@ function AllDepartment() {
                     <Link onClick={scrollToTop} to="/departments/cardiologist-and-internal-medicine" className='depLink'>Get Details..</Link>
                 </div>
                 
-                <div className='depCard'>
-                    <div className='depIcon'><img className="depIconImg" src="assets/department/magnifying-glass.png" alt="dept" /></div>
-                    <h1 className='depHead'>Cardiologist and internal medicine  </h1>
-                    {/* <h3 className='depAbout'>Bones & Joints</h3> */}
-                    <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
-                    <Link onClick={scrollToTop} to="/departments/cardiologist-and-internal-medicine" className='depLink'>Get Details..</Link>
-                </div>
                 
                 <div className='depCard'>
                     <div className='depIcon'><img className="depIconImg" src="assets/department/magnifying-glass.png" alt="dept" /></div>
@@ -190,6 +183,8 @@ function AllDepartment() {
                     <Link onClick={scrollToTop} to="/departments/special-tests" className='depLink'>Get Details..</Link>
                 </div>
 
+
+                
             </div>
         </div>
     )
