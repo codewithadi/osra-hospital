@@ -6,6 +6,8 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import SupportService from "./components/Services/SopportService/SupportService";
+
+// departments and its routes 
 import AllDepartments from "./components/Services/AllDepartments/AllDepartments";
 import Ophthalmology from "./components/Departments/Ophthalmology";
 import BariaticSurgery from "./components/Departments/BariaticSurgery";
@@ -14,7 +16,14 @@ import Dentistry from "./components/Departments/Dentistry";
 import Urology from "./components/Departments/Urology";
 import Dermatology from "./components/Departments/Dermatology";
 import TopBar from "./components/TopBar/TopBar";
+import Radiology from "./components/Departments/Radiology";
 import EarNose from "./components/Departments/EarNose";
+import Gastroenterology from "./components/Departments/Gastroenterology ";
+import Neuro from "./components/Departments/Neuro";
+import Pshyciatric from "./components/Departments/Pshyciatric";
+import Physiotherapist from "./components/Departments/Physiotherapist ";
+
+// departments and its routes finished
 import BlogList from "./components/BlogList/BlogList";
 import Services from "./pages/Services";
 import Media from "./pages/Media";
@@ -39,6 +48,12 @@ function App() {
         <Route path="/departments/dentistry" element={<Dentistry />} />
         <Route path="/departments/dermatology" element={<Dermatology />} />
         <Route path="/departments/ear-nose-throat" element={<EarNose />} />
+        <Route path="/departments/radiologic" element={<Radiology />} />
+        <Route path="/departments/gastroenterology" element={<Gastroenterology />} />
+        <Route path="/departments/neuro" element={<Neuro />} />
+        <Route path="/departments/pshyciatric" element={<Pshyciatric />} />
+        <Route path="/departments/physiotherapist" element={<Physiotherapist />} />
+       
         <Route path="/blog" element={<BlogList />} />
       </Routes>
       <Footer />
