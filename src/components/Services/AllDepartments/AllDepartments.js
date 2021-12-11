@@ -20,8 +20,8 @@ function AllDepartment() {
                     {/* <h3 className='depAbout'>Operations & surgeries</h3> */}
                     <p className='depDetailHome'>Behind the word mountains, far from the countries Vokalia.</p>
                     <Link 
-                        // onClick={scrollToTop} 
-                        // to="/departments/general-sergery" 
+                        onClick={scrollToTop} 
+                        to="/departments/general-sergery" 
                         className='depLink'>
                             Get Details..
                     </Link>
