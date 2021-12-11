@@ -27,6 +27,7 @@ import Physiotherapist from "./components/Departments/Physiotherapist";
 import BlogList from "./components/BlogList/BlogList";
 import Services from "./pages/Services";
 import Media from "./pages/Media";
+import Insurance from "./components/Services/Insurance/Insurance";
 
 function App() {
   return (
@@ -40,6 +41,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/supporting-medical-services" element={<SupportService />} />
+        <Route path="/insurance" element={<Insurance />} />
+
         <Route path="/departments" element={<AllDepartments />} />
         <Route path="/departments/ophthalmology" element={<Ophthalmology />} />
         <Route path="/departments/urology" element={<Urology />} />
