@@ -69,7 +69,7 @@ export default function Navbar() {
             LogoName
           </div> */}
         </div>
-        <div className="hidden sm:flex text-lg md:text-xl py-3 md:pr-10 bg-transparent" id="">
+        <div className="hidden sm:flex text-base md:text-lg py-3 md:pr-10 bg-transparent" id="">
           <NavLinks />
         </div>
         <div
