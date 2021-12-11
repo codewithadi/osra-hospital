@@ -27,7 +27,8 @@ const WhyChooseUs = () => {
               <h3 className="font-medium px-2 text-2xl">Mission</h3>
             </div>
             <p className="text-lg my-2 text-gray-600">
-              Anim pariatur cliche life eiusmod reprehenderit enim.
+              We are dedicated to provide high quality, evidence-based and safe
+              healthcare.{" "}
             </p>
           </div>
 
@@ -41,7 +42,8 @@ const WhyChooseUs = () => {
               <h3 className="font-medium px-2 text-2xl">Vision</h3>
             </div>
             <p className="text-lg my-2 text-gray-600">
-              Anim pariatur cliche life eiusmod reprehenderit enim.
+              To be a benchmark in provision of quality healthcare services in
+              the private sector in the Kingdom
             </p>
           </div>
         </section>
@@ -83,7 +85,8 @@ const WhyChooseUs = () => {
               <h3 className="font-medium px-2 text-2xl">Values</h3>
             </div>
             <p className="text-lg my-2 text-gray-600">
-              Anim pariatur cliche life eiusmod reprehenderit enim.
+              Dignity and respect | Medical excellence | Transparency | Justice
+              | Safety | Teamwork | Loyalty 
             </p>
           </div>
         </section>
