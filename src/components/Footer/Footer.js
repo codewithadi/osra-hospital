@@ -20,9 +20,9 @@ function Footer() {
                     className="text-xl font-bold bg-transparent hover:text-gray-700 dark:hover:text-gray-700"
                   >
                     <img
-                      className="h-14 w-28 md:h-24 md:w-26 bg-transparent"
+                      className="h-24 w-24 md:h-28 md:w-28 bg-transparent"
                       src="/hospitalLogo.jpeg"
-                      alt=""
+                      alt="brandlogofooter"
                     />
                     {/* Company Name */}
                   </Link>

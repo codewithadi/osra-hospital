@@ -4,7 +4,7 @@ const TopBar = () => {
   return (
     <div className="w-full h-9 flex justify-end items-center bg-blue-200 px-3 md:px-6 z-100 shadow-md">
       <a
-        className="py-2 px-6 mr-4 bg-blue-600 text-white font-semibold uppercase"
+        className="p-2 md:py-2 md:px-6 mr-4 bg-blue-600 text-sm md:text-base text-white font-semibold uppercase"
         href="tel:011431111"
       >
         Emergency: 011-431-111
