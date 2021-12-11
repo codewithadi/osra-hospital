@@ -141,6 +141,14 @@ function NavLinks({ colorchange }) {
             </h1>
           </Link>
         </li>
+        {/* <li className="inline-block bg-transparent">
+          <Link
+            to="/appointment"
+            className="text-white py-2 px-2 uppercase font-light bg-blue-600 hover:bg-green-400 text-sm md:text-base ml-2 "
+          >
+            Book Appointment
+          </Link>
+        </li> */}
       </ul>
     </div>
   );
