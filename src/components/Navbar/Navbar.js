@@ -59,17 +59,37 @@ export default function Navbar() {
         <TextAnim />
       </div> */}
       <div className="h-16 flex justify-between justify-items-center bg-transparent">
-        <div className="inline-flex md:pt-0 bg-transparent" style={{ width: "20%" }}>
-          <div className="md:-mt-5 bg-transparent">
-            <Link className="bg-transparent" to="/" onClick={scrollToTop}>
-              <img className="h-14 w-14 md:h-24 md:w-24 bg-transparent" src="/hospitalLogo.jpeg" alt="brandlogo" />
+        <div
+          className="flex justify-center items-center md:pt-0 bg-transparent"
+          // style={{ width: "27%" }}
+        >
+          <div className="md:inline-flex md:-mt-5 text-sm md:text-base pr-2 select-none font-semibold pt-2">
+            AL-Osrah International Hospital
+          </div>
+
+          <div className="md:-mt-5 md:inline-flex bg-transparent">
+            <Link
+              className="w-full bg-transparent"
+              to="/"
+              onClick={scrollToTop}
+            >
+              <img
+                className="h-14 w-14 md:h-24 md:w-24 bg-transparent"
+                src="/hospitalLogo.jpeg"
+                alt="brandlogo"
+              />
             </Link>
           </div>
+
           {/* <div className="text-md lg:text-3xl pl-2 align-middle select-none font-bold pt-2">
-            LogoName
+            AL-Osrah International Hospital
           </div> */}
         </div>
-        <div className="hidden sm:flex text-base md:text-lg py-3 md:pr-10 bg-transparent" id="">
+
+        <div
+          className="hidden sm:flex text-base md:text-lg py-3 md:pr-10 bg-transparent"
+          id=""
+        >
           <NavLinks />
         </div>
         <div
