@@ -67,7 +67,7 @@ export default function Navbar() {
             AL-Osrah International Hospital
           </div>
 
-          <div className="md:-mt-5 md:inline-flex bg-transparent">
+          <div className="md:-mt-4 md:inline-flex bg-transparent">
             <Link
               className="w-full bg-transparent"
               to="/"
