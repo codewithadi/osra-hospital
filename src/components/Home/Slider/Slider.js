@@ -98,7 +98,7 @@ const Slider = () => {
             </p>
             <div className="flex justify-start">
               <Link
-                to="/departments"
+                to="/clinics"
                 className="text-white py-3 px-4 uppercase font-light bg-blue-600 hover:bg-green-400 md:text-xl mb-2"
               >
                 Visitor Guide

@@ -22,14 +22,14 @@ const Services = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center items-center py-10 px-2 md:px-20">
         <ServiceGrid
           imgUrl="/assets/images/supportservice.png"
-          title="Supporting Medical Services"
-          linkUrl="/supporting-medical-services"
+          title="Departments"
+          linkUrl="/departments"
         />
 
         <ServiceGrid
           imgUrl="/assets/images/dept.jpg"
-          title="Departments"
-          linkUrl="/departments"
+          title="Clinics"
+          linkUrl="/clinics"
         />
 
         <ServiceGrid

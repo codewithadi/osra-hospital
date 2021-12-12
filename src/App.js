@@ -8,7 +8,7 @@ import Contact from "./pages/Contact"
 import SupportService from "./components/Services/SopportService/SupportService";
 
 // departments and its routes 
-import AllDepartments from "./components/Services/AllDepartments/AllDepartments";
+import AllClinics from "./components/Services/AllClinics/AllClinics";
 import Ophthalmology from "./components/Departments/Ophthalmology";
 import BariaticSurgery from "./components/Departments/BariaticSurgery";
 import Pediatrics from "./components/Departments/Pediatrics";
@@ -50,31 +50,31 @@ function App() {
         <Route path="/media" element={<Media />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        <Route path="/supporting-medical-services" element={<SupportService />} />
+        <Route path="/departments" element={<SupportService />} />
         <Route path="/insurance" element={<Insurance />} />
 
-        <Route path="/departments" element={<AllDepartments />} />
-        <Route path="/departments/ophthalmology" element={<Ophthalmology />} />
-        <Route path="/departments/urology" element={<Urology />} />
-        <Route path="/departments/bariatic-surgery" element={<BariaticSurgery />} />
-        <Route path="/departments/pediatrics" element={<Pediatrics />} />
-        <Route path="/departments/dentistry" element={<Dentistry />} />
-        <Route path="/departments/dermatology" element={<Dermatology />} />
-        <Route path="/departments/ear-nose-throat" element={<EarNose />} />
-        <Route path="/departments/er" element={<ER />} />
-        <Route path="/departments/dietitian" element={<Dietitian />} />
-        <Route path="/departments/cardiologist-and-internal-medicine" element={<Cardiologist />} />
-        <Route path="/departments/orthopedics" element={<Orthopedics />} />
-        <Route path="/departments/laboratory" element={<Laboratory />} />
-        <Route path="/departments/special-tests" element={<SpecialTests />} />
-        <Route path="/departments/serology" element={<Serology />} />
-        <Route path="/departments/radiologic" element={<Radiology />} />
-        <Route path="/departments/gastroenterology" element={<Gastroenterology />} />
-        <Route path="/departments/neuro" element={<Neuro />} />
-        <Route path="/departments/pshyciatric" element={<Pshyciatric />} />
-        <Route path="/departments/physiotherapist" element={<Physiotherapist />} />
-        <Route path="/departments/general-sergery" element={<GenSurgery />} />
-        <Route path="/departments/ob-gyne" element={<OBGyne />} />  
+        <Route path="/clinics" element={<AllClinics />} />
+        <Route path="/clinics/ophthalmology" element={<Ophthalmology />} />
+        <Route path="/clinics/urology" element={<Urology />} />
+        <Route path="/clinics/bariatic-surgery" element={<BariaticSurgery />} />
+        <Route path="/clinics/pediatrics" element={<Pediatrics />} />
+        <Route path="/clinics/dentistry" element={<Dentistry />} />
+        <Route path="/clinics/dermatology" element={<Dermatology />} />
+        <Route path="/clinics/ear-nose-throat" element={<EarNose />} />
+        <Route path="/clinics/er" element={<ER />} />
+        <Route path="/clinics/dietitian" element={<Dietitian />} />
+        <Route path="/clinics/cardiologist-and-internal-medicine" element={<Cardiologist />} />
+        <Route path="/clinics/orthopedics" element={<Orthopedics />} />
+        <Route path="/clinics/laboratory" element={<Laboratory />} />
+        <Route path="/clinics/special-tests" element={<SpecialTests />} />
+        <Route path="/clinics/serology" element={<Serology />} />
+        <Route path="/clinics/radiologic" element={<Radiology />} />
+        <Route path="/clinics/gastroenterology" element={<Gastroenterology />} />
+        <Route path="/clinics/neuro" element={<Neuro />} />
+        <Route path="/clinics/pshyciatric" element={<Pshyciatric />} />
+        <Route path="/clinics/physiotherapist" element={<Physiotherapist />} />
+        <Route path="/clinics/general-sergery" element={<GenSurgery />} />
+        <Route path="/clinics/ob-gyne" element={<OBGyne />} />  
         <Route path="/blog" element={<BlogList />} />
         <Route path="/appointment" element={<BookAppointment />} />
       </Routes>

@@ -1,12 +1,12 @@
 export const DropItems = [
     {
-      title: "Supporting Medical Services",
-      path: "/supporting-medical-services",
+      title: "Departments",
+      path: "/departments",
       cName: "subdropdown-link bg-transparent",
     },
     {
-      title: "Departments",
-      path: "/departments",
+      title: "Clinics",
+      path: "/clinics",
       cName: "subdropdown-link bg-transparent",
     },
     {
