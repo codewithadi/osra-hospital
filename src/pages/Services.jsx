@@ -27,7 +27,7 @@ const Services = () => {
         />
 
         <ServiceGrid
-          imgUrl="/assets/images/department.png"
+          imgUrl="/assets/images/dept.jpg"
           title="Departments"
           linkUrl="/departments"
         />
