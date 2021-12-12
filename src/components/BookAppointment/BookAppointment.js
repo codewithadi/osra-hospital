@@ -18,10 +18,20 @@ function BookAppointment() {
                 <form className='appointmentForm'>                    
                     <input  className='bookFormItem' type="text" name="name" placeholder="Your Full Name" />
                     <input  className='bookFormItem' type="number" name="age" placeholder="Your Age" min={1} max={100}/>
-                    <input  className='bookFormItem' type="date" name="dob" placeholder="Your DOB" />
+                    {/* gender radio box below  */}
+                    <div className='serviceText'>Your Gender : </div>
+                    <div className='bookFormItems'>
+                        <input type="radio" className='bookFormRadio' name="gender" value="male" />
+                        <label className='bookFormLabel'>Male</label>
+
+                        <input type="radio" className='bookFormRadio' name="gender" value="Female" />
+                        <label className='bookFormLabel'>Female</label>
+                    </div>
+                    
                     <input  className='bookFormItem' type="text" name="phone" placeholder="Your Phone Number" />
+                    {/* Services Check box below  */}
                     <div className='serviceText'>Services Needed : </div>
-                    <div className='servicesNeeded'>
+                    <div className='bookFormItems'>
                         <div className='bookFormRow'>
                             <input type="checkbox" className='bookFormCheck' />
                             <label>Radiology</label><br />

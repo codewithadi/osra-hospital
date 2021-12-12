@@ -39,7 +39,7 @@
     font-weight: 500;
     margin-top:10px;
 }
-.servicesNeeded{
+.bookFormItems{
     width:100%;
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +53,13 @@
     margin:10px 0;
     margin-right:8px;
 }
-
+.bookFormRadio{
+    margin:8px 0;
+    margin-right:5px;
+}
+.bookFormLabel{
+    margin-right:20px;
+}
 textarea {
     resize: none;
 }
