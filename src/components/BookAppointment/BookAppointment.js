@@ -24,43 +24,88 @@ function BookAppointment() {
                     <div className='servicesNeeded'>
                         <div className='bookFormRow'>
                             <input type="checkbox" className='bookFormCheck' />
-                            <label>Blood pressure check</label><br />
+                            <label>Radiology</label><br />
                             
                             <input type="checkbox" className='bookFormCheck' />
-                            <label>RBC count check</label><br />
+                            <label>Physiotherapy</label><br />
                         </div>
                         
                         <div className='bookFormRow'>
                             <input type="checkbox" className='bookFormCheck' />
-                            <label>Bone marrow</label><br />
+                            <label>Home Care</label><br />
 
                             <input type="checkbox" className='bookFormCheck' />
-                            <label>Joint lubrication</label><br />
+                            <label>Operations</label><br />
                         </div>
 
                         <div className='bookFormRow'>
                             <input type="checkbox" className='bookFormCheck' />
-                            <label>Eye sight checkup</label><br />
+                            <label>Delivery</label><br />
 
                             <input type="checkbox" className='bookFormCheck' />
-                            <label>RBC count check</label><br />
+                            <label>ER</label><br />
                         </div> 
 
                         <div className='bookFormRow'>
                             <input type="checkbox" className='bookFormCheck' />
-                            <label>Bone marrow</label><br />
+                            <label>Pediatric</label><br />
 
                             <input type="checkbox" className='bookFormCheck' />
-                            <label>Joint lubrication</label><br />
+                            <label>OB-Gyna</label><br />
                         </div>
 
                         <div className='bookFormRow'>
                             <input type="checkbox" className='bookFormCheck' />
-                            <label>Eye sight checkup</label><br />
+                            <label>Ophthalmology</label><br />
                             
                             <input type="checkbox" className='bookFormCheck' />
-                            <label>RBC count check</label><br />
+                            <label>Dermatology</label><br />
+                        </div>
+                        
+                        <div className='bookFormRow'>
+                            <input type="checkbox" className='bookFormCheck' />
+                            <label>Internal Medicine</label><br />
+                            
+                            <input type="checkbox" className='bookFormCheck' />
+                            <label>Dentistry</label><br />
                         </div> 
+
+                        <div className='bookFormRow'>
+                            <input type="checkbox" className='bookFormCheck' />
+                            <label>Dietition</label><br />
+                            
+                            <input type="checkbox" className='bookFormCheck' />
+                            <label>ENT</label><br />
+                        </div> 
+
+                        <div className='bookFormRow'>
+                            <input type="checkbox" className='bookFormCheck' />
+                            <label>Orthopedics</label><br />
+                            
+                            <input type="checkbox" className='bookFormCheck' />
+                            <label>Surgery</label><br />
+                        </div> 
+
+                        <div className='bookFormRow'>
+                            <input type="checkbox" className='bookFormCheck' />
+                            <label>Urology</label><br />
+                            
+                            <input type="checkbox" className='bookFormCheck' />
+                            <label>Cardiology</label><br />
+                        </div>
+
+                        <div className='bookFormRow'>
+                            <input type="checkbox" className='bookFormCheck' />
+                            <label>Neuro</label><br />
+                            
+                            <input type="checkbox" className='bookFormCheck' />
+                            <label>Phschiatric</label><br />
+                        </div>  
+
+                        <div className='bookFormRow'>
+                            <input type="checkbox" className='bookFormCheck' />
+                            <label>Bariatric Surgery</label><br />
+                        </div>  
                     </div>
                     <textarea className='bookFormItem' name="message" rows={5} resize="none" placeholder="Your Message"></textarea>
                     <div className='bookFormBtn'>
