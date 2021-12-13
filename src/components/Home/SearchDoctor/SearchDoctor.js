@@ -28,6 +28,7 @@ const people = [
 
 function SearchDoctor() {
   const [selected, setSelected] = useState(people[0]);
+  const [selected1, setSelected1] = useState(people[0]);
   const [dispDoc, setDispDoc] = useState(false);
   const handleSelect = (e) => {
     e.preventDefault();
@@ -37,6 +38,7 @@ function SearchDoctor() {
       return;
     }
     setDispDoc(true);
+    setSelected1(selected)
     console.log(selected);
   };
 
@@ -154,7 +156,7 @@ function SearchDoctor() {
           </div>
         </div>
       </div>
-      {dispDoc && <DisplayDoctor selected={selected}/>}
+      {dispDoc && <DisplayDoctor selected1={selected1}/>}
     </>
   );
 }

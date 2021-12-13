@@ -1,11 +1,11 @@
 import React from "react";
 
-const DisplayDoctor = ({selected}) => {
+const DisplayDoctor = ({selected1}) => {
   return (
     <div>
       <div className="depDoctors1">
         <div className="depMain1">
-          <h1 className="depMainHead1">{selected.name} Clinic Doctors</h1>
+          <h1 className="depMainHead1">{selected1.name} Clinic Doctors</h1>
           <div className="depLine1"></div>
         </div>
         <div className="depDoctorWrapper1">
