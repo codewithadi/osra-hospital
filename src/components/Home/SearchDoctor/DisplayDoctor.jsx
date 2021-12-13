@@ -5,7 +5,7 @@ const DisplayDoctor = ({selected}) => {
     <div>
       <div className="depDoctors1">
         <div className="depMain1">
-          <h1 className="depMainHead1">Search Results for {selected.name}</h1>
+          <h1 className="depMainHead1">{selected.name} Clinic Doctors</h1>
           <div className="depLine1"></div>
         </div>
         <div className="depDoctorWrapper1">
