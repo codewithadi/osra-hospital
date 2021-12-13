@@ -1,28 +1,162 @@
-import React from 'react'
-import './searchdoctor.css'
+import React, { Fragment, useState } from "react";
+import { Listbox, Transition } from "@headlessui/react";
+import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
+// import CustomSelect from './CustomSelect'
+import "./searchdoctor.css";
+import DisplayDoctor from "./DisplayDoctor";
+
+const people = [
+  { name: "Select Clinic", unavailable: true },
+  { name: "Pediatric", unavailable: false },
+  { name: "OBGyna", unavailable: false },
+  { name: "Ophthalmology", unavailable: false },
+  { name: "Gastroenterology", unavailable: false },
+  { name: "Dermatology", unavailable: false },
+  { name: "Internal Medicine(Chest,Respiratory/Digestive,Cardio vascular)", unavailable: false },
+  { name: "Dentistry", unavailable: false },
+  { name: "Dietitian", unavailable: false },
+  { name: "ENT", unavailable: false },
+  { name: "Orthopedics", unavailable: false },
+  { name: "Surgery", unavailable: false },
+  { name: "Urology", unavailable: false },
+  { name: "Cardiology", unavailable: false },
+  { name: "Neuro", unavailable: false },
+  { name: "Phsycstric", unavailable: false },
+  { name: "Bariatric Surgery", unavailable: false },
+  { name: "Physiotherapy", unavailable: false },
+];
 
 function SearchDoctor() {
-    return (
-        <div className='search-doctor'>
-            <div className='searchDoctorWrapper'>
-                <img class="searchDoctorBack" src="/assets/department/depLastBack.jpg" alt="hmsearch" />
-                <div className='searchDoctorOverlay'>
-                    <div className='searchDoctorCol'>
-                        <h1 className='searchDoctorHead'>Find a Doctor</h1>
-                        <div className='searchDoctorAbout'>Culpa qui officia deserunt mollit anim idest</div>
-                        <p className='searchDoctorPara'>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <div className='searchDoctorButton'>
+  const [selected, setSelected] = useState(people[0]);
+  const [dispDoc, setDispDoc] = useState(false);
+  const handleSelect = (e) => {
+    e.preventDefault();
+    if (selected === people[0]) {
+      alert("Select Clinic to search doctor");
+      setDispDoc(false);
+      return;
+    }
+    setDispDoc(true);
+    console.log(selected);
+  };
+
+  return (
+    <>
+      <div className="search-doctor">
+        <div className="searchDoctorWrapper">
+          <img
+            class="searchDoctorBack"
+            src="/assets/department/depLastBack.jpg"
+            alt="hmsearch"
+          />
+          <div className="searchDoctorOverlay">
+            <div className="searchDoctorCol">
+              <h1 className="searchDoctorHead">Find a Doctor</h1>
+              <div className="searchDoctorAbout">
+                Culpa qui officia deserunt mollit anim idest
+              </div>
+              <p className="searchDoctorPara">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+              </p>
+              {/* <div className='searchDoctorButton'>
                             <input className='searchDoctorInput' type="text" placeholder='Find A Doctor' />
                             <a className='searchDoctorBtn' href="/contact">Find Doctor</a>
-                        </div>
+                        </div> */}
+
+              {/* Custom select */}
+
+              <div className="flex flex-col md:flex-row gap-4">
+                <div className="searchDoctorButtonCustom w-full md:w-3/4">
+                  <Listbox value={selected} onChange={setSelected}>
+                    <div className="relative mt-1">
+                      <Listbox.Button className="relative w-full py-3 pl-3 pr-10 text-left bg-white rounded-lg shadow-md cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-orange-300 focus-visible:ring-offset-2 focus-visible:border-indigo-500 sm:text-sm">
+                        <span className="block truncate">{selected.name}</span>
+                        <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                          <SelectorIcon
+                            className="w-5 h-5 text-gray-400"
+                            aria-hidden="true"
+                          />
+                        </span>
+                      </Listbox.Button>
+                      <Transition
+                        as={Fragment}
+                        leave="transition ease-in duration-100"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                      >
+                        <Listbox.Options className="absolute w-full py-1 mt-1 overflow-auto text-base bg-white rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                          {people.map((person, personIdx) => (
+                            <Listbox.Option
+                              key={personIdx}
+                              className={({ active }) =>
+                                `${
+                                  active
+                                    ? "text-amber-900 bg-amber-100"
+                                    : "text-gray-900"
+                                }
+                          cursor-default select-none relative py-2 pl-10 pr-4`
+                              }
+                              value={person}
+                              disabled={person.unavailable}
+                            >
+                              {({ selected, active }) => (
+                                <>
+                                  <span
+                                    className={`${
+                                      selected ? "font-medium" : "font-normal"
+                                    } block truncate`}
+                                  >
+                                    {person.name}
+                                  </span>
+                                  {selected ? (
+                                    <span
+                                      className={`${
+                                        active
+                                          ? "text-amber-600"
+                                          : "text-amber-600"
+                                      }
+                                absolute inset-y-0 left-0 flex items-center pl-3`}
+                                    >
+                                      <CheckIcon
+                                        className="w-5 h-5"
+                                        aria-hidden="true"
+                                      />
+                                    </span>
+                                  ) : null}
+                                </>
+                              )}
+                            </Listbox.Option>
+                          ))}
+                        </Listbox.Options>
+                      </Transition>
                     </div>
-                    <div className='searchDoctorCol'>
-                        <img className='seachDoctorImg' src="assets/images/findDoctor.png" alt="hmsearch"/>
-                    </div>
+                  </Listbox>
                 </div>
+                <button
+                  className="searchDoctorBtnCustom w-full md:w-1/4"
+                  onClick={handleSelect}
+                  href="/contact"
+                >
+                  Find Doctor
+                </button>
+              </div>
+
+              {/* custom select */}
             </div>
+            <div className="searchDoctorCol">
+              <img
+                className="seachDoctorImg"
+                src="assets/images/findDoctor.png"
+                alt="hmsearch"
+              />
+            </div>
+          </div>
         </div>
-    )
+      </div>
+      {dispDoc && <DisplayDoctor />}
+    </>
+  );
 }
 
-export default SearchDoctor
+export default SearchDoctor;

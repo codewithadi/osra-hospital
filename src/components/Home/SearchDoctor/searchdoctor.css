@@ -10,14 +10,15 @@
 }
 .searchDoctorOverlay{
     position: absolute;
-    top:0;
+    top:0px;
     left:0;
     width:100%;
     height:100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    align-items: center !important;
 }
 .searchDoctorCol{
     width:40%;
@@ -25,6 +26,7 @@
     text-align: left;
     flex-direction: column;
     justify-content: center;
+
 }
 .searchDoctorHead{
     font-size:30px;
@@ -51,6 +53,10 @@
     margin-top:40px;
     margin-bottom:50px;
 }
+.searchDoctorButtonCustom{
+    margin-top:10px !important;
+    margin-bottom:10px !important;
+}
 .searchDoctorInput{
     padding:15px;
     color:#fff;
@@ -65,13 +71,89 @@
     text-decoration: none;
     outline: none;
 }
+.searchDoctorBtnCustom{
+    background-color: #427cc5;
+    padding:15px 30px;
+    color:rgb(3, 3, 3);
+    text-align: center;
+    margin:10px 0;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Disp Compenent */
+.depMainHead1{
+    text-align: center !important;
+    font-size:30px;
+    font-weight: 700;
+}
+.depDoctors1{
+    margin:20px 0 !important;
+    width:100%;
+}
+.depDoctorWrapper1{
+    width:100% !important;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.depDoctorCard1{
+    width:300px;
+    margin:20px 0;
+    text-align:center;
+}
+.depDoctorImg1{  
+    border-radius: 50%;
+    border:1px solid #8ea1ae;
+    padding:5px;
+    width:150px;
+    height:150px;
+    margin:0 auto;
+}
+.doctorImg1{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.depDoctorName1{
+    font-size:22px;
+    font-weight: 600;
+    margin-top:10px;
+}
+.depDoctorAbout1{
+    font-size: 17px;
+    color:#8ea1ae;
+    margin:5px 0;
+    word-spacing: 1.5px;
+}
+.depDoctorMob1{
+    margin:10px 0;
+}
+.depBtnWrapper1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+}
+.depDoctorBtn1{
+    display: block;
+    width:70%;
+    text-decoration: none;
+    outline: none;
+    background:#eff5f9;
+    padding:10px;
+    margin:10px 0;
+}
+
 
 @media (max-width:1000px){
     .searchDoctorWrapper{
         height:700px;
     }
     .searchDoctorOverlay{
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: flex-end;
         align-items: center;
     }
