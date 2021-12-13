@@ -154,7 +154,7 @@ function SearchDoctor() {
           </div>
         </div>
       </div>
-      {dispDoc && <DisplayDoctor />}
+      {dispDoc && <DisplayDoctor selected={selected}/>}
     </>
   );
 }
