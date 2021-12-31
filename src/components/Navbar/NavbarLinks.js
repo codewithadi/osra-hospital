@@ -1,15 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Dropdown from "./Dropdown";
 
 function NavLinks({ colorchange }) {
   const [dropdown, setDropdown] = useState(false);
+  const [showApt, setShowApt] = useState(false);
   //assigning location variable
   const location = useLocation();
   //destructuring pathname from location
   const { pathname } = location;
   //Javascript split method to get the name of the path in array
   const splitLocation = pathname.split("/");
+  useEffect(() => {
+    const resizeEve = () => {
+      if (window.innerWidth < 768) {
+        setShowApt(false);
+      } else {
+        setShowApt(true);
+      }
+    }
+    window.addEventListener("resize", resizeEve)
+    resizeEve()
+    return () => window.removeEventListener()
+    
+  }, []);
 
   const onMouseEnter = () => {
     if (window.innerWidth < 768) {
@@ -141,14 +155,17 @@ function NavLinks({ colorchange }) {
             </h1>
           </Link>
         </li>
-        {/* <li className="inline-block bg-transparent">
-          <Link
-            to="/appointment"
-            className="text-white py-2 px-2 uppercase font-light bg-blue-600 hover:bg-green-400 text-sm md:text-base ml-2 "
-          >
-            Book Appointment
-          </Link>
-        </li> */}
+        {showApt && (
+          <li className="inline-block bg-transparent">
+            <Link
+              to="/appointment"
+              onClick={scrollToTop}
+              className="text-white rounded-sm py-3 px-2 uppercase font-light bg-blue-600 hover:bg-green-400 text-sm md:text-base ml-2 "
+            >
+              Book Appointment
+            </Link>
+          </li>
+        )}
       </ul>
     </div>
   );
