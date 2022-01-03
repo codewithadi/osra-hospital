@@ -95,7 +95,7 @@ function App() {
         <Route path="/clinics/neuro" element={<Neuro />} />
         <Route path="/clinics/pshyciatric" element={<Pshyciatric />} />
         <Route path="/clinics/physiotherapist" element={<Physiotherapist />} />
-        <Route path="/clinics/general-sergery" element={<GenSurgery />} />
+        <Route path="/clinics/general-surgery" element={<GenSurgery />} />
         <Route path="/clinics/ob-gyne" element={<OBGyne />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/appointment" element={<BookAppointment />} />
