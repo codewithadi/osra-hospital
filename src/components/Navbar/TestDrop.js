@@ -13,11 +13,6 @@ const TestDrop = () => {
     const ref = useRef(null);
     const [state, setState] = useState();
 
-    {
-        /* <div ref={ref} onMouseEnter={() => setState('open')}>
-    Hover to Open
-</div> */
-    }
     const location = useLocation();
     //destructuring pathname from location
     const { pathname } = location;
