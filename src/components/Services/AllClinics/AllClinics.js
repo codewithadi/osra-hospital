@@ -205,7 +205,7 @@ function AllClinics() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/ob.png"
                             alt="dept"
                         />
                     </div>
@@ -228,7 +228,7 @@ function AllClinics() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/physio.png"
                             alt="dept"
                         />
                     </div>
@@ -251,7 +251,7 @@ function AllClinics() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/dentist.png"
                             alt="dept"
                         />
                     </div>
@@ -274,7 +274,7 @@ function AllClinics() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/radio.png"
                             alt="dept"
                         />
                     </div>
@@ -297,7 +297,7 @@ function AllClinics() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/derma.png"
                             alt="dept"
                         />
                     </div>
@@ -320,7 +320,7 @@ function AllClinics() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/gas.png"
                             alt="dept"
                         />
                     </div>
@@ -343,7 +343,7 @@ function AllClinics() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/er.png"
                             alt="dept"
                         />
                     </div>
@@ -366,7 +366,7 @@ function AllClinics() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/die.png"
                             alt="dept"
                         />
                     </div>
@@ -389,7 +389,7 @@ function AllClinics() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/cardio.png"
                             alt="dept"
                         />
                     </div>
@@ -414,7 +414,7 @@ function AllClinics() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/ortho.png"
                             alt="dept"
                         />
                     </div>
@@ -437,7 +437,7 @@ function AllClinics() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/labd.png"
                             alt="dept"
                         />
                     </div>
@@ -460,7 +460,7 @@ function AllClinics() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/sero.png"
                             alt="dept"
                         />
                     </div>
@@ -483,7 +483,7 @@ function AllClinics() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/special.png"
                             alt="dept"
                         />
                     </div>

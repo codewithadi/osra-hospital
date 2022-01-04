@@ -15,8 +15,8 @@ function Laboratory() {
                 <div className='depDetailContainer'>
                     <div className='depTextHead'>
                         <h1 className='depDetailTitle'>Laboratory Department</h1>
-                        <div className='depDetailAbout'>The department of a hospital responsible for the provision of medical and surgical care to patients arriving at the hospital in need of immediate care..</div>
-                        <p className='depDetailPara'>If you have a health problem with your head or neck, your doctor might recommend that you see an otolaryngologist. That's someone who treats issues in your ears, nose, or throat as well as related areas in your head and neck.</p>
+                        <div className='depDetailAbout'>where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease.</div>
+                        {/* <p className='depDetailPara'>If you have a health problem with your head or neck, your doctor might recommend that you see an otolaryngologist. That's someone who treats issues in your ears, nose, or throat as well as related areas in your head and neck.</p> */}
                     </div>
                     <div className='depImgWrapper'>
                         <img className="depDetailImg" src="/assets/images/earnose.jpg" alt="earnose" />

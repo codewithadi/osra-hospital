@@ -22,37 +22,37 @@ const SupportService = () => {
         <SupportGrid
           imgUrl="/assets/images/radiology.jpg"
           title="Radiology"
-          desc="Radiology is committed to providing outstanding patient care by combining excellence in clinical imaging, research and state-of-the-art technology."
+          desc="Radiology is a medical specialty that uses imaging to diagnose and treat diseases seen within the body. ... The radiology department may also be called the X-ray or imaging department"
         />
         <SupportGrid
           imgUrl="https://images.unsplash.com/photo-1518152006812-edab29b069ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
           title="Laboratory"
-          desc="where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease."
+          desc="where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease"
         />
         <SupportGrid
           imgUrl="/assets/images/Physiotherapy.jpg"
           title="Physiotherapy"
-          desc="Healthcare profession concerned with the assessment, maintenance, and restoration of the physical function and performance of the body by physical."
+          desc="Healthcare profession concerned with the assessment, maintenance, and restoration of the physical function and performance of the body by physical trainers."
         />
         <SupportGrid
           imgUrl="/assets/images/outpatient.jpg"
           title="Out-Patient Clinics"
-          desc=""
+          desc="An outpatient department or outpatient clinic is the part of a hospital designed for the treatment of outpatients"
         />
         <SupportGrid
           imgUrl="/assets/images/inpatient.jpg"
           title="In-Patient "
-          desc=""
+          desc="Inpatient care requires overnight hospitalization. Patients must stay at the medical facility where their procedure was done"
         />
         <SupportGrid
           imgUrl="https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
           title="OR department "
-          desc=""
+          desc="The OR consists of individualized rooms with specific equipment for performing surgeries, including robotic systems."
         />
         <SupportGrid
           imgUrl="/assets/images/homecare-1.jpg"
           title="Home care"
-          desc="skilled care delivered directly to a patient's home. This type of care is provided by licensed medical professionals including nurses, therapists, and aides for the purpose of treating or managing an illness, injury, or medical condition."
+          desc="skilled care delivered directly to a patient's home. This type of care is provided by licensed medical professionals including nurses, therapists, and aides for the purpose of treating or managing an illness, injury, or medical condition"
         />
         <SupportGrid
           imgUrl="https://images.unsplash.com/photo-1579684453401-966b11832744?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=891&q=80"
