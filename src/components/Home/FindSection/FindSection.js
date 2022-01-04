@@ -5,8 +5,8 @@ function FindSection() {
     const findApi = [
         {
             mainHead:"Find a doctor",
-            headTwo:"200+ doctors on panel",
-            detailPara:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.",
+            headTwo:"140+ doctors on panel",
+            detailPara:"We are dedicated to provide high quality, evidence-based and safe healthcare.",
             buttonText:"See Doctors",
             linkTo:"/departments",
             boxClass:"findBox"
@@ -14,7 +14,7 @@ function FindSection() {
         {
             mainHead:"Find Ailment",
             headTwo:"Symptoms & Treatment",
-            detailPara:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.",
+            detailPara:"Expansion and Development of Healthcare services provided by Hospital",
             buttonText:"See Ailment",
             linkTo:"/departments",
             boxClass:"findBox findBox2"
@@ -22,7 +22,7 @@ function FindSection() {
         {
             mainHead:"Talk to Expert",
             headTwo:"Get assistance on call",
-            detailPara:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.",
+            detailPara:"24 hours round the clock services through the Emergency Department also provides rehabilitation care",
             buttonText:"Get Help",
             linkTo:"/contact",
             boxClass:"findBox"
