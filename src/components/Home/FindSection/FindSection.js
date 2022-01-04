@@ -22,7 +22,7 @@ function FindSection() {
         {
             mainHead:"Talk to Expert",
             headTwo:"Get assistance on call",
-            detailPara:"24 hours round the clock services through the Emergency Department also provides rehabilitation care",
+            detailPara:"24 hours service through the Emergency Department also provides rehabilitation care",
             buttonText:"Get Help",
             linkTo:"/contact",
             boxClass:"findBox"
