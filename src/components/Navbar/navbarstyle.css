@@ -125,6 +125,12 @@ customNav:hover {
   border-bottom-width: 2px;
 }
 
+.drop-box{
+  height: 200px;
+  width: 220px;  
+  overflow-y: scroll;
+}
+
 @media (min-width: 768px) {
   .navbrand {
     width: 27%;
