@@ -26,7 +26,6 @@ import Pshyciatric from "./components/Departments/Pshyciatric";
 import Physiotherapist from "./components/Departments/Physiotherapist";
 import GenSurgery from "./components/Departments/GenSurgury";
 import OBGyne from "./components/Departments/OBGyne";
-
 // departments and its routes finished
 import BlogList from "./components/BlogList/BlogList";
 import Services from "./pages/Services";

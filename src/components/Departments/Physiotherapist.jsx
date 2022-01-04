@@ -20,14 +20,11 @@ function Physiotherapist() {
           <div className="depTextHead">
             <h1 className="depDetailTitle">Physiotherapist Department</h1>
             <div className="depDetailAbout">
-              A physiotherapist works with patients to develop customized
-              programs designed to restore as much as possible their functional
-              ability and movement. They are trained to help patients at all
-              stages of life — from infant to old age — whose function and
-              movement are impacted by: Disease Health conditions,Injury,
-              Environmental factors,Aging Disorders and weight issues.
+              Healthcare profession concerned with the assessment, maintenance,
+              and restoration of the physical function and performance of the
+              body by physical trainers.
             </div>
-            <p className="depDetailPara">
+            {/* <p className="depDetailPara">
               Physiotherapists have in-depth knowledge of how the body works and
               specialized hands-on clinical skills to assess, diagnose, and
               treat symptoms of illness, injury and disability. Physiotherapy
@@ -35,7 +32,7 @@ function Physiotherapist() {
               promotion of health and fitness. Physiotherapists often work in
               teams with other health professionals to help meet an individual's
               health care needs.
-            </p>
+            </p> */}
           </div>
           <div className="depImgWrapper">
             <img
@@ -63,7 +60,9 @@ function Physiotherapist() {
               <img src="/assets/department/surgery.png" alt="anyimg" />
             </div>
             <div className="treatmentText">
-              <h2 className="treatmentTitle">Treating orthopedic and neurological diseases</h2>
+              <h2 className="treatmentTitle">
+                Treating orthopedic and neurological diseases
+              </h2>
               <p className="treatmentAbout">
                 Dunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
@@ -97,7 +96,9 @@ function Physiotherapist() {
               <img src="/assets/department/surgery.png" alt="anyimg" />
             </div>
             <div className="treatmentText">
-              <h2 className="treatmentTitle">Rehabilitation of handicapped children</h2>
+              <h2 className="treatmentTitle">
+                Rehabilitation of handicapped children
+              </h2>
               <p className="treatmentAbout">
                 Dunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>

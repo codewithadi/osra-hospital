@@ -70,7 +70,7 @@ function Department() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/magnifying-glass.png"
+                            src="assets/department/derma.png"
                             alt="dept"
                         />
                     </div>
@@ -94,7 +94,7 @@ function Department() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/Dispensary.png"
+                            src="assets/department/special.png"
                             alt="dept"
                         />
                     </div>
@@ -118,7 +118,7 @@ function Department() {
                     <div className="depIcon">
                         <img
                             className="depIconImg"
-                            src="assets/department/lab.png"
+                            src="assets/department/labd.png"
                             alt="dept"
                         />
                     </div>
