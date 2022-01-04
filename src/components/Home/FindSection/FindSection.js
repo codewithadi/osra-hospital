@@ -8,7 +8,7 @@ function FindSection() {
             headTwo:"140+ doctors on panel",
             detailPara:"We are dedicated to provide high quality, evidence-based and safe healthcare.",
             buttonText:"See Doctors",
-            linkTo:"/departments",
+            linkTo:"/doctor",
             boxClass:"findBox"
         },
         {

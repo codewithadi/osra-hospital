@@ -1,7 +1,72 @@
-import React from "react";
+import React, { useState } from "react";
+import Select from "react-select";
 import "./bookappointment.css";
 
 function BookAppointment() {
+    const [selectedDept, setSelectedDept] = useState(null);
+    const [selectedDoc, setSelectedDoc] = useState(null);
+    const [docArr, setDocArr] = useState(null);
+
+    const doctors = [
+        {
+            value: "Eman Radwan",
+            label: "Eman Radwan",
+            spec: ["neuro", "phschiatric"],
+        },
+        {
+            value: "Attif Bassas",
+            label: "Attif Bassas",
+            spec: ["surgery", "bariatric-surgery"],
+        },
+        {
+            value: "Rehab Ammar",
+            label: "Rehab Ammar",
+            spec: ["dermatology"],
+        },
+        {
+            value: "Mamdouh Oun Alsoud",
+            label: "Mamdouh Oun Alsoud",
+            spec: ["surgery", "or"],
+        },
+    ];
+    const departments = [
+        { value: "radiology", label: "Radiology" },
+        { value: "physiotherapy", label: "Physiotherapy" },
+        { value: "home-care", label: "Home Care" },
+        { value: "operations", label: "Operations" },
+        { value: "delivery", label: "Delivery" },
+        { value: "or", label: "OR" },
+        { value: "dermatology", label: "Dermatology" },
+        { value: "pediatric", label: "Pediatric" },
+        { value: "ob-gyna", label: "OB-Gyna" },
+        { value: "ophthalmology", label: "Ophthalmology" },
+        { value: "internal-medicine", label: "Internal Medicine" },
+        { value: "dentistry", label: "Dentistry" },
+        { value: "dietition", label: "Dietition" },
+        { value: "surgery", label: "Surgery" },
+        { value: "urology", label: "Urology" },
+        { value: "cardiology", label: "Cardiology" },
+        { value: "neuro", label: "Neuro" },
+        { value: "phschiatric", label: "Phschiatric" },
+        { value: "bariatric-surgery", label: "Bariatric Surgery" },
+    ];
+
+    const handleChangeDept = (selectedDept) => {
+        let tempArr = [];
+        setDocArr(null);
+        setSelectedDoc(null);
+        tempArr = doctors.filter((doc) =>
+            doc.spec.includes(selectedDept.value)
+        );
+        setDocArr(tempArr);
+        setSelectedDept(selectedDept);
+
+        console.log(tempArr);
+    };
+    const handleChangeDoc = (selectedDoc) => {
+        setSelectedDoc(selectedDoc);
+    };
+
     return (
         <div className="book-appointment">
             <div className="depMainBack">
@@ -37,6 +102,7 @@ function BookAppointment() {
                         min={1}
                         max={100}
                     />
+
                     {/* gender radio box below  */}
                     <div className="serviceText">Your Gender : </div>
                     <div className="bookFormItems">
@@ -64,114 +130,23 @@ function BookAppointment() {
                         placeholder="Your Phone Number"
                     />
                     {/* Services Check box below  */}
-                    <div className="serviceText">Services Needed : </div>
-                    <div className="bookFormItems">
-                        <div className="bookFormRow">
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Radiology</label>
-                            <br />
+                    <div className="serviceText">Select Department : </div>
+                    <Select
+                        value={selectedDept}
+                        onChange={handleChangeDept}
+                        options={departments}
+                    />
+                    {selectedDept && docArr && (
+                        <>
+                            <div className="serviceText">Select Doctor : </div>
+                            <Select
+                                value={selectedDoc}
+                                onChange={handleChangeDoc}
+                                options={docArr}
+                            />
+                        </>
+                    )}
 
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Physiotherapy</label>
-                            <br />
-                        </div>
-
-                        <div className="bookFormRow">
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Home Care</label>
-                            <br />
-
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Operations</label>
-                            <br />
-                        </div>
-
-                        <div className="bookFormRow">
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Delivery</label>
-                            <br />
-
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>ER</label>
-                            <br />
-                        </div>
-
-                        <div className="bookFormRow">
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Pediatric</label>
-                            <br />
-
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>OB-Gyna</label>
-                            <br />
-                        </div>
-
-                        <div className="bookFormRow">
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Ophthalmology</label>
-                            <br />
-
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Dermatology</label>
-                            <br />
-                        </div>
-
-                        <div className="bookFormRow">
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Internal Medicine</label>
-                            <br />
-
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Dentistry</label>
-                            <br />
-                        </div>
-
-                        <div className="bookFormRow">
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Dietition</label>
-                            <br />
-
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>ENT</label>
-                            <br />
-                        </div>
-
-                        <div className="bookFormRow">
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Orthopedics</label>
-                            <br />
-
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Surgery</label>
-                            <br />
-                        </div>
-
-                        <div className="bookFormRow">
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Urology</label>
-                            <br />
-
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Cardiology</label>
-                            <br />
-                        </div>
-
-                        <div className="bookFormRow">
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Neuro</label>
-                            <br />
-
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Phschiatric</label>
-                            <br />
-                        </div>
-
-                        <div className="bookFormRow">
-                            <input type="checkbox" className="bookFormCheck" />
-                            <label>Bariatric Surgery</label>
-                            <br />
-                        </div>
-                    </div>
                     <textarea
                         className="bookFormItem"
                         name="message"
