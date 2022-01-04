@@ -29,10 +29,11 @@ const Insurance = () => {
                     title="Tuwuniya"
                     desc="Tawuniya provides its customers with more than 60 types of insurance including medical, motor, fire, property, engineering, casualty, marine, aviation, Takaful, liability insurance and many other types of insurance."
                 />
+
                 <InsuranceGrid
-                    imgUrl="/assets/insurance/Medgulf.png"
-                    title="Medgulf"
-                    desc="MEDGULF is one of the Kingdom's largest insurance companies, providing a comprehensive choice of cooperative Health, Motor, Property and other insurance and reinsurance services."
+                    imgUrl="/assets/insurance/mednet.png"
+                    title="Mednet"
+                    desc="MedNet provide managed care service in Saudi Arabia and dedicated to serving high-quality healthcare solutions in Middle East."
                 />
                 <InsuranceGrid
                     imgUrl="/assets/insurance/Malath.jpg"
@@ -40,19 +41,14 @@ const Insurance = () => {
                     desc="Malath Cooperative Insurance Co. is a 100% Saudi Company established in 2007 by Saudi Leaders & Entrepreneurs. It is the 2nd insurance company that was listed in the Saudi Stock Market."
                 />
                 <InsuranceGrid
+                    imgUrl="/assets/insurance/Medgulf.png"
+                    title="Medgulf"
+                    desc="MEDGULF is one of the Kingdom's largest insurance companies, providing a comprehensive choice of cooperative Health, Motor, Property and other insurance and reinsurance services."
+                />
+                <InsuranceGrid
                     imgUrl="/assets/insurance/Alrajhi-Takaful.jpg"
                     title="Alrajhi Takaful"
                     desc="Insurance Plans which Suits Your Need. Choose From Third Party, Wafi Smart & Comprehensive. Drive Worry Free & Ensure that Your Motor is Insured with Motor Comprehensive Insurance."
-                />
-                <InsuranceGrid
-                    imgUrl="/assets/insurance/mednet.png"
-                    title="Mednet"
-                    desc="MedNet provide managed care service in Saudi Arabia and dedicated to serving high-quality healthcare solutions in Middle East."
-                />
-                <InsuranceGrid
-                    imgUrl="/assets/insurance/GLOBAL-NET.jpg"
-                    title="Globalnet"
-                    desc="Globalnet Insurance LLC builds policies with both you and your vehicle in mind, customizing the types and levels of coverage to fit."
                 />
                 <InsuranceGrid
                     imgUrl="/assets/insurance/tcs.png"
@@ -64,11 +60,13 @@ const Insurance = () => {
                     title="AL ETIHAD (TCS)"
                     desc="Al-Etihad Co-operative Insurance Co. is one of the largest insurance companies in the Kingdom today. We are authorized to transact all classes of insurance except life insurance, supervised and regulated by SAMA"
                 />
+
                 <InsuranceGrid
                     imgUrl="/assets/insurance/ARABIANSHEILD.png"
                     title="ARABIAN SHEILD"
                     desc="Arabian Shield Cooperative Insurance Company sells insurance products including motor, marine, property and medical insurance. In addition, the company also provides claim settlement services to its policyholders."
                 />
+
                 <InsuranceGrid
                     imgUrl="/assets/insurance/Gulf-Union.jpg"
                     title="Gulf Union"
@@ -78,6 +76,11 @@ const Insurance = () => {
                     imgUrl="/assets/insurance/GLOBMED.jpg"
                     title="GLOBMED"
                     desc="Through our network of world-class doctors and healthcare facilities, from the initial consultation to post-treatment recovery, we arrange every detail to provide you with the very best healthcare solutions."
+                />
+                <InsuranceGrid
+                    imgUrl="/assets/insurance/GLOBAL-NET.jpg"
+                    title="Globalnet"
+                    desc="Globalnet Insurance LLC builds policies with both you and your vehicle in mind, customizing the types and levels of coverage to fit."
                 />
             </div>
         </div>

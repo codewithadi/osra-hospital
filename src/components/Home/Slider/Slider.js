@@ -34,9 +34,8 @@ const Slider = () => {
                             <br /> for the World
                         </h1>
                         <p className=" text-white text-left md:text-2xl bg-transparent mb-4">
-                            Excepteur sint occaecat cupidatat non proident, sunt
-                            in culpa qui officia deserunt mollit anim id est
-                            laborum.
+                            We are dedicated to provide high quality,
+                            evidence-based and safe healthcare.
                         </p>
                         <div className="flex justify-start">
                             <Link
@@ -63,9 +62,9 @@ const Slider = () => {
                             Better Health
                         </h1>
                         <p className=" text-white text-left md:text-2xl bg-transparent mb-4">
-                            Excepteur sint occaecat cupidatat non proident, sunt
-                            in culpa qui officia deserunt mollit anim id est
-                            laborum.
+                            24 hours round the clock services through the
+                            Emergency Department also provides rehabilitation
+                            care
                         </p>
                         <div className="flex justify-start">
                             <Link
@@ -95,9 +94,7 @@ const Slider = () => {
                             <br /> Our Strength
                         </h1>
                         <p className=" text-white text-left md:text-2xl bg-transparent mb-4">
-                            Excepteur sint occaecat cupidatat non proident, sunt
-                            in culpa qui officia deserunt mollit anim id est
-                            laborum.
+                        All our departments provide world-class healthcare services.
                         </p>
                         <div className="flex justify-start">
                             <Link
