@@ -113,6 +113,7 @@ function BookAppointment() {
             setPhone("");
             setSelectedDept("");
             setSelectedDoc("");
+            window.location.reload();
         } catch (error) {
             console.log(error);
         }
