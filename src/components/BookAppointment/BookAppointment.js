@@ -144,6 +144,7 @@ const handleSubmit=async(e)=>{
     setPhone("")
     setSelectedDept("")
     setSelectedDoc("")
+    window.location.reload()
     
   } catch (error) {
     console.log(error);
