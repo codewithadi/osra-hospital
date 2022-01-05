@@ -108,7 +108,9 @@ function BookAppointment() {
   const handleChangeDate = (date) => {
     
       setDateB(moment(date).format('DD-MM-YYYY').toString())
-      const patientdate= patient.filter(item=>item.date===dateb && item.doctor===selectedDoc._id)
+      const datebook= moment(date).format('DD-MM-YYYY').toString()
+      console.log(datebook)
+      const patientdate= patient.filter(item=>item.date===datebook && item.doctor===selectedDoc._id)
       console.log(patientdate)
       const patientslotbooked=patientdate.map(value => value.slot)
       const docSlot=selectedDoc.slots
