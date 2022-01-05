@@ -198,65 +198,72 @@ function BookAppointment() {
                                 onChange={(e) => setPhone(e.target.value)}
                             />
                             {/* Services Check box below  */}
-                            <div className="serviceText">
-                                Select Department :{" "}
-                            </div>
-                            <Select
-                                value={selectedDept}
-                                onChange={handleChangeDept}
-                                options={department}
-                            />
-                            {selectedDept && docArr && (
-                                <>
+                            <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2">
+                                <div className="mb-2">
                                     <div className="serviceText">
-                                        Select Doctor :{" "}
+                                        Select Department :{" "}
                                     </div>
                                     <Select
-                                        value={selectedDoc}
-                                        onChange={handleChangeDoc}
-                                        options={docArr}
+                                        value={selectedDept}
+                                        onChange={handleChangeDept}
+                                        options={department}
                                     />
-                                </>
-                            )}
-
-                            {selectedDept && docArr && selectedDoc && (
-                                <>
-                                    <div className="serviceText mt-2">
-                                        Select Date :{" "}
+                                </div>
+                                {selectedDept && docArr && (
+                                    <div className="mb-2">
+                                        <div className="serviceText">
+                                            Select Doctor :{" "}
+                                        </div>
+                                        <Select
+                                            value={selectedDoc}
+                                            onChange={handleChangeDoc}
+                                            options={docArr}
+                                        />
                                     </div>
-                                    <DatePicker
-                                        className="py-3 px-6 text-center mb-4 border-2 rounded-sm"
-                                        selected={startDate}
-                                        onChange={handleChangeDate}
-                                    />
-                                </>
-                            )}
-                            {selectedDept &&
-                                docArr &&
-                                selectedDoc &&
-                                dateb &&
-                                blankslot && (
-                                    <div className="row">
+                                )}
+                                {selectedDept && docArr && selectedDoc && (
+                                    <div className="mb-2">
                                         <div className="serviceText mt-2">
                                             Select Date :{" "}
                                         </div>
-                                        <select
-                                            className="w-full md:w-1/2 py-3 px-6 text-center mb-4 border-2 rounded-sm"
-                                            name="slot"
-                                            value={slot}
-                                            onChange={handleChangeInput}
-                                        >
-                                            <option value="">
-                                                ----Slot----
-                                            </option>
-                                            {blankslot.map((slot) => (
-                                                <option value={slot} key={slot}>
-                                                    {slot}
-                                                </option>
-                                            ))}
-                                        </select>
+                                        <DatePicker
+                                            className="py-2 px-4 text-center mb-4 border-2 rounded-sm"
+                                            selected={startDate}
+                                            onChange={handleChangeDate}
+                                        />
                                     </div>
                                 )}
+                                {selectedDept &&
+                                    docArr &&
+                                    selectedDoc &&
+                                    dateb &&
+                                    blankslot && (
+                                        <div className="mb-2">
+                                            <div className="serviceText mt-2">
+                                                Select Slot :{" "}
+                                            </div>
+                                            <select
+                                                className="py-2 px-4 text-center border-2 rounded-sm"
+                                                name="slot"
+                                                value={slot}
+                                                onChange={handleChangeInput}
+                                            >
+                                                <option value="">
+                                                    ----Slot----
+                                                </option>
+                                                {blankslot.map((slot) => (
+                                                    <option
+                                                        value={slot}
+                                                        key={slot}
+                                                    >
+                                                        {slot}
+                                                    </option>
+                                                ))}
+                                            </select>
+                                        </div>
+                                    )}
+                            </div>
+
                             <textarea
                                 className="bookFormItem"
                                 name="message"
