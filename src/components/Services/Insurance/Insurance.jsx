@@ -7,7 +7,7 @@ const Insurance = () => {
             <div
                 className="bg-center bg-cover"
                 style={{
-                    backgroundImage: `url("https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")`,
+                    backgroundImage: `url("https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")`,
                     width: "100%",
                     height: "55vh",
                 }}
@@ -56,6 +56,11 @@ const Insurance = () => {
                     desc="TCS delivers the best in personalized customer service to patients while controlling utilization and costs resulting from services rendered within the scoupe of health care policies."
                 />
                 <InsuranceGrid
+                    imgUrl="/assets/insurance/ALSAQER.png"
+                    title="ALSAQER (TCS)"
+                    desc="Al Saqer has Experienced Hospital and Health Service Administration with a demonstrated history of working in the hospital & health care industry."
+                />
+                <InsuranceGrid
                     imgUrl="/assets/insurance/aletihad.png"
                     title="AL ETIHAD (TCS)"
                     desc="Al-Etihad Co-operative Insurance Co. is one of the largest insurance companies in the Kingdom today. We are authorized to transact all classes of insurance except life insurance, supervised and regulated by SAMA"
@@ -68,6 +73,12 @@ const Insurance = () => {
                 />
 
                 <InsuranceGrid
+                    imgUrl="/assets/insurance/sncinc.png"
+                    title="SAUDI NEXT CARE"
+                    desc="We are trusted partners to insurers, businesses and healthcare providers around the world. We secure services with transparency in mind."
+                />
+
+                <InsuranceGrid
                     imgUrl="/assets/insurance/Gulf-Union.jpg"
                     title="Gulf Union"
                     desc="Gulf Union have grown to be among the top national insurers in the Kingdom of Saudi Arabia that enable us to be licensed as one of the recognized Insurance."
@@ -76,6 +87,41 @@ const Insurance = () => {
                     imgUrl="/assets/insurance/GLOBMED.jpg"
                     title="GLOBMED"
                     desc="Through our network of world-class doctors and healthcare facilities, from the initial consultation to post-treatment recovery, we arrange every detail to provide you with the very best healthcare solutions."
+                />
+                <InsuranceGrid
+                    imgUrl="/assets/insurance/senya.jpg"
+                    title="SAUDI ENAYA (GLOBEMED)"
+                    desc="International Medical Center, aka IMC, has trusted Saudi Enaya to manage all their insurance needs for 2020."
+                />
+                <InsuranceGrid
+                    imgUrl="/assets/insurance/ALARABIYA.png"
+                    title="AL ARABIYA (GLOBMED)"
+                    desc="With a strong presence in several Arab countries and over 75 years of experience in the insurance industry, Arabia Insurance Company has become a synonym to trust, great customer care, and peace of mind."
+                />
+                <InsuranceGrid
+                    imgUrl="/assets/insurance/alsalama.png"
+                    title="AL SALAMA (GLOBMED)"
+                    desc="With more than 40 years of experience, SALAMA is considered one of the leading Insurance Companies in the Saudi Market and the whole region."
+                />
+                <InsuranceGrid
+                    imgUrl="/assets/insurance/alahlia.png"
+                    title="AL AHLIA (GLOBMED)"
+                    desc="Al Ahlia Insurance, one of the leading insurance companies in Oman, received the Oman Insurer of the Year award at MENA IR Awards 2021 for the 8th time."
+                />
+                <InsuranceGrid
+                    imgUrl="/assets/insurance/SOLIDARITY.png"
+                    title="SOLIDARITY (GLOBMED)"
+                    desc="Established in 2007, Solidarity - First Insurance Company is a relatively fresh face in Jordan's crowded insurance market."
+                />
+                <InsuranceGrid
+                    imgUrl="/assets/insurance/amana.jpg"
+                    title="AMANA (GLOBMED)"
+                    desc="AMANA complies with insurance regulatory requirements of SAMA (Saudi Arabian Monetary Authority) and CCHI (Council of Cooperative Health Insurance) and is publicly listed on TADAWUL (the Saudi Arabian Stock Exchange)."
+                />
+                <InsuranceGrid
+                    imgUrl="/assets/insurance/aljazeera.jpg"
+                    title="ALJAZIRAH (GLOBMED)"
+                    desc="AL Jazirah Providing comprehensive and innovative insurance services with competitive prices."
                 />
                 <InsuranceGrid
                     imgUrl="/assets/insurance/GLOBAL-NET.jpg"
