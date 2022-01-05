@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./doctor.css";
 
 const SingleDoctor = () => {
@@ -16,9 +17,9 @@ const SingleDoctor = () => {
             <p className="depDoctorMob1"> +00 0000 0000 00</p>
             <p className="depDoctorMail1">roberto@medwise.com</p>
             <div className="depBtnWrapper1">
-                <a className="depDoctorBtn1" href="/departments">
+                <Link className="depDoctorBtn1" to="/doctor/Eman_Radwan">
                     View Profile
-                </a>
+                </Link>
             </div>
         </div>
     );

@@ -42,6 +42,9 @@ import Serology from "./components/Departments/Serology";
 import Insurance from "./components/Services/Insurance/Insurance";
 import AppointmentBtn from "./components/AppointmentBtn/AppointmentBtn";
 
+//Dr profile
+import Profile from "./components/DoctorProfile/Profile";
+
 function App() {
     const [showApt, setShowApt] = useState(false);
     useEffect(() => {
@@ -116,6 +119,7 @@ function App() {
                 <Route path="/clinics/ob-gyne" element={<OBGyne />} />
                 <Route path="/blog" element={<BlogList />} />
                 <Route path="/appointment" element={<BookAppointment />} />
+                <Route path="/doctor/Eman_Radwan" element={<Profile />} />
             </Routes>
             <Footer />
             <Whatsapp />
