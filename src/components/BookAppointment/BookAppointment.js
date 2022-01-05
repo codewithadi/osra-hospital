@@ -201,7 +201,7 @@ function BookAppointment() {
                             <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2">
                                 <div className="mb-2">
                                     <div className="serviceText">
-                                        Select Department :{" "}
+                                        Select Clinic :{" "}
                                     </div>
                                     <Select
                                         value={selectedDept}
