@@ -273,6 +273,13 @@
   .depTextHead {
     width: 100%;
   }
+  .drTextHead {
+      margin: 0;
+    width: 100%;
+  }
+  .drDetailAbout{
+      margin: 10px;
+  }
   .depImgWrapper {
     width: 100%;
     height: 300px;
