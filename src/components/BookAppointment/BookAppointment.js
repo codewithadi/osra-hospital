@@ -20,6 +20,12 @@ function BookAppointment() {
   const [startDate, setStartDate] = useState(new Date());
   const [dateb, setDateB]=useState("")
   const [blankslot, setblankslot]=useState("")
+  const [name, setName]=useState("")
+  const[age,setAge]=useState("")
+  const[message,setMessage]=useState("")
+  const [phone,setPhone]=useState("")
+  const[gender,setGender]=useState("")
+  
   //console.log(moment(date).format('DD-MM-YYYY').toString())
 
   const doctors = [
@@ -102,22 +108,47 @@ function BookAppointment() {
   const handleChangeDate = (date) => {
     
       setDateB(moment(date).format('DD-MM-YYYY').toString())
-      const patientdate= patient.filter(item=>item.date===dateb)
+      const patientdate= patient.filter(item=>item.date===dateb && item.doctor===selectedDoc._id)
+      console.log(patientdate)
       const patientslotbooked=patientdate.map(value => value.slot)
       const docSlot=selectedDoc.slots
       const res=docSlot.filter(item=>!patientslotbooked.includes(item))
       setblankslot(res)
 
-      console.log(dateb)
+      //console.log(dateb)
 
     setStartDate(date);
   };
   const handleChangeInput = (e) => {
-  console.log(e.target.value)
-  console.log(blankslot)
+  //console.log(e.target.value)
+  //console.log(dateb)
+ // console.log(blankslot)
 
   setSlot(e.target.value);
 };
+const handleSubmit=async(e)=>{
+  e.preventDefault()
+  const patient ={date:dateb,slot,name,age,message,phone,department:selectedDept._id,doctor:selectedDoc._id}
+  console.log(patient)
+  try {
+    
+    const res = await axios.post("https://doctorappapi.herokuapp.com/api/patient", patient);
+    alert(res.data.msg)
+    setDateB("")
+    setAge("")
+    setName("")
+   
+    setMessage("")
+    setPhone("")
+    setSelectedDept("")
+    setSelectedDoc("")
+    
+  } catch (error) {
+    console.log(error);
+  
+   
+  }
+}
   return (
     <>
       
@@ -142,12 +173,14 @@ function BookAppointment() {
                 Now you can request an appoinment in some simple steps Online
               </p>
             </div>
-            <form className="appointmentForm">
+            <form className="appointmentForm" onSubmit={handleSubmit}>
               <input
                 className="bookFormItem"
                 type="text"
                 name="name"
                 placeholder="Your Full Name"
+                value={name}
+                onChange={(e)=>setName(e.target.value)}
               />
               <input
                 className="bookFormItem"
@@ -156,6 +189,8 @@ function BookAppointment() {
                 placeholder="Your Age"
                 min={1}
                 max={100}
+                value={age}
+                onChange={(e)=>setAge(e.target.value)}
               />
 
               {/* gender radio box below  */}
@@ -183,6 +218,8 @@ function BookAppointment() {
                 type="text"
                 name="phone"
                 placeholder="Your Phone Number"
+                value={phone}
+                onChange={(e)=>setPhone(e.target.value)}
               />
               {/* Services Check box below  */}
               <div className="serviceText">Select Department : </div>
@@ -229,6 +266,8 @@ function BookAppointment() {
                 rows={5}
                 resize="none"
                 placeholder="Your Message"
+                value={message}
+                onChange={(e)=>setMessage(e.target.value)}
               ></textarea>
               <div className="bookFormBtn">
                 <input
