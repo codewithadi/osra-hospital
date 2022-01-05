@@ -68,7 +68,7 @@ const Slider = () => {
                         </p>
                         <div className="flex justify-start">
                             <Link
-                                to="/contact"
+                                to="/doctor"
                                 className="text-white py-3 px-4 uppercase font-light bg-blue-600 hover:bg-green-400 md:text-xl mb-2"
                             >
                                 Find a Doctor
@@ -94,7 +94,8 @@ const Slider = () => {
                             <br /> Our Strength
                         </h1>
                         <p className=" text-white text-left md:text-2xl bg-transparent mb-4">
-                        All our departments provide world-class healthcare services.
+                            All our departments provide world-class healthcare
+                            services.
                         </p>
                         <div className="flex justify-start">
                             <Link

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Dropdown from "./Dropdown";
+// import Dropdown from "./Dropdown";
 import TestDrop from "./TestDrop";
 
 function NavLinks({ colorchange }) {
-    const [dropdown, setDropdown] = useState(false);
+    // const [dropdown, setDropdown] = useState(false);
     const [showApt, setShowApt] = useState(false);
     //assigning location variable
     const location = useLocation();
@@ -25,20 +25,20 @@ function NavLinks({ colorchange }) {
         return () => window.removeEventListener();
     }, []);
 
-    const onMouseEnter = () => {
-        if (window.innerWidth < 768) {
-            setDropdown(false);
-        } else {
-            setDropdown(true);
-        }
-    };
-    const onMouseLeave = () => {
-        if (window.innerWidth < 768) {
-            setDropdown(false);
-        } else {
-            setDropdown(false);
-        }
-    };
+    // const onMouseEnter = () => {
+    //     if (window.innerWidth < 768) {
+    //         setDropdown(false);
+    //     } else {
+    //         setDropdown(true);
+    //     }
+    // };
+    // const onMouseLeave = () => {
+    //     if (window.innerWidth < 768) {
+    //         setDropdown(false);
+    //     } else {
+    //         setDropdown(false);
+    //     }
+    // };
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);

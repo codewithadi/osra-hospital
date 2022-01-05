@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import { Link } from "react-router-dom";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
 // import CustomSelect from './CustomSelect'
@@ -29,21 +30,25 @@ const people = [
     { name: "Physiotherapy", unavailable: false },
 ];
 
+const scrollToTop = () => {
+    window.scrollTo(0, 0);
+};
+
 function SearchDoctor() {
-    const [selected, setSelected] = useState(people[0]);
-    const [selected1, setSelected1] = useState(people[0]);
-    const [dispDoc, setDispDoc] = useState(false);
-    const handleSelect = (e) => {
-        e.preventDefault();
-        if (selected === people[0]) {
-            alert("Select Clinic to search doctor");
-            setDispDoc(false);
-            return;
-        }
-        setDispDoc(true);
-        setSelected1(selected);
-        console.log(selected);
-    };
+    // const [selected, setSelected] = useState(people[0]);
+    // const [selected1, setSelected1] = useState(people[0]);
+    // const [dispDoc, setDispDoc] = useState(false);
+    // const handleSelect = (e) => {
+    //     e.preventDefault();
+    //     if (selected === people[0]) {
+    //         alert("Select Clinic to search doctor");
+    //         setDispDoc(false);
+    //         return;
+    //     }
+    //     setDispDoc(true);
+    //     setSelected1(selected);
+    //     console.log(selected);
+    // };
 
     return (
         <>
@@ -72,7 +77,7 @@ function SearchDoctor() {
                             {/* Custom select */}
 
                             <div className="flex flex-col md:flex-row gap-4">
-                                <div className="searchDoctorButtonCustom w-full md:w-3/4">
+                                {/* <div className="searchDoctorButtonCustom w-full md:w-3/4">
                                     <Listbox
                                         value={selected}
                                         onChange={setSelected}
@@ -155,14 +160,21 @@ function SearchDoctor() {
                                             </Transition>
                                         </div>
                                     </Listbox>
-                                </div>
-                                <button
-                                    className="searchDoctorBtnCustom w-full md:w-1/4"
-                                    onClick={handleSelect}
-                                    href="/contact"
+                                </div> */}
+                                {/* <Link
+                                    className="searchDoctorBtnCustom w-full md:w-1/4 text-white"
+                                    // onClick={handleSelect}
+                                    to="/doctor"
                                 >
                                     Find Doctor
-                                </button>
+                                </Link> */}
+                                <Link
+                                    to="/doctor"
+                                    onClick={scrollToTop}
+                                    className="text-white mt-5 rounded-sm py-3 px-4 uppercase font-light bg-blue-600 hover:bg-green-400 text-sm md:text-base "
+                                >
+                                    Find Doctor
+                                </Link>
                             </div>
 
                             {/* custom select */}
@@ -177,7 +189,7 @@ function SearchDoctor() {
                     </div>
                 </div>
             </div>
-            {dispDoc && <DisplayDoctor selected1={selected1} />}
+            {/* {dispDoc && <DisplayDoctor selected1={selected1} />} */}
         </>
     );
 }

@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Doctor from "./components/Doctor/Doctor";
+import Whatsapp from "./components/Whatsapp/Whatsapp";
 import SupportService from "./components/Services/SopportService/SupportService";
 
 // departments and its routes
@@ -117,6 +118,7 @@ function App() {
                 <Route path="/appointment" element={<BookAppointment />} />
             </Routes>
             <Footer />
+            <Whatsapp />
         </div>
     );
 }
