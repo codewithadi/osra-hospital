@@ -4,7 +4,11 @@ import "./bookappointment.css";
 import DatePicker from "react-datepicker";
 import moment from "moment";
 import axios from "axios";
+import PhoneInput from "react-phone-input-2";
 
+// import "react-phone-input-2/lib/style.css";
+
+import 'react-phone-input-2/lib/high-res.css'
 import "react-datepicker/dist/react-datepicker.css";
 import Loading from "../Loading/Loading";
 
@@ -24,6 +28,7 @@ function BookAppointment() {
     const [age, setAge] = useState("");
     const [message, setMessage] = useState("");
     const [phone, setPhone] = useState("");
+    const [email, setEmail] = useState("");
     const [gender, setGender] = useState("");
 
     //console.log(moment(date).format('DD-MM-YYYY').toString())
@@ -188,15 +193,24 @@ function BookAppointment() {
                                 />
                                 <label className="bookFormLabel">Female</label>
                             </div>
-
-                            <input
-                                className="bookFormItem"
-                                type="text"
-                                name="phone"
-                                placeholder="Your Phone Number"
-                                value={phone}
-                                onChange={(e) => setPhone(e.target.value)}
-                            />
+                            <div className="flex flex-col justify-center items-center md:flex-row gap-4">
+                                <input
+                                    className="bookFormItem"
+                                    type="email"
+                                    name="email"
+                                    placeholder="Your Email"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                />
+                                <PhoneInput
+                                    containerClass="w-full"
+                                    country="ae"
+                                    value={phone}
+                                    onChange={(phone) => setPhone(phone)}
+                                    placeholder="Enter phone number"
+                                    enableSearch
+                                />
+                            </div>
                             {/* Services Check box below  */}
                             <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2">
                                 <div className="mb-2">
