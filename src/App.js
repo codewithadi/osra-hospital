@@ -59,7 +59,7 @@ function App() {
     return (
         <div className="relative">
             <TopBar />
-            {!showApt && <AppointmentBtn />}
+            <AppointmentBtn />
             <Navbar />
             <Routes>
                 <Route path="/" exact element={<Home />} />
