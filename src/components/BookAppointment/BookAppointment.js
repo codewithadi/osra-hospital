@@ -96,8 +96,11 @@ function BookAppointment() {
   };
   const handleChangeDoc = (selectedDoc) => {
     setSelectedDoc(selectedDoc);
+    setblankslot(null)
+    
   };
   const handleChangeDate = (date) => {
+    
       setDateB(moment(date).format('DD-MM-YYYY').toString())
       const patientdate= patient.filter(item=>item.date===dateb)
       const patientslotbooked=patientdate.map(value => value.slot)
