@@ -29,7 +29,7 @@ function Department() {
                     <h1 className="depHead">Surgery</h1>
                     <h3 className="depAbout">Operations & surgeries</h3>
                     <p className="depDetailHome">
-                        surgical specialty that focuses on abdominal contents
+                        Surgical specialty that focuses on abdominal contents
                         including the esophagus, stomach, small intestine, large
                         intestine, liver, pancreas, gallbladder, appendix and
                         bile ducts, and often the thyroid gland.

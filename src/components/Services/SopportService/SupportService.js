@@ -27,7 +27,7 @@ const SupportService = () => {
         <SupportGrid
           imgUrl="https://images.unsplash.com/photo-1518152006812-edab29b069ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
           title="Laboratory"
-          desc="where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease"
+          desc="Where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease"
         />
         <SupportGrid
           imgUrl="/assets/images/Physiotherapy.jpg"
@@ -52,17 +52,17 @@ const SupportService = () => {
         <SupportGrid
           imgUrl="/assets/images/homecare-1.jpg"
           title="Home care"
-          desc="skilled care delivered directly to a patient's home. This type of care is provided by licensed medical professionals including nurses, therapists, and aides for the purpose of treating or managing an illness, injury, or medical condition"
+          desc="Skilled care delivered directly to a patient's home. This type of care is provided by licensed medical professionals including nurses, therapists, and aides for the purpose of treating or managing an illness, injury, or medical condition"
         />
         <SupportGrid
           imgUrl="https://images.unsplash.com/photo-1579684453401-966b11832744?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=891&q=80"
           title="Operations"
-          desc="he operating room, sometimes called the OR or surgery center, is where surgery (say: SUR-juh-ree) takes place in a hospital"
+          desc="The operating room, sometimes called the OR or surgery center, is where surgery (say: SUR-juh-ree) takes place in a hospital"
         />
         <SupportGrid
           imgUrl="/assets/images/delivery.jpg"
           title="Delivery"
-          desc="the care and treatment of women in childbirth and during the period before and after delivery. of or relating to childbirth or obstetrics. Abbreviations"
+          desc="The care and treatment of women in childbirth and during the period before and after delivery. of or relating to childbirth or obstetrics. Abbreviations"
         />
         <SupportGrid
           imgUrl="/assets/images/icu.jpg"
@@ -72,7 +72,7 @@ const SupportService = () => {
         <SupportGrid
           imgUrl="/assets/images/er.jpg"
           title="ER"
-          desc="a hospital room or area staffed and equipped for the reception and treatment of persons with conditions (as illness or trauma) requiring immediate medical care."
+          desc="A hospital room or area staffed and equipped for the reception and treatment of persons with conditions (as illness or trauma) requiring immediate medical care."
         />
       </div>
     </div>
