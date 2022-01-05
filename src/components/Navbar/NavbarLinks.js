@@ -1,30 +1,34 @@
-import React from "react";
-// import React, { useState, useEffect } from "react";
+// import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 // import Dropdown from "./Dropdown";
 import TestDrop from "./TestDrop";
 
+import { Disclosure } from "@headlessui/react";
+import { ChevronUpIcon } from "@heroicons/react/solid";
+import ServicesDisclosure from "./ServicesDisclosure";
+
 function NavLinks({ colorchange }) {
     // const [dropdown, setDropdown] = useState(false);
-    // const [showApt, setShowApt] = useState(false);
+    const [showApt, setShowApt] = useState(false);
     //assigning location variable
     const location = useLocation();
     //destructuring pathname from location
     const { pathname } = location;
     //Javascript split method to get the name of the path in array
     const splitLocation = pathname.split("/");
-    // useEffect(() => {
-    //     const resizeEve = () => {
-    //         if (window.innerWidth < 768) {
-    //             setShowApt(false);
-    //         } else {
-    //             setShowApt(true);
-    //         }
-    //     };
-    //     window.addEventListener("resize", resizeEve);
-    //     resizeEve();
-    //     return () => window.removeEventListener();
-    // }, []);
+    useEffect(() => {
+        const resizeEve = () => {
+            if (window.innerWidth < 768) {
+                setShowApt(false);
+            } else {
+                setShowApt(true);
+            }
+        };
+        window.addEventListener("resize", resizeEve);
+        resizeEve();
+        return () => window.removeEventListener();
+    }, []);
 
     // const onMouseEnter = () => {
     //     if (window.innerWidth < 768) {
@@ -108,9 +112,15 @@ function NavLinks({ colorchange }) {
                         )}
                     </Link>
                 </li> */}
-                <li className="inline-block bg-transparent">
-                    <TestDrop />
-                </li>
+                {showApt ? (
+                    <li className="inline-block bg-transparent">
+                        <TestDrop />
+                    </li>
+                ) : (
+                    <li className="inline-block bg-transparent">
+                        <ServicesDisclosure />
+                    </li>
+                )}
                 <li className="inline-block bg-transparent">
                     <Link
                         exact
