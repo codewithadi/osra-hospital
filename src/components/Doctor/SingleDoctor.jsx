@@ -2,22 +2,26 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./doctor.css";
 
-const SingleDoctor = () => {
+const scrollToTop = () => {
+    window.scrollTo(0, 0);
+};
+
+const SingleDoctor = ({ imgUrl, name, position, mobno, email, linkto }) => {
     return (
         <div className="depDoctorCard1">
             <div className="depDoctorImg1">
-                <img
-                    className="doctorImg1"
-                    src="/assets/department/doctor1.jpg"
-                    alt="anyimg"
-                />
+                <img className="doctorImg1" src={imgUrl} alt="anyimg" />
             </div>
-            <h2 className="depDoctorName1">Kathy Cruse</h2>
-            <p className="depDoctorAbout1">Head Of Department</p>
-            <p className="depDoctorMob1"> +00 0000 0000 00</p>
-            <p className="depDoctorMail1">roberto@medwise.com</p>
+            <h2 className="depDoctorName1">{name}</h2>
+            <p className="depDoctorAbout1">{position}</p>
+            <p className="depDoctorMob1">{mobno}</p>
+            <p className="depDoctorMail1">{email}</p>
             <div className="depBtnWrapper1">
-                <Link className="depDoctorBtn1" to="/doctor/Eman_Radwan">
+                <Link
+                    onClick={scrollToTop}
+                    className="depDoctorBtn1"
+                    to={`/doctor/${linkto}`}
+                >
                     View Profile
                 </Link>
             </div>

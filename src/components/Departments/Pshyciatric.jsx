@@ -1,5 +1,17 @@
 import React from "react";
 import "./departments.css";
+const treatmentsOffered = [
+  {
+    name: "Evaluation of diseases",
+    detail: "",
+    logo: "",
+  },
+  {
+    name: "Psychological Assessment",
+    detail: "",
+    logo: "",
+  },
+];
 
 function Pshyciatric() {
   return (
@@ -26,15 +38,15 @@ function Pshyciatric() {
               who specializes in mental health, including substance use
               disorders. Psychiatrists are qualified to assess both the mental
               and physical aspects of psychological problems.
-            </div>
-            <p className="depDetailPara">
+              <br />
+              <br />
               People seek psychiatric help for many reasons. The problems can be
               sudden, such as a panic attack, frightening hallucinations,
               thoughts of suicide, or hearing "voices." Or they may be more
               long-term, such as feelings of sadness, hopelessness, or
               anxiousness that never seem to lift or problems functioning,
               causing everyday life to feel distorted or out of control.
-            </p>
+            </div>
           </div>
           <div className="depImgWrapper">
             <img
@@ -50,45 +62,42 @@ function Pshyciatric() {
         <div className="depMain">
           <h1 className="depMainHead">Treatments Offered</h1>
           <p className="depMainPara">
-            There live the blind texts separated they right at the coast of the
-            Semantics.
+          Our department of Psychiatry is dedicated to exceeding expectations. We
+            provide cutting edge treatment of disorders below
           </p>
           <div className="depLine"></div>
         </div>
 
         <div className="treatmentWrapper">
-          <div className="treatmentCard">
-            <div className="treatmentLogo">
-              <img src="/assets/department/surgery.png" alt="anyimg" />
-            </div>
-            <div className="treatmentText">
-              <h2 className="treatmentTitle">Evaluation of diseases</h2>
-              <p className="treatmentAbout">
-                Dunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          </div>
-
-          <div className="treatmentCard">
-            <div className="treatmentLogo">
-              <img src="/assets/department/surgery.png" alt="anyimg" />
-            </div>
-            <div className="treatmentText">
-              <h2 className="treatmentTitle">Psychological Assessment</h2>
-              <p className="treatmentAbout">
-                Dunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          </div>
+          {treatmentsOffered.map((item, index) => (
+            <>
+              <div className="treatmentCard" key={index}>
+                {/* for logo uncomment n remove check */}
+                {/* <div className="treatmentLogo">
+                  <img src="/assets/department/surgery.png" alt="anyimg" />
+                </div> */}
+                <div className="checkLogo">
+                  <img src="/assets/dr/check.png" alt="check" />
+                </div>
+                <div className="treatmentText">
+                  <h2 className="treatmentTitle">{item.name}</h2>
+                  {/* for content  */}
+                  {/* <p className="treatmentAbout">
+                    Dunt in culpa qui officia deserunt mollit anim id est
+                    laborum.
+                  </p> */}
+                </div>
+              </div>
+            </>
+          ))}
         </div>
       </div>
-
       <div className="depDoctors">
         <div className="depMain">
           <h1 className="depMainHead">Department Doctors</h1>
           <p className="depMainPara">
-            There live the blind texts separated they right at the coast of the
-            Semantics.
+            Our psychiatrists Furthermore, our psychiatrists at Osra Hospital
+            you may know:
           </p>
           <div className="depLine"></div>
         </div>
