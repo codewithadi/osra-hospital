@@ -63,7 +63,7 @@ const Doctor = () => {
                             />
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
+                    <div className="grid grid-cols-1 justify-center items-center justify-items-center px-2 md:px-10 gap-4 md:grid-cols-4">
                         {demoData.map((doc, index) => (
                             <SingleDoctor
                                 key={index}

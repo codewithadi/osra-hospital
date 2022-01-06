@@ -130,7 +130,7 @@ export const demoData = [
         Qualification: "Clinical Phd in Obstetrics and Gynecology",
         Experience: " 16 years",
         position: " OB/GYNA Consultant",
-        department: ["ob"],
+        department: ["obgyna"],
         skills: [
             "Pregnancy diagnoses and pregnancy Care",
             "Birth delivery and Surgical delivery",
