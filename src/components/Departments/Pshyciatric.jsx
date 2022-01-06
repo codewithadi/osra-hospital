@@ -10,7 +10,7 @@ const treatmentsOffered = [
     name: "Psychological Assessment",
     detail: "",
     logo: "",
-  },
+  }, 
 ];
 
 function Pshyciatric() {
@@ -62,8 +62,8 @@ function Pshyciatric() {
         <div className="depMain">
           <h1 className="depMainHead">Treatments Offered</h1>
           <p className="depMainPara">
-          Our department of Psychiatry is dedicated to exceeding expectations. We
-            provide cutting edge treatment of disorders below
+            Our department of Psychiatry is dedicated to exceeding expectations.
+            We provide cutting edge treatment of disorders below
           </p>
           <div className="depLine"></div>
         </div>
@@ -96,7 +96,7 @@ function Pshyciatric() {
         <div className="depMain">
           <h1 className="depMainHead">Department Doctors</h1>
           <p className="depMainPara">
-            Our psychiatrists Furthermore, our psychiatrists at Osra Hospital
+            Furthermore, our Psychiatrists at Osra Hospital
             you may know:
           </p>
           <div className="depLine"></div>
