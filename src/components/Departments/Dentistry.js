@@ -119,8 +119,8 @@ function Dentistry() {
         <div className="depMain">
           <h1 className="depMainHead">Treatments Offered</h1>
           <p className="depMainPara">
-            Our department of Psychiatry is dedicated to exceeding expectations.
-            We provide cutting edge treatment of disorders below
+            Our Dermatology Department is dedicated to exceeding expectations.
+            We provide cutting edge treatment
           </p>
           <div className="depLine"></div>
         </div>
@@ -153,10 +153,7 @@ function Dentistry() {
       <div className="depDoctors">
         <div className="depMain">
           <h1 className="depMainHead">Department Doctors</h1>
-          <p className="depMainPara">
-            There live the blind texts separated they right at the coast of the
-            Semantics.
-          </p>
+          <p className="depMainPara">Doctors in Dermatology are</p>
           <div className="depLine"></div>
         </div>
         <div className="depDoctorWrapper">
