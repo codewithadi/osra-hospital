@@ -13,7 +13,8 @@ import "react-datepicker/dist/react-datepicker.css";
 import Loading from "../Loading/Loading";
 
 function BookAppointment() {
-    const [loading, setloading] = useState(true);
+    const[book,setBook]=useState(false)
+    const [loading, setloading] = useState(false);
     const [department, setDepartment] = useState("");
     const [doctor, setDoctor] = useState("");
     const [patient, setPatient] = useState("");
@@ -113,11 +114,13 @@ function BookAppointment() {
             email
         };
         console.log(patient);
+        setBook(true);
         try {
             const res = await axios.post(
                 "https://doctorappapi.herokuapp.com/api/patient",
                 patient
             );
+            setBook(false);
             alert(res.data.msg);
             setDateB("");
             setAge("");
@@ -129,7 +132,9 @@ function BookAppointment() {
             setSelectedDoc("");
             window.location.reload();
         } catch (error) {
+            setBook(true);
             console.log(error);
+            setBook(false);
         }
     };
     return (
@@ -145,7 +150,9 @@ function BookAppointment() {
                         <h1 className="depMainText">Book Appointment</h1>
                     </div>
                 </div>
-                {loading ? (
+                {book ? (<div className="w-full h-full flex justify-center items-center py-4">
+                        <h1 className="text-2xl m-4 p-4 ">Wait Booking your appointment and will send you message shortly.....</h1>
+                    </div>) : loading ? (
                     <div className="w-full h-full flex justify-center items-center py-4">
                         <Loading />
                     </div>
