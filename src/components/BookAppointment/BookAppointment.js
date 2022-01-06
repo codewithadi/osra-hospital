@@ -232,7 +232,7 @@ function BookAppointment() {
                                 />
                                 <PhoneInput
                                     containerClass="w-full"
-                                    country="ae"
+                                    country="sa"
                                     value={phone}
                                     onChange={(phone) => setPhone(phone)}
                                     placeholder="Enter phone number"
