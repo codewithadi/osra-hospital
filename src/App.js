@@ -119,7 +119,7 @@ function App() {
                 <Route path="/clinics/ob-gyne" element={<OBGyne />} />
                 <Route path="/blog" element={<BlogList />} />
                 <Route path="/appointment" element={<BookAppointment />} />
-                <Route path="/doctor/Eman_Radwan" element={<Profile />} />
+                <Route path="/doctor/:doc" element={<Profile />} />
             </Routes>
             <Footer />
             <Whatsapp />

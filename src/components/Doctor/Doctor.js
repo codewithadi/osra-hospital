@@ -3,6 +3,7 @@ import SingleDoctor from "./SingleDoctor";
 import Select from "react-select";
 import axios from "axios";
 import Loading from "../Loading/Loading";
+import { demoData } from "../DemoData/demodata";
 
 const Doctor = () => {
     const [loading, setloading] = useState(true);
@@ -63,10 +64,17 @@ const Doctor = () => {
                         </div>
                     </div>
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-                        <SingleDoctor />
-                        <SingleDoctor />
-                        <SingleDoctor />
-                        <SingleDoctor />
+                        {demoData.map((doc, index) => (
+                            <SingleDoctor
+                                key={index}
+                                imgUrl={doc.imgUrl}
+                                name={doc.name}
+                                position={doc.position}
+                                mobno={doc.mobno}
+                                email={doc.email}
+                                linkto={doc.linkto}
+                            />
+                        ))}
                     </div>
                 </>
             )}
