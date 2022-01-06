@@ -8,9 +8,10 @@ import PhoneInput from "react-phone-input-2";
 
 // import "react-phone-input-2/lib/style.css";
 
-import 'react-phone-input-2/lib/high-res.css'
+import "react-phone-input-2/lib/high-res.css";
 import "react-datepicker/dist/react-datepicker.css";
 import Loading from "../Loading/Loading";
+import { Link } from "react-router-dom";
 
 function BookAppointment() {
     const[book,setBook]=useState(false)
@@ -31,8 +32,6 @@ function BookAppointment() {
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
     const [gender, setGender] = useState("male");
-    
-    
 
     //console.log(moment(date).format('DD-MM-YYYY').toString())
     useEffect(() => {
@@ -96,13 +95,13 @@ function BookAppointment() {
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
-      //  console.log(selectedDoc.label)
+        //  console.log(selectedDoc.label)
         //console.log(selectedDept.label)
-       // console.log(gender)
+        // console.log(gender)
         const patient = {
             date: dateb,
-            doctorname:selectedDoc.label,
-            departmentname:selectedDept.label,
+            doctorname: selectedDoc.label,
+            departmentname: selectedDept.label,
             gender,
             slot,
             name,
@@ -111,7 +110,7 @@ function BookAppointment() {
             phone,
             department: selectedDept._id,
             doctor: selectedDoc._id,
-            email
+            email,
         };
         console.log(patient);
         setBook(true);
@@ -193,26 +192,41 @@ function BookAppointment() {
                             {/* gender radio box below  */}
                             <div className="serviceText">Your Gender : </div>
                             <div className="bookFormItems">
-                            <label className="bookFormLabel " htmlFor="
-                            male" ><input
-                                    type="radio"
-                                    className="bookFormRadio"
-                                    name="gender"
-                                    value="male"
-                                    id="male"
-                                    onChangle={(e)=>setGender(e.target.value)}
-                                />
-                                Male</label>
+                                <label
+                                    className="bookFormLabel "
+                                    htmlFor="
+                            male"
+                                >
+                                    <input
+                                        type="radio"
+                                        className="bookFormRadio"
+                                        name="gender"
+                                        value="male"
+                                        id="male"
+                                        onChangle={(e) =>
+                                            setGender(e.target.value)
+                                        }
+                                    />
+                                    Male
+                                </label>
 
-                                <label className="bookFormLabel" htmlFor="female">  <input
-                                    type="radio"
-                                    className="bookFormRadio"
-                                    name="gender"
-                                    id="female"
-                                    value="Female"
-                                    onChangle={(e)=>setGender(e.target.value)}
-                                />
-                                Female</label>
+                                <label
+                                    className="bookFormLabel"
+                                    htmlFor="female"
+                                >
+                                    {" "}
+                                    <input
+                                        type="radio"
+                                        className="bookFormRadio"
+                                        name="gender"
+                                        id="female"
+                                        value="Female"
+                                        onChangle={(e) =>
+                                            setGender(e.target.value)
+                                        }
+                                    />
+                                    Female
+                                </label>
                             </div>
                             <div className="flex flex-col justify-center items-center md:flex-row gap-4">
                                 <input
@@ -225,7 +239,7 @@ function BookAppointment() {
                                 />
                                 <PhoneInput
                                     containerClass="w-full"
-                                    country="ae"
+                                    country="sa"
                                     value={phone}
                                     onChange={(phone) => setPhone(phone)}
                                     placeholder="Enter phone number"
@@ -308,12 +322,18 @@ function BookAppointment() {
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                             ></textarea>
-                            <div className="bookFormBtn">
+                            <div className="bookFormBtn flex flex-col gap-4 md:flex-row">
                                 <input
                                     type="submit"
-                                    className="bookFormButton"
+                                    className="bookFormButton "
                                     value="Book Appointment"
                                 />
+                                <Link
+                                    to="/appointment"
+                                    className="bookFormButton text-center"
+                                >
+                                    Find Doctor
+                                </Link>
                             </div>
                         </form>
                     </div>

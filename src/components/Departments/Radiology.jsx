@@ -1,5 +1,7 @@
 import React from "react";
 import "./departments.css";
+import { demoData } from "../DemoData/demodata";
+import SingleDoctor from "../Doctor/SingleDoctor";
 const treatmentsOffered = [
   {
     name: "CT scan Procedures",
@@ -19,6 +21,9 @@ const treatmentsOffered = [
 ];
 
 function Radiology() {
+  const filterdDoc = demoData.filter((data) =>
+  data.department.includes("pshyciatric")
+);
   return (
     <div className="departments">
       <div className="depMainBack">
