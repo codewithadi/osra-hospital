@@ -9,9 +9,9 @@ const Slider = () => {
         <div>
             <Carousel
                 autoPlay={true}
-                interval={4000}
+                interval={4500}
                 infiniteLoop={true}
-                transitionTime={1000}
+                transitionTime={2000}
                 showIndicators={false}
                 swipeable={false}
                 showStatus={false}
