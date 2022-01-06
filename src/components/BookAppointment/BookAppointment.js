@@ -29,7 +29,9 @@ function BookAppointment() {
     const [message, setMessage] = useState("");
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
-    const [gender, setGender] = useState("");
+    const [gender, setGender] = useState("male");
+    
+    
 
     //console.log(moment(date).format('DD-MM-YYYY').toString())
     useEffect(() => {
@@ -70,11 +72,11 @@ function BookAppointment() {
     const handleChangeDate = (date) => {
         setDateB(moment(date).format("DD-MM-YYYY").toString());
         const datebook = moment(date).format("DD-MM-YYYY").toString();
-        console.log(datebook);
+        //console.log(datebook);
         const patientdate = patient.filter(
             (item) => item.date === datebook && item.doctor === selectedDoc._id
         );
-        console.log(patientdate);
+        //console.log(patientdate);
         const patientslotbooked = patientdate.map((value) => value.slot);
         const docSlot = selectedDoc.slots;
         const res = docSlot.filter((item) => !patientslotbooked.includes(item));
@@ -93,8 +95,14 @@ function BookAppointment() {
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
+      //  console.log(selectedDoc.label)
+        //console.log(selectedDept.label)
+       // console.log(gender)
         const patient = {
             date: dateb,
+            doctorname:selectedDoc.label,
+            departmentname:selectedDept.label,
+            gender,
             slot,
             name,
             age,
@@ -102,6 +110,7 @@ function BookAppointment() {
             phone,
             department: selectedDept._id,
             doctor: selectedDoc._id,
+            email
         };
         console.log(patient);
         try {
@@ -118,7 +127,7 @@ function BookAppointment() {
             setPhone("");
             setSelectedDept("");
             setSelectedDoc("");
-            window.location.reload();
+            //window.location.reload();
         } catch (error) {
             console.log(error);
         }
@@ -177,21 +186,26 @@ function BookAppointment() {
                             {/* gender radio box below  */}
                             <div className="serviceText">Your Gender : </div>
                             <div className="bookFormItems">
-                                <input
+                            <label className="bookFormLabel " htmlFor="
+                            male" ><input
                                     type="radio"
                                     className="bookFormRadio"
                                     name="gender"
                                     value="male"
+                                    id="male"
+                                    onChangle={(e)=>setGender(e.target.value)}
                                 />
-                                <label className="bookFormLabel">Male</label>
+                                Male</label>
 
-                                <input
+                                <label className="bookFormLabel" htmlFor="female">  <input
                                     type="radio"
                                     className="bookFormRadio"
                                     name="gender"
+                                    id="female"
                                     value="Female"
+                                    onChangle={(e)=>setGender(e.target.value)}
                                 />
-                                <label className="bookFormLabel">Female</label>
+                                Female</label>
                             </div>
                             <div className="flex flex-col justify-center items-center md:flex-row gap-4">
                                 <input
