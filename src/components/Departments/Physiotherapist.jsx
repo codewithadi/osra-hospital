@@ -1,5 +1,32 @@
 import React from "react";
 import "./departments.css";
+const treatmentsOffered = [
+  {
+    name: "Treating orthopedic and neurological diseases",
+    detail: "",
+    logo: "",
+  },
+  {
+    name: "Sports injury rehabilitation",
+    detail: "",
+    logo: "",
+  },
+  {
+    name: "Thromboembolism treatment",
+    detail: "",
+    logo: "",
+  },
+  {
+    name: "Rehabilitation of handicapped children",
+    detail: "",
+    logo: "",
+  },
+  {
+    name: "Facial nerve treatment",
+    detail: "",
+    logo: "",
+  },
+];
 
 function Physiotherapist() {
   return (
@@ -48,73 +75,34 @@ function Physiotherapist() {
         <div className="depMain">
           <h1 className="depMainHead">Treatments Offered</h1>
           <p className="depMainPara">
-            There live the blind texts separated they right at the coast of the
-            Semantics.
+            Our department of Psychiatry is dedicated to exceeding expectations.
+            We provide cutting edge treatment of disorders below
           </p>
           <div className="depLine"></div>
         </div>
 
         <div className="treatmentWrapper">
-          <div className="treatmentCard">
-            <div className="treatmentLogo">
-              <img src="/assets/department/surgery.png" alt="anyimg" />
-            </div>
-            <div className="treatmentText">
-              <h2 className="treatmentTitle">
-                Treating orthopedic and neurological diseases
-              </h2>
-              <p className="treatmentAbout">
-                Dunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          </div>
-
-          <div className="treatmentCard">
-            <div className="treatmentLogo">
-              <img src="/assets/department/surgery.png" alt="anyimg" />
-            </div>
-            <div className="treatmentText">
-              <h2 className="treatmentTitle">Sports injury rehabilitation</h2>
-              <p className="treatmentAbout">
-                Dunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          </div>
-          <div className="treatmentCard">
-            <div className="treatmentLogo">
-              <img src="/assets/department/surgery.png" alt="anyimg" />
-            </div>
-            <div className="treatmentText">
-              <h2 className="treatmentTitle">Thromboembolism treatment</h2>
-              <p className="treatmentAbout">
-                Dunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          </div>
-          <div className="treatmentCard">
-            <div className="treatmentLogo">
-              <img src="/assets/department/surgery.png" alt="anyimg" />
-            </div>
-            <div className="treatmentText">
-              <h2 className="treatmentTitle">
-                Rehabilitation of handicapped children
-              </h2>
-              <p className="treatmentAbout">
-                Dunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          </div>
-          <div className="treatmentCard">
-            <div className="treatmentLogo">
-              <img src="/assets/department/surgery.png" alt="anyimg" />
-            </div>
-            <div className="treatmentText">
-              <h2 className="treatmentTitle">Facial nerve treatment</h2>
-              <p className="treatmentAbout">
-                Dunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          </div>
+          {treatmentsOffered.map((item, index) => (
+            <>
+              <div className="treatmentCard" key={index}>
+                {/* for logo uncomment n remove check */}
+                {/* <div className="treatmentLogo">
+                  <img src="/assets/department/surgery.png" alt="anyimg" />
+                </div> */}
+                <div className="checkLogo">
+                  <img src="/assets/dr/check.png" alt="check" />
+                </div>
+                <div className="treatmentText">
+                  <h2 className="treatmentTitle">{item.name}</h2>
+                  {/* for content  */}
+                  {/* <p className="treatmentAbout">
+                    Dunt in culpa qui officia deserunt mollit anim id est
+                    laborum.
+                  </p> */}
+                </div>
+              </div>
+            </>
+          ))}
         </div>
       </div>
 
