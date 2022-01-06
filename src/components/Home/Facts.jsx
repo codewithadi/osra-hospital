@@ -17,7 +17,7 @@ const Facts = () => {
                     <i>since 1991</i>
                 </h1>
 
-                <div className="grid grid-cols-2 gap-4 md:gap-4 md:grid-cols-4 my-2 md:my-4">
+                <div className="grid grid-cols-2 gap-4 md:gap-4 md:grid-cols-3 my-2 md:my-4">
                     <div className="text-lg">
                         <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
                             30+
@@ -29,7 +29,7 @@ const Facts = () => {
 
                     <div className="text-lg">
                         <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
-                            140+
+                            40+
                         </h2>
                         <h3 className="pl-2 text-white font-semibold text-base md:text-lg">
                             Doctors on Panel
@@ -38,21 +38,21 @@ const Facts = () => {
 
                     <div className="text-lg">
                         <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
-                            18+
+                            25+
                         </h2>
                         <h3 className="pl-2 text-white font-semibold text-base md:text-lg">
                             Clinics Available
                         </h3>
                     </div>
 
-                    <div className="text-lg">
+                    {/* <div className="text-lg">
                         <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
                             25+
                         </h2>
                         <h3 className="text-white font-semibold text-base md:text-lg">
                             Patient services
                         </h3>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
