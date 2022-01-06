@@ -1,12 +1,12 @@
 import React from "react";
 import AboutHead from "../components/About/AboutHead";
-import BrandSlider from "../components/About/BrandSlider";
+// import BrandSlider from "../components/About/BrandSlider";
 import WhyChooseUs from "../components/About/WhyChooseUs";
 import BoD from "../components/About/BoD";
 import AdminMem from "../components/About/AdminMem";
 // import AboutFacts from "../components/About/AboutFacts";
 import Facts from "../components/Home/Facts";
-import Testimonials from "../components/About/Testimonials";
+// import Testimonials from "../components/About/Testimonials";
 // import { Link } from "react-router-dom";
 import "../components/About/About.css";
 
@@ -81,8 +81,8 @@ const About = () => {
             <WhyChooseUs />
             <BoD />
             <AdminMem />
-            <Testimonials />
-            <BrandSlider />
+            {/* <Testimonials /> */}
+            {/* <BrandSlider /> */}
         </>
     );
 };

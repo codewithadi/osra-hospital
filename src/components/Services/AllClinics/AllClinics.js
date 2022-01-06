@@ -456,7 +456,7 @@ function AllClinics() {
                     </Link>
                 </div>
 
-                <div className="depCard">
+                {/* <div className="depCard">
                     <div className="depIcon">
                         <img
                             className="depIconImg"
@@ -465,7 +465,7 @@ function AllClinics() {
                         />
                     </div>
                     <h1 className="depHead">Serology </h1>
-                    {/* <h3 className='depAbout'>Bones & Joints</h3> */}
+                    <h3 className='depAbout'>Bones & Joints</h3> 
                     <p className="depDetailHome">
                         Behind the word mountains, far from the countries
                         Vokalia.
@@ -477,9 +477,9 @@ function AllClinics() {
                     >
                         Get Details..
                     </Link>
-                </div>
+                </div> */}
 
-                <div className="depCard">
+                {/* <div className="depCard">
                     <div className="depIcon">
                         <img
                             className="depIconImg"
@@ -488,7 +488,7 @@ function AllClinics() {
                         />
                     </div>
                     <h1 className="depHead">Special Tests </h1>
-                    {/* <h3 className='depAbout'>Bones & Joints</h3> */}
+                     <h3 className='depAbout'>Bones & Joints</h3> 
                     <p className="depDetailHome">
                         Behind the word mountains, far from the countries
                         Vokalia.
@@ -500,7 +500,7 @@ function AllClinics() {
                     >
                         Get Details..
                     </Link>
-                </div>
+                </div> */}
             </div>
         </div>
     );

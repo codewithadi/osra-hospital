@@ -18,7 +18,7 @@ const AdminMem = () => {
                 <SingleDoctor
                     imgUrl="/assets/department/doctor1.jpg"
                     name="Mr. Alla Adel Abdulrhman Bin Soufayan"
-                    position=""
+                    position="General Manager"
                 />
                 <SingleDoctor
                     imgUrl="/assets/department/doctor1.jpg"

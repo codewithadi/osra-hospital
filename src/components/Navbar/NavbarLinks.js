@@ -137,7 +137,7 @@ function NavLinks({ colorchange }) {
                         </h1>
                     </Link>
                 </li>
-                <li className="inline-block bg-transparent">
+                {/* <li className="inline-block bg-transparent">
                     <Link
                         exact
                         to="/blog"
@@ -152,7 +152,7 @@ function NavLinks({ colorchange }) {
                             Blog
                         </h1>
                     </Link>
-                </li>
+                </li> */}
                 <li className="inline-block bg-transparent">
                     <Link
                         exact
