@@ -98,43 +98,59 @@ function BookAppointment() {
         //  console.log(selectedDoc.label)
         //console.log(selectedDept.label)
         // console.log(gender)
-        const patient = {
-            date: dateb,
-            doctorname: selectedDoc.label,
-            departmentname: selectedDept.label,
-            gender,
-            slot,
-            name,
-            age,
-            message,
-            phone,
-            department: selectedDept._id,
-            doctor: selectedDoc._id,
-            email,
-        };
-        console.log(patient);
-        setBook(true);
-        try {
-            const res = await axios.post(
-                "https://doctorappapi.herokuapp.com/api/patient",
-                patient
-            );
-            setBook(false);
-            alert(res.data.msg);
-            setDateB("");
-            setAge("");
-            setName("");
-
-            setMessage("");
-            setPhone("");
-            setSelectedDept("");
-            setSelectedDoc("");
-            window.location.reload();
-        } catch (error) {
+       
+        if(
+            dateb &&
+            selectedDoc.label &&
+            selectedDept.label &&
+            
+            name &&
+            department &&
+            doctor &&
+            email || phone
+        ){
+            const patient = {
+                date: dateb,
+                doctorname: selectedDoc.label,
+                departmentname: selectedDept.label,
+                gender,
+                slot,
+                name,
+                age,
+                message,
+                phone,
+                department: selectedDept._id,
+                doctor: selectedDoc._id,
+                email,
+            };
+            console.log(patient);
             setBook(true);
-            console.log(error);
-            setBook(false);
+            try {
+                const res = await axios.post(
+                    "https://doctorappapi.herokuapp.com/api/patient",
+                    patient
+                );
+                setBook(false);
+                alert(res.data.msg);
+                setDateB("");
+                setAge("");
+                setName("");
+    
+                setMessage("");
+                setPhone("");
+                setSelectedDept("");
+                setSelectedDoc("");
+                window.location.reload();
+            } catch (error) {
+                setBook(true);
+                console.log(error);
+                setBook(false);
+            }
+        }else{
+alert ("Please fill all the field")
         }
+        
+       
     };
     return (
         <>
