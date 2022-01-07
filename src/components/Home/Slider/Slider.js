@@ -56,7 +56,7 @@ const Slider = () => {
                         alt="prod1"
                     />
                     <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
-                    <div className="main-text-alt bg-transparent text-grey-300">
+                    <div className="main-text bg-transparent text-grey-300">
                         <h1 className=" text-white text-left font-semibold text-3xl md:text-6xl bg-transparent mb-4">
                             Committed to Your <br />
                             Better Health
