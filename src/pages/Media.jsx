@@ -1,6 +1,6 @@
 import React from "react";
 import MediaImages from "../components/Media/MediaImages";
-import MediaVideo from "../components/Media/MediaVideo";
+// import MediaVideo from "../components/Media/MediaVideo";
 
 const Media = () => {
     // const [dispImg, setDispImg] = useState(true);

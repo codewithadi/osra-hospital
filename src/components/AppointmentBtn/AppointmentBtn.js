@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ReactPlayer from 'react-player'
 
 const AppointmentBtn = () => {
     const scrollToTop = () => {
@@ -17,7 +18,8 @@ const AppointmentBtn = () => {
             <Link
                 to="/appointment"
                 onClick={scrollToTop}
-                className="text-white rounded-xl py-3 px-5 uppercase font-light bg-green-900 hover:bg-green-600 text-sm md:text-base"
+                style={{ background: "#005000" }}
+                className="text-white rounded-xl py-3 px-5 uppercase font-light hover:bg-green-600 text-sm md:text-base"
             >
                 Book Now
             </Link>
