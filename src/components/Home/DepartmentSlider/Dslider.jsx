@@ -206,7 +206,7 @@ const BrandSlider = () => {
 
   return (
     <div className="bg-gray-200 w-full px-5">
-      <div className="p-2 my-6 text-center">
+      <div className="p-2 text-center">
         <h2 className="mt-12 text-4xl font-medium">Hospital Departments</h2>
         <p className="text-lg my-4 text-gray-500">
           Patient care and getting CBAHI Reaccreditation with continues
