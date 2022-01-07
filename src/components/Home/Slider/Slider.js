@@ -9,9 +9,9 @@ const Slider = () => {
         <div>
             <Carousel
                 autoPlay={true}
-                interval={4000}
+                interval={4500}
                 infiniteLoop={true}
-                transitionTime={1000}
+                transitionTime={2000}
                 showIndicators={false}
                 swipeable={false}
                 showStatus={false}
@@ -37,14 +37,14 @@ const Slider = () => {
                             We are dedicated to provide high quality,
                             evidence-based and safe healthcare.
                         </p>
-                        <div className="flex justify-start">
+                        {/* <div className="flex justify-start">
                             <Link
                                 to="/appointment"
                                 className="text-white py-3 px-4 uppercase font-light bg-blue-600 hover:bg-green-400 md:text-xl mb-2"
                             >
                                 Book Appointment
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -66,14 +66,14 @@ const Slider = () => {
                             Emergency Department also provides rehabilitation
                             care
                         </p>
-                        <div className="flex justify-start">
+                        {/* <div className="flex justify-start">
                             <Link
                                 to="/doctor"
                                 className="text-white py-3 px-4 uppercase font-light bg-blue-600 hover:bg-green-400 md:text-xl mb-2"
                             >
                                 Find a Doctor
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -97,14 +97,14 @@ const Slider = () => {
                             All our departments provide world-class healthcare
                             services.
                         </p>
-                        <div className="flex justify-start">
+                        {/* <div className="flex justify-start">
                             <Link
                                 to="/clinics"
                                 className="text-white py-3 px-4 uppercase font-light bg-blue-600 hover:bg-green-400 md:text-xl mb-2"
                             >
                                 Visitor Guide
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </Carousel>

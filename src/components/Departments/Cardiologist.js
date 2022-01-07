@@ -1,5 +1,8 @@
 import React from "react";
 import "./departments.css";
+import { demoData } from "../DemoData/demodata";
+import SingleDoctor from "../Doctor/SingleDoctor";
+
 const treatmentsOffered = [
   {
     name: "Internal medicine Cases",
@@ -54,6 +57,10 @@ const treatmentsOffered = [
 ];
 
 function Cardiologist() {
+  const filterdDoc = demoData.filter((data) =>
+    data.department.includes("cardiologist")
+  );
+
   return (
     <div className="departments">
       <div className="depMainBack">
@@ -129,6 +136,7 @@ function Cardiologist() {
           ))}
         </div>
       </div>
+
       <div className="depDoctors">
         <div className="depMain">
           <h1 className="depMainHead">Department Doctors</h1>
@@ -138,82 +146,18 @@ function Cardiologist() {
           </p>
           <div className="depLine"></div>
         </div>
-        <div className="depDoctorWrapper">
-          <div className="depDoctorCard">
-            <div className="depDoctorImg">
-              <img
-                className="doctorImg"
-                src="/assets/department/doctor1.jpg"
-                alt="anyimg"
-              />
-            </div>
-            <h2 className="depDoctorName">David Paulson</h2>
-            <p className="depDoctorAbout">Head Of Department</p>
-            <p className="depDoctorMob"> +00 0000 0000 00</p>
-            <p className="depDoctorMail">roberto@medwise.com</p>
-            <div className="depBtnWrapper">
-              <a className="depDoctorBtn" href="/departments">
-                View Profile
-              </a>
-            </div>
-          </div>
-
-          <div className="depDoctorCard">
-            <div className="depDoctorImg">
-              <img
-                className="doctorImg"
-                src="/assets/department/doctor2.jpg"
-                alt="anyimg"
-              />
-            </div>
-            <h2 className="depDoctorName">Merri Hoffman</h2>
-            <p className="depDoctorAbout">Head Of Department</p>
-            <p className="depDoctorMob"> +00 0000 0000 00</p>
-            <p className="depDoctorMail">roberto@medwise.com</p>
-            <div className="depBtnWrapper">
-              <a className="depDoctorBtn" href="/departments">
-                View Profile
-              </a>
-            </div>
-          </div>
-
-          <div className="depDoctorCard">
-            <div className="depDoctorImg">
-              <img
-                className="doctorImg"
-                src="/assets/department/doctor1.jpg"
-                alt="anyimg"
-              />
-            </div>
-            <h2 className="depDoctorName">Kathy Cruse</h2>
-            <p className="depDoctorAbout">Head Of Department</p>
-            <p className="depDoctorMob"> +00 0000 0000 00</p>
-            <p className="depDoctorMail">roberto@medwise.com</p>
-            <div className="depBtnWrapper">
-              <a className="depDoctorBtn" href="/departments">
-                View Profile
-              </a>
-            </div>
-          </div>
-
-          <div className="depDoctorCard">
-            <div className="depDoctorImg">
-              <img
-                className="doctorImg"
-                src="/assets/department/doctor2.jpg"
-                alt="anyimg"
-              />
-            </div>
-            <h2 className="depDoctorName">Floyd Birdsong</h2>
-            <p className="depDoctorAbout">Head Of Department</p>
-            <p className="depDoctorMob"> +00 0000 0000 00</p>
-            <p className="depDoctorMail">roberto@medwise.com</p>
-            <div className="depBtnWrapper">
-              <a className="depDoctorBtn" href="/departments">
-                View Profile
-              </a>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10">
+          {filterdDoc.map((doc, index) => (
+            <SingleDoctor
+              key={index}
+              imgUrl={doc.imgUrl}
+              name={doc.name}
+              position={doc.position}
+              mobno={doc.mobno}
+              email={doc.email}
+              linkto={doc.linkto}
+            />
+          ))}
         </div>
       </div>
 

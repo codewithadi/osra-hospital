@@ -28,7 +28,7 @@ import Physiotherapist from "./components/Departments/Physiotherapist";
 import GenSurgery from "./components/Departments/GenSurgury";
 import OBGyne from "./components/Departments/OBGyne";
 // departments and its routes finished
-import BlogList from "./components/BlogList/BlogList";
+// import BlogList from "./components/BlogList/BlogList";
 import Services from "./pages/Services";
 import Media from "./pages/Media";
 import BookAppointment from "./components/BookAppointment/BookAppointment";
@@ -117,7 +117,7 @@ function App() {
                     element={<GenSurgery />}
                 />
                 <Route path="/clinics/ob-gyne" element={<OBGyne />} />
-                <Route path="/blog" element={<BlogList />} />
+                {/* <Route path="/blog" element={<BlogList />} /> */}
                 <Route path="/appointment" element={<BookAppointment />} />
                 <Route path="/doctor/:doc" element={<Profile />} />
             </Routes>

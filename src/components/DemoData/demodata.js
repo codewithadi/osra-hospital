@@ -1,7 +1,7 @@
 export const demoData = [
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Eman Radwan",
+        name: "Dr. Eman Radwan",
         Nationality: "Egyptian",
         Qualification: "Master's degree in Psychiatry and neurology",
         Experience: "47 years",
@@ -22,7 +22,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Attif Bassas",
+        name: "Dr. Attif Bassas",
         Nationality: "Saudi",
         Qualification: "PhD in general surgery At the Royal Jordanian College",
         Experience: "30+ years",
@@ -51,7 +51,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Rehab Ammar",
+        name: "Dr. Rehab Ammar",
         Nationality: "Egyptian",
         Qualification:
             "Bachelor Degree in general surgery ( Dermatology and cosmetology) ",
@@ -73,7 +73,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Mamdouh Oun Alsoud",
+        name: "Dr. Mamdouh Oun Alsoud",
         Nationality: "Syrian",
         Qualification: "Board in General Surgeries",
         Experience: "9 years",
@@ -97,7 +97,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Asma Salem",
+        name: "Dr. Asma Salem",
         Nationality: "Yemeni",
         Qualification: "MBBS",
         Experience: " 15 years",
@@ -125,7 +125,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Somaya Abbas",
+        name: "Dr. Somaya Abbas",
         Nationality: "Sudanese",
         Qualification: "Clinical Phd in Obstetrics and Gynecology",
         Experience: " 16 years",
@@ -142,7 +142,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Muhammed Farouq",
+        name: "Dr. Muhammed Farouq",
         Nationality: "Pakistan",
         Qualification: "MBBS MSC Gastroenterology UK",
         Experience: " 15 years",
@@ -162,7 +162,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Hansa Diyab",
+        name: "Dr. Hansa Diyab",
         Nationality: "Egyptian",
         Qualification: "MSC Ophthalmology and bachelor medical and surgery",
         Experience: "15+ years",
@@ -185,7 +185,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Malek Hassan",
+        name: "Dr. Malek Hassan",
         Nationality: "Syrian",
         Qualification: "Bachelor Degree in general Surgery ",
         Experience: "27 years",
@@ -207,7 +207,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Abdulfatah Ali",
+        name: "Dr. Abdulfatah Ali",
         Nationality: "Egyptian",
         Qualification: " Fellowship of the Royal College of Surgery",
         Experience: "42 years",
@@ -232,7 +232,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Abeer Alotaibi",
+        name: "Dr. Abeer Alotaibi",
         Nationality: "Saudi",
         Qualification: "Bachelor Degree of Clinical Nutrition",
         Experience: "6 Month",
@@ -251,7 +251,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Saleh Eid",
+        name: "Dr. Saleh Eid",
         Nationality: "Egyptian",
         Qualification: "Bachelor in Medicine and surgery",
         Experience: "36 Years",
@@ -269,7 +269,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Mohammed Alnather",
+        name: "Dr. Mohammed Alnather",
         Nationality: "Egyptian",
         Qualification: "Master Degree in Cardiology",
         Experience: "44 Years",
@@ -289,7 +289,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Abdulrahman Alsouify",
+        name: "Dr. Abdulrahman Alsouify",
         Nationality: "Egyptian",
         Qualification: "Master degree in Urology",
         Experience: "14 Years",
@@ -309,7 +309,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Dania Bawadkji",
+        name: "Dr. Dania Bawadkji",
         Nationality: "Syrian",
         Qualification: "Bachelor's degree in dentistry",
         Experience: "3 Years",
@@ -335,7 +335,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Alaa Mohammed",
+        name: "Dr. Alaa Mohammed",
         Nationality: "Egyptian",
         Qualification: "Master Degree",
         Experience: "10 Years",
@@ -357,7 +357,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Eman Mohammed",
+        name: "Dr. Eman Mohammed",
         Nationality: "Chinese",
         Qualification: "",
         Experience: "",
@@ -376,7 +376,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Mohammed Alsamamni",
+        name: "Dr. Mohammed Alsamamni",
         Nationality: "Sudanese",
         Qualification: "Bachelor Degree in Physiotherapy",
         Experience: "",
@@ -396,7 +396,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Ahmed Ali",
+        name: "Dr. Ahmed Ali",
         Nationality: "Egyptian",
         Qualification: "PhD in internal medicine",
         Experience: "30 Years",
@@ -422,7 +422,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Ibrahim Rushdi",
+        name: "Dr. Ibrahim Rushdi",
         Nationality: "Egyptian",
         Qualification: "Master's degree in pediatrics",
         Experience: "30 Years",
@@ -451,7 +451,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/department/doctor1.jpg",
-        name: "Ahmed Nader",
+        name: "Dr. Ahmed Nader",
         Nationality: "Palastnian",
         Qualification: "Jordanian Board of General Surgery",
         Experience: "7 Years",
