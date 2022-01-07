@@ -28,23 +28,11 @@
   left: 50%;
   transform: translate(-50%, -60%);
 }
-.adepCard {
-  background: #fff;
-  padding: 10px 30px;
-  text-align: center;
-  margin: 10px;
-  width: 18.5rem;
-  height: 23rem;
+
+.border-color{
+  border-color: #538dd4;
 }
-.adepIcon {
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-}
-.adepIconImg {
-  width: 100%;
-  height: 100%;
-}
+
 @media (min-width: 768px) {
   .main-text-about {
     position: absolute;
