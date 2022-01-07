@@ -21,7 +21,7 @@ const ServiceGrid = ({ imgUrl, title, linkUrl }) => {
                 <Link
                     onClick={scrollToTop}
                     to={linkUrl}
-                    className="text-sm md:text-lg text-white py-3 px-4 uppercase font-light  bg-red-900 hover:bg-yellow-900 mb-2"
+                    className="text-sm md:text-lg text-white py-3 px-4 font-light  bg-green-900 hover:bg-green-700 mb-2"
                 >
                     Learn More
                 </Link>
