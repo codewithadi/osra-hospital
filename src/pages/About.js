@@ -23,7 +23,7 @@ const About = () => {
                 />
                 <div className="p-2 md:p-8 mt-14">
                     <h2 className="text-2xl md:text-5xl font-semibold titleColor">
-                        Who are we
+                        Our History
                     </h2>
                     <p className="mt-7 text-base md:text-xl w-4/5 text-gray-200 textColor">
                         AlOsrah international Hospital is a Secondary level
