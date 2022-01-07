@@ -5,7 +5,7 @@ const Journey = () => {
     return (
         <div class="fullwidth">
             <div class="separator w-full md:w-5/6">
-                <h2 className="mt-12 text-4xl text-center font-medium">
+                <h2 className="mt-12 text-4xl text-center font-medium" style={{color: "#3f0f1e"}}>
                     Our Journey
                 </h2>
 

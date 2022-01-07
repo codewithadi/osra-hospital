@@ -4,7 +4,7 @@ const WhyChooseUs = () => {
     return (
         <div>
             <div className="md:p-2 md:my-6 text-center">
-                <h2 className="mt-12 text-4xl font-medium">Why Choose Us</h2>
+                <h2 className="mt-12 text-4xl font-medium"style={{color: "#3f0f1e"}}>Why Choose Us</h2>
                 {/* <p className="text-lg px:4 md:my-4 text-gray-500">
                     There live the blind texts separated they right at the coast
                     of the Semantics.
@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
                                 src="/assets/about/mission.png"
                                 alt="mission"
                             />
-                            <h3 className="font-medium px-3 text-2xl">
+                            <h3 className="font-medium px-3 text-2xl" style={{color: "#3f0f1e"}}>
                                 Mission
                             </h3>
                         </div>
@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
                                 src="/assets/about/vision.png"
                                 alt="mission"
                             />
-                            <h3 className="font-medium px-3 text-2xl">
+                            <h3 className="font-medium px-3 text-2xl" style={{color: "#3f0f1e"}}>
                                 Vision
                             </h3>
                         </div>
@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
                                 src="/assets/about/values.png"
                                 alt="values"
                             />
-                            <h3 className="font-medium px-3 text-2xl">
+                            <h3 className="font-medium px-3 text-2xl" style={{color: "#3f0f1e"}}>
                                 Values
                             </h3>
                         </div>

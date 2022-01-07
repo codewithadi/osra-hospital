@@ -6,7 +6,7 @@ const AdminMem = () => {
     return (
         <>
             <div className="md:p-2 md:my-6 text-center">
-                <h2 className="mt-12 mb-4 text-4xl font-medium">
+                <h2 className="mt-12 mb-4 text-4xl font-medium"style={{color: "#3f0f1e"}}>
                     {" "}
                     Administration Members
                 </h2>
@@ -15,7 +15,7 @@ const AdminMem = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-3 px-2 md:px-10">
+            <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-3 px-2 md:px-10" style={{color: "#3f0f1e"}}>
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
                     name="Mr. Alla Adel Abdulrhman Bin Soufayan"

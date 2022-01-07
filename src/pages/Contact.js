@@ -62,7 +62,7 @@ const Contact = () => {
 
               <div className="flex flex-col pl-2 md:pl-4">
                 <span
-                  style={{ color: "#030f27" }}
+                  style={{color: "#3f0f1e"}}
                   className="mt-2 mb-2 font-medium text-2xl"
                 >
                   Address
@@ -88,9 +88,9 @@ const Contact = () => {
                 />
               </div>
 
-              <div className="flex flex-col pl-2 md:pl-4">
+              <div className="flex flex-col pl-2 md:pl-4" >
                 <span
-                  style={{ color: "#030f27" }}
+                  style={{color: "#3f0f1e"}}
                   className="mt-2 mb-2 font-medium text-2xl"
                 >
                   Get in Touch
@@ -127,7 +127,7 @@ const Contact = () => {
 
               <div className="flex flex-col pl-2 md:pl-4">
                 <span
-                  style={{ color: "#030f27" }}
+                  style={{color: "#3f0f1e"}}
                   className="mt-2 mb-2 font-medium text-2xl text-center"
                 >
                   OPD Hours
@@ -233,7 +233,7 @@ const Contact = () => {
                     <button
                       type="submit"
                       className="px-9 py-4 transition-colors duration-700 ease-in-out font-semibold text-white transform bg-blue-500 rounded hover:bg-gray-900 hover:text-white focus:outline-none focus:bg-gray-700"
-                      // style={{ zIndex: "-56" }}
+                      style={{backgroundColor:"#005000"}}
                     >
                       Submit
                     </button>
