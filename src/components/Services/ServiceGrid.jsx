@@ -11,9 +11,9 @@ const ServiceGrid = ({ imgUrl, title, linkUrl }) => {
             <div className="w-full">
                 <img className="w-full h-auto" src={imgUrl} alt="service" />
             </div>
-            <div className="w-full pl-2 md:pl-5 pr-2 py-2 md:py-3">
+            <div className="w-full flex flex-col justify-center pl-2 md:pl-5 pr-2 py-2 md:py-3">
                 <h2
-                    className="text-base md:text-2xl mb-2 md:mb-4"
+                    className="text-base md:text-2xl mb-3 md:mb-5"
                     style={{ color: "#3c0c1c" }}
                 >
                     {title}
