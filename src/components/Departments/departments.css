@@ -61,7 +61,7 @@
 .depDetailTitle {
     font-size: 30px;
     font-weight: 700;
-    color: #394657;
+    color:#3f0f1e;
 }
 .depDetailAbout {
     font-size: 20px;
@@ -101,6 +101,7 @@
     margin: 0 auto;
 }
 .depMainHead {
+    color:#3f0f1e;
     font-size: 30px;
     font-weight: 700;
 }
