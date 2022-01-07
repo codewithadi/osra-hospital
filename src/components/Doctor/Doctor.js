@@ -78,6 +78,7 @@ const Doctor = () => {
       let searchvalue=e.target.value
       if(searchvalue.length===0){
           setDoctors(demoData)
+          setNodoctor(false)
       }
     }
 
