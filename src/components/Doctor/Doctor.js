@@ -14,24 +14,8 @@ const Doctor = () => {
   const [doctors, setDoctors] = useState();
 
   const handleChangeDept = (selectedDept) => {
+   
     setSelectedDept(selectedDept);
-    
-    let searchdept=selectedDept.label.toLowerCase().replace(/ /g,"").toString()
-   
-    if(searchdept="all"){
-        setDoctors(demoData)
-        console.log("all")
-    }else if(searchdept !== ""){
-        console.log("nothing")
-        let searcheddoctor = doctors.filter((doctor) => {
-            return doctor.name
-              .toLowerCase()
-              .replace(/ /g, "")
-              .includes(searchdept);
-          });
-          setDoctors(searcheddoctor)
-    }
-   
   };
   useEffect(() => {
     const getDept = async () => {
@@ -39,7 +23,7 @@ const Doctor = () => {
       
       setDepartment(demodept);
       setDoctors(demoData);
-      
+     
       setloading(false);
     };
     getDept();
@@ -47,7 +31,7 @@ const Doctor = () => {
   const handleSubmit = () => {
     
     if (search !== "") {
-      let searcheddoctor = doctors.filter((doctor) => {
+      const searcheddoctor = doctors.filter((doctor) => {
         return doctor.name
           .toLowerCase()
           .replace(/ /g, "")

@@ -1,6 +1,7 @@
+export const demodepts =["all","eman","Radiology", "Physiotherapy", "home Care"]
 export const demodept =[
-    { "value": "all", "label": "all" },
-    { "value": "eman", "label": "eman" },
+    { "value": "All", "label": "All" },
+  
     { "value": "radiology", "label": "Radiology" },
     { "value": "physiotherapy", "label": "Physiotherapy" },
     { "value": "home-care", "label": "Home Care" },
