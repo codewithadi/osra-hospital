@@ -7,6 +7,9 @@
   left: 55%;
   transform: translate(-70%, -50%);
 }
+.bg-primary-brown{
+  background-color: #3c0c1c !important;
+}
 
 .main-text-2-about {
   position: absolute;

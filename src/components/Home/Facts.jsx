@@ -7,10 +7,10 @@ const Facts = () => {
             <img
                 className="h-full w-full bg-cover bg-center"
                 style={{ objectFit: "cover" }}
-                src="/assets/slider/sliderImg1.jpg"
+                src="/assets/images/2-min.png"
                 alt="prod1"
             />
-            <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
+            <div className="w-full h-full main-dark-bg bg-black opacity-50"></div>
             <div className="main-text-fact bg-transparent text-grey-300">
                 <h1 className="text-white text-center font-semibold text-lg md:text-2xl bg-transparent mt-20">
                     Serving the World <br />

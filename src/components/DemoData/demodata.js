@@ -1,6 +1,6 @@
 export const demoData = [
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Eman Radwan",
         Nationality: "Egyptian",
         Qualification: "Master's degree in Psychiatry and neurology",
@@ -21,7 +21,7 @@ export const demoData = [
         linkto: "Eman_Radwan",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Attif Bassas",
         Nationality: "Saudi",
         Qualification: "PhD in general surgery At the Royal Jordanian College",
@@ -50,7 +50,7 @@ export const demoData = [
         linkto: "Attif_Bassas",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Rehab Ammar",
         Nationality: "Egyptian",
         Qualification:
@@ -72,7 +72,7 @@ export const demoData = [
         linkto: "Rehab_Ammar",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Mamdouh Oun Alsoud",
         Nationality: "Syrian",
         Qualification: "Board in General Surgeries",
@@ -96,7 +96,7 @@ export const demoData = [
         linkto: "Mamdouh_Oun_Alsoud",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/femaledoc.png",
         name: "Dr. Asma Salem",
         Nationality: "Yemeni",
         Qualification: "MBBS",
@@ -124,7 +124,7 @@ export const demoData = [
         linkto: "Asma_Salem",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/femaledoc.png",
         name: "Dr. Somaya Abbas",
         Nationality: "Sudanese",
         Qualification: "Clinical Phd in Obstetrics and Gynecology",
@@ -141,7 +141,7 @@ export const demoData = [
         linkto: "Somaya_Abbas",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Muhammed Farouq",
         Nationality: "Pakistan",
         Qualification: "MBBS MSC Gastroenterology UK",
@@ -161,7 +161,7 @@ export const demoData = [
         linkto: "Muhammed_Farouq",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Hansa Diyab",
         Nationality: "Egyptian",
         Qualification: "MSC Ophthalmology and bachelor medical and surgery",
@@ -184,7 +184,7 @@ export const demoData = [
         linkto: "Hansa_Diyab",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Malek Hassan",
         Nationality: "Syrian",
         Qualification: "Bachelor Degree in general Surgery ",
@@ -206,7 +206,7 @@ export const demoData = [
         linkto: "Malek_Hassan",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Abdulfatah Ali",
         Nationality: "Egyptian",
         Qualification: " Fellowship of the Royal College of Surgery",
@@ -231,7 +231,7 @@ export const demoData = [
         linkto: "Abdulfatah_Ali",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Abeer Alotaibi",
         Nationality: "Saudi",
         Qualification: "Bachelor Degree of Clinical Nutrition",
@@ -250,7 +250,7 @@ export const demoData = [
         linkto: "Abeer_Alotaibi",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/femaledoc.png",
         name: "Dr. Saleh Eid",
         Nationality: "Egyptian",
         Qualification: "Bachelor in Medicine and surgery",
@@ -268,7 +268,7 @@ export const demoData = [
         linkto: "Saleh_Eid",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Mohammed Alnather",
         Nationality: "Egyptian",
         Qualification: "Master Degree in Cardiology",
@@ -288,7 +288,7 @@ export const demoData = [
         linkto: "Mohammed_Alnather",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Abdulrahman Alsouify",
         Nationality: "Egyptian",
         Qualification: "Master degree in Urology",
@@ -308,7 +308,7 @@ export const demoData = [
         linkto: "Abdulrahman_Alsouify",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/femaledoc.png",
         name: "Dr. Dania Bawadkji",
         Nationality: "Syrian",
         Qualification: "Bachelor's degree in dentistry",
@@ -334,7 +334,7 @@ export const demoData = [
         linkto: "Dania_Bawadkji",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Alaa Mohammed",
         Nationality: "Egyptian",
         Qualification: "Master Degree",
@@ -356,7 +356,7 @@ export const demoData = [
         linkto: "Alaa_Mohammed",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Eman Mohammed",
         Nationality: "Chinese",
         Qualification: "",
@@ -375,7 +375,7 @@ export const demoData = [
         linkto: "Eman_Mohammed",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Mohammed Alsamamni",
         Nationality: "Sudanese",
         Qualification: "Bachelor Degree in Physiotherapy",
@@ -395,7 +395,7 @@ export const demoData = [
         linkto: "Mohammed_Alsamamni",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Ahmed Ali",
         Nationality: "Egyptian",
         Qualification: "PhD in internal medicine",
@@ -421,7 +421,7 @@ export const demoData = [
         linkto: "Ahmed_Ali",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Ibrahim Rushdi",
         Nationality: "Egyptian",
         Qualification: "Master's degree in pediatrics",
@@ -450,7 +450,7 @@ export const demoData = [
         linkto: "Ibrahim_Rushdi",
     },
     {
-        imgUrl: "/assets/department/doctor1.jpg",
+        imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Ahmed Nader",
         Nationality: "Palastnian",
         Qualification: "Jordanian Board of General Surgery",

@@ -134,7 +134,7 @@ function App() {
                 <Route path="/appointment" element={<BookAppointment />} />
                 <Route path="/doctor/:doc" element={<Profile />} />
             </Routes>
-            <VisibilitySensor onChange={onChange}>
+            <VisibilitySensor onChange={onChange} partialVisibility={true}>
                 <Footer />
             </VisibilitySensor>
             {!visible && <SocialIcons />}
