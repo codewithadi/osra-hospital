@@ -6,6 +6,7 @@ import BoD from "../components/About/BoD";
 import AdminMem from "../components/About/AdminMem";
 // import AboutFacts from "../components/About/AboutFacts";
 import Facts from "../components/Home/Facts";
+import Journey from "../components/About/Journey";
 // import Testimonials from "../components/About/Testimonials";
 // import { Link } from "react-router-dom";
 import "../components/About/About.css";
@@ -18,7 +19,7 @@ const About = () => {
             <div className="p-5 flex flex-col md:flex-row">
                 <img
                     className="p-2 md:p-20 abmain-img"
-                    src="/assets/about/about.jpeg"
+                    src="/assets/about/about_main.png"
                     alt="About Home"
                 />
                 <div className="p-2 md:p-8 mt-14">
@@ -29,6 +30,7 @@ const About = () => {
                         AlOsrah international Hospital is a Secondary level
                         facility with 50 bed-Capacities situated in the middle
                         of Riyadh city, Saudi Arabia.
+                        <br />
                         <br />
                         It provides inpatient and outpatient services to Male
                         and Female patients of all age groups, nationalities and
@@ -77,6 +79,7 @@ const About = () => {
             </div>
             {/*About Content Closed */}
             {/* <AboutFacts /> */}
+            <Journey />
             <Facts />
             <WhyChooseUs />
             <BoD />

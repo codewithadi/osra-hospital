@@ -7,7 +7,7 @@ const MediaImages = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 justify-center items-center py-7 px-2 md:px-6">
             <div className="md:col-span-2 overflow-hidden ">
                 <img
-                    className="w-full h-full transform transition-all duration-700 hover:scale-125"
+                    className="w-full h-full transform transition-all duration-700 hover:scale-110"
                     src="assets/igdata/post1.jpg"
                     alt="media"
                 />
@@ -44,7 +44,7 @@ const MediaImages = () => {
             </div>
             <div className="md:col-span-2 overflow-hidden">
                 <img
-                    className="w-full h-full transform transition-all duration-700 hover:scale-125"
+                    className="w-full h-full transform transition-all duration-700 hover:scale-110"
                     src="assets/igdata/post8.jpg"
                     alt="media"
                 />
