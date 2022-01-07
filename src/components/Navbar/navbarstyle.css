@@ -119,14 +119,17 @@ h1 {
 }
 
 .hoverColor:hover {
-    color: #3b82f6;
+    color: #005000;
+    /* color: #3b82f6; */
 }
 .customNav:hover {
-    color: #145da0;
+    color: #005000;
+    /* color: #145da0; */
 }
 .activeLink {
     font-weight: 500;
-    color: #3b82f6;
+    color: #005000;
+    /* color: #3b82f6; */
     border-bottom-width: 2px;
 }
 

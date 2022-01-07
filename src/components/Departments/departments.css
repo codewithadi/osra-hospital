@@ -51,7 +51,7 @@
     background-image: linear-gradient(
         120deg,
         hsla(224, 78%, 47%, 1) 10%,
-        rgb(113, 147, 173) 100%
+        #7193ad 100%
     );
     color: #fff;
     padding: 2em, 5em;
