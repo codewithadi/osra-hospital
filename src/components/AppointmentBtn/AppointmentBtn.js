@@ -17,7 +17,7 @@ const AppointmentBtn = () => {
             <Link
                 to="/appointment"
                 onClick={scrollToTop}
-                className="text-white rounded-xl py-3 px-5 uppercase font-light bg-blue-600 hover:bg-blue-400 text-sm md:text-base"
+                className="text-white rounded-xl py-3 px-5 uppercase font-light bg-green-900 hover:bg-green-600 text-sm md:text-base"
             >
                 Book Now
             </Link>
