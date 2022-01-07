@@ -44,8 +44,21 @@ import AppointmentBtn from "./components/AppointmentBtn/AppointmentBtn";
 
 //Dr profile
 import Profile from "./components/DoctorProfile/Profile";
+import SocialIcons from "./components/SocialIcons/SocialIcons";
+
+// visibility sensor for social icons
+import VisibilitySensor from "react-visibility-sensor";
 
 function App() {
+    const [visible, setVisible] = useState(false);
+
+    function onChange(isVisible) {
+        if (isVisible) {
+            setVisible(true);
+        } else {
+            setVisible(false);
+        }
+    }
     const [showApt, setShowApt] = useState(false);
     useEffect(() => {
         const resizeEve = () => {
@@ -121,7 +134,10 @@ function App() {
                 <Route path="/appointment" element={<BookAppointment />} />
                 <Route path="/doctor/:doc" element={<Profile />} />
             </Routes>
-            <Footer />
+            <VisibilitySensor onChange={onChange}>
+                <Footer />
+            </VisibilitySensor>
+            {!visible && <SocialIcons />}
             <Whatsapp />
         </div>
     );
