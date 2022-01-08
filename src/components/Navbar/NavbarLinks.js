@@ -1,7 +1,7 @@
 // import React from "react";
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-// import Dropdown from "./Dropdown";
+import Dropdown from "./Dropdown";
 import TestDrop from "./TestDrop";
 
 import { Disclosure } from "@headlessui/react";
@@ -9,7 +9,7 @@ import { ChevronUpIcon } from "@heroicons/react/solid";
 import ServicesDisclosure from "./ServicesDisclosure";
 
 function NavLinks({ colorchange }) {
-    // const [dropdown, setDropdown] = useState(false);
+    const [dropdown, setDropdown] = useState(false);
     const [showApt, setShowApt] = useState(false);
     //assigning location variable
     const location = useLocation();
@@ -30,89 +30,95 @@ function NavLinks({ colorchange }) {
         return () => window.removeEventListener();
     }, []);
 
-    // const onMouseEnter = () => {
-    //     if (window.innerWidth < 768) {
-    //         setDropdown(false);
-    //     } else {
-    //         setDropdown(true);
-    //     }
-    // };
-    // const onMouseLeave = () => {
-    //     if (window.innerWidth < 768) {
-    //         setDropdown(false);
-    //     } else {
-    //         setDropdown(false);
-    //     }
-    // };
+    const onMouseEnter = () => {
+        if (window.innerWidth < 768) {
+            setDropdown(false);
+        } else {
+            setDropdown(true);
+        }
+    };
+    const onMouseLeave = () => {
+        if (window.innerWidth < 768) {
+            setDropdown(false);
+        } else {
+            setDropdown(false);
+        }
+    };
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);
     };
 
     return (
-        <div className="bg-transparent">
+        <div className="">
             <ul className="flex flex-col justify-center items-center md:bg-transparent md:inline-block bg-transparent">
-                <li className="inline-block bg-transparent">
+                <li className="inline-block bg-transparent border-none-c">
                     <Link
                         exact
                         to="/"
                         className={
                             splitLocation[1] === ""
-                                ? "activeLink md:pb-10 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium bg-transparent"
-                                : "navbar-link-hover font-medium bg-transparent"
+                                ? "activeLink navbar-link-hover font-medium bg-transparent border-none-c"
+                                : "navbar-link-hover font-medium bg-transparent border-none-c"
                         }
                         onClick={scrollToTop}
                     >
-                        <h1 className="uppercase mx-2 md:px-1 pt-1 pb-1 md:pb-10 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
+                        <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
                             Home
                         </h1>
                     </Link>
                 </li>
-                <li className="inline-block bg-transparent">
+                <li className="inline-block bg-transparent border-none-c">
                     <Link
                         exact
                         to="/about"
                         className={
                             splitLocation[1] === "about"
-                                ? "activeLink md:pb-10 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium bg-transparent"
-                                : "navbar-link-hover font-medium bg-transparent"
+                                ? "activeLink navbar-link-hover font-medium bg-transparent border-none-c"
+                                : "navbar-link-hover font-medium bg-transparent border-none-c"
                         }
                         onClick={scrollToTop}
                     >
-                        <h1 className="uppercase mx-2 md:px-1 pt-1 pb-1 md:pb-10 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
+                        <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
                             About
                         </h1>
                     </Link>
                 </li>
-                {/* <li
-                    className="inline-block bg-transparent"
-                    onMouseEnter={onMouseEnter}
-                    onMouseLeave={onMouseLeave}
-                >
-                    <Link
-                        exact
-                        to="/services"
-                        className={
-                            splitLocation[1] === "services"
-                                ? "activeLink md:pb-10 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium bg-transparent"
-                                : "navbar-link-hover font-medium bg-transparent"
-                        }
-                        onClick={scrollToTop}
-                    >
-                        <div className="navbar-link-hover font-semibold bg-transparent">
-                            <h1 className="uppercase mx-2 md:px-1 pt-1 pb-1 md:pb-10 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
-                                Services
-                            </h1>
-                        </div>
-
-                        {dropdown && (
-                            <div classname="z-50 shadow-md">
-                                <Dropdown />
-                            </div>
-                        )}
-                    </Link>
-                </li> */}
                 {showApt ? (
+                    <li
+                        className="inline-block bg-transparent"
+                        onMouseEnter={onMouseEnter}
+                        onMouseLeave={onMouseLeave}
+                    >
+                        <Link
+                            exact
+                            to="/services"
+                            className={
+                                splitLocation[1] === "services"
+                                    ? "activeLink navbar-link-hover font-medium bg-transparent"
+                                    : "navbar-link-hover font-medium bg-transparent"
+                            }
+                            onClick={scrollToTop}
+                        >
+                            <div className="navbar-link-hover font-semibold bg-transparent">
+                                <h1 className="uppercase mx-2 md:px-1 lg:mx-2 hoverColor block sm:inline-block navbar-link">
+                                    Services
+                                </h1>
+                            </div>
+
+                            {dropdown && (
+                                <div classname="z-50 shadow-md">
+                                    <Dropdown />
+                                </div>
+                            )}
+                        </Link>
+                    </li>
+                ) : (
+                    <li className="inline-block bg-transparent">
+                        <ServicesDisclosure />
+                    </li>
+                )}
+                {/* {showApt ? (
                     <li className="inline-block bg-transparent">
                         <TestDrop />
                     </li>
@@ -120,19 +126,19 @@ function NavLinks({ colorchange }) {
                     <li className="inline-block bg-transparent">
                         <ServicesDisclosure />
                     </li>
-                )}
-                <li className="inline-block bg-transparent">
+                )} */}
+                <li className="inline-block bg-transparent border-none-c">
                     <Link
                         exact
                         to="/media"
                         className={
                             splitLocation[1] === "media"
-                                ? "activeLink md:pb-10 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium bg-transparent"
-                                : "navbar-link-hover font-medium bg-transparent"
+                                ? "activeLink navbar-link-hover font-medium bg-transparent border-none-c"
+                                : "navbar-link-hover font-medium bg-transparent border-none-c"
                         }
                         onClick={scrollToTop}
                     >
-                        <h1 className="uppercase mx-2 md:px-1 pt-1 pb-1 md:pb-10 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
+                        <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
                             Media
                         </h1>
                     </Link>
@@ -153,18 +159,18 @@ function NavLinks({ colorchange }) {
                         </h1>
                     </Link>
                 </li> */}
-                <li className="inline-block bg-transparent">
+                <li className="inline-block bg-transparent border-none-c">
                     <Link
                         exact
                         to="/contact"
                         className={
                             splitLocation[1] === "contact"
-                                ? "activeLink md:pb-10 border-b-2 border-blue-500 border-opacity-90 navbar-link-hover font-medium bg-transparent"
-                                : "navbar-link-hover font-medium bg-transparent"
+                                ? "activeLink navbar-link-hover font-medium bg-transparent border-none-c"
+                                : "navbar-link-hover font-medium bg-transparent border-none-c"
                         }
                         onClick={scrollToTop}
                     >
-                        <h1 className="uppercase mx-2 md:px-1 pt-1 pb-1 md:pb-10 lg:mx-2 border-b-2 border-opacity-0 hover:border-opacity-90 hover:border-blue-500 bg-transparent hoverColor block sm:inline-block navbar-link">
+                        <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
                             Contact
                         </h1>
                     </Link>

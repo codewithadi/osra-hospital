@@ -28,11 +28,13 @@
     justify-content: center;
 }
 .searchDoctorHead {
+    color: #3f0f1e;
     font-size: 30px;
     width: 90%;
     font-weight: 700;
 }
 .searchDoctorAbout {
+    color: #3f0f1e;
     font-size: 20px;
     font-weight: 400;
     margin: 20px 0;

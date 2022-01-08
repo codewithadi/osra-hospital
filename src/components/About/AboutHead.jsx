@@ -7,7 +7,7 @@ const AboutHead = () => {
             <img
                 className="h-full w-full bg-cover bg-center"
                 style={{ objectFit: "cover" }}
-                src="/assets/about/about1.jpg"
+                src="/assets/about/about.png"
                 alt="prod1"
             />
             <div className="w-full h-5/6 main-dark-bg-about bg-black opacity-30"></div>
