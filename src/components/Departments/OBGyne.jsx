@@ -80,7 +80,7 @@ function OBGyne() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/3-min.png"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">

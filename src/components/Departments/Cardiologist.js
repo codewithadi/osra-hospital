@@ -66,7 +66,7 @@ function Cardiologist() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/3-min.png"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
@@ -98,7 +98,7 @@ function Cardiologist() {
                     <div className="depImgWrapper">
                         <img
                             className="depDetailImg"
-                            src="/assets/images/earnose.jpg"
+                            src="/assets/department/Cardiology.jpg"
                             alt="earnose"
                         />
                     </div>

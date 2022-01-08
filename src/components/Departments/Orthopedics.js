@@ -82,7 +82,7 @@ function Orthopedics() {
           <div className="depImgWrapper">
             <img
               className="depDetailImg"
-              src="/assets/images/earnose.jpg"
+              src="/assets/department/13-min.png"
               alt="earnose"
             />
           </div>

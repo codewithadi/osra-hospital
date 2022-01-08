@@ -50,7 +50,7 @@ function Dermatology() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/14-min.png"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">

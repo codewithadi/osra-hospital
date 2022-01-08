@@ -172,7 +172,7 @@ function SearchDoctor() {
                                     to="/doctor"
                                     onClick={scrollToTop}
                                     className="text-white mt-5 rounded-sm py-3 px-4 uppercase font-light !hover:bg-green-400 text-sm md:text-base "
-                                    style={{ backgroundColor: "#005000" }}
+                                    style={{ backgroundColor: "#588325" }}
                                 >
                                     Find Doctor
                                 </Link>

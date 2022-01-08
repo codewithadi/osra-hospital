@@ -36,7 +36,7 @@ function Dietitian() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/2-min.png"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
@@ -65,7 +65,7 @@ function Dietitian() {
                     <div className="depImgWrapper">
                         <img
                             className="depDetailImg"
-                            src="/assets/images/earnose.jpg"
+                            src="/assets/department/diet.png"
                             alt="earnose"
                         />
                     </div>

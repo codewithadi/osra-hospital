@@ -7,7 +7,7 @@ const SupportService = () => {
             <div
                 className="bg-center bg-cover"
                 style={{
-                    backgroundImage: `url("https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")`,
+                    backgroundImage: `url("/assets/department/6-min.png")`,
                     width: "100%",
                     height: "55vh",
                 }}

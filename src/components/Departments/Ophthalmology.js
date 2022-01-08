@@ -76,7 +76,7 @@ function Ophthalmology() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/10-min.png"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">

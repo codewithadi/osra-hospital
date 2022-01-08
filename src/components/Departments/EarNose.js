@@ -79,7 +79,7 @@ function EarNose() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/ENT.jpg"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
@@ -112,7 +112,7 @@ function EarNose() {
                     <div className="depImgWrapper">
                         <img
                             className="depDetailImg"
-                            src="/assets/images/earnose.jpg"
+                            src="/assets/department/11-min.png"
                             alt="earnose"
                         />
                     </div>

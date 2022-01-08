@@ -39,7 +39,7 @@ function Physiotherapist() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/Physiotherapy-Header.jpg"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">

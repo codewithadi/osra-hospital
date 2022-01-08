@@ -55,7 +55,7 @@ function ER() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/7-min.png"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
@@ -83,7 +83,7 @@ function ER() {
                     <div className="depImgWrapper">
                         <img
                             className="depDetailImg"
-                            src="/assets/images/earnose.jpg"
+                            src="/assets/department/4-min.png"
                             alt="earnose"
                         />
                     </div>

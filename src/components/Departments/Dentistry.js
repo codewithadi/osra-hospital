@@ -84,7 +84,7 @@ function Dentistry() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/dentistimg.jpg"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
