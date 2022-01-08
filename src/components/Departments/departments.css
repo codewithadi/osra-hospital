@@ -131,8 +131,43 @@
     border-radius: 50%;
 }
 .checkLogo {
-    width: 2em;
+    width: 2.3em;
+    height: 2.3em;
+    -webkit-clip-path: polygon(
+        20% 0,
+        80% 0,
+        100% 50%,
+        80% 100%,
+        20% 100%,
+        0 50%
+    ) !important;
+    clip-path: polygon(
+        20% 0,
+        80% 0,
+        100% 50%,
+        80% 100%,
+        20% 100%,
+        0 50%
+    ) !important;
 }
+/* .logocheck {
+    -webkit-clip-path: polygon(
+        20% 0,
+        80% 0,
+        100% 50%,
+        80% 100%,
+        20% 100%,
+        0 50%
+    ) !important;
+    clip-path: polygon(
+        20% 0,
+        80% 0,
+        100% 50%,
+        80% 100%,
+        20% 100%,
+        0 50%
+    ) !important;
+} */
 .treatmentText {
     width: 80%;
     margin-left: 15px;

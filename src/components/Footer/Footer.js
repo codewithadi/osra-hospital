@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// linear-gradient(to right, #017439 0%, #3eac55 100%)
 
 function Footer() {
     const scrollToTop = () => {

@@ -107,7 +107,7 @@ function Orthopedics() {
                   <img src="/assets/department/surgery.png" alt="anyimg" />
                 </div> */}
                 <div className="checkLogo">
-                  <img src="/assets/dr/check.png" alt="check" />
+                  <img src="/assets/dr/customcheck.jpg" alt="check" />
                 </div>
                 <div className="treatmentText">
                   <h2 className="treatmentTitle">{item.name}</h2>
