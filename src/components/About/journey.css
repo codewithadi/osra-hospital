@@ -76,24 +76,24 @@
     color: #fff;
 }
 .progress-step .progress-marker::before {
-    background-color: #b6b6b6;
+    background-color: #588325;
 }
 .progress-step .progress-marker::after {
-    background-color: #b6b6b6;
+    background-color: #588325;
 }
 .progress-step .progress-text {
     color: #333;
 }
 .progress-step.is-active .progress-marker::before {
-    background-color: #2196f3;
+    background-color: #588325;
 }
 .progress-step.is-complete .progress-marker::before,
 .progress-step.is-progress .progress-marker::before {
-    background-color: #1976d2;
+    background-color: #588325;
 }
 .progress-step.is-complete .progress-marker::after,
 .progress-step.is-progress .progress-marker::after {
-    background-color: #868686;
+    background-color: #588325;
 }
 .progress-step.is-progress-10 .progress-marker::after {
     background-image: linear-gradient(to right, #868686 10%, #b6b6b6 10%);

@@ -20,10 +20,10 @@ const Journey = () => {
                     <li className="progress-step is-complete">
                         <div className="progress-marker"></div>
                         <div className="progress-text progress-text--dotted text-lg progress-text--dotted-1">
-                            <h4 className="progress-title font-sans text-sm md:text-4xl font-semibold">
+                            <h4 className="progress-title font-sans text-sm md:text-2xl font-semibold">
                                 Start
                             </h4>
-                            <h4 className="progress-title font-sans text-sm md:text-3xl font-medium">
+                            <h4 className="progress-title font-sans text-sm md:text-xl font-medium">
                                 1991
                             </h4>
                         </div>
@@ -32,10 +32,10 @@ const Journey = () => {
                     <li class="progress-step is-complete">
                         <div class="progress-marker"></div>
                         <div class="progress-text progress-text--dotted progress-text--dotted-3">
-                            <h4 className="progress-title font-sans text-sm md:text-4xl font-semibold">
+                            <h4 className="progress-title font-sans text-sm md:text-2xl font-semibold">
                                 Expansion
                             </h4>
-                            <h4 className="progress-title font-sans text-sm md:text-3xl font-medium">
+                            <h4 className="progress-title font-sans text-sm md:text-xl font-medium">
                                 1996
                             </h4>
                         </div>
@@ -44,10 +44,10 @@ const Journey = () => {
                     <li class="progress-step is-complete" aria-current="step">
                         <div class="progress-marker"></div>
                         <div class="progress-text progress-text--dotted progress-text--dotted-6">
-                            <h4 className="progress-title font-sans text-sm md:text-4xl font-semibold">
+                            <h4 className="progress-title font-sans text-sm md:text-2xl font-semibold">
                                 Fully Automated
                             </h4>
-                            <h4 className="progress-title font-sans text-sm md:text-3xl font-medium">
+                            <h4 className="progress-title font-sans text-sm md:text-xl font-medium">
                                 2013
                             </h4>
                         </div>
@@ -56,10 +56,10 @@ const Journey = () => {
                     <li class="progress-step is-completee" aria-current="step">
                         <div class="progress-marker"></div>
                         <div class="progress-text progress-text--dotted progress-text--dotted-1">
-                            <h4 className="progress-title font-sans text-sm md:text-4xl font-semibold">
+                            <h4 className="progress-title font-sans text-sm md:text-2xl font-semibold">
                                 Renovations
                             </h4>
-                            <h4 className="progress-title font-sans text-sm md:text-3xl font-medium">
+                            <h4 className="progress-title font-sans text-sm md:text-xl font-medium">
                                 2016
                             </h4>
                         </div>
@@ -68,10 +68,10 @@ const Journey = () => {
                     <li class="progress-step is-complete" aria-current="step">
                         <div class="progress-marker"></div>
                         <div class="progress-text progress-text--dotted progress-text--dotted-3">
-                            <h4 className="progress-title font-sans text-sm md:text-4xl font-semibold">
+                            <h4 className="progress-title font-sans text-sm md:text-2xl font-semibold">
                                 CBAHI certified
                             </h4>
-                            <h4 className="progress-title font-sans text-sm md:text-3xl font-medium">
+                            <h4 className="progress-title font-sans text-sm md:text-xl font-medium">
                                 2019
                             </h4>
                         </div>
