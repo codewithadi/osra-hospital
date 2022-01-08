@@ -9,7 +9,7 @@ function Footer() {
     return (
         <div
             className="md:pt-8 pt-4"
-            style={{ background: "#588325", color: "#fff" }}
+            style={{ background: "#431423", color: "#fff" }}
         >
             <footer className="dark:bg-gray-300">
                 <div className="container px-6 py-2 mx-auto bg-transparent">

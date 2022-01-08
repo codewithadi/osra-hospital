@@ -17,13 +17,24 @@
     color: #252827;
     /* color: #1b434d; */
 }
+.facts-container {
+    height: 65vh;
+}
 
 .main-text-fact {
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 35%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-65%, -50%);
 }
-.z-1000{
+.z-1000 {
     z-index: 1000;
+}
+
+@media (min-width: 768px) {
+    .facts-container {
+        height: 50vh !important;
+    }
 }
