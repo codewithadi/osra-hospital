@@ -69,11 +69,12 @@ textarea {
     width: 100%;
 }
 .bookFormButton {
-    background-color: #588325;
+    /* background-color: #588325; */
     margin: 10px auto;
     padding: 8px;
     display: block;
     width: 50%;
+    background-color: #427cc5;
     color: #fff;
     font-size: 17px;
     cursor: pointer;
@@ -82,7 +83,7 @@ textarea {
     transition-duration: 700ms;
 }
 .bookFormButton:hover {
-    background-color: #24360f;
+    background-color: #2b5180;
 }
 
 @media (max-width: 650px) {
