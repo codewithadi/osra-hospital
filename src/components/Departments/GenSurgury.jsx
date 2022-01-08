@@ -3,88 +3,112 @@ import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
 
-const treatmentsOffered = [
-    {
-        name: "Incision biopsy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Excision",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "FNAC",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Diagnostic Laparoscopy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Procto-sigmoidoscopy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Appendectomy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Inguinal, Umbilical and Femoral Hernioplasty",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Peritonitis",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Ascities",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Peptic ulcer perforation",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Masterctomy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Colorectal Surgery",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Laparotomy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Bowel resection anastomsis",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Stoma creation and take down",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Exploratory lapatotomy",
-        detail: "",
-        logo: "",
-    },
-];
+const treatmentOffered = {
+    DiagnosticModalities: [
+        {
+            name: "Incision biopsy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Excision",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "FNAC",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Diagnostic Laparoscopy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Procto-sigmoidoscopy",
+            detail: "",
+            logo: "",
+        },
+    ],
+    TherapeuticModalities: [
+        {
+            name: "Appendectomy  ( open and laproscopic)",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Inguinal, Umbilical and Femoral Hernioplasty ( open and laproscopic)",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Cholecystectomy ( open and laproscopic)",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Haemorrhoidectomy, Fissurectomy, Fistulectomy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Thyroidectomy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Pilonidal sinus excision & flap closure",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Peritonitis",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Ascities",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Peptic ulcer perforation",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Mastectomy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Colorectal Surgery",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Laparotomy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Bowel resection anastomosis",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Stoma creation and take down",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Exploratory lapatotomy",
+            detail: "",
+            logo: "",
+        },
+    ],
+};
 
 function Gen_surgery() {
     const filterdDoc = demoData.filter((data) =>
@@ -144,32 +168,53 @@ function Gen_surgery() {
                 </div>
 
                 <div className="treatmentWrapper">
-                    {treatmentsOffered.map((item, index) => (
-                        <>
-                            <div className="treatmentCard" key={index}>
-                                {/* for logo uncomment n remove check */}
-                                {/* <div className="treatmentLogo">
-                  <img src="/assets/department/surgery.png" alt="anyimg" />
-                </div> */}
-                                <div className="checkLogo">
-                                    <img
-                                        src="/assets/dr/customcheck.jpg"
-                                        alt="check"
-                                    />
+                    <h1 className="depMainHead">Diagnostic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentOffered.DiagnosticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                                <div className="treatmentText">
-                                    <h2 className="treatmentTitle">
-                                        {item.name}
-                                    </h2>
-                                    {/* for content  */}
-                                    {/* <p className="treatmentAbout">
-                    Dunt in culpa qui officia deserunt mollit anim id est
-                    laborum.
-                  </p> */}
+                            </>
+                        )
+                    )}
+                </div>
+
+                <div className="treatmentWrapper">
+                    <h1 className="depMainHead">Therapeutic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentOffered.TherapeuticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                            </div>
-                        </>
-                    ))}
+                            </>
+                        )
+                    )}
                 </div>
             </div>
 
