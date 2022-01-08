@@ -341,7 +341,7 @@ function BookAppointment() {
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                             ></textarea>
-                            <div className="bookFormBtn px-4 md:px-72">
+                            <div className="bookFormBtn md:px-72">
                                 <input
                                     type="submit"
                                     className="bookFormButton "
