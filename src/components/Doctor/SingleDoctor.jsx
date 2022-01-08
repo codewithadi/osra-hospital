@@ -14,8 +14,8 @@ const SingleDoctor = ({ imgUrl, name, position, mobno, email, linkto }) => {
             </div>
             <h2 className="depDoctorName1">{name}</h2>
             <p className="depDoctorAbout1">{position}</p>
-            <p className="depDoctorMob1">{mobno}</p>
-            <p className="depDoctorMail1">{email}</p>
+            {/* <p className="depDoctorMob1">{mobno}</p>
+            <p className="depDoctorMail1">{email}</p> */}
             <div className="depBtnWrapper1">
                 <Link
                     onClick={scrollToTop}

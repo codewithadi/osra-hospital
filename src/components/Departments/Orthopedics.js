@@ -146,7 +146,7 @@ function Orthopedics() {
           ))}
         </div>
       </div>
-
+{/* 
       <div className="depBanner">
         <img
           class="depBannerImg"
@@ -167,7 +167,7 @@ function Orthopedics() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

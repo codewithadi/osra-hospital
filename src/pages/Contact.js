@@ -130,7 +130,7 @@ const Contact = () => {
                   style={{color: "#3f0f1e"}}
                   className="mt-2 mb-2 font-medium text-2xl text-center"
                 >
-                  OPD Hours
+                 Work Hours
                 </span>
 
                 <a href="/contact">
@@ -138,15 +138,15 @@ const Contact = () => {
                     style={{ color: "#778696" }}
                     className="mt-2 mb-4 font-normal text-sm"
                   >
-                    Mon to Fri : 10am to 6pm
+                    All Days: 24 Hours
                   </span>
                   <br />
-                  <span
+                  {/* <span
                     style={{ color: "#778696" }}
                     className="mt-2 mb-4 font-normal text-sm"
                   >
                     Sat & Sun : 12am to 3pm
-                  </span>
+                  </span> */}
                 </a>
               </div>
             </div>

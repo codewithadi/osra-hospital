@@ -19,7 +19,7 @@ const Facts = () => {
 
                 <div className="grid grid-cols-2 gap-4 md:gap-4 md:grid-cols-3 my-2 md:my-4">
                     <div className="text-lg">
-                        <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
+                        <h2 className="text-center text-white font-bold text-xl md:text-5xl">
                             30+
                         </h2>
                         <h3 className="text-white text-center font-semibold text-base md:text-lg">
@@ -28,7 +28,7 @@ const Facts = () => {
                     </div>
 
                     <div className="text-lg">
-                        <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
+                        <h2 className="text-center text-white font-bold text-xl md:text-5xl">
                             40+
                         </h2>
                         <h3 className="pl-2 text-white font-semibold text-base md:text-lg">
@@ -37,7 +37,7 @@ const Facts = () => {
                     </div>
 
                     <div className="text-lg">
-                        <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
+                        <h2 className="text-center text-white font-bold text-xl md:text-5xl">
                             25+
                         </h2>
                         <h3 className="pl-2 text-white font-semibold text-base md:text-lg">
@@ -46,7 +46,7 @@ const Facts = () => {
                     </div>
 
                     {/* <div className="text-lg">
-                        <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
+                        <h2 className="text-center text-white font-bold text-xl md:text-5xl">
                             25+
                         </h2>
                         <h3 className="text-white font-semibold text-base md:text-lg">

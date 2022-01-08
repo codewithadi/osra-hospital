@@ -169,7 +169,7 @@ function Footer() {
                                 {/* -------------------- */}
                                 <div className="font-semibold">
                                     <h3 className=" font-semibold text-lg uppercase dark: bg-transparent cursor-default">
-                                        OPD Hours
+                                        Work Hours
                                     </h3>
                                     <div>All Days: 24 Hours</div>
                                     {/* <div>Sat & Sun : 12am to 3pm</div> */}

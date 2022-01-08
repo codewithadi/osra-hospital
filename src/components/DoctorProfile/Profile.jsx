@@ -40,12 +40,24 @@ const Profile = () => {
                                         </h2>
                                         <h4 className="mt-4">{doc.position}</h4>
                                         <div className="mt-20">
-                                            <h5 className="flex">
+                                            <h5 className="flex mb-2">
                                                 Qualification :
                                                 <p className="ml-1">
                                                     {doc.Qualification}
                                                 </p>
                                             </h5>
+                                            {!doc.License < 1 && (
+                                                <h5 className="flex flex-col mb-2">
+                                                    License :
+                                                    {doc.License.map((lic) => (
+                                                        <>
+                                                            <p className="ml-3">
+                                                                {lic}
+                                                            </p>
+                                                        </>
+                                                    ))}
+                                                </h5>
+                                            )}
                                             <h4 className="flex">
                                                 Years of experience :{" "}
                                                 <p className="ml-1">
