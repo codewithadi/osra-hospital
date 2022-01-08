@@ -9,7 +9,7 @@ function Footer() {
     return (
         <div
             className="md:pt-8 pt-4"
-            style={{ background: "#005C00", color: "#aaa" }}
+            style={{ background: "#588325", color: "#fff" }}
         >
             <footer className="dark:bg-gray-300">
                 <div className="container px-6 py-2 mx-auto bg-transparent">
@@ -20,7 +20,7 @@ function Footer() {
                                     <Link
                                         onClick={scrollToTop}
                                         to="/"
-                                        className="text-xl font-bold bg-transparent hover:text-gray-200 dark:hover:text-gray-700"
+                                        className="text-xl font-bold bg-transparent hover:text-blue-400 dark:hover:text-gray-700"
                                     >
                                         <img
                                             className="h-24 w-24 md:h-28 md:w-28 bg-transparent"
@@ -49,42 +49,42 @@ function Footer() {
                                     <Link
                                         onClick={scrollToTop}
                                         to="/"
-                                        className="block mt-2 text-sm hover:text-gray-200 transition-colors duration-700 delay-100"
+                                        className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-700 delay-100"
                                     >
                                         Home
                                     </Link>
                                     <Link
                                         onClick={scrollToTop}
                                         to="/about"
-                                        className="block mt-2 text-sm hover:text-gray-200 transition-colors duration-300"
+                                        className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-300"
                                     >
                                         About
                                     </Link>
                                     <Link
                                         onClick={scrollToTop}
                                         to="/services"
-                                        className="block mt-2 text-sm hover:text-gray-200 transition-colors duration-300"
+                                        className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-300"
                                     >
                                         Services
                                     </Link>
                                     <Link
                                         onClick={scrollToTop}
                                         to="/media"
-                                        className="block mt-2 text-sm hover:text-gray-200 transition-colors duration-300"
+                                        className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-300"
                                     >
                                         Media
                                     </Link>
                                     {/* <Link
                                         onClick={scrollToTop}
                                         to="/blog"
-                                        className="block mt-2 text-sm hover:text-blue-600 transition-colors duration-300"
+                                        className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-300"
                                     >
                                         Blog
                                     </Link> */}
                                     <Link
                                         onClick={scrollToTop}
                                         to="/contact"
-                                        className="block mt-2 text-sm hover:text-gray-200 transition-colors duration-300"
+                                        className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-300"
                                     >
                                         Contact
                                     </Link>
@@ -95,7 +95,7 @@ function Footer() {
                                         Get Support
                                     </h3>
                                     <div className="block mt-2 text-sm  dark: bg-transparent">
-                                        <div className="inline-flex md:pr-4 mb-2 hover:text-gray-200 transition-colors duration-700 delay-100">
+                                        <div className="inline-flex md:pr-4 mb-2 hover:text-blue-400 transition-colors duration-700 delay-100">
                                             <svg
                                                 className="w-4 h-4 rounded-md bg-transparent"
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +116,7 @@ function Footer() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="block mt-2 text-sm hover:text-gray-200 transition-colors duration-700 delay-100">
+                                    <div className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-700 delay-100">
                                         <div className="inline-flex bg-transparent">
                                             <svg
                                                 className="w-5 h-5 bg-transparent"
@@ -139,7 +139,7 @@ function Footer() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="block mt-2 text-sm hover:text-gray-200 transition-colors duration-700 delay-100">
+                                    <div className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-700 delay-100">
                                         <div className="inline-flex bg-transparent">
                                             <svg
                                                 className="w-5 h-5 bg-transparent"
