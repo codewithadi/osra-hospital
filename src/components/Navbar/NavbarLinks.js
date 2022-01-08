@@ -1,49 +1,49 @@
-// import React from "react";
-import React, { useState, useEffect } from "react";
+import React from "react";
+// import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Dropdown from "./Dropdown";
-import TestDrop from "./TestDrop";
+// import Dropdown from "./Dropdown";
+// import TestDrop from "./TestDrop";
 
-import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/solid";
-import ServicesDisclosure from "./ServicesDisclosure";
+// import { Disclosure } from "@headlessui/react";
+// import { ChevronUpIcon } from "@heroicons/react/solid";
+// import ServicesDisclosure from "./ServicesDisclosure";
 
 function NavLinks({ colorchange }) {
-    const [dropdown, setDropdown] = useState(false);
-    const [showApt, setShowApt] = useState(false);
+    // const [dropdown, setDropdown] = useState(false);
+    // const [showApt, setShowApt] = useState(false);
     //assigning location variable
     const location = useLocation();
     //destructuring pathname from location
     const { pathname } = location;
     //Javascript split method to get the name of the path in array
     const splitLocation = pathname.split("/");
-    useEffect(() => {
-        const resizeEve = () => {
-            if (window.innerWidth < 768) {
-                setShowApt(false);
-            } else {
-                setShowApt(true);
-            }
-        };
-        window.addEventListener("resize", resizeEve);
-        resizeEve();
-        return () => window.removeEventListener();
-    }, []);
+    // useEffect(() => {
+    //     const resizeEve = () => {
+    //         if (window.innerWidth < 768) {
+    //             setShowApt(false);
+    //         } else {
+    //             setShowApt(true);
+    //         }
+    //     };
+    //     window.addEventListener("resize", resizeEve);
+    //     resizeEve();
+    //     return () => window.removeEventListener();
+    // }, []);
 
-    const onMouseEnter = () => {
-        if (window.innerWidth < 768) {
-            setDropdown(false);
-        } else {
-            setDropdown(true);
-        }
-    };
-    const onMouseLeave = () => {
-        if (window.innerWidth < 768) {
-            setDropdown(false);
-        } else {
-            setDropdown(false);
-        }
-    };
+    // const onMouseEnter = () => {
+    //     if (window.innerWidth < 768) {
+    //         setDropdown(false);
+    //     } else {
+    //         setDropdown(true);
+    //     }
+    // };
+    // const onMouseLeave = () => {
+    //     if (window.innerWidth < 768) {
+    //         setDropdown(false);
+    //     } else {
+    //         setDropdown(false);
+    //     }
+    // };
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);
@@ -84,7 +84,55 @@ function NavLinks({ colorchange }) {
                         </h1>
                     </Link>
                 </li>
-                {showApt ? (
+                <li className="inline-block bg-transparent border-none-c">
+                    <Link
+                        exact
+                        to="/departments"
+                        className={
+                            splitLocation[1] === "departments"
+                                ? "activeLink navbar-link-hover font-medium bg-transparent border-none-c"
+                                : "navbar-link-hover font-medium bg-transparent border-none-c"
+                        }
+                        onClick={scrollToTop}
+                    >
+                        <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
+                            Departments
+                        </h1>
+                    </Link>
+                </li>
+                <li className="inline-block bg-transparent border-none-c">
+                    <Link
+                        exact
+                        to="/clinics"
+                        className={
+                            splitLocation[1] === "clinics"
+                                ? "activeLink navbar-link-hover font-medium bg-transparent border-none-c"
+                                : "navbar-link-hover font-medium bg-transparent border-none-c"
+                        }
+                        onClick={scrollToTop}
+                    >
+                        <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
+                            Clinics
+                        </h1>
+                    </Link>
+                </li>
+                <li className="inline-block bg-transparent border-none-c">
+                    <Link
+                        exact
+                        to="/insurance"
+                        className={
+                            splitLocation[1] === "insurance"
+                                ? "activeLink navbar-link-hover font-medium bg-transparent border-none-c"
+                                : "navbar-link-hover font-medium bg-transparent border-none-c"
+                        }
+                        onClick={scrollToTop}
+                    >
+                        <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
+                            Insurance
+                        </h1>
+                    </Link>
+                </li>
+                {/* {showApt ? (
                     <li
                         className="inline-block bg-transparent"
                         onMouseEnter={onMouseEnter}
@@ -117,7 +165,7 @@ function NavLinks({ colorchange }) {
                     <li className="inline-block bg-transparent">
                         <ServicesDisclosure />
                     </li>
-                )}
+                )} */}
                 {/* {showApt ? (
                     <li className="inline-block bg-transparent">
                         <TestDrop />
