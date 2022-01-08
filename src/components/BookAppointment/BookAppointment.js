@@ -14,7 +14,7 @@ import Loading from "../Loading/Loading";
 import { Link } from "react-router-dom";
 
 function BookAppointment() {
-    const[book,setBook]=useState(false)
+    const [book, setBook] = useState(false);
     const [loading, setloading] = useState(false);
     const [department, setDepartment] = useState("");
     const [doctor, setDoctor] = useState("");
@@ -98,17 +98,17 @@ function BookAppointment() {
         //  console.log(selectedDoc.label)
         //console.log(selectedDept.label)
         // console.log(gender)
-       
-        if(
-            dateb &&
-            selectedDoc.label &&
-            selectedDept.label &&
-            
-            name &&
-            department &&
-            doctor &&
-            email || phone
-        ){
+
+        if (
+            (dateb &&
+                selectedDoc.label &&
+                selectedDept.label &&
+                name &&
+                department &&
+                doctor &&
+                email) ||
+            phone
+        ) {
             const patient = {
                 date: dateb,
                 doctorname: selectedDoc.label,
@@ -135,7 +135,7 @@ function BookAppointment() {
                 setDateB("");
                 setAge("");
                 setName("");
-    
+
                 setMessage("");
                 setPhone("");
                 setSelectedDept("");
@@ -146,11 +146,9 @@ function BookAppointment() {
                 console.log(error);
                 setBook(false);
             }
-        }else{
-alert ("Please fill all the field")
+        } else {
+            alert("Please fill all the field");
         }
-        
-       
     };
     return (
         <>
@@ -165,9 +163,14 @@ alert ("Please fill all the field")
                         <h1 className="depMainText">Book Appointment</h1>
                     </div>
                 </div>
-                {book ? (<div className="w-full h-full flex justify-center items-center py-4">
-                        <h1 className="text-2xl m-4 p-4 ">Wait Booking your appointment and will send you message shortly.....</h1>
-                    </div>) : loading ? (
+                {book ? (
+                    <div className="w-full h-full flex justify-center items-center py-4">
+                        <h1 className="text-2xl m-4 p-4 ">
+                            Wait Booking your appointment and will send you
+                            message shortly.....
+                        </h1>
+                    </div>
+                ) : loading ? (
                     <div className="w-full h-full flex justify-center items-center py-4">
                         <Loading />
                     </div>
@@ -338,18 +341,18 @@ alert ("Please fill all the field")
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                             ></textarea>
-                            <div className="bookFormBtn flex flex-col gap-4 md:flex-row">
+                            <div className="bookFormBtn flex flex-col gap-4 md:flex-row px-4 md:px-10">
                                 <input
                                     type="submit"
                                     className="bookFormButton "
                                     value="Book Appointment"
                                 />
-                                <Link
+                                {/* <Link
                                     to="/appointment"
                                     className="bookFormButton text-center"
                                 >
                                     Find Doctor
-                                </Link>
+                                </Link> */}
                             </div>
                         </form>
                     </div>
