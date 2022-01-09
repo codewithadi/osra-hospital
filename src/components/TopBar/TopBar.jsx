@@ -6,7 +6,7 @@ const TopBar = () => {
             <a
                 className="p-1 md:py-1 md:px-6 mr-4 text-sm md:text-base text-white font-semibold uppercase"
                 href="tel:011431111"
-                style={{ background: "#005C00" }}
+                style={{ background: "#588325" }}
             >
                 Emergency: 011-431-111
             </a>

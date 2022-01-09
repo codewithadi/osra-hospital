@@ -39,7 +39,7 @@ function Gastroenterology() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/9-min.png"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
@@ -83,7 +83,8 @@ function Gastroenterology() {
                     <h1 className="depMainHead">Treatments Offered</h1>
                     <p className="depMainPara">
                         Our Gastroenterology Department is dedicated to
-                        exceeding expectations. We provide cutting edge treatmen
+                        exceeding expectations. We provide cutting edge
+                        treatment
                     </p>
                     <div className="depLine"></div>
                 </div>
@@ -98,7 +99,7 @@ function Gastroenterology() {
                 </div> */}
                                 <div className="checkLogo">
                                     <img
-                                        src="/assets/dr/check.png"
+                                        src="/assets/dr/customcheck.jpg"
                                         alt="check"
                                     />
                                 </div>
@@ -141,7 +142,7 @@ function Gastroenterology() {
                 </div>
             </div>
 
-            <div className="depBanner">
+            {/* <div className="depBanner">
                 <img
                     class="depBannerImg"
                     src="/assets/department/depLastBack.jpg"
@@ -163,7 +164,7 @@ function Gastroenterology() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

@@ -39,7 +39,7 @@ function Physiotherapist() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/Physiotherapy-Header.jpg"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
@@ -100,7 +100,7 @@ function Physiotherapist() {
                 </div> */}
                                 <div className="checkLogo">
                                     <img
-                                        src="/assets/dr/check.png"
+                                        src="/assets/dr/customcheck.jpg"
                                         alt="check"
                                     />
                                 </div>
@@ -144,7 +144,7 @@ function Physiotherapist() {
                 </div>
             </div>
 
-            <div className="depBanner">
+            {/* <div className="depBanner">
                 <img
                     class="depBannerImg"
                     src="/assets/department/depLastBack.jpg"
@@ -166,7 +166,7 @@ function Physiotherapist() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

@@ -19,3 +19,12 @@
 .text-main {
     color: #3c0c1c;
 }
+.contact-btn {
+    background-color: #588325;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 700ms;
+}
+.contact-btn:hover {
+    background-color: #24360f;
+}

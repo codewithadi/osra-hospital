@@ -3,7 +3,7 @@ import "../../App.css";
 
 const Facts = () => {
     return (
-        <div className="w-full relative" style={{ height: "40vh" }}>
+        <div className="w-full relative facts-container">
             <img
                 className="h-full w-full bg-cover bg-center"
                 style={{ objectFit: "cover" }}
@@ -17,9 +17,9 @@ const Facts = () => {
                     <i>since 1991</i>
                 </h1>
 
-                <div className="grid grid-cols-2 gap-4 md:gap-4 md:grid-cols-3 my-2 md:my-4">
+                <div className="grid grid-cols-2 gap-4 justify-items-center md:gap-4 md:grid-cols-3 lg:grid-cols-4 my-2 md:px-20 md:my-4">
                     <div className="text-lg">
-                        <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
+                        <h2 className="text-center text-white font-bold text-xl md:text-5xl">
                             30+
                         </h2>
                         <h3 className="text-white text-center font-semibold text-base md:text-lg">
@@ -28,7 +28,7 @@ const Facts = () => {
                     </div>
 
                     <div className="text-lg">
-                        <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
+                        <h2 className="text-center text-white font-bold text-xl md:text-5xl">
                             40+
                         </h2>
                         <h3 className="pl-2 text-white font-semibold text-base md:text-lg">
@@ -37,7 +37,7 @@ const Facts = () => {
                     </div>
 
                     <div className="text-lg">
-                        <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
+                        <h2 className="text-center text-white font-bold text-xl md:text-5xl">
                             25+
                         </h2>
                         <h3 className="pl-2 text-white font-semibold text-base md:text-lg">
@@ -45,14 +45,41 @@ const Facts = () => {
                         </h3>
                     </div>
 
-                    {/* <div className="text-lg">
-                        <h2 className="text-center text-blue-700 font-bold text-xl md:text-5xl">
-                            25+
+                    <div className="text-lg">
+                        <h2 className="text-center text-white font-bold text-xl md:text-5xl">
+                            180000+
                         </h2>
                         <h3 className="text-white font-semibold text-base md:text-lg">
-                            Patient services
+                            Patients per Year
                         </h3>
-                    </div> */}
+                    </div>
+
+                    <div className="text-lg">
+                        <h2 className="text-center text-white font-bold text-xl md:text-5xl">
+                            350000+
+                        </h2>
+                        <h3 className="text-white font-semibold text-base md:text-lg">
+                            Lab Investigations per Year
+                        </h3>
+                    </div>
+
+                    <div className="text-lg">
+                        <h2 className="text-center text-white font-bold text-xl md:text-5xl">
+                            5000+
+                        </h2>
+                        <h3 className="text-white font-semibold text-base md:text-lg">
+                            Surgery Operations per Year
+                        </h3>
+                    </div>
+
+                    <div className="text-lg">
+                        <h2 className="text-center text-white font-bold text-xl md:text-5xl">
+                            5000+
+                        </h2>
+                        <h3 className="text-white font-semibold text-base md:text-lg">
+                            Birth Deliveries per Year
+                        </h3>
+                    </div>
                 </div>
             </div>
         </div>

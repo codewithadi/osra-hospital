@@ -2,73 +2,82 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
-const treatmentsOffered = [
-    {
-        name: "Laryngoscopy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Flexible Nasoendoscopy Audiometer",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Tonsillectomy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Adenoidectomy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Turbinectomy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Septoplasty",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Uvulva reconstruction",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Trachial intubation",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Bronchial Washing",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Tracheostomy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Nasal polypectomy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "FESS: functional endoscopic sinus surgery",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Fracture nasal bone fixation",
-        detail: "",
-        logo: "",
-    },
-];
+const treatmentsOffered = {
+    DiagnosticModalities: [
+        {
+            name: "Laryngoscopy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Flexible Nasoendoscopy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Audiometer",
+            detail: "",
+            logo: "",
+        },
+    ],
+    TherapeuticModalities: [
+        {
+            name: "Tonsillectomy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Adenoidectomy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Turbinectomy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Septoplasty",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Uvulva reconstruction",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Trachial intubation",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Bronchial Washing",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Tracheostomy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Nasal polypectomy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "FESS: functional endoscopic sinus surgery",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Fracture nasal bone fixation",
+            detail: "",
+            logo: "",
+        },
+    ],
+};
 
 function EarNose() {
     const filterdDoc = demoData.filter((data) =>
@@ -79,7 +88,7 @@ function EarNose() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/ENT.jpg"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
@@ -112,7 +121,7 @@ function EarNose() {
                     <div className="depImgWrapper">
                         <img
                             className="depDetailImg"
-                            src="/assets/images/earnose.jpg"
+                            src="/assets/department/11-min.png"
                             alt="earnose"
                         />
                     </div>
@@ -130,32 +139,53 @@ function EarNose() {
                 </div>
 
                 <div className="treatmentWrapper">
-                    {treatmentsOffered.map((item, index) => (
-                        <>
-                            <div className="treatmentCard" key={index}>
-                                {/* for logo uncomment n remove check */}
-                                {/* <div className="treatmentLogo">
-                  <img src="/assets/department/surgery.png" alt="anyimg" />
-                </div> */}
-                                <div className="checkLogo">
-                                    <img
-                                        src="/assets/dr/check.png"
-                                        alt="check"
-                                    />
+                    <h1 className="depMainHead">Diagnostic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentsOffered.DiagnosticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                                <div className="treatmentText">
-                                    <h2 className="treatmentTitle">
-                                        {item.name}
-                                    </h2>
-                                    {/* for content  */}
-                                    {/* <p className="treatmentAbout">
-                    Dunt in culpa qui officia deserunt mollit anim id est
-                    laborum.
-                  </p> */}
+                            </>
+                        )
+                    )}
+                </div>
+
+                <div className="treatmentWrapper">
+                    <h1 className="depMainHead">Therapeutic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentsOffered.TherapeuticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                            </div>
-                        </>
-                    ))}
+                            </>
+                        )
+                    )}
                 </div>
             </div>
 
@@ -184,7 +214,7 @@ function EarNose() {
                 </div>
             </div>
 
-            <div className="depBanner">
+            {/* <div className="depBanner">
                 <img
                     class="depBannerImg"
                     src="/assets/department/depLastBack.jpg"
@@ -206,7 +236,7 @@ function EarNose() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

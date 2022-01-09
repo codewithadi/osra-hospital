@@ -7,7 +7,7 @@ const SupportService = () => {
             <div
                 className="bg-center bg-cover"
                 style={{
-                    backgroundImage: `url("https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")`,
+                    backgroundImage: `url("/assets/department/6-min.png")`,
                     width: "100%",
                     height: "55vh",
                 }}
@@ -54,19 +54,19 @@ const SupportService = () => {
                     title="Home care"
                     desc="Skilled care delivered directly to a patient's home. This type of care is provided by licensed medical professionals including nurses, therapists, and aides for the purpose of treating or managing an illness, injury, or medical condition"
                 />
-                {/* <SupportGrid
-                     imgUrl="/assets/departmentlogos/or.png"
-                     title="Operations"
-                     desc="The operating room, sometimes called the OR or surgery center, is where surgery (say: SUR-juh-ree) takes place in a hospital"
-                    /> */}
+                <SupportGrid
+                    imgUrl="/assets/departmentlogos/phar.png"
+                    title="Pharmacy"
+                    desc="Hospital pharmacists are experts in medicines who work as part of multidisciplinary healthcare teams to manage the use of medicines in hospitals."
+                />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/delivery.png"
                     title="Delivery"
                     desc="The care and treatment of women in childbirth and during the period before and after delivery. of or relating to childbirth or obstetrics. Abbreviations"
                 />
                 <SupportGrid
-                    imgUrl="/assets/departmentlogos/icu.png"
-                    title="ICU"
+                    imgUrl="/assets/departmentlogos/micu.png"
+                    title="ICU (Intermediate Care Unit)"
                     desc="ICU unit in a hospital providing intensive care for critically ill or injured patients that is staffed by specially trained medical personnel and has equipment that allows for continuous monitoring and life support —abbreviation ICU. — called also critical care unit."
                 />
                 <SupportGrid

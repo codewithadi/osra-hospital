@@ -7,75 +7,77 @@ import "./searchdoctor.css";
 import DisplayDoctor from "./DisplayDoctor";
 
 const people = [
-  { name: "Select Clinic", unavailable: true },
-  { name: "Pediatric", unavailable: false },
-  { name: "OBGyna", unavailable: false },
-  { name: "Ophthalmology", unavailable: false },
-  { name: "Gastroenterology", unavailable: false },
-  { name: "Dermatology", unavailable: false },
-  {
-    name: "Internal Medicine(Chest,Respiratory/Digestive,Cardio vascular)",
-    unavailable: false,
-  },
-  { name: "Dentistry", unavailable: false },
-  { name: "Dietitian", unavailable: false },
-  { name: "ENT", unavailable: false },
-  { name: "Orthopedics", unavailable: false },
-  { name: "Surgery", unavailable: false },
-  { name: "Urology", unavailable: false },
-  { name: "Cardiology", unavailable: false },
-  { name: "Neuro", unavailable: false },
-  { name: "Phsycstric", unavailable: false },
-  { name: "Bariatric Surgery", unavailable: false },
-  { name: "Physiotherapy", unavailable: false },
+    { name: "Select Clinic", unavailable: true },
+    { name: "Pediatric", unavailable: false },
+    { name: "OBGyna", unavailable: false },
+    { name: "Ophthalmology", unavailable: false },
+    { name: "Gastroenterology", unavailable: false },
+    { name: "Dermatology", unavailable: false },
+    {
+        name: "Internal Medicine(Chest,Respiratory/Digestive,Cardio vascular)",
+        unavailable: false,
+    },
+    { name: "Dentistry", unavailable: false },
+    { name: "Dietitian", unavailable: false },
+    { name: "ENT", unavailable: false },
+    { name: "Orthopedics", unavailable: false },
+    { name: "Surgery", unavailable: false },
+    { name: "Urology", unavailable: false },
+    { name: "Cardiology", unavailable: false },
+    { name: "Neuro", unavailable: false },
+    { name: "Phsycstric", unavailable: false },
+    { name: "Bariatric Surgery", unavailable: false },
+    { name: "Physiotherapy", unavailable: false },
 ];
 
 const scrollToTop = () => {
-  window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 };
 
 function SearchDoctor() {
-  // const [selected, setSelected] = useState(people[0]);
-  // const [selected1, setSelected1] = useState(people[0]);
-  // const [dispDoc, setDispDoc] = useState(false);
-  // const handleSelect = (e) => {
-  //     e.preventDefault();
-  //     if (selected === people[0]) {
-  //         alert("Select Clinic to search doctor");
-  //         setDispDoc(false);
-  //         return;
-  //     }
-  //     setDispDoc(true);
-  //     setSelected1(selected);
-  //     console.log(selected);
-  // };
+    // const [selected, setSelected] = useState(people[0]);
+    // const [selected1, setSelected1] = useState(people[0]);
+    // const [dispDoc, setDispDoc] = useState(false);
+    // const handleSelect = (e) => {
+    //     e.preventDefault();
+    //     if (selected === people[0]) {
+    //         alert("Select Clinic to search doctor");
+    //         setDispDoc(false);
+    //         return;
+    //     }
+    //     setDispDoc(true);
+    //     setSelected1(selected);
+    //     console.log(selected);
+    // };
 
-  return (
-    <>
-      <div className="search-doctor">
-        <div className="searchDoctorWrapper">
-          <img
-            class="searchDoctorBack"
-            src="/assets/department/depLastBack.jpg"
-            alt="hmsearch"
-          />
-          <div className="searchDoctorOverlay">
-            <div className="searchDoctorCol">
-              <h1 className="searchDoctorHead">Find a Doctor</h1>
-              <div className="searchDoctorAbout">140+ doctors on panel</div>
-              <p className="searchDoctorPara">
-                We are dedicated to provide high quality, evidence-based and
-                safe healthcare.
-              </p>
-              {/* <div className='searchDoctorButton'>
+    return (
+        <>
+            <div className="search-doctor">
+                <div className="searchDoctorWrapper">
+                    <img
+                        class="searchDoctorBack"
+                        src="/assets/department/whitebg.jpg"
+                        alt="hmsearch"
+                    />
+                    <div className="searchDoctorOverlay">
+                        <div className="searchDoctorCol">
+                            <h1 className="searchDoctorHead">Find a Doctor</h1>
+                            <div className="searchDoctorAbout">
+                                40+ doctors on panel
+                            </div>
+                            <p className="searchDoctorPara">
+                                We are dedicated to provide high quality,
+                                evidence-based and safe healthcare.
+                            </p>
+                            {/* <div className='searchDoctorButton'>
                             <input className='searchDoctorInput' type="text" placeholder='Find A Doctor' />
                             <a className='searchDoctorBtn' href="/contact">Find Doctor</a>
                         </div> */}
 
-              {/* Custom select */}
+                            {/* Custom select */}
 
-              <div className="flex flex-col md:flex-row gap-4">
-                {/* <div className="searchDoctorButtonCustom w-full md:w-3/4">
+                            <div className="flex flex-col md:flex-row gap-4">
+                                {/* <div className="searchDoctorButtonCustom w-full md:w-3/4">
                                     <Listbox
                                         value={selected}
                                         onChange={setSelected}
@@ -159,38 +161,39 @@ function SearchDoctor() {
                                         </div>
                                     </Listbox>
                                 </div> */}
-                {/* <Link
+                                {/* <Link
                                     className="searchDoctorBtnCustom w-full md:w-1/4 text-white"
                                     // onClick={handleSelect}
                                     to="/doctor"
                                 >
                                     Find Doctor
                                 </Link> */}
-                <Link
-                  to="/doctor"
-                  onClick={scrollToTop}
-                  className="text-white mt-5 rounded-sm py-3 px-4 uppercase font-light !hover:bg-green-400 text-sm md:text-base "
-                  style={{backgroundColor:"#005000"}}
-                >
-                  Find Doctor
-                </Link>
-              </div>
+                                <Link
+                                    to="/doctor"
+                                    onClick={scrollToTop}
+                                    className="text-white mt-5 rounded-sm py-3 px-4 uppercase font-light !hover:bg-green-400 text-sm md:text-base "
+                                    style={{ backgroundColor: "#588325" }}
+                                >
+                                    Find Doctor
+                                </Link>
+                            </div>
 
-              {/* custom select */}
+                            {/* custom select */}
+                        </div>
+                        <div className="searchDoctorCol">
+                            <img
+                                className="seachDoctorImg"
+                                src="/assets/dr/find.png"
+                                // src="assets/images/findDoctor.png"
+                                alt="hmsearch"
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="searchDoctorCol">
-              <img
-                className="seachDoctorImg"
-                src="assets/images/findDoctor.png"
-                alt="hmsearch"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* {dispDoc && <DisplayDoctor selected1={selected1} />} */}
-    </>
-  );
+            {/* {dispDoc && <DisplayDoctor selected1={selected1} />} */}
+        </>
+    );
 }
 
 export default SearchDoctor;

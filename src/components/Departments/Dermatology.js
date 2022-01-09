@@ -50,11 +50,11 @@ function Dermatology() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/14-min.png"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">Dermatology</h1>
+                    <h1 className="depMainText">Dermatology and Cosmetology</h1>
                 </div>
             </div>
 
@@ -62,7 +62,7 @@ function Dermatology() {
                 <div className="depDetailContainer">
                     <div className="depTextHead">
                         <h1 className="depDetailTitle">
-                            Dermatology Department
+                            Dermatology and Cosmetology Department
                         </h1>
                         <div className="depDetailAbout">
                             Dermatology is the branch of medicine dealing with
@@ -90,8 +90,8 @@ function Dermatology() {
                 <div className="depMain">
                     <h1 className="depMainHead">Treatments Offered</h1>
                     <p className="depMainPara">
-                        Our Dermatology Department is dedicated to exceeding
-                        expectations. We provide
+                        Our dermatology and cosmetology specialists have
+                        expertise in
                     </p>
                     <div className="depLine"></div>
                 </div>
@@ -106,7 +106,7 @@ function Dermatology() {
                 </div> */}
                                 <div className="checkLogo">
                                     <img
-                                        src="/assets/dr/check.png"
+                                        src="/assets/dr/customcheck.jpg"
                                         alt="check"
                                     />
                                 </div>
@@ -147,7 +147,7 @@ function Dermatology() {
                 </div>
             </div>
 
-            <div className="depBanner">
+            {/* <div className="depBanner">
                 <img
                     class="depBannerImg"
                     src="/assets/department/depLastBack.jpg"
@@ -169,7 +169,7 @@ function Dermatology() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

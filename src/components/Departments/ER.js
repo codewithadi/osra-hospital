@@ -55,7 +55,7 @@ function ER() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/7-min.png"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
@@ -83,7 +83,7 @@ function ER() {
                     <div className="depImgWrapper">
                         <img
                             className="depDetailImg"
-                            src="/assets/images/earnose.jpg"
+                            src="/assets/department/4-min.png"
                             alt="earnose"
                         />
                     </div>
@@ -111,7 +111,7 @@ function ER() {
                 </div> */}
                                 <div className="checkLogo">
                                     <img
-                                        src="/assets/dr/check.png"
+                                        src="/assets/dr/customcheck.jpg"
                                         alt="check"
                                     />
                                 </div>
@@ -152,7 +152,7 @@ function ER() {
                 </div>
             </div>
 
-            <div className="depBanner">
+            {/* <div className="depBanner">
                 <img
                     class="depBannerImg"
                     src="/assets/department/depLastBack.jpg"
@@ -174,7 +174,7 @@ function ER() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
