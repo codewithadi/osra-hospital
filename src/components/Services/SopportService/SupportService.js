@@ -65,7 +65,7 @@ const SupportService = () => {
                     desc="The care and treatment of women in childbirth and during the period before and after delivery. of or relating to childbirth or obstetrics. Abbreviations"
                 />
                 <SupportGrid
-                    imgUrl="/assets/departmentlogos/icu.png"
+                    imgUrl="/assets/departmentlogos/micu.png"
                     title="ICU (Intermediate Care Unit)"
                     desc="ICU unit in a hospital providing intensive care for critically ill or injured patients that is staffed by specially trained medical personnel and has equipment that allows for continuous monitoring and life support —abbreviation ICU. — called also critical care unit."
                 />
