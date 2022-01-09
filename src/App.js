@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -60,19 +60,19 @@ function App() {
             setVisible(false);
         }
     }
-    const [showApt, setShowApt] = useState(false);
-    useEffect(() => {
-        const resizeEve = () => {
-            if (window.innerWidth < 768) {
-                setShowApt(false);
-            } else {
-                setShowApt(true);
-            }
-        };
-        window.addEventListener("resize", resizeEve);
-        resizeEve();
-        return () => window.removeEventListener();
-    }, []);
+    // const [showApt, setShowApt] = useState(false);
+    // useEffect(() => {
+    //     const resizeEve = () => {
+    //         if (window.innerWidth < 768) {
+    //             setShowApt(false);
+    //         } else {
+    //             setShowApt(true);
+    //         }
+    //     };
+    //     window.addEventListener("resize", resizeEve);
+    //     resizeEve();
+    //     return () => window.removeEventListener();
+    // }, []);
     return (
         <div className="relative">
             <TopBar />

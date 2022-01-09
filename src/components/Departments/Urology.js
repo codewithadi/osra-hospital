@@ -75,11 +75,11 @@ function Urology() {
                             Since health problems in these body parts can happen
                             to everyone, urologic health is important.
                         </div>
-                        <p className="depDetailPara">
+                        {/* <p className="depDetailPara">
                             The scope of organs under Urology include kidneys,
                             adrenal glands, ureters, urinary bladder, and
                             urethra.
-                        </p>
+                        </p> */}
                     </div>
                     <div className="depImgWrapper">
                         <img

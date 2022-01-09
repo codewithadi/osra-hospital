@@ -70,9 +70,7 @@ function Cardiologist() {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">
-                        Cardiologist and Internal Medicine
-                    </h1>
+                    <h1 className="depMainText">Cardiologist</h1>
                 </div>
             </div>
 
@@ -80,19 +78,20 @@ function Cardiologist() {
                 <div className="depDetailContainer">
                     <div className="depTextHead">
                         <h1 className="depDetailTitle">
-                            Cardiologist and internal medicine Department
+                            Cardiologist Department
                         </h1>
                         <div className="depDetailAbout">
-                            The department of a hospital responsible for the
-                            provision of medical and surgical care to patients
-                            arriving at the hospital in need of immediate care..
+                            Cardiology is the study and treatment of disorders
+                            of the heart and the blood vessels. A person with
+                            heart disease or cardiovascular disease may be
+                            referred to a cardiologist. Cardiology is a branch
+                            of internal medicine.
                             <br />
-                            <br />
-                            If you have a health problem with your head or neck,
-                            your doctor might recommend that you see an
-                            otolaryngologist. That's someone who treats issues
-                            in your ears, nose, or throat as well as related
-                            areas in your head and neck.
+                            <br />A cardiologist is not the same as a cardiac
+                            surgeon. A cardiac surgeon opens the chest and
+                            performs heart surgery. A cardiologist specializes
+                            in diagnosing and treating diseases of the
+                            cardiovascular system.
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -109,7 +108,7 @@ function Cardiologist() {
                 <div className="depMain">
                     <h1 className="depMainHead">Treatments Offered</h1>
                     <p className="depMainPara">
-                        Our department of Psychiatry is dedicated to exceeding
+                        Our department of Cardiology is dedicated to exceeding
                         expectations. We provide cutting edge treatment of
                         disorders below
                     </p>

@@ -25,7 +25,7 @@ export const demoClinic = [
     },
     {
         name: "Cardiologist",
-        desc: "The department of a hospital responsible for the provision of medical and surgical care to patients arriving at the hospital in need of immediate care.",
+        desc: "Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
         imgurl: "assets/department/cardio.png",
         linkto: "/clinics/cardiologist",
     },
@@ -43,7 +43,7 @@ export const demoClinic = [
     },
     {
         name: "Dietitian",
-        desc: "The department of a hospital responsible for the provision of medical and surgical care to patients arriving at the hospital in need of immediate care.",
+        desc: "The Clinical Nutrition & Dietetics department at Lifepoint Multispecialty Hospital is a one-stop solution for all therapeutic diet and nutrition queries when it comes to health and illness.",
         imgurl: "assets/department/die.png",
         linkto: "/clinics/dietitian",
     },
@@ -55,7 +55,7 @@ export const demoClinic = [
     },
     {
         name: "Orthopedics",
-        desc: "The department of a hospital responsible for the provision of medical and surgical care to patients arriving at the hospital in need of immediate care.",
+        desc: " Orthopedics is the branch of medicine concerned with diseases, injuries and conditions of the musculoskeletal system or the body's muscles and skeleton.",
         imgurl: "assets/department/ortho.png",
         linkto: "/clinics/orthopedics",
     },

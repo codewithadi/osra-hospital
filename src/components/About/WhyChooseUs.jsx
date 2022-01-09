@@ -1,4 +1,5 @@
 import React from "react";
+import "./About.css";
 
 const WhyChooseUs = () => {
     return (
@@ -15,7 +16,7 @@ const WhyChooseUs = () => {
                     of the Semantics.
                 </p> */}
                 <div className="flex justify-center items-center w-full mt-4">
-                    <div className="h-1 w-16 bg-blue-500"></div>
+                    <div className="h-1 w-16 bg-primary-brown"></div>
                 </div>
             </div>
 

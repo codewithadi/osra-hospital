@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./About.css";
 import "./journey.css";
 
 const Journey = () => {
@@ -26,7 +27,7 @@ const Journey = () => {
                 </h2>
 
                 <div className="flex justify-center items-center w-full mt-4">
-                    <div className="h-1 w-16 bg-blue-500"></div>
+                    <div className="h-1 w-16 bg-primary-brown"></div>
                 </div>
                 {!changeUi ? (
                     <ul className="progress-tracker progress-tracker--text">

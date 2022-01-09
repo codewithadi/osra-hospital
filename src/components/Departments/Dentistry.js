@@ -115,7 +115,7 @@ function Dentistry() {
                 <div className="depMain">
                     <h1 className="depMainHead">Treatments Offered</h1>
                     <p className="depMainPara">
-                        Our Dermatology Department is dedicated to exceeding
+                        Our Dentistry Department is dedicated to exceeding
                         expectations. We provide cutting edge treatment
                     </p>
                     <div className="depLine"></div>

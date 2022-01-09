@@ -83,7 +83,8 @@ function Gastroenterology() {
                     <h1 className="depMainHead">Treatments Offered</h1>
                     <p className="depMainPara">
                         Our Gastroenterology Department is dedicated to
-                        exceeding expectations. We provide cutting edge treatmen
+                        exceeding expectations. We provide cutting edge
+                        treatment
                     </p>
                     <div className="depLine"></div>
                 </div>

@@ -1,14 +1,15 @@
 import React from "react";
 import SingleDoctor from "./Doctor/SingleDoctor";
-import "./About.css"
-
-
+import "./About.css";
 
 const BoD = () => {
     return (
         <>
             <div className="md:p-2 md:my-6 text-center">
-                <h2 className="mt-12 mb-4 text-4xl font-medium"style={{color: "#3f0f1e"}}>
+                <h2
+                    className="mt-12 mb-4 text-4xl font-medium"
+                    style={{ color: "#3f0f1e" }}
+                >
                     {" "}
                     Board of Directors Members
                 </h2>
@@ -17,7 +18,10 @@ const BoD = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10" style={{color: "#3f0f1e"}}>
+            <div
+                className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10"
+                style={{ color: "#3f0f1e" }}
+            >
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
                     name="Mr. Hesham Abdulrahman Albajadi"
