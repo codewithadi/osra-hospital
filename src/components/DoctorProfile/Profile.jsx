@@ -21,7 +21,7 @@ const Profile = () => {
             {singleDoc.map((doc) => (
                 <div className="departments">
                     <div className="depDetail">
-                        <div className="depDetailContainer">
+                        <div className="depProfileDetailContainer">
                             <div className="drTextHead">
                                 <div className="drDetailAbout8">
                                     <div className="my-24 ml-10">
@@ -73,10 +73,10 @@ const Profile = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="depImgWrapper">
+                            <div className="docProfileImgWrapper">
                                 <img
                                     className="depDetailImg"
-                                    src="/assets/dr/drp.jpg"
+                                    src={doc.imgUrl}
                                     alt="dermatology"
                                 />
                             </div>

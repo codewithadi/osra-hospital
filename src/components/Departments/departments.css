@@ -43,6 +43,12 @@
     display: flex;
     justify-content: space-between;
 }
+.depProfileDetailContainer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 .depTextHead {
     width: 50%;
     margin: 0 20px;
@@ -84,7 +90,19 @@
     width: 450px;
     position: relative;
 }
+.docProfileImgWrapper {
+    width: 620px !important;
+    position: relative !important;
+}
 .depDetailImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.docPImgWrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -307,6 +325,11 @@
         flex-direction: column;
         justify-content: unset;
     }
+    .depProfileDetailContainer {
+        width: 80%;
+        flex-direction: column;
+        justify-content: unset;
+    }
     .depTextHead {
         width: 100%;
     }
@@ -319,6 +342,11 @@
     }
     .depImgWrapper {
         width: 100%;
+        height: 300px;
+        margin-top: 40px;
+    }
+    .docProfileImgWrapper {
+        width: 100% !important;
         height: 300px;
         margin-top: 40px;
     }
