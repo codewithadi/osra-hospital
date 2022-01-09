@@ -14,14 +14,14 @@ const Contact = () => {
       return;
     }
     e.preventDefault();
-    // axios
-    //   .post("http://localhost:5000/api/postcontactmail", {
-    //     name,
-    //     email,
-    //     subject,
-    //     mailBody,
-    //   })
-    //   .catch((err) => console.log(err));
+    const res=axios
+      .post("https://doctorappapi.herokuapp.com/api/postcontactmail", {
+         name,
+         email,
+         subject,
+         mailBody,
+       })
+    alert(res.data.msg)
     setName("");
     setemail("");
     setmailBody("");
