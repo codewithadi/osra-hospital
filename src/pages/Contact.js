@@ -47,12 +47,12 @@ const Contact = () => {
 
             <div className="w-full flex justify-center items-center">
                 <section className="px-6 py-4 mx-auemail text-black rounded-md dark:bg-gray-800 mt-4">
-                    <div className="grid grid-cols-1 gap-10 mt-6 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-4 mt-6 md:grid-cols-2 lg:grid-cols-3">
                         <div
                             style={{ boxShadow: "0 0 10px grey" }}
                             className="flex xl:flex-row flex-col cursor-pointer items-center p-8 px-10 text-black shadow-md border border-gray-100 rounded-md dark:text-gray-800 hover:shadow-2xl hover:bg-green-200"
                         >
-                            <div className="w-1/3 flex justify-center items-center">
+                            <div className="w-1/5 flex justify-center items-center">
                                 <img
                                     className="w-24 h-24"
                                     src="https://cdn-icons-png.flaticon.com/512/535/535239.png"
@@ -80,7 +80,7 @@ const Contact = () => {
                             style={{ boxShadow: "0 0 10px grey" }}
                             className="flex xl:flex-row flex-col cursor-pointer items-center p-8 px-10 text-black shadow-md border border-gray-100 rounded-md dark:text-gray-800 hover:shadow-2xl hover:bg-green-200"
                         >
-                            <div className="w-1/3 flex justify-center items-center">
+                            <div className="w-1/5 flex justify-center items-center">
                                 <img
                                     className="w-24 h-24"
                                     src="https://cdn-icons-png.flaticon.com/512/126/126509.png"
@@ -117,7 +117,7 @@ const Contact = () => {
                             style={{ boxShadow: "0 0 10px grey" }}
                             className="flex flex-col xl:flex-row cursor-pointer items-center p-8 px-10 text-black shadow-md border border-gray-100 rounded-md dark:text-gray-800 hover:shadow-2xl hover:bg-green-200"
                         >
-                            <div className="w-1/3 flex justify-center items-center">
+                            <div className="w-1/5 flex justify-center items-center">
                                 <img
                                     className="w-24 h-24"
                                     src="https://cdn-icons-png.flaticon.com/512/546/546394.png"
