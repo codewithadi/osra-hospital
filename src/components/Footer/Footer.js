@@ -159,7 +159,7 @@ function Footer() {
                                                     target="_blank"
                                                     className="bg-transparent"
                                                     rel="noreferrer"
-                                                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.147329415484!2d46.59436991499743!3d24.584111184185087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f198a70eb0c97%3A0x78e1d83094c785a9!2sAl%20Osrah%20International%20Hospital!5e0!3m2!1sen!2sin!4v1639135132397!5m2!1sen!2sin"
+                                                    href="https://www.google.com/maps?ll=24.584713,46.592886&z=16&t=m&hl=en&gl=IN&mapclient=embed&cid=8710480857477383593"
                                                 >
                                                     Exit 29 - Riyadh
                                                 </a>{" "}
