@@ -2,18 +2,20 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
-const treatmentsOffered = [
-    {
-        name: "Evaluation of diseases",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Psychological Assessment",
-        detail: "",
-        logo: "",
-    },
-];
+const treatmentsOffered = {
+    TherapeuticModalities: [
+        {
+            name: "Evaluation of diseases",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Psychological Assessment",
+            detail: "",
+            logo: "",
+        },
+    ],
+};
 
 function Neuro() {
     const filterdDoc = demoData.filter((data) =>
@@ -76,32 +78,28 @@ function Neuro() {
                 </div>
 
                 <div className="treatmentWrapper">
-                    {treatmentsOffered.map((item, index) => (
-                        <>
-                            <div className="treatmentCard" key={index}>
-                                {/* for logo uncomment n remove check */}
-                                {/* <div className="treatmentLogo">
-                  <img src="/assets/department/surgery.png" alt="anyimg" />
-                </div> */}
-                                <div className="checkLogo">
-                                    <img
-                                        src="/assets/dr/customcheck.jpg"
-                                        alt="check"
-                                    />
+                    <h1 className="depMainHead">Therapeutic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentsOffered.TherapeuticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                                <div className="treatmentText">
-                                    <h2 className="treatmentTitle">
-                                        {item.name}
-                                    </h2>
-                                    {/* for content  */}
-                                    {/* <p className="treatmentAbout">
-                    Dunt in culpa qui officia deserunt mollit anim id est
-                    laborum.
-                  </p> */}
-                                </div>
-                            </div>
-                        </>
-                    ))}
+                            </>
+                        )
+                    )}
                 </div>
             </div>
 

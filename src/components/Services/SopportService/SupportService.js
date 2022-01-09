@@ -54,11 +54,11 @@ const SupportService = () => {
                     title="Home care"
                     desc="Skilled care delivered directly to a patient's home. This type of care is provided by licensed medical professionals including nurses, therapists, and aides for the purpose of treating or managing an illness, injury, or medical condition"
                 />
-                {/* <SupportGrid
-                     imgUrl="/assets/departmentlogos/or.png"
-                     title="Operations"
-                     desc="The operating room, sometimes called the OR or surgery center, is where surgery (say: SUR-juh-ree) takes place in a hospital"
-                    /> */}
+                <SupportGrid
+                    imgUrl="/assets/departmentlogos/phar.png"
+                    title="Pharmacy"
+                    desc="Hospital pharmacists are experts in medicines who work as part of multidisciplinary healthcare teams to manage the use of medicines in hospitals."
+                />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/delivery.png"
                     title="Delivery"
@@ -66,7 +66,7 @@ const SupportService = () => {
                 />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/icu.png"
-                    title="ICU"
+                    title="ICU (Intermediate Care Unit)"
                     desc="ICU unit in a hospital providing intensive care for critically ill or injured patients that is staffed by specially trained medical personnel and has equipment that allows for continuous monitoring and life support —abbreviation ICU. — called also critical care unit."
                 />
                 <SupportGrid

@@ -3,73 +3,87 @@ import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
 
-const treatmentsOffered = [
-    {
-        name: "Smears(e.g. pap smear)",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Biopsies",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "CT Scan",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Conventional Diagnostic Radiology",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "D&C",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Caesarean Section",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Normal Deliveries/instrumental Deliveries/ Epidural Injection (Painless)",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "All other Gynecological operations",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Hysterectomy (Partial or Complete)",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Insertion & removal of IUD",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Episiotomy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Perineal Repair",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Vaginal Re-Construction Surgeries",
-        detail: "",
-        logo: "",
-    },
-];
+const treatmentsOffered = {
+    DiagnosticModalities: [
+        {
+            name: "Laboratory investigations include blood chemistry, hematology, serology, hormone assay, urinalysis, cytology, ",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Smears(e.g. pap smear)",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Biopsies",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Ultrasonographies",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "CT Scan",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Conventional Diagnostic Radiology",
+            detail: "",
+            logo: "",
+        },
+    ],
+    TherapeuticModalities: [
+        {
+            name: "D&C",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Caesarean Section",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Normal Deliveries/instrumental Deliveries/ Epidural Injection (Painless)",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "All other Gynecological operations",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Hysterectomy (Partial or Complete)",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Insertion & removal of IUD",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Episiotomy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Perineal Repair",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Vaginal Re-Construction Surgeries",
+            detail: "",
+            logo: "",
+        },
+    ],
+};
 
 function OBGyne() {
     const filterdDoc = demoData.filter((data) =>
@@ -126,32 +140,53 @@ function OBGyne() {
                 </div>
 
                 <div className="treatmentWrapper">
-                    {treatmentsOffered.map((item, index) => (
-                        <>
-                            <div className="treatmentCard" key={index}>
-                                {/* for logo uncomment n remove check */}
-                                {/* <div className="treatmentLogo">
-                  <img src="/assets/department/surgery.png" alt="anyimg" />
-                </div> */}
-                                <div className="checkLogo">
-                                    <img
-                                        src="/assets/dr/customcheck.jpg"
-                                        alt="check"
-                                    />
+                    <h1 className="depMainHead">Diagnostic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentsOffered.DiagnosticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                                <div className="treatmentText">
-                                    <h2 className="treatmentTitle">
-                                        {item.name}
-                                    </h2>
-                                    {/* for content  */}
-                                    {/* <p className="treatmentAbout">
-                    Dunt in culpa qui officia deserunt mollit anim id est
-                    laborum.
-                  </p> */}
+                            </>
+                        )
+                    )}
+                </div>
+
+                <div className="treatmentWrapper">
+                    <h1 className="depMainHead">Therapeutic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentsOffered.TherapeuticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                            </div>
-                        </>
-                    ))}
+                            </>
+                        )
+                    )}
                 </div>
             </div>
 

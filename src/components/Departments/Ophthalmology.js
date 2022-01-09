@@ -3,68 +3,72 @@ import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
 
-const treatmentsOffered = [
-    {
-        name: "Ophthalmoscope",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Retino-scope",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Refraction",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Orthopedic Trauma",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Close & Open reduction procedures",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Plaster cast (POP)",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Open reduction & internal fixation",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Tendon repair",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Reduction of Joint dislocation",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Orthopedic joint reconstruction Surgery",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Arthroplasty",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Sports Injury",
-        detail: "",
-        logo: "",
-    },
-];
+const treatmentsOffered = {
+    DiagnosticModalities: [
+        {
+            name: "Ophthalmoscope",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Retino-scope",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Refraction",
+            detail: "",
+            logo: "",
+        },
+    ],
+    TherapeuticModalities: [
+        {
+            name: "Orthopedic Trauma",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Close & Open reduction procedures",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Plaster cast (POP)",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Open reduction & internal fixation",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Tendon repair",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Reduction of Joint dislocation",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Orthopedic joint reconstruction Surgery",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Arthroplasty",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Sports Injury",
+            detail: "",
+            logo: "",
+        },
+    ],
+};
 
 function Ophthalmology() {
     const filterdDoc = demoData.filter((data) =>
@@ -123,32 +127,53 @@ function Ophthalmology() {
                 </div>
 
                 <div className="treatmentWrapper">
-                    {treatmentsOffered.map((item, index) => (
-                        <>
-                            <div className="treatmentCard" key={index}>
-                                {/* for logo uncomment n remove check */}
-                                {/* <div className="treatmentLogo">
-                  <img src="/assets/department/surgery.png" alt="anyimg" />
-                </div> */}
-                                <div className="checkLogo">
-                                    <img
-                                        src="/assets/dr/customcheck.jpg"
-                                        alt="check"
-                                    />
+                    <h1 className="depMainHead">Diagnostic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentsOffered.DiagnosticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                                <div className="treatmentText">
-                                    <h2 className="treatmentTitle">
-                                        {item.name}
-                                    </h2>
-                                    {/* for content  */}
-                                    {/* <p className="treatmentAbout">
-                    Dunt in culpa qui officia deserunt mollit anim id est
-                    laborum.
-                  </p> */}
+                            </>
+                        )
+                    )}
+                </div>
+
+                <div className="treatmentWrapper">
+                    <h1 className="depMainHead">Therapeutic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentsOffered.TherapeuticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                            </div>
-                        </>
-                    ))}
+                            </>
+                        )
+                    )}
                 </div>
             </div>
 

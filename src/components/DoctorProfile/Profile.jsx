@@ -65,7 +65,7 @@ const Profile = () => {
                                                 </p>
                                             </h4>
                                         </div>
-                                        <button className="border-white border-2 px-4 py-2 rounded-full mt-4">
+                                        <button className="border-white border-2 px-4 py-2 rounded-full mt-4 transition-all duration-500 hover:bg-white hover:text-black">
                                             <Link to="/appointment">
                                                 Book An Appointment
                                             </Link>
@@ -85,7 +85,7 @@ const Profile = () => {
 
                     <div className="treatmentDetails">
                         <div className="depMain">
-                            <h1 className="depMainHead">Skills</h1>
+                            <h1 className="depMainHead">Procedures</h1>
                             <div className="depLine"></div>
                         </div>
 
@@ -94,7 +94,7 @@ const Profile = () => {
                                 <div className="treatmentCard" key={index}>
                                     <div className="checkLogo">
                                         <img
-                                            src="/assets/dr/check.png"
+                                            src="/assets/dr/customcheck.jpg"
                                             alt="check"
                                         />
                                     </div>

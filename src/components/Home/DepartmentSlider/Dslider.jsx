@@ -174,6 +174,25 @@ const BrandSlider = () => {
                     <div className="adepIcon">
                         <img
                             className="adepIconImg"
+                            src="/assets/departmentlogos/phar.png"
+                            alt="dept"
+                        />
+                    </div>
+                    <h1 className="depHead">Pharmacy</h1>
+                    <p className="depDetailHome">
+                        Hospital pharmacists are experts in medicines who work
+                        as part of multidisciplinary healthcare teams to manage
+                        the use of medicines in hospitals.
+                    </p>
+                </div>
+            </div>
+        </div>,
+        <div className="p-2">
+            <div className="border-2 rounded" data-value="1">
+                <div className="adepCard">
+                    <div className="adepIcon">
+                        <img
+                            className="adepIconImg"
                             src="/assets/departmentlogos/icu.png"
                             alt="dept"
                         />

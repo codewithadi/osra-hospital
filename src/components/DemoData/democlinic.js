@@ -18,23 +18,23 @@ export const demoClinic = [
         linkto: "/clinics/ophthalmology",
     },
     {
-        name: "ER",
-        desc: "The department of a hospital responsible for the provision of medical and surgical care to patients arriving at the hospital in need of immediate care.",
-        imgurl: "assets/department/er.png",
-        linkto: "/clinics/er",
-    },
-    {
         name: "Gastroenterology",
         desc: "Gastroenterology is a medical specialty dealing with the study of the digestive system and its disorders.",
         imgurl: "assets/department/gas.png",
         linkto: "/clinics/gastroenterology",
     },
     {
-        name: "Cardiologist and Internal Medicine Department",
+        name: "Cardiologist",
         desc: "The department of a hospital responsible for the provision of medical and surgical care to patients arriving at the hospital in need of immediate care.",
         imgurl: "assets/department/cardio.png",
-        linkto: "/clinics/cardiologist-and-internal-medicine",
+        linkto: "/clinics/cardiologist",
     },
+    // {
+    //     name: "Internal Medicine Department",
+    //     desc: "The department of a hospital responsible for the provision of medical and surgical care to patients arriving at the hospital in need of immediate care.",
+    //     imgurl: "assets/department/cardio.png",
+    //     linkto: "/clinics/internal-medicine",
+    // },
     {
         name: "Dentistry",
         desc: "Dentistry, the profession concerned with the prevention and treatment of oral disease, including diseases of the teeth and supporting structures and diseases of the soft tissues of the mouth.",
@@ -48,7 +48,7 @@ export const demoClinic = [
         linkto: "/clinics/dietitian",
     },
     {
-        name: "Dermatology",
+        name: "Dermatology and Cosmetology",
         desc: "Dermatology is the branch of medicine dealing with the skin. It is a speciality with both medical and surgical aspects.",
         imgurl: "assets/department/derma.png",
         linkto: "/clinics/dermatology",

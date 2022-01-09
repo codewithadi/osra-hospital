@@ -3,98 +3,102 @@ import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
 
-const treatmentsOffered = [
-    {
-        name: "Blood sampling",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Pulse oxymetry",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Throat swab and skin swab for Culture and Sensitivity studies",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Arterial blood gas sampling",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Radiological & Laboratory investigation",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Intravenous line cannulation",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Intravenous fluid administration",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Gastric lavage",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Naso-gastric tube placement",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Umbilical vein catheterization",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Umbilical artery catheterization",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Neonatal resuscitation",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Phototheraphy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Chest tube placement",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Conventional mechanical ventilation",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "High frequency oscillatory ventilation.",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Management of Neonatal diseases",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Management of Pediatric diseases as DKA, RSV, Bronchopneumonia, convulsions and other diseases.",
-        detail: "",
-        logo: "",
-    },
-];
+const treatmentsOffered = {
+    DiagnosticModalities: [
+        {
+            name: "Blood sampling",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Pulse oxymetry",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Throat swab and skin swab for Culture and Sensitivity studies",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Arterial blood gas sampling",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Radiological & Laboratory investigation",
+            detail: "",
+            logo: "",
+        },
+    ],
+    TherapeuticModalities: [
+        {
+            name: "Intravenous line cannulation",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Intravenous fluid administration",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Gastric lavage",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Naso-gastric tube placement",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Umbilical vein catheterization",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Umbilical artery catheterization",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Neonatal resuscitation",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Phototheraphy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Chest tube placement",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Conventional mechanical ventilation",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "High frequency oscillatory ventilation.",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Management of Neonatal diseases",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Management of Pediatric diseases as DKA, RSV, Bronchopneumonia, convulsions and other diseases.",
+            detail: "",
+            logo: "",
+        },
+    ],
+};
 
 function Pediatrics() {
     const filterdDoc = demoData.filter((data) =>
@@ -157,32 +161,53 @@ function Pediatrics() {
                 </div>
 
                 <div className="treatmentWrapper">
-                    {treatmentsOffered.map((item, index) => (
-                        <>
-                            <div className="treatmentCard" key={index}>
-                                {/* for logo uncomment n remove check */}
-                                {/* <div className="treatmentLogo">
-                  <img src="/assets/department/surgery.png" alt="anyimg" />
-                </div> */}
-                                <div className="checkLogo">
-                                    <img
-                                        src="/assets/dr/customcheck.jpg"
-                                        alt="check"
-                                    />
+                    <h1 className="depMainHead">Diagnostic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentsOffered.DiagnosticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                                <div className="treatmentText">
-                                    <h2 className="treatmentTitle">
-                                        {item.name}
-                                    </h2>
-                                    {/* for content  */}
-                                    {/* <p className="treatmentAbout">
-                    Dunt in culpa qui officia deserunt mollit anim id est
-                    laborum.
-                  </p> */}
+                            </>
+                        )
+                    )}
+                </div>
+
+                <div className="treatmentWrapper">
+                    <h1 className="depMainHead">Therapeutic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentsOffered.TherapeuticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                            </div>
-                        </>
-                    ))}
+                            </>
+                        )
+                    )}
                 </div>
             </div>
 

@@ -13,7 +13,7 @@ const SocialIcons = () => {
                 >
                     <img
                         className="w-10 h-10 bg-transparent"
-                        src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                        src="/assets/logo/tt.png"
                         alt="twitter"
                     />
                 </a>
@@ -27,7 +27,7 @@ const SocialIcons = () => {
                 >
                     <img
                         className="w-10 h-10 bg-transparent"
-                        src="https://image.flaticon.com/icons/png/512/1409/1409946.png"
+                        src="/assets/logo/ig.png"
                         alt="instagram"
                     />
                 </a>
@@ -40,7 +40,7 @@ const SocialIcons = () => {
                 >
                     <img
                         className="w-10 h-10 bg-transparent"
-                        src="https://image.flaticon.com/icons/png/512/1384/1384053.png"
+                        src="/assets/logo/fb.png"
                         alt="facebook"
                     />
                 </a>

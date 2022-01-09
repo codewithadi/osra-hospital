@@ -24,8 +24,8 @@ function Footer() {
                                         className="text-xl font-bold bg-transparent hover:text-blue-400 dark:hover:text-gray-700"
                                     >
                                         <img
-                                            className="h-24 w-24 md:h-28 md:w-28 bg-transparent"
-                                            src="/hospitalLogo.jpeg"
+                                            className="h-24 w-44 md:h-28 md:w-48 bg-transparent"
+                                            src="/OIH.logo.011.png"
                                             alt="brandlogofooter"
                                         />
                                         {/* Company Name */}
@@ -169,11 +169,35 @@ function Footer() {
                                 </div>
                                 {/* -------------------- */}
                                 <div className="font-semibold">
-                                    <h3 className=" font-semibold text-lg uppercase dark: bg-transparent cursor-default">
-                                        Work Hours
+                                    <h3 className="pb-2 font-semibold text-lg uppercase dark: bg-transparent cursor-default">
+                                        Working Hours
                                     </h3>
-                                    <div>All Days: 24 Hours</div>
-                                    {/* <div>Sat & Sun : 12am to 3pm</div> */}
+                                    <div className="py-1 text-sm text-blue-300 uppercase">
+                                        Outside patient,
+                                    </div>
+                                    <div className="text-sm">
+                                        Morning: 9:00 a.m to 12:00 p.m
+                                    </div>
+                                    <div className="text-sm">
+                                        Evening: 4:00 p.m to 9:30 p.m
+                                    </div>
+
+                                    <div className="py-1 text-sm text-blue-300 uppercase">
+                                        Emergency, Pharmacy, Laboratory, Patient
+                                        Relations (in-duty manager):
+                                    </div>
+                                    <div>24 Hours</div>
+
+                                    <div className="py-1 text-sm text-blue-300 uppercase">
+                                        In patient visit times:
+                                    </div>
+                                    <div className="text-sm">
+                                        Saturday to Thursday: 7:00 a.m to 12:00
+                                        a.m
+                                    </div>
+                                    <div className="text-sm">
+                                        Friday: 2:00 p.m to 12:00 a.m
+                                    </div>
                                 </div>
                                 {/* ------------------------- */}
                                 <div className="bg-transparent">
@@ -190,7 +214,7 @@ function Footer() {
                                         >
                                             <img
                                                 className="w-10 h-10 bg-transparent"
-                                                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                                                src="/assets/logo/tt.png"
                                                 alt="twitter"
                                             />
                                         </a>
@@ -204,7 +228,7 @@ function Footer() {
                                         >
                                             <img
                                                 className="w-10 h-10 bg-transparent"
-                                                src="https://image.flaticon.com/icons/png/512/1409/1409946.png"
+                                                src="/assets/logo/ig.png"
                                                 alt="instagram"
                                             />
                                         </a>
@@ -217,7 +241,7 @@ function Footer() {
                                         >
                                             <img
                                                 className="w-10 h-10 bg-transparent"
-                                                src="https://image.flaticon.com/icons/png/512/1384/1384053.png"
+                                                src="/assets/logo/fb.png"
                                                 alt="facebook"
                                             />
                                         </a>

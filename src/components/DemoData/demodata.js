@@ -102,7 +102,7 @@ export const demoData = [
         Qualification: "MBBS",
         Experience: " 15 years",
         position: "Consultant Gynecology and Obstetrics",
-        department: ["gastroenterology"],
+        department: ["obgyna"],
         License: [
             "Jordanian Board on obstetric and Gynecology",
             "Arab Board on obstetrics and Gynecology",
@@ -190,7 +190,7 @@ export const demoData = [
         Qualification: "Bachelor Degree in general Surgery ",
         Experience: "27 years",
         position: "General Practitioner (Head of ER department)",
-        department: ["er"],
+        department: ["er", "general_surgeon"],
         skills: [
             "Critical cases ",
             "Sutures",
@@ -402,7 +402,7 @@ export const demoData = [
         Experience: "30 Years",
         position:
             "Consultant and Professor of internal Medicine / Head of Internal Medicine Dept.",
-        department: ["internal medicine"],
+        department: ["internalmeds"],
         skills: [
             "Chest allergy",
             "High blood pressure",

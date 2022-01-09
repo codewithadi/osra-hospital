@@ -2,78 +2,67 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
-const treatmentsOffered = [
-    {
-        name: "Laboratory investigations include blood hematology",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Periapical x-ray, panoramic , CT scan.",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Excision biopsy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Oral hygiene instruction.",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Root Canals treatment",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Cosmetic fillings",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Oral hygiene instruction.",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Root Canals treatment",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Cosmetic fillings",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Tooth extraction",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Removable prosthodontics",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Fixed prosthodontice",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Gum treatment",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Orthodontics",
-        detail: "",
-        logo: "",
-    },
-];
+const treatmentsOffered = {
+    DiagnosticModalities: [
+        {
+            name: "Laboratory investigations include blood hematology",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Periapical x-ray, panoramic , CT scan.",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Excision biopsy",
+            detail: "",
+            logo: "",
+        },
+    ],
+    TherapeuticModalities: [
+        {
+            name: "Oral hygiene instruction.",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Root Canals treatment",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Cosmetic fillings",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Tooth extraction",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Removable prosthodontics",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Fixed prosthodontice",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Gum treatment",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Orthodontics",
+            detail: "",
+            logo: "",
+        },
+    ],
+};
 
 function Dentistry() {
     const filterdDoc = demoData.filter((data) =>
@@ -133,32 +122,53 @@ function Dentistry() {
                 </div>
 
                 <div className="treatmentWrapper">
-                    {treatmentsOffered.map((item, index) => (
-                        <>
-                            <div className="treatmentCard" key={index}>
-                                {/* for logo uncomment n remove check */}
-                                {/* <div className="treatmentLogo">
-                  <img src="/assets/department/surgery.png" alt="anyimg" />
-                </div> */}
-                                <div className="checkLogo">
-                                    <img
-                                        src="/assets/dr/customcheck.jpg"
-                                        alt="check"
-                                    />
+                    <h1 className="depMainHead">Diagnostic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentsOffered.DiagnosticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                                <div className="treatmentText">
-                                    <h2 className="treatmentTitle">
-                                        {item.name}
-                                    </h2>
-                                    {/* for content  */}
-                                    {/* <p className="treatmentAbout">
-                    Dunt in culpa qui officia deserunt mollit anim id est
-                    laborum.
-                  </p> */}
+                            </>
+                        )
+                    )}
+                </div>
+
+                <div className="treatmentWrapper">
+                    <h1 className="depMainHead">Therapeutic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentsOffered.TherapeuticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                            </div>
-                        </>
-                    ))}
+                            </>
+                        )
+                    )}
                 </div>
             </div>
 
