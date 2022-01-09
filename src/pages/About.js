@@ -23,7 +23,10 @@ const About = () => {
                     alt="About Home"
                 />
                 <div className="p-2 md:p-8 mt-14">
-                    <h2 className="text-2xl md:text-5xl font-semibold titleColor" style={{color:"#3f0f1e"}}>
+                    <h2
+                        className="text-2xl md:text-5xl font-semibold titleColor"
+                        style={{ color: "#3f0f1e" }}
+                    >
                         Our History
                     </h2>
                     <p className="mt-7 text-base md:text-xl w-4/5 text-gray-200 textColor">
@@ -83,6 +86,13 @@ const About = () => {
             <Facts />
             <WhyChooseUs />
             <BoD />
+            <div className="w-full flex justify-center items-center">
+                <img
+                    className="w-full md:w-4/6"
+                    src="/assets/about/OIH.OrganizationalChart.png"
+                    alt="chart"
+                />
+            </div>
             <AdminMem />
             {/* <Testimonials /> */}
             {/* <BrandSlider /> */}
