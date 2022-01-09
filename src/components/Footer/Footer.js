@@ -159,7 +159,7 @@ function Footer() {
                                                     target="_blank"
                                                     className="bg-transparent"
                                                     rel="noreferrer"
-                                                    href="https://www.google.com/maps/place/Ominvest+Business+Center/@23.5746516,58.2950687,17z/data=!3m1!4b1!4m5!3m4!1s0x3e8e016752655811:0x2b30e06b8368993f!8m2!3d23.5746467!4d58.2972574"
+                                                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.147329415484!2d46.59436991499743!3d24.584111184185087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f198a70eb0c97%3A0x78e1d83094c785a9!2sAl%20Osrah%20International%20Hospital!5e0!3m2!1sen!2sin!4v1639135132397!5m2!1sen!2sin"
                                                 >
                                                     Exit 29 - Riyadh
                                                 </a>{" "}

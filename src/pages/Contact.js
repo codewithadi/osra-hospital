@@ -135,18 +135,51 @@ const Contact = () => {
 
                                 <a href="/contact">
                                     <span
-                                        style={{ color: "#778696" }}
-                                        className="mt-2 mb-4 font-normal text-sm"
+                                        style={{ color: "#3f0f1e" }}
+                                        className="mt-1 mb-1 font-normal text-lg"
                                     >
-                                        All Days: 24 Hours
+                                        Outside patient,
                                     </span>
                                     <br />
-                                    {/* <span
-                    style={{ color: "#778696" }}
-                    className="mt-2 mb-4 font-normal text-sm"
-                  >
-                    Sat & Sun : 12am to 3pm
-                  </span> */}
+                                    <span
+                                        style={{ color: "#778696" }}
+                                        className="mb-1 font-normal text-sm"
+                                    >
+                                        Morning: 9:00 a.m to 12:00 p.m, <br />
+                                        Evening: 4:00 p.m to 9:30 p.m
+                                    </span>
+                                    <br />
+                                    <span
+                                        style={{ color: "#3f0f1e" }}
+                                        className="mb-1 font-normal text-lg"
+                                    >
+                                        Emergency, Pharmacy, Laboratory, Patient
+                                        <br />
+                                        Relations (in-duty manager):
+                                    </span>
+                                    <br />
+                                    <span
+                                        style={{ color: "#778696" }}
+                                        className="mb-1 font-normal text-sm"
+                                    >
+                                        24 Hours
+                                    </span>
+                                    <br />
+                                    <span
+                                        style={{ color: "#3f0f1e" }}
+                                        className="mb-1 font-normal text-lg"
+                                    >
+                                        In patient visit times:
+                                    </span>
+                                    <br />
+                                    <span
+                                        style={{ color: "#778696" }}
+                                        className="mb-1 font-normal text-sm"
+                                    >
+                                        Saturday to Thursday: 7:00 a.m to 12:00
+                                        a.m, <br />
+                                        Friday: 2:00 p.m to 12:00 a.m
+                                    </span>
                                 </a>
                             </div>
                         </div>
