@@ -1,10 +1,9 @@
 import React from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { demoClinic } from "../../DemoData/democlinic";
 import "./department.css";
 
 function AllClinics() {
-    const navigate = useNavigate();
     const scrollToTop = () => {
         window.scrollTo(0, 0);
     };
