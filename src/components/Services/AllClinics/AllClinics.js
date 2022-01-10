@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { demoClinic } from "../../DemoData/democlinic";
 import "./department.css";
 
 function AllClinics() {
+    const navigate = useNavigate();
     const scrollToTop = () => {
         window.scrollTo(0, 0);
     };
@@ -19,7 +20,7 @@ function AllClinics() {
             </div>
             <div className="depContainer">
                 {demoClinic.map((clinic, index) => (
-                    <div key={index} className="depCard">
+                    <Link to={clinic.linkto} key={index} className="depCard">
                         <div className="depIcon">
                             <img
                                 className="depIconImg"
@@ -37,7 +38,7 @@ function AllClinics() {
                         >
                             Get Details..
                         </Link>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>
