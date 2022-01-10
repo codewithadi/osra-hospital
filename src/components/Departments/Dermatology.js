@@ -43,7 +43,7 @@ const treatmentsOffered = [
 
 function Dermatology() {
     const filterdDoc = demoData.filter((data) =>
-        data.department.includes("pshyciatric")
+        data.department.includes("dermatology")
     );
     return (
         <div className="departments">
