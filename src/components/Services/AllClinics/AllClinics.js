@@ -30,13 +30,13 @@ function AllClinics() {
                         <h1 className="depHead">{clinic.name}</h1>
                         {/* <h3 className='depAbout'>Operations & surgeries</h3> */}
                         <p className="depDetailHome">{clinic.desc}</p>
-                        <Link
+                        {/* <Link
                             onClick={scrollToTop}
                             to={clinic.linkto}
                             className="depLink"
                         >
                             Get Details..
-                        </Link>
+                        </Link> */}
                     </Link>
                 ))}
             </div>
