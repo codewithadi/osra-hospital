@@ -35,15 +35,15 @@
 }
 .searchDoctorAbout {
     color: #3f0f1e;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 500;
     margin: 20px 0;
 }
 .searchDoctorPara {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 400;
     width: 80%;
-    color: #8ea1ae;
+    color: #3f0f1e;
 }
 .seachDoctorImg {
     width: 500px;
@@ -127,7 +127,12 @@
     object-fit: cover;
     /* border-radius: 50%; */
     -webkit-clip-path: polygon(
-        20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%
+        20% 0,
+        80% 0,
+        100% 50%,
+        80% 100%,
+        20% 100%,
+        0 50%
     );
     clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);
 }
@@ -193,7 +198,7 @@
     }
     .searchDoctorPara {
         width: 90%;
-        color: #8ea1ae;
+        color: #3f0f1e;
     }
     .seachDoctorImg {
         width: 300px;

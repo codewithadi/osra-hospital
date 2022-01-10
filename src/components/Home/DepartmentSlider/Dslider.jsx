@@ -238,7 +238,7 @@ const BrandSlider = () => {
                 >
                     Hospital Departments
                 </h2>
-                <p className="text-lg my-4 text-gray-500">
+                <p className="text-xl my-4" style={{ color: "#3f0f1e" }}>
                     Patient care and getting CBAHI Reaccreditation with
                     continues improvement and Enhancement in quality level and
                     provided services

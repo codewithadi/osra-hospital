@@ -24,6 +24,13 @@ const SingleDoctor = ({ imgUrl, name, position, mobno, email, linkto }) => {
                 >
                     View Profile
                 </Link>
+                <Link
+                    onClick={scrollToTop}
+                    className="depDoctorBtn1"
+                    to={`/appointment`}
+                >
+                    Book Appointment
+                </Link>
             </div>
         </div>
     );

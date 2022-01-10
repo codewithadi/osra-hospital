@@ -19,7 +19,7 @@ const About = () => {
             <div className="p-5 flex flex-col md:flex-row">
                 <img
                     className="p-2 md:p-20 abmain-img"
-                    src="/assets/about/about_main.png"
+                    src="/assets/about/12-min.png"
                     alt="About Home"
                 />
                 <div className="p-2 md:p-8 mt-14">
