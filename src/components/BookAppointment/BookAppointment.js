@@ -335,7 +335,7 @@ function BookAppointment() {
                                             >
                                                 
                                                 <option value="">
-                                                    {blankslot.length===0 ? "--No Slot--" :"--Slot--"}
+                                                    {blankslot.length===0 ? "--No Slot--" :"--Choose Slot--"}
                                                 </option>
                                                 {blankslot.map((slot) => (
                                                     <option

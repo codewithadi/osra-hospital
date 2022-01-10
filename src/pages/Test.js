@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Table } from "react-bootstrap";
+import moment from "moment"
+import "./excel.css"
 import axios from "axios";
 import Loading from "../components/Loading/Loading";
 import ReactHTMLTableToExcel from "react-html-table-to-excel";
@@ -57,6 +59,7 @@ function Test() {
                     <th>Department</th>
                     <th>Message</th>
                     <th>Email</th>
+                    <th>Booked at</th>
             </tr>
             {
                     patient.map((data,index)=>(
@@ -74,6 +77,7 @@ function Test() {
                                 
                                 <td>{data.message}</td>
                                 <td>{data.email}</td>
+                                <td>{moment(data.createdAt).format('MMMM Do YYYY, h:mm:ss a')}</td>
                                 
                             </tr>
                         ))
