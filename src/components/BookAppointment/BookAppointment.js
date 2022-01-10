@@ -247,7 +247,15 @@ function BookAppointment() {
                                     Female
                                 </label>
                             </div>
-                            <div className="flex flex-col justify-center items-center md:flex-row gap-4">
+                            <div className="flex flex-col justify-center items-center md:flex-row gap-2">
+                            <PhoneInput
+                                    className="bookFormItem"
+                                    country="sa"
+                                    value={phone}
+                                    onChange={(phone) => setPhone(phone)}
+                                    placeholder="Enter phone number"
+                                    enableSearch
+                                />
                                 <input
                                     className="bookFormItem"
                                     type="email"
@@ -256,14 +264,7 @@ function BookAppointment() {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
-                                <PhoneInput
-                                    containerClass="w-full"
-                                    country="sa"
-                                    value={phone}
-                                    onChange={(phone) => setPhone(phone)}
-                                    placeholder="Enter phone number"
-                                    enableSearch
-                                />
+                               
                             </div>
                             {/* Services Check box below  */}
                             <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2">

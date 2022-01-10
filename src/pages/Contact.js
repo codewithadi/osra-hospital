@@ -7,27 +7,29 @@ const Contact = () => {
     const [email, setemail] = useState("");
     const [mailBody, setmailBody] = useState("");
     const [subject, setSubject] = useState("");
+    const [phone,setphone]=useState('')
 
-    const handleContactSubmit = (e) => {
-        if (name === "" || email === "" || mailBody === "" || subject === "") {
-            alert("fill all fields");
-            return;
-        }
-        e.preventDefault();
-        axios
-            .post("https://doctorappapi.herokuapp.com/api/postcontactmail", {
-                name,
-                email,
-                subject,
-                mailBody,
-            })
-            .catch((err) => console.log(err));
-        alert("Message sent successfully.");
-        setName("");
-        setemail("");
-        setmailBody("");
-        setSubject("");
-    };
+  const handleContactSubmit = (e) => {
+    if (name === "" ||  mailBody === "" || subject === "") {
+      alert("fill all fields");
+      return;
+    }
+    e.preventDefault();
+    axios
+      .post("https://doctorappapi.herokuapp.com/api/postcontactmail", {
+         name,
+         email,
+         subject,
+         mailBody,
+         phone
+       }).catch((err) => console.log(err));
+    alert("Message sent successfully.")
+    setName("");
+    setemail("");
+    setmailBody("");
+    setSubject("");
+  };
+  
 
     return (
         <div className="">
@@ -210,7 +212,26 @@ const Contact = () => {
                                             />
                                         </div>
                                     </div>
+                                    <div className="-ml-2 pt-2 md:flex">
+                                        <div className="w-full mx-2">
+                                            <label className="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-200">
+                                                Phone no.
+                                            </label>
 
+                                            <input
+                                                className="block w-full px-4 py-2 text-black shadow-md bg-gray-100 border-none rounded-md dark:bg-gray-700 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-500 focus:outline-none focus:ring"
+                                                onChange={(e) =>
+                                                    setphone(e.target.value)
+                                                }
+                                                value={phone}
+                                                placeholder="Your Phone"
+                                                required
+                                                id="phone"
+                                                type="number"
+                                                name="phone"
+                                            />
+                                        </div>
+                                    </div>
                                     <div className="-ml-2 pt-2 md:flex">
                                         <div className="w-full mx-2">
                                             <label className="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-200">
