@@ -7,6 +7,7 @@ export const demoData = [
         Experience: "47 years",
         position: "Nuoru Phsycstric Specialist ",
         department: ["neuro", "pshyciatric"],
+        search:"Psychiatric Neuro Dermatology and Cosmetology ",
         skills: [
             "Psychiatric analysis",
             "Personality disorders",
@@ -28,6 +29,7 @@ export const demoData = [
         Experience: "30+ years",
         position: "Bariatric Surgeon and General Specialist Surgeon",
         department: ["bariatic", "general_surgeon"],
+        search:"Bariatic Surgery",
         License: [
             "World Obesity Association (IFSD) - American Society of Hepatology",
             "Followership of the Royal College of Surgeons in Ireland",
@@ -58,6 +60,7 @@ export const demoData = [
         Experience: "9 years",
         position: "Dermatology resident",
         department: ["dermatology"],
+        search:"Dermatology and Cosmetology",
         skills: [
             "Dermatopathology ",
             "Peeling( Chemical Type)",
@@ -79,6 +82,7 @@ export const demoData = [
         Experience: "9 years",
         position: " Head of General Surgery and OR",
         department: ["or", "general_surgeon"],
+        search:"General Surgery",
         License: ["Jordanian Board and Sweden Board"],
         skills: [
             "Appendectomy ( open and laproscopic)",
@@ -103,6 +107,7 @@ export const demoData = [
         Experience: " 15 years",
         position: "Consultant Gynecology and Obstetrics",
         department: ["obgyna"],
+        search:"ob/Gyne",
         License: [
             "Jordanian Board on obstetric and Gynecology",
             "Arab Board on obstetrics and Gynecology",
@@ -131,6 +136,7 @@ export const demoData = [
         Experience: " 16 years",
         position: "Consultant Gynecology and Obstetrics",
         department: ["obgyna"],
+        search:"ob/Gyne",
         skills: [
             "Pregnancy diagnoses and pregnancy Care",
             "Birth delivery and Surgical delivery",
@@ -148,6 +154,7 @@ export const demoData = [
         Experience: " 15 years",
         position: "Gastroenterology Consultant",
         department: ["gastroenterology"],
+        search:"Gastroenterology",
         License: ["Member of Saudi Gastroenterology Association"],
         skills: [
             "Herpetology and Endoscopy",
@@ -168,6 +175,7 @@ export const demoData = [
         Experience: "15+ years",
         position: "Ophthalmology Specialist",
         department: ["ophthalmology"],
+        search:"Ophthalmology",
         skills: [
             "Ophthalmoscope",
             "Retino-scope",
@@ -191,6 +199,7 @@ export const demoData = [
         Experience: "27 years",
         position: "General Practitioner (Head of ER department)",
         department: ["er", "general_surgeon"],
+        search:"General Surgery",
         skills: [
             "Critical cases ",
             "Sutures",
@@ -214,6 +223,7 @@ export const demoData = [
         position: "ENT Consultant",
         License: ["Membership of the American Nose and Throat Association"],
         department: ["ENT"],
+        search:"ENT(Ear, Nose & Throat)",
         skills: [
             "Sinus view surgeries",
             "Diagnose ENT children's problems",
@@ -239,6 +249,7 @@ export const demoData = [
         position: "Dietitian Specialist",
         License: ["Certified Diabetes Education for diabetes Center"],
         department: ["dietitian"],
+        search:"Dietitian",
         skills: [
             "Slimming and fitness programs",
             "Obesity programs",
@@ -257,6 +268,7 @@ export const demoData = [
         Experience: "36 Years",
         position: "General Surgeon Specialist",
         department: ["general_surgeon"],
+        search:"General Surgery",
         skills: [
             "hernia, appendix",
             "Hemorrhoids",
@@ -275,6 +287,7 @@ export const demoData = [
         Experience: "44 Years",
         position: " Cardiologist and internal medicine registrar",
         department: ["cardiologist"],
+        search:"Cardiologist",
         License: ["internal medicine British followership"],
         skills: [
             "Internal medicine Cases",
@@ -295,6 +308,7 @@ export const demoData = [
         Experience: "14 Years",
         position: "Registrar Urology - Medical Director",
         department: ["urology"],
+        search:"Urology",
         skills: [
             "Prostate diseases and infections",
             "Infertility and delayed childbearing",
@@ -315,6 +329,7 @@ export const demoData = [
         Experience: "3 Years",
         position: "General Dentist",
         department: ["dentist"],
+        search:"Dentistry",
         skills: [
             "Periapical x-ray, panoramic, CT scan",
             "Excision biopsy",
@@ -341,6 +356,7 @@ export const demoData = [
         Experience: "10 Years",
         position: "Orthopedics Specialist",
         department: ["orthopedics"],
+        search:"Orthopedics",
         skills: [
             "Joint Diseases",
             "Tumors",
@@ -363,6 +379,7 @@ export const demoData = [
         Experience: "",
         position: "Pediatric Specialist",
         department: ["pediatrics"],
+        search:"pediatric",
         skills: [
             "Gastrointestinal diseases",
             "Lung disease (asthma)",
@@ -383,6 +400,7 @@ export const demoData = [
         position: "Physiotherapist Specielist ",
         department: ["physiotherapist"],
         License: ["Czech Republic Studies"],
+        search:"Physiotherapy",
         skills: [
             "Treating orthopedic and neurological diseases",
             "Sports injury rehabilitation",
@@ -403,6 +421,7 @@ export const demoData = [
         position:
             "Consultant and Professor of internal Medicine / Head of Internal Medicine Dept.",
         department: ["internalmeds"],
+        search:"",
         skills: [
             "Chest allergy",
             "High blood pressure",
@@ -428,6 +447,7 @@ export const demoData = [
         Experience: "30 Years",
         position: "Head of the Department of Pediatrics and Neonatology",
         department: ["pediatrics"],
+        search:"pediatric",
         License: [
             "Membership of the Jordanian Medical Council",
             "Colon and gastrointestinal tumors",
@@ -455,6 +475,7 @@ export const demoData = [
         Experience: "7 Years",
         position: "Senior registrar general surgery",
         department: ["general_surgeon"],
+        search:"General Surgery",
         License: [
             "Membership of the Jordanian Medical Council",
             "Colon and gastrointestinal tumors",

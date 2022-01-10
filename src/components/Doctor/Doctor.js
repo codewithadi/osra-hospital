@@ -20,19 +20,19 @@ const Doctor = () => {
     setSelectedDept(selectedDept);
     if(selectedDept){
         var searchdept=selectedDept.label.toLowerCase().replace(/ /g,"")
-        if(searchdept=="all"){
+        if(searchdept==""){
             
             setDoctors(demoData)
         }else{
         
         console.log(searchdept)
-        const searcheddoctor = doctors.filter((doctor) => {
-            return doctor.name
+        const searcheddoctor = demoData.filter((doctor) => {
+            return doctor.search
               .toLowerCase()
               .replace(/ /g, "")
               .includes(searchdept);
           });
-          setDoctors(demoData);
+          setDoctors(searcheddoctor);
         }
         
     }
@@ -41,8 +41,12 @@ const Doctor = () => {
   useEffect(() => {
     const getDept = async () => {
       setloading(true);
+      const resp = await axios.get(
+        "https://doctorappapi.herokuapp.com/api/department"
+    );
+    setDepartment(resp.data);
       
-      setDepartment(demodept);
+      //setDepartment(demodept);
       setDoctors(demoData);
      
       setloading(false);
