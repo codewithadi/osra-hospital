@@ -8,7 +8,7 @@ const TopBar = () => {
                 href="tel:0114311111"
                 style={{ background: "#588325" }}
             >
-                Emergency: 011-431-11111
+                Emergency: 011-431-1111
             </a>
             <form className="px-4">
                 <select className="text-center outline-none">
