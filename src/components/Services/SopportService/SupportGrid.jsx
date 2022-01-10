@@ -14,7 +14,7 @@ const SupportGrid = ({ imgUrl, title, desc }) => {
                 >
                     {title}
                 </h2>
-                <p className="text-sm md:text-lg">{desc}</p>
+                <p className="text-sm md:text-base">{desc}</p>
             </div>
         </div>
     );
