@@ -82,7 +82,14 @@ const About = () => {
             </div>
             {/*About Content Closed */}
             {/* <AboutFacts /> */}
-            <Journey />
+            <div className="w-full flex justify-center items-center">
+                <img
+                    className="w-full md:w-4/6"
+                    src="/assets/about/OIH.Our.Journey.png"
+                    alt="chart"
+                />
+            </div>
+            {/* <Journey /> */}
             <Facts />
             <WhyChooseUs />
             <BoD />
