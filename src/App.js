@@ -46,6 +46,8 @@ import AppointmentBtn from "./components/AppointmentBtn/AppointmentBtn";
 //Dr profile
 import Profile from "./components/DoctorProfile/Profile";
 import SocialIcons from "./components/SocialIcons/SocialIcons";
+import UserDatabase from "./pages/UserDatabase";
+import Test from "./pages/Test";
 
 // visibility sensor for social icons
 import VisibilitySensor from "react-visibility-sensor";
@@ -89,6 +91,8 @@ function App() {
                 <Route path="/insurance" element={<Insurance />} />
 
                 <Route path="/clinics" element={<AllClinics />} />
+                <Route path="/patientfilter" element={<UserDatabase />} />
+                <Route path="/patients" element={<Test />} />
                 <Route
                     path="/clinics/ophthalmology"
                     element={<Ophthalmology />}

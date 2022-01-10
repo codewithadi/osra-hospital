@@ -79,8 +79,23 @@ function BookAppointment() {
         //console.log(patientdate);
         const patientslotbooked = patientdate.map((value) => value.slot);
         const docSlot = selectedDoc.slots;
-        const res = docSlot.filter((item) => !patientslotbooked.includes(item));
+
+        const availdocSlot=selectedDoc.availslot
+        const availdocSlotu=availdocSlot.filter(e=>e.dateav===datebook)
+        if(availdocSlotu.length>0){
+            //const availdocSlotu=availdocSlot.filter(e=>e.dateav===datebook)
+            console.log(availdocSlotu)
+       // const availosradocslot=(availdocSlotu.map(e=>e.availSloty))
+       const availosradocslot=availdocSlotu[0].availSloty
+        console.log(availosradocslot)
+        const res = availosradocslot.filter((item) => !patientslotbooked.includes(item));
+        console.log(res)
         setblankslot(res);
+        }else{
+            const res = docSlot.filter((item) => !patientslotbooked.includes(item));
+        setblankslot(res);
+        }
+        
 
         //console.log(dateb)
 
@@ -123,7 +138,7 @@ function BookAppointment() {
                 doctor: selectedDoc._id,
                 email,
             };
-            console.log(patient);
+           // console.log(patient);
             setBook(true);
             try {
                 const res = await axios.post(
@@ -299,6 +314,7 @@ function BookAppointment() {
                                             className="py-2 px-4 text-center mb-4 border-2 rounded-sm"
                                             selected={startDate}
                                             onChange={handleChangeDate}
+                                            minDate={moment(). toDate()}
                                         />
                                     </div>
                                 )}
@@ -317,8 +333,9 @@ function BookAppointment() {
                                                 value={slot}
                                                 onChange={handleChangeInput}
                                             >
+                                                
                                                 <option value="">
-                                                    ----Slot----
+                                                    {blankslot.length===0 ? "--No Slot--" :"--Slot--"}
                                                 </option>
                                                 {blankslot.map((slot) => (
                                                     <option
