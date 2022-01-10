@@ -1,32 +1,33 @@
 import React, { useState } from "react";
 import "./contact.css";
 // import swal from "sweetalert";
-// import axios from "axios";
+import axios from "axios";
 const Contact = () => {
     const [name, setName] = useState("");
     const [email, setemail] = useState("");
     const [mailBody, setmailBody] = useState("");
     const [subject, setSubject] = useState("");
 
-    const handleContactSubmit = (e) => {
-        if (name === "" || email === "" || mailBody === "" || subject === "") {
-            alert("fill all fields");
-            return;
-        }
-        e.preventDefault();
-        // axios
-        //   .post("http://localhost:5000/api/postcontactmail", {
-        //     name,
-        //     email,
-        //     subject,
-        //     mailBody,
-        //   })
-        //   .catch((err) => console.log(err));
-        setName("");
-        setemail("");
-        setmailBody("");
-        setSubject("");
-    };
+  const handleContactSubmit = (e) => {
+    if (name === "" || email === "" || mailBody === "" || subject === "") {
+      alert("fill all fields");
+      return;
+    }
+    e.preventDefault();
+    axios
+      .post("https://doctorappapi.herokuapp.com/api/postcontactmail", {
+         name,
+         email,
+         subject,
+         mailBody,
+       }).catch((err) => console.log(err));
+    alert("Message sent successfully.")
+    setName("");
+    setemail("");
+    setmailBody("");
+    setSubject("");
+  };
+  
 
     return (
         <div className="">
