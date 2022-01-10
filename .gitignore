@@ -4,13 +4,16 @@
 /node_modules
 /.pnp
 .pnp.js
-build.zip
-/build.zip
+
+
 # testing
 /coverage
 
 # production
 /build
+build.zip
+/build.zip
+/buildzip
 
 # misc
 .DS_Store
