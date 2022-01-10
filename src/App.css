@@ -27,7 +27,7 @@
     height: 100%;
     top: 35%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-65%, -50%);
 }
 .z-1000 {
     z-index: 1000;
