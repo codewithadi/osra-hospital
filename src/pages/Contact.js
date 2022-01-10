@@ -98,12 +98,12 @@ const Contact = () => {
                                 >
                                     Get in Touch
                                 </span>
-                                <a href="tel:213-562-5625">
+                                <a href="tel:01143111111">
                                     <span
                                         style={{ color: "#778696" }}
                                         className="mt-2 mb-4 font-normal text-lg"
                                     >
-                                        Phone : 011431111
+                                        Phone : 0114311111
                                     </span>
                                 </a>
                                 <a href="tel:+94766300033">

@@ -3,7 +3,7 @@ import React from "react";
 export default function Whatsapp() {
     return (
         <div className="bg-blue-50">
-            <div className="z-50 fixed bottom-2 pl-3 pb-1.5">
+            <div style={{ zIndex: 1000 }} className="fixed top-96 pl-3 pb-1.5">
                 <div className="hidden lg:block">
                     <a
                         href="https://web.whatsapp.com/send?phone=+966553303754"

@@ -27,7 +27,7 @@ export const demoData = [
         Qualification: "PhD in general surgery At the Royal Jordanian College",
         Experience: "30+ years",
         position: "Bariatric Surgeon and General Specialist Surgeon",
-        department: ["bariatric", "general_surgeon"],
+        department: ["bariatic", "general_surgeon"],
         License: [
             "World Obesity Association (IFSD) - American Society of Hepatology",
             "Followership of the Royal College of Surgeons in Ireland",
@@ -57,7 +57,7 @@ export const demoData = [
             "Bachelor Degree in general surgery ( Dermatology and cosmetology) ",
         Experience: "9 years",
         position: "Dermatology resident",
-        department: ["dermatology", "general_surgeon"],
+        department: ["dermatology"],
         skills: [
             "Dermatopathology ",
             "Peeling( Chemical Type)",
@@ -129,7 +129,7 @@ export const demoData = [
         Nationality: "Sudanese",
         Qualification: "Clinical Phd in Obstetrics and Gynecology",
         Experience: " 16 years",
-        position: " OB/GYNA Consultant",
+        position: "Consultant Gynecology and Obstetrics",
         department: ["obgyna"],
         skills: [
             "Pregnancy diagnoses and pregnancy Care",

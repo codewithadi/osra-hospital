@@ -7,7 +7,12 @@ const AppointmentBtn = () => {
         window.scrollTo(0, 0);
     };
     return (
-        <div className="fixed top-72 -left-9 z-1000 rounded shadow transform rotate-90">
+        <Link
+            onClick={scrollToTop}
+            to="/appointment"
+            style={{ background: "#588325" }}
+            className="fixed top-72 left-2 z-1000 shadow text-white rounded-xl py-3 px-5 uppercase font-light hover:bg-green-600 text-sm md:text-base"
+        >
             {/* <Link className="w-full h-full flex justify-center items-center" onClick={scrollToTop} to="/appointment">
         <img
           className="w-5/6 h-5/6"
@@ -15,15 +20,18 @@ const AppointmentBtn = () => {
           alt="apt-logo"
         />
       </Link> */}
-            <Link
+            <div>Book</div>
+            <div>Now</div>
+            {/* <Link
                 to="/appointment"
                 onClick={scrollToTop}
                 style={{ background: "#588325" }}
                 className="text-white rounded-xl py-3 px-5 uppercase font-light hover:bg-green-600 text-sm md:text-base"
             >
-                Book Now
-            </Link>
-        </div>
+                <div>Book</div>
+                <div>Now</div>
+            </Link> */}
+        </Link>
     );
 };
 

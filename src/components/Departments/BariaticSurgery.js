@@ -65,7 +65,7 @@ const treatmentsOffered = {
 
 function BariaticSurgery() {
     const filterdDoc = demoData.filter((data) =>
-        data.department.includes("bariatric")
+        data.department.includes("bariatic")
     );
     return (
         <div className="departments">

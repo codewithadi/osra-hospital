@@ -25,7 +25,7 @@ const AdminMem = () => {
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
                     name="Mr. Alla Adel Abdulrhman Bin Soufayan"
-                    position="General Manager"
+                    position="General Director"
                 />
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
@@ -37,15 +37,30 @@ const AdminMem = () => {
                     name="Dr. Feras Al-harbi"
                     position="Medical Director"
                 />
-                <SingleDoctor
+                {/* <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
-                    name="Dr.Adulrahman Sweyfi "
+                    name="Dr. Adulrahman Sweyfi "
                     position="Deputy Medical Director"
-                />
-                <SingleDoctor
+                /> */}
+                {/* <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
                     name="Mr. Alaa Awad"
                     position="Nursing Director"
+                /> */}
+                {/* <SingleDoctor
+                    imgUrl="/assets/dr/maledirector.png"
+                    name="Mr. Sameer Mohammed"
+                    position="Internal controller"
+                /> */}
+            </div>
+            <div
+                className="flex flex-col md:flex-row justify-center items-center gap-7 px-2 md:px-10"
+                style={{ color: "#3f0f1e" }}
+            >
+                <SingleDoctor
+                    imgUrl="/assets/dr/maledirector.png"
+                    name="Dr. Adulrahman Sweyfi "
+                    position="Deputy Medical Director"
                 />
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"

@@ -36,7 +36,7 @@ const WhyChooseUs = () => {
                     <div className="mx-4 md:mt-4 mb-1">
                         <div className="flex justify-start">
                             <img
-                                className="h-10 w-10 -ml-1"
+                                className="h-10 w-10"
                                 src="/assets/about/mission.png"
                                 alt="mission"
                             />
@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
                                 Mission
                             </h3>
                         </div>
-                        <p className="text-lg my-2 text-gray-600">
+                        <p className="text-xl my-2 text-gray-800">
                             We are dedicated to provide high quality,
                             evidence-based and safe healthcare.{" "}
                         </p>
@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
                                 Vision
                             </h3>
                         </div>
-                        <p className="text-lg my-2 text-gray-600">
+                        <p className="text-xl my-2 text-gray-800">
                             To be a benchmark in provision of quality healthcare
                             services in the private sector in the Kingdom
                         </p>
@@ -86,7 +86,7 @@ const WhyChooseUs = () => {
                                 Values
                             </h3>
                         </div>
-                        <p className="text-lg my-2 text-gray-600">
+                        <p className="text-xl my-2 text-gray-800">
                             Dignity and respect | Medical excellence |
                             Transparency | Justice | Safety | Teamwork | Loyalty
                         </p>

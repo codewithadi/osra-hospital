@@ -19,7 +19,7 @@ function AllClinics() {
             </div>
             <div className="depContainer">
                 {demoClinic.map((clinic, index) => (
-                    <div key={index} className="depCard">
+                    <Link to={clinic.linkto} key={index} className="depCard">
                         <div className="depIcon">
                             <img
                                 className="depIconImg"
@@ -30,14 +30,14 @@ function AllClinics() {
                         <h1 className="depHead">{clinic.name}</h1>
                         {/* <h3 className='depAbout'>Operations & surgeries</h3> */}
                         <p className="depDetailHome">{clinic.desc}</p>
-                        <Link
+                        {/* <Link
                             onClick={scrollToTop}
                             to={clinic.linkto}
                             className="depLink"
                         >
                             Get Details..
-                        </Link>
-                    </div>
+                        </Link> */}
+                    </Link>
                 ))}
             </div>
         </div>
