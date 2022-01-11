@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ReactPlayer from "react-player";
+import { withTranslation } from "react-i18next";
 
-const AppointmentBtn = () => {
+const AppointmentBtn = ({ t }) => {
     const scrollToTop = () => {
         window.scrollTo(0, 0);
     };
@@ -20,8 +20,8 @@ const AppointmentBtn = () => {
           alt="apt-logo"
         />
       </Link> */}
-            <div>Book</div>
-            <div>Now</div>
+            <div>{t("book_btn_fixed1")}</div>
+            <div>{t("book_btn_fixed2")}</div>
             {/* <Link
                 to="/appointment"
                 onClick={scrollToTop}
@@ -35,4 +35,4 @@ const AppointmentBtn = () => {
     );
 };
 
-export default AppointmentBtn;
+export default withTranslation()(AppointmentBtn);

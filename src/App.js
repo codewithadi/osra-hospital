@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import { withTranslation } from "react-i18next";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -52,7 +53,7 @@ import Test from "./pages/Test";
 // visibility sensor for social icons
 import VisibilitySensor from "react-visibility-sensor";
 
-function App() {
+function App({ t }) {
     const [visible, setVisible] = useState(false);
 
     function onChange(isVisible) {
@@ -152,4 +153,4 @@ function App() {
     );
 }
 
-export default App;
+export default withTranslation()(App);

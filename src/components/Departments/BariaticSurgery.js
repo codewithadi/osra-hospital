@@ -2,68 +2,68 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
 
-const treatmentsOffered = {
-    TherapeuticModalities: [
-        {
-            name: "Gastric Bypass",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Gastric Banding",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Gastrostomy Sleeve",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Tumor operations",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "All types of obesity operations (re-obesity and morbid obesity)",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Laparoscopic sleeve gastrectomy",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "SADI operation",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "SASI process",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Oncology surgery",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "General surgeries",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Mini gastric bypass",
-            detail: "",
-            logo: "",
-        },
-    ],
-};
-
-function BariaticSurgery() {
+function BariaticSurgery({ t }) {
+    const treatmentsOffered = {
+        TherapeuticModalities: [
+            {
+                name: `${t("clinic.test")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: "Gastric Banding",
+                detail: "",
+                logo: "",
+            },
+            {
+                name: "Gastrostomy Sleeve",
+                detail: "",
+                logo: "",
+            },
+            {
+                name: "Tumor operations",
+                detail: "",
+                logo: "",
+            },
+            {
+                name: "All types of obesity operations (re-obesity and morbid obesity)",
+                detail: "",
+                logo: "",
+            },
+            {
+                name: "Laparoscopic sleeve gastrectomy",
+                detail: "",
+                logo: "",
+            },
+            {
+                name: "SADI operation",
+                detail: "",
+                logo: "",
+            },
+            {
+                name: "SASI process",
+                detail: "",
+                logo: "",
+            },
+            {
+                name: "Oncology surgery",
+                detail: "",
+                logo: "",
+            },
+            {
+                name: "General surgeries",
+                detail: "",
+                logo: "",
+            },
+            {
+                name: "Mini gastric bypass",
+                detail: "",
+                logo: "",
+            },
+        ],
+    };
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("bariatic")
     );
@@ -202,4 +202,4 @@ function BariaticSurgery() {
     );
 }
 
-export default BariaticSurgery;
+export default withTranslation()(BariaticSurgery);

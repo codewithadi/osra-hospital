@@ -1,5 +1,6 @@
 import React from "react";
 import AboutHead from "../components/About/AboutHead";
+import { withTranslation } from "react-i18next";
 // import BrandSlider from "../components/About/BrandSlider";
 import WhyChooseUs from "../components/About/WhyChooseUs";
 import BoD from "../components/About/BoD";
@@ -11,7 +12,7 @@ import Journey from "../components/About/Journey";
 // import { Link } from "react-router-dom";
 import "../components/About/About.css";
 
-const About = () => {
+const About = ({ t }) => {
     return (
         <>
             <AboutHead />
@@ -27,7 +28,7 @@ const About = () => {
                         className="text-2xl md:text-5xl font-semibold titleColor"
                         style={{ color: "#3f0f1e" }}
                     >
-                        Our History
+                        {t("about.about_hist")}
                     </h2>
                     <p className="mt-7 text-base md:text-xl w-4/5 text-gray-200 textColor">
                         AlOsrah international Hospital is a Secondary level
@@ -107,4 +108,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default withTranslation()(About);

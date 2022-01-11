@@ -3,60 +3,62 @@ import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
 
-const treatmentsOffered = [
-    {
-        name: "Internal medicine Cases",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Cardio Vascular System",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Trauma",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "High Blood Pressure",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Diabetes",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Incision biopsy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Excision Biopsy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Diagnostic Laparoscopy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Respiratory system",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Digestive system",
-        detail: "",
-        logo: "",
-    },
-];
+
 
 function Cardiologist() {
+    const treatmentsOffered = [
+        {
+            name: "Internal medicine Cases",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Cardio Vascular System",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Trauma",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "High Blood Pressure",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Diabetes",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Incision biopsy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Excision Biopsy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Diagnostic Laparoscopy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Respiratory system",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Digestive system",
+            detail: "",
+            logo: "",
+        },
+    ];
+    
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("cardiologist")
     );

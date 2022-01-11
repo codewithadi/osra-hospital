@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import AliceCarousel from "react-alice-carousel";
+import { withTranslation } from "react-i18next";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 import "./About.css";
 
-const BrandSlider = () => {
+const BrandSlider = ({ t }) => {
     const responsive = {
         0: { items: 1 },
         568: { items: 3 },
@@ -23,13 +24,8 @@ const BrandSlider = () => {
                             alt="dept"
                         />
                     </div>
-                    <h1 className="depHead">Radiology</h1>
-                    <p className="depDetailHome">
-                        Radiology is a medical specialty that uses imaging to
-                        diagnose and treat diseases seen within the body. ...
-                        The radiology department may also be called the X-ray or
-                        imaging department
-                    </p>
+                    <h1 className="depHead">{t("departments.a.name")}</h1>
+                    <p className="depDetailHome">{t("departments.a.info")}</p>
                 </div>
             </div>
         </div>,
@@ -299,4 +295,4 @@ const BrandSlider = () => {
     );
 };
 
-export default BrandSlider;
+export default withTranslation()(BrandSlider);
