@@ -2,145 +2,127 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
+
 
 const treatmentsOffered = [
-    {
-        name: "Slimming and fitness programs",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Obesity programs",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Monitor the nutritional status of patients",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Follow-up of the nutritional status of the patient after the operations",
-        detail: "",
-        logo: "",
-    },
+  {
+    name: `${t("dietitian.treatment1")}`,
+    detail: "",
+    logo: "",
+  },
+  {
+    name: `${t("dietitian.treatment2")}`,
+    detail: "",
+    logo: "",
+  },
+  {
+    name: `${t("dietitian.treatment3")}`,
+    detail: "",
+    logo: "",
+  },
+  {
+    name: `${t("dietitian.treatment4")}`,
+    detail: "",
+    logo: "",
+  },
 ];
 
-function Dietitian() {
+function Dietitian({t}) {
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("dietitian")
     );
 
     return (
-        <div className="departments">
-            <div className="depMainBack">
-                <img
-                    className="depMainImg"
-                    src="/assets/department/2-min.png"
-                    alt="department Back"
-                />
-                <div className="depMainOverlay">
-                    <h1 className="depMainText">Dietitian</h1>
-                </div>
+      <div className="departments">
+        <div className="depMainBack">
+          <img
+            className="depMainImg"
+            src="/assets/department/2-min.png"
+            alt="department Back"
+          />
+          <div className="depMainOverlay">
+            <h1 className="depMainText">{t("dietitian.title")}</h1>
+          </div>
+        </div>
+
+        <div className="depDetail">
+          <div className="depDetailContainer">
+            <div className="depTextHead">
+              <h1 className="depDetailTitle">{t("dietitian.subTitle")}</h1>
+              <div className="depDetailAbout">
+                {t("dietitian.bodyPart1")}
+                <br />
+                <br />
+                {t("dietitian.bodyPart2")}
+              </div>
             </div>
-
-            <div className="depDetail">
-                <div className="depDetailContainer">
-                    <div className="depTextHead">
-                        <h1 className="depDetailTitle">Dietitian Department</h1>
-                        <div className="depDetailAbout">
-                            The Clinical Nutrition & Dietetics department at
-                            Lifepoint Multispecialty Hospital is a one-stop
-                            solution for all therapeutic diet and nutrition
-                            queries when it comes to health and illness. We
-                            provide comprehensive nutrition and diet services to
-                            both in-patients and out-patients.
-                            <br />
-                            <br />A dietitian, medical dietitian, or dietician
-                            is an expert in identifying and treating
-                            disease-related malnutrition and in conducting
-                            medical nutrition therapy. A dietitian, medical
-                            dietitian, or dietician is an expert in identifying
-                            and treating disease-related malnutrition and in
-                            conducting medical nutrition therapy
-                        </div>
-                    </div>
-                    <div className="depImgWrapper">
-                        <img
-                            className="depDetailImg"
-                            src="/assets/department/diet.png"
-                            alt="earnose"
-                        />
-                    </div>
-                </div>
+            <div className="depImgWrapper">
+              <img
+                className="depDetailImg"
+                src="/assets/department/diet.png"
+                alt="earnose"
+              />
             </div>
+          </div>
+        </div>
 
-            <div className="treatmentDetails">
-                <div className="depMain">
-                    <h1 className="depMainHead">Treatments Offered</h1>
-                    <p className="depMainPara">
-                        Our clinical dietician is specialized is assessing the
-                        nutritional status of the patient, calculate individual
-                        nutritional requirements and plan the diet accordingly
-                        depending upon the patients health condition.
-                    </p>
-                    <div className="depLine"></div>
-                </div>
+        <div className="treatmentDetails">
+          <div className="depMain">
+            <h1 className="depMainHead">{t("dietitian.treatmentHead")}</h1>
+            <p className="depMainPara">{t("dietitian.treatmentBody")}</p>
+            <div className="depLine"></div>
+          </div>
 
-                <div className="treatmentWrapper">
-                    {treatmentsOffered.map((item, index) => (
-                        <>
-                            <div className="treatmentCard" key={index}>
-                                {/* for logo uncomment n remove check */}
-                                {/* <div className="treatmentLogo">
+          <div className="treatmentWrapper">
+            {treatmentsOffered.map((item, index) => (
+              <>
+                <div className="treatmentCard" key={index}>
+                  {/* for logo uncomment n remove check */}
+                  {/* <div className="treatmentLogo">
                   <img src="/assets/department/surgery.png" alt="anyimg" />
                 </div> */}
-                                <div className="checkLogo">
-                                    <img
-                                        src="/assets/dr/customcheck.jpg"
-                                        alt="check"
-                                    />
-                                </div>
-                                <div className="treatmentText">
-                                    <h2 className="treatmentTitle">
-                                        {item.name}
-                                    </h2>
-                                    {/* for content  */}
-                                    {/* <p className="treatmentAbout">
+                  <div className="checkLogo">
+                    <img src="/assets/dr/customcheck.jpg" alt="check" />
+                  </div>
+                  <div className="treatmentText">
+                    <h2 className="treatmentTitle">{item.name}</h2>
+                    {/* for content  */}
+                    {/* <p className="treatmentAbout">
                     Dunt in culpa qui officia deserunt mollit anim id est
                     laborum.
                   </p> */}
-                                </div>
-                            </div>
-                        </>
-                    ))}
+                  </div>
                 </div>
-            </div>
+              </>
+            ))}
+          </div>
+        </div>
 
-            <div className="depDoctors">
-                <div className="depMain">
-                    <h1 className="depMainHead">Department Doctors</h1>
-                    <p className="depMainPara">
-                        Our expert team of dietitian specializes
-                    </p>
-                    <div className="depLine"></div>
-                </div>
-                <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10">
-                    {filterdDoc.map((doc, index) => (
-                        <SingleDoctor
-                            key={index}
-                            imgUrl={doc.imgUrl}
-                            name={doc.name}
-                            position={doc.position}
-                            mobno={doc.mobno}
-                            email={doc.email}
-                            linkto={doc.linkto}
-                        />
-                    ))}
-                </div>
-            </div>
+        <div className="depDoctors">
+          <div className="depMain">
+            <h1 className="depMainHead">Department Doctors</h1>
+            <p className="depMainPara">
+              Our expert team of dietitian specializes
+            </p>
+            <div className="depLine"></div>
+          </div>
+          <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10">
+            {filterdDoc.map((doc, index) => (
+              <SingleDoctor
+                key={index}
+                imgUrl={doc.imgUrl}
+                name={doc.name}
+                position={doc.position}
+                mobno={doc.mobno}
+                email={doc.email}
+                linkto={doc.linkto}
+              />
+            ))}
+          </div>
+        </div>
 
-            {/* <div className="depBanner">
+        {/* <div className="depBanner">
                 <img
                     class="depBannerImg"
                     src="/assets/department/depLastBack.jpg"
@@ -163,8 +145,8 @@ function Dietitian() {
                     </div>
                 </div>
             </div> */}
-        </div>
+      </div>
     );
 }
 
-export default Dietitian;
+export default withTranslation()(Dietitian);
