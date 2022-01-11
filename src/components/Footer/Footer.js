@@ -32,7 +32,7 @@ function Footer() {
                                     </Link>
                                 </div>
 
-                                <div className="max-w-md mt-2 font-semibold dark:text-gray-800 bg-transparent px-2 md:pr-32 cursor-default ">
+                                <div className="max-w-md mt-2 font-semibold dark:text-gray-800 bg-transparent px-2 md:pr-28 cursor-default ">
                                     AlOsrah international Hospital is a
                                     Secondary level facility with 50
                                     bed-Capacities situated in the middle of
@@ -42,7 +42,7 @@ function Footer() {
                         </div>
 
                         <div className="mt-6 lg:mt-0 lg:flex-1 lg:ml-4 bg-transparent">
-                            <div className="grid grid-cols-1 md:gap-6 gap-2 sm:grid-cols-4 md:grid-cols-4 bg-transparent">
+                            <div className="grid grid-cols-1 md:gap-3 gap-2 sm:grid-cols-4 md:grid-cols-4 bg-transparent">
                                 <div className="bg-transparent font-semibold">
                                     <h3 className=" font-semibold text-lg uppercase dark: bg-transparent cursor-default">
                                         Quick Links
@@ -135,7 +135,7 @@ function Footer() {
                                                     href="mailto:info@alosrah-hospital.com"
                                                     className="bg-transparent"
                                                 >
-                                                   info@alosrah-hospital.com
+                                                    info@alosrah-hospital.com
                                                 </a>{" "}
                                             </div>
                                         </div>
