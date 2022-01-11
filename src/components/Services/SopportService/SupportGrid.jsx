@@ -1,4 +1,5 @@
 import React from "react";
+import { withTranslation } from "react-i18next";
 import "./support.css";
 
 const SupportGrid = ({ imgUrl, title, desc }) => {
@@ -20,4 +21,4 @@ const SupportGrid = ({ imgUrl, title, desc }) => {
     );
 };
 
-export default SupportGrid;
+export default withTranslation()(SupportGrid);

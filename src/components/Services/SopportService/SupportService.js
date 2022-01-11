@@ -1,7 +1,8 @@
 import React from "react";
 import SupportGrid from "./SupportGrid";
+import { withTranslation } from "react-i18next";
 
-const SupportService = () => {
+const SupportService = ({ t }) => {
     return (
         <div>
             <div
@@ -21,8 +22,8 @@ const SupportService = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center py-10 px-2 md:px-20">
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/radiology.png"
-                    title="Radiology"
-                    desc="Radiology is a medical specialty that uses imaging to diagnose and treat diseases seen within the body. ... The radiology department may also be called the X-ray or imaging department"
+                    title={t("departments.a.name")}
+                    desc={t("departments.a.info")}
                 />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/lab.png"
@@ -79,4 +80,4 @@ const SupportService = () => {
     );
 };
 
-export default SupportService;
+export default withTranslation()(SupportService);

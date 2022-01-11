@@ -1,4 +1,6 @@
 {
+    "book_btn_fixed1": "Book",
+    "book_btn_fixed2": "Now",
     "top-emergency": "Emergency",
     "nav_brandname": "AL-Osrah International Hospital",
     "nav": {
@@ -25,5 +27,36 @@
         "home_find_doc_b": "40+ doctors on panel",
         "home_find_doc_c": "We are dedicated to provide high quality, evidence-based and safe healthcare.",
         "home_find_doc_btn": "Find Doctor"
+    },
+    "home_facts": {
+        "facts_heading1": "Serving the World",
+        "facts_heading2": "since 1991",
+        "facts_exp": "Years of Experience",
+        "facts_doc_on_panel": "Doctors on Panel",
+        "facts_clinics": "Clinics Available",
+        "facts_patients": "Patients per Year",
+        "facts_lab": "Lab Investigations per Year",
+        "facts_surgery": "Surgery Operations per Year",
+        "facts_birth": "Birth Deliveries per Year"
+    },
+    "departments": {
+        "a": {
+            "name": "Radiology",
+            "info": "Radiology is a medical specialty that uses imaging to diagnose and treat diseases seen within the body. The radiology department may also be called the X-ray or imaging department"
+        },
+        "b": {
+            "name": "Laboratory",
+            "info": "Where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease"
+        },
+        "c": {
+            "name": "Physiotherapy",
+            "info": "Healthcare profession concerned with the assessment, maintenance, and restoration of the physical function and performance of the body by physical trainers."
+        }
+    },
+    "about": {
+        "about_hist": "Our History"
+    },
+    "clinic": {
+        "test": "Gastric Bypass"
     }
 }

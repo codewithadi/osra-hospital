@@ -1,7 +1,8 @@
 import React from "react";
 import "../../App.css";
+import { withTranslation } from "react-i18next";
 
-const Facts = () => {
+const Facts = ({ t }) => {
     return (
         <div className="w-full relative facts-container">
             <img
@@ -13,8 +14,8 @@ const Facts = () => {
             <div className="w-full h-full main-dark-bg bg-black opacity-50"></div>
             <div className="main-text-fact text-grey-300">
                 <h1 className="text-white text-center font-semibold text-xl md:text-4xl bg-transparent mt-20">
-                    Serving the World <br />
-                    <i>since 1991</i>
+                    {t("home_facts.facts_heading1")} <br />
+                    <i>{t("home_facts.facts_heading2")}</i>
                 </h1>
 
                 <div className="flex justify-center items-center flex-wrap gap-4 justify-items-center md:gap-x-16 md:grid-cols-3 lg:grid-cols-4 my-2 md:px-20 md:my-4">
@@ -23,7 +24,7 @@ const Facts = () => {
                             30+
                         </h2>
                         <h3 className="text-white text-center font-semibold text-base md:text-lg">
-                            Years of Experience
+                            {t("home_facts.facts_exp")}
                         </h3>
                     </div>
 
@@ -32,7 +33,7 @@ const Facts = () => {
                             40+
                         </h2>
                         <h3 className="pl-2 text-white font-semibold text-base md:text-lg">
-                            Doctors on Panel
+                            {t("home_facts.facts_doc_on_panel")}
                         </h3>
                     </div>
 
@@ -41,7 +42,7 @@ const Facts = () => {
                             25+
                         </h2>
                         <h3 className="pl-2 text-white font-semibold text-base md:text-lg">
-                            Clinics Available
+                            {t("home_facts.facts_clinics")}
                         </h3>
                     </div>
 
@@ -50,7 +51,7 @@ const Facts = () => {
                             180000+
                         </h2>
                         <h3 className="text-white font-semibold text-base md:text-lg">
-                            Patients per Year
+                            {t("home_facts.facts_patients")}
                         </h3>
                     </div>
 
@@ -59,7 +60,7 @@ const Facts = () => {
                             350000+
                         </h2>
                         <h3 className="text-white font-semibold text-base md:text-lg">
-                            Lab Investigations per Year
+                            {t("home_facts.facts_lab")}
                         </h3>
                     </div>
 
@@ -68,7 +69,7 @@ const Facts = () => {
                             5000+
                         </h2>
                         <h3 className="text-white font-semibold text-base md:text-lg">
-                            Surgery Operations per Year
+                            {t("home_facts.facts_surgery")}
                         </h3>
                     </div>
 
@@ -77,7 +78,7 @@ const Facts = () => {
                             5000+
                         </h2>
                         <h3 className="text-white font-semibold text-base md:text-lg">
-                            Birth Deliveries per Year
+                            {t("home_facts.facts_birth")}
                         </h3>
                     </div>
                 </div>
@@ -86,4 +87,4 @@ const Facts = () => {
     );
 };
 
-export default Facts;
+export default withTranslation()(Facts);
