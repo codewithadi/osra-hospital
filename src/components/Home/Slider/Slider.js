@@ -21,7 +21,7 @@ const Slider = () => {
                     <img
                         className="h-full w-full bg-cover bg-center"
                         style={{ objectFit: "cover" }}
-                        src="/assets/slider/sliderImg1.png"
+                        src="/assets/slider/Slide1.png"
                         alt="prod1"
                     />
                     <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
@@ -52,7 +52,7 @@ const Slider = () => {
                     <img
                         className="h-full w-full bg-cover bg-center"
                         style={{ objectFit: "cover" }}
-                        src="/assets/slider/sliderImg2.png"
+                        src="/assets/slider/Slide2.png"
                         alt="prod1"
                     />
                     <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
@@ -81,7 +81,7 @@ const Slider = () => {
                     <img
                         className="h-full w-full bg-cover bg-center"
                         style={{ objectFit: "cover" }}
-                        src="/assets/slider/sliderImg3.png"
+                        src="/assets/slider/Slide3.png"
                         alt="prod1"
                     />
                     <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
