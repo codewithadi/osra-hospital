@@ -24,7 +24,7 @@ export const demoClinic = [
         linkto: "/clinics/gastroenterology",
     },
     {
-        name: "Cardiologist",
+        name: "Cardiology",
         desc: "Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
         imgurl: "assets/department/cardio.png",
         linkto: "/clinics/cardiologist",
