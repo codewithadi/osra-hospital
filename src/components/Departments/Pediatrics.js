@@ -4,98 +4,98 @@ import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
 import { withTranslation } from "react-i18next";
 
-function Pediatrics({t}) {
+function Pediatrics({ t }) {
   const treatmentsOffered = {
     DiagnosticModalities: [
       {
-        name: `${t('tm')}`,
+        name: `${t("PediatricsDepartment.dm1")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Pulse oxymetry",
+        name: `${t("PediatricsDepartment.dm2")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Throat swab and skin swab for Culture and Sensitivity studies",
+        name: `${t("PediatricsDepartment.dm3")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Arterial blood gas sampling",
+        name: `${t("PediatricsDepartment.dm4")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Radiological & Laboratory investigation",
+        name: `${t("PediatricsDepartment.dm5")}`,
         detail: "",
         logo: "",
       },
     ],
     TherapeuticModalities: [
       {
-        name: "Intravenous line cannulation",
+        name: `${t("PediatricsDepartment.tm1")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Intravenous fluid administration",
+        name: `${t("PediatricsDepartment.tm2")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Gastric lavage",
+        name: `${t("PediatricsDepartment.tm3")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Naso-gastric tube placement",
+        name: `${t("PediatricsDepartment.tm4")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Umbilical vein catheterization",
+        name: `${t("PediatricsDepartment.tm5")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Umbilical artery catheterization",
+        name: `${t("PediatricsDepartment.tm11")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Neonatal resuscitation",
+        name: `${t("PediatricsDepartment.tm12")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Phototheraphy",
+        name: `${t("PediatricsDepartment.tm6")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Chest tube placement",
+        name: `${t("PediatricsDepartment.tm7")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Conventional mechanical ventilation",
+        name: `${t("PediatricsDepartment.tm8")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "High frequency oscillatory ventilation.",
+        name: `${t("PediatricsDepartment.tm13")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Management of Neonatal diseases",
+        name: `${t("PediatricsDepartment.tm9")}`,
         detail: "",
         logo: "",
       },
       {
-        name: "Management of Pediatric diseases as DKA, RSV, Bronchopneumonia, convulsions and other diseases.",
+        name: `${t("PediatricsDepartment.tm10")}`,
         detail: "",
         logo: "",
       },
@@ -114,26 +114,16 @@ function Pediatrics({t}) {
           alt="department Back"
         />
         <div className="depMainOverlay">
-          <h1 className="depMainText">Pediatrics</h1>
+          <h1 className="depMainText">{t("PediatricsDepartment.dname")}</h1>
         </div>
       </div>
 
       <div className="depDetail">
         <div className="depDetailContainer">
           <div className="depTextHead">
-            <h1 className="depDetailTitle">Pediatrics Department</h1>
+            <h1 className="depDetailTitle">{t("PediatricsDepartment.dname")}</h1>
             <div className="depDetailAbout">
-              A paediatrician is a child's physician who provides not only
-              medical care for children who are acutely or chronically ill but
-              also preventive health services for healthy children. A
-              paediatrician manages physical, mental, and emotional well-being
-              of the children under their care at every stage of development, in
-              both sickness and health.
-              <br />
-              <br />
-              Pediatrics is the branch of medicine dealing with the health and
-              medical care of infants, children, and adolescents from birth up
-              to the age of 18.
+            {t("PediatricsDepartment.detail")}
             </div>
           </div>
           <div className="depImgWrapper">
@@ -148,18 +138,15 @@ function Pediatrics({t}) {
 
       <div className="treatmentDetails">
         <div className="depMain">
-          <h1 className="depMainHead">Treatments Offered</h1>
+          <h1 className="depMainHead">{t("to")}</h1>
           <p className="depMainPara">
-            Dedicated to providing children under 14 years of age with the
-            highest quality of care in a comforting environment, the Pediatrics
-            department at Osra Hospital is one of the most trusted in the
-            region.
+          {t("PediatricsDepartment.treatment")}
           </p>
           <div className="depLine"></div>
         </div>
 
         <div className="treatmentWrapper">
-          <h1 className="depMainHead">Diagnostic Modalities :</h1>
+          <h1 className="depMainHead">{t("dm")}</h1>
         </div>
         <div className="treatmentWrapper">
           {treatmentsOffered.DiagnosticModalities.map((item, index) => (
@@ -177,7 +164,7 @@ function Pediatrics({t}) {
         </div>
 
         <div className="treatmentWrapper">
-          <h1 className="depMainHead">Therapeutic Modalities :</h1>
+          <h1 className="depMainHead">{t("tm")}</h1>
         </div>
         <div className="treatmentWrapper">
           {treatmentsOffered.TherapeuticModalities.map((item, index) => (
