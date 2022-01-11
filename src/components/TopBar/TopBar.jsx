@@ -1,6 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const TopBar = () => {
+    const { i18n } = useTranslation();
+    function changeLanguage(e) {
+        i18n.changeLanguage(e.target.value);
+    }
+
     return (
         <div className="w-full h-7 flex justify-end items-center px-3 md:px-6 z-100 shadow-md">
             <a
@@ -11,9 +17,12 @@ const TopBar = () => {
                 Emergency: 011-431-1111
             </a>
             <form className="px-4">
-                <select className="text-center outline-none">
+                <select
+                    onClick={changeLanguage}
+                    className="text-center outline-none"
+                >
                     <option value="en">English</option>
-                    {/* <option></option> */}
+                    <option value="ar">Arabic</option>
                 </select>
             </form>
         </div>

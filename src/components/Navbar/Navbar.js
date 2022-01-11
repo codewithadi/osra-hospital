@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { withTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 import NavLinks from "./NavbarLinks";
 import "./navbarstyle.css";
@@ -33,7 +34,7 @@ const handleClick = () => {
     isOpen ? Toggle1(y, x) : Toggle2(y, x);
 };
 
-export default function Navbar() {
+function Navbar({ t }) {
     const [colorChange, setColorchange] = useState(false);
     const changeNavbarColor = () => {
         if (window.scrollY >= 120) {
@@ -61,7 +62,7 @@ export default function Navbar() {
                     // style={{ width: "27%" }}
                 >
                     <div className="md:inline-flex md:-mt-5 text-sm md:text-base pr-2 select-none font-semibold">
-                        AL-Osrah International Hospital
+                    {t('nav_brandname')}
                     </div>
 
                     <div className="md:-mt-4 md:inline-flex bg-transparent">
@@ -104,3 +105,5 @@ export default function Navbar() {
         </div>
     );
 }
+
+export default withTranslation()(Navbar)

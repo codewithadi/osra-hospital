@@ -1,6 +1,7 @@
 import React from "react";
 // import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { withTranslation } from "react-i18next";
 // import Dropdown from "./Dropdown";
 // import TestDrop from "./TestDrop";
 
@@ -8,7 +9,7 @@ import { Link, useLocation } from "react-router-dom";
 // import { ChevronUpIcon } from "@heroicons/react/solid";
 // import ServicesDisclosure from "./ServicesDisclosure";
 
-function NavLinks({ colorchange }) {
+function NavLinks({ colorchange, t }) {
     // const [dropdown, setDropdown] = useState(false);
     // const [showApt, setShowApt] = useState(false);
     //assigning location variable
@@ -64,7 +65,7 @@ function NavLinks({ colorchange }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            Home
+                            {t("nav_home")}
                         </h1>
                     </Link>
                 </li>
@@ -80,7 +81,7 @@ function NavLinks({ colorchange }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            About
+                            {t("nav_about")}
                         </h1>
                     </Link>
                 </li>
@@ -96,7 +97,7 @@ function NavLinks({ colorchange }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            Departments
+                            {t("nav_dept")}
                         </h1>
                     </Link>
                 </li>
@@ -112,7 +113,7 @@ function NavLinks({ colorchange }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            Clinics
+                            {t("nav_clinic")}
                         </h1>
                     </Link>
                 </li>
@@ -128,7 +129,7 @@ function NavLinks({ colorchange }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            Insurance
+                            {t("nav_insurance")}
                         </h1>
                     </Link>
                 </li>
@@ -187,7 +188,7 @@ function NavLinks({ colorchange }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            Media
+                            {t("nav_media")}
                         </h1>
                     </Link>
                 </li>
@@ -219,7 +220,7 @@ function NavLinks({ colorchange }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            Contact
+                            {t("nav_contact")}
                         </h1>
                     </Link>
                 </li>
@@ -239,4 +240,4 @@ function NavLinks({ colorchange }) {
     );
 }
 
-export default NavLinks;
+export default withTranslation()(NavLinks);
