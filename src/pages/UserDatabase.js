@@ -5,12 +5,16 @@ import Select from "react-select";
 import axios from "axios";
 import Loading from "../components/Loading/Loading";
 import ReactHTMLTableToExcel from "react-html-table-to-excel";
+import DatePicker from "react-datepicker";
 import moment from "moment"
 function UserDatabase() {
   const [doctor, setDoctor] = useState("");
   const [patient, setPatient] = useState("");
+  const [patientall, setPatientall] = useState("");
   const [loading, setloading] = useState(true);
   const [selectedDoc,setSelectedDoc]=useState("")
+  const [startDate, setStartDate] = useState(new Date());
+    const [dateb, setDateB] = useState("");
   useEffect(() => {
     const getroom = async () => {
       setloading(true);
@@ -23,17 +27,34 @@ function UserDatabase() {
         "https://doctorappapi.herokuapp.com/api/patient"
       );
       setPatient(respo.data);
+      setPatientall(respo.data)
       console.log(respo.data);
 
       setloading(false);
     };
     getroom();
   }, []);
+  const handleChangeDate = (date) => {
+    setDateB(moment(date).format("DD-MM-YYYY").toString());
+    const datebook = moment(date).format("DD-MM-YYYY").toString();
+  //console.log(datebook);
+    const patientdate = patient.filter(
+        (item) => item.date === datebook
+    );
+    console.log(patientdate);
+    setPatient(patientdate)
+   
+    
+
+    //console.log(dateb)
+
+    setStartDate(date);
+};
   const handleChangeDoc = (selectedDoc) => {
     setSelectedDoc(selectedDoc);
     const filterdocid=(selectedDoc._id)
     if(filterdocid){
-const res=patient.filter(x=>x.doctor===filterdocid)
+const res=patientall.filter(x=>x.doctor===filterdocid)
 setPatient(res)
     }
    else{
@@ -51,7 +72,7 @@ setPatient(res)
         <Loading />
       ) : (
         <div>
-            { 
+            { <div>
                                     <div className="mb-2">
                                         <div className="serviceText">
                                             Select Doctor :{" "}
@@ -61,6 +82,18 @@ setPatient(res)
                                             onChange={handleChangeDoc}
                                             options={doctor}
                                         />
+                                    </div>
+                                    <div className="mb-2">
+                                        <div className="serviceText mt-2">
+                                            Select Date :{" "}
+                                        </div>
+                                        <DatePicker
+                                            className="py-2 px-4 text-center mb-4 border-2 rounded-sm"
+                                            selected={startDate}
+                                            onChange={handleChangeDate}
+                                            minDate={moment(). toDate()}
+                                        />
+                                    </div>
                                     </div>
                                 }
           <ReactHTMLTableToExcel
