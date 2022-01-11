@@ -72,7 +72,7 @@ function Gastroenterology() {
                     <div className="depImgWrapper">
                         <img
                             className="depDetailImg"
-                            src="/assets/images/Gastroenterology.jpg"
+                            src="/assets/images/gastroenterology.jpg"
                             alt="Gastroenterology"
                         />
                     </div>
