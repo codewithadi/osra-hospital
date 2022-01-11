@@ -70,7 +70,7 @@ function Cardiologist() {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">Cardiologist</h1>
+                    <h1 className="depMainText">Cardiology</h1>
                 </div>
             </div>
 
@@ -78,7 +78,7 @@ function Cardiologist() {
                 <div className="depDetailContainer">
                     <div className="depTextHead">
                         <h1 className="depDetailTitle">
-                            Cardiologist Department
+                            Cardiology Department
                         </h1>
                         <div className="depDetailAbout">
                             Cardiology is the study and treatment of disorders

@@ -43,7 +43,7 @@ function Physiotherapist() {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">Physiotherapist</h1>
+                    <h1 className="depMainText">Physiotherapy</h1>
                 </div>
             </div>
 
@@ -51,7 +51,7 @@ function Physiotherapist() {
                 <div className="depDetailContainer">
                     <div className="depTextHead">
                         <h1 className="depDetailTitle">
-                            Physiotherapist Department
+                            Physiotherapy Department
                         </h1>
                         <div className="depDetailAbout">
                             Healthcare profession concerned with the assessment,
@@ -83,9 +83,9 @@ function Physiotherapist() {
                 <div className="depMain">
                     <h1 className="depMainHead">Treatments Offered</h1>
                     <p className="depMainPara">
-                        Our department of Psychiatry is dedicated to exceeding
-                        expectations. We provide cutting edge treatment of
-                        disorders below
+                        Our department of Physiotherapy is dedicated to
+                        exceeding expectations. We provide cutting edge
+                        treatment of disorders below
                     </p>
                     <div className="depLine"></div>
                 </div>
