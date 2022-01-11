@@ -2,7 +2,6 @@
     "book_btn_fixed1": "Book",
     "book_btn_fixed2": "Now",
     "top-emergency": "Emergency",
-    "tm": "Therapeutic modalities",
     "nav_brandname": "AL-Osrah International Hospital",
     "nav": {
         "nav_home": "Home",
@@ -158,7 +157,7 @@
     "to": "Treatmemt Offered",
     "dm": "Diagnostic modalities",
     "tm": "Therapeutic modalities",
-    "Pediatrics Department": {
+    "PediatricsDepartment": {
          "dname": "Pediatrics Department",
          "detail": "A paediatrician is a child's physician who provides not only medical care for children who are acutely or chronically ill but also preventive health services for healthy children. A paediatrician manages physical, mental, and emotional well-being of the children under their care at every stage of development, in both sickness and health. Pediatrics is the branch of medicine dealing with the health and ‎medical care of infants, children, and adolescents from birth up to the ‎age of 18.‎",
          "treatment": "Dedicated to providing children under 14 years of age with the highest quality of care in a comforting environment, the Pediatrics department at Osra Hospital is one of the most trusted in the region.",
@@ -176,7 +175,10 @@
          "tm7": "Chest tube placement",
          "tm8": "Conventional mechanical ventilation",
          "tm9": "Management of Neonatal diseases",
-         "tm10": "Management of Pediatric diseases as DKA, RSV, Bronchopneumonia, convulsions and other diseases"
+         "tm10": "Management of Pediatric diseases as DKA, RSV, Bronchopneumonia, convulsions and other diseases",
+         "tm11":"Umbilical artery catheterization",
+         "tm12":"Neonatal resuscitation",
+         "tm13":"High frequency oscillatory ventilation."
     },
     "Gastroenterology  Department": {
          "dname": "Gastroenterology  Department",

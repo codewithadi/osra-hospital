@@ -2,6 +2,7 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
 
 const treatmentsOffered = [
     {
@@ -179,4 +180,5 @@ function ER() {
     );
 }
 
-export default ER;
+export default withTranslation()(ER);
+
