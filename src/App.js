@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -32,9 +32,10 @@ import OBGyne from "./components/Departments/OBGyne";
 import Services from "./pages/Services";
 import Media from "./pages/Media";
 import BookAppointment from "./components/BookAppointment/BookAppointment";
-import ER from "./components/Departments/ER";
+// import ER from "./components/Departments/ER";
 import Dietitian from "./components/Departments/Dietitian";
 import Cardiologist from "./components/Departments/Cardiologist";
+import InternalMeds from "./components/Departments/InternalMeds";
 import Orthopedics from "./components/Departments/Orthopedics";
 import Laboratory from "./components/Departments/Laboratory";
 import SpecialTests from "./components/Departments/SpecialTests";
@@ -45,6 +46,8 @@ import AppointmentBtn from "./components/AppointmentBtn/AppointmentBtn";
 //Dr profile
 import Profile from "./components/DoctorProfile/Profile";
 import SocialIcons from "./components/SocialIcons/SocialIcons";
+import UserDatabase from "./pages/UserDatabase";
+import Test from "./pages/Test";
 
 // visibility sensor for social icons
 import VisibilitySensor from "react-visibility-sensor";
@@ -59,19 +62,19 @@ function App() {
             setVisible(false);
         }
     }
-    const [showApt, setShowApt] = useState(false);
-    useEffect(() => {
-        const resizeEve = () => {
-            if (window.innerWidth < 768) {
-                setShowApt(false);
-            } else {
-                setShowApt(true);
-            }
-        };
-        window.addEventListener("resize", resizeEve);
-        resizeEve();
-        return () => window.removeEventListener();
-    }, []);
+    // const [showApt, setShowApt] = useState(false);
+    // useEffect(() => {
+    //     const resizeEve = () => {
+    //         if (window.innerWidth < 768) {
+    //             setShowApt(false);
+    //         } else {
+    //             setShowApt(true);
+    //         }
+    //     };
+    //     window.addEventListener("resize", resizeEve);
+    //     resizeEve();
+    //     return () => window.removeEventListener();
+    // }, []);
     return (
         <div className="relative">
             <TopBar />
@@ -88,6 +91,8 @@ function App() {
                 <Route path="/insurance" element={<Insurance />} />
 
                 <Route path="/clinics" element={<AllClinics />} />
+                <Route path="/patientfilter" element={<UserDatabase />} />
+                <Route path="/patients" element={<Test />} />
                 <Route
                     path="/clinics/ophthalmology"
                     element={<Ophthalmology />}
@@ -101,11 +106,15 @@ function App() {
                 <Route path="/clinics/dentistry" element={<Dentistry />} />
                 <Route path="/clinics/dermatology" element={<Dermatology />} />
                 <Route path="/clinics/ear-nose-throat" element={<EarNose />} />
-                <Route path="/clinics/er" element={<ER />} />
+                {/* <Route path="/clinics/er" element={<ER />} /> */}
                 <Route path="/clinics/dietitian" element={<Dietitian />} />
                 <Route
-                    path="/clinics/cardiologist-and-internal-medicine"
+                    path="/clinics/cardiologist"
                     element={<Cardiologist />}
+                />
+                <Route
+                    path="/clinics/internal-medicine"
+                    element={<InternalMeds />}
                 />
                 <Route path="/clinics/orthopedics" element={<Orthopedics />} />
                 <Route path="/clinics/laboratory" element={<Laboratory />} />

@@ -131,7 +131,7 @@ function SpecialTests() {
                 </div>
             </div>
 
-            <div className='depBanner'>
+            {/* <div className='depBanner'>
                 <img class="depBannerImg" src="/assets/department/depLastBack.jpg" alt="anyimg"/>
                 <div className='depBannerOverlay'>
                     <h3 className='depBannerText'>Reliable & Trusted</h3>
@@ -139,7 +139,7 @@ function SpecialTests() {
                     <p className='depBannerPara'>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <div className='depBannerButton'><a className='depBannerBtn' href="/contact">Contact Us Now</a></div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

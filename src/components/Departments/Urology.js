@@ -2,43 +2,47 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
-const treatmentsOffered = [
-    {
-        name: "Urethro - cystocopy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Diagnostic Laparoscopy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Pyelolithotomy",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "ESWL",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Andrology",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Laproscopic Procedures",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Folley Catherization",
-        detail: "",
-        logo: "",
-    },
-];
+const treatmentsOffered = {
+    DiagnosticModalities: [
+        {
+            name: "Urethro - cystocopy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Diagnostic Laparoscopy",
+            detail: "",
+            logo: "",
+        },
+    ],
+    TherapeuticModalities: [
+        {
+            name: "Pyelolithotomy",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "ESWL",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Andrology",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Laproscopic Procedures",
+            detail: "",
+            logo: "",
+        },
+        {
+            name: "Folley Catherization",
+            detail: "",
+            logo: "",
+        },
+    ],
+};
 
 function Urology() {
     const filterdDoc = demoData.filter((data) =>
@@ -71,11 +75,11 @@ function Urology() {
                             Since health problems in these body parts can happen
                             to everyone, urologic health is important.
                         </div>
-                        <p className="depDetailPara">
+                        {/* <p className="depDetailPara">
                             The scope of organs under Urology include kidneys,
                             adrenal glands, ureters, urinary bladder, and
                             urethra.
-                        </p>
+                        </p> */}
                     </div>
                     <div className="depImgWrapper">
                         <img
@@ -98,32 +102,53 @@ function Urology() {
                 </div>
 
                 <div className="treatmentWrapper">
-                    {treatmentsOffered.map((item, index) => (
-                        <>
-                            <div className="treatmentCard" key={index}>
-                                {/* for logo uncomment n remove check */}
-                                {/* <div className="treatmentLogo">
-                  <img src="/assets/department/surgery.png" alt="anyimg" />
-                </div> */}
-                                <div className="checkLogo">
-                                    <img
-                                        src="/assets/dr/check.png"
-                                        alt="check"
-                                    />
+                    <h1 className="depMainHead">Diagnostic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentsOffered.DiagnosticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                                <div className="treatmentText">
-                                    <h2 className="treatmentTitle">
-                                        {item.name}
-                                    </h2>
-                                    {/* for content  */}
-                                    {/* <p className="treatmentAbout">
-                    Dunt in culpa qui officia deserunt mollit anim id est
-                    laborum.
-                  </p> */}
+                            </>
+                        )
+                    )}
+                </div>
+
+                <div className="treatmentWrapper">
+                    <h1 className="depMainHead">Therapeutic Modalities :</h1>
+                </div>
+                <div className="treatmentWrapper">
+                    {treatmentsOffered.TherapeuticModalities.map(
+                        (item, index) => (
+                            <>
+                                <div className="treatmentCard" key={index}>
+                                    <div className="checkLogo">
+                                        <img
+                                            src="/assets/dr/customcheck.jpg"
+                                            alt="check"
+                                        />
+                                    </div>
+                                    <div className="treatmentText">
+                                        <h2 className="treatmentTitle">
+                                            {item.name}
+                                        </h2>
+                                    </div>
                                 </div>
-                            </div>
-                        </>
-                    ))}
+                            </>
+                        )
+                    )}
                 </div>
             </div>
 
@@ -150,7 +175,7 @@ function Urology() {
                 </div>
             </div>
 
-            <div className="depBanner">
+            {/* <div className="depBanner">
                 <img
                     class="depBannerImg"
                     src="/assets/department/depLastBack.jpg"
@@ -172,7 +197,7 @@ function Urology() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

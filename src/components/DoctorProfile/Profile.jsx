@@ -21,7 +21,7 @@ const Profile = () => {
             {singleDoc.map((doc) => (
                 <div className="departments">
                     <div className="depDetail">
-                        <div className="depDetailContainer">
+                        <div className="depProfileDetailContainer">
                             <div className="drTextHead">
                                 <div className="drDetailAbout8">
                                     <div className="my-24 ml-10">
@@ -40,12 +40,24 @@ const Profile = () => {
                                         </h2>
                                         <h4 className="mt-4">{doc.position}</h4>
                                         <div className="mt-20">
-                                            <h5 className="flex">
+                                            <h5 className="flex mb-2">
                                                 Qualification :
                                                 <p className="ml-1">
                                                     {doc.Qualification}
                                                 </p>
                                             </h5>
+                                            {!doc.License < 1 && (
+                                                <h5 className="flex flex-col mb-2">
+                                                    License :
+                                                    {doc.License.map((lic) => (
+                                                        <>
+                                                            <p className="ml-3">
+                                                                {lic}
+                                                            </p>
+                                                        </>
+                                                    ))}
+                                                </h5>
+                                            )}
                                             <h4 className="flex">
                                                 Years of experience :{" "}
                                                 <p className="ml-1">
@@ -53,7 +65,7 @@ const Profile = () => {
                                                 </p>
                                             </h4>
                                         </div>
-                                        <button className="border-white border-2 px-4 py-2 rounded-full mt-4">
+                                        <button className="border-white border-2 px-4 py-2 rounded-full mt-4 transition-all duration-500 hover:bg-white hover:text-black">
                                             <Link to="/appointment">
                                                 Book An Appointment
                                             </Link>
@@ -61,10 +73,10 @@ const Profile = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="depImgWrapper">
+                            <div className="docProfileImgWrapper">
                                 <img
                                     className="depDetailImg"
-                                    src="/assets/dr/drp.jpg"
+                                    src={doc.imgUrl}
                                     alt="dermatology"
                                 />
                             </div>
@@ -73,7 +85,7 @@ const Profile = () => {
 
                     <div className="treatmentDetails">
                         <div className="depMain">
-                            <h1 className="depMainHead">Skills</h1>
+                            <h1 className="depMainHead">Procedures</h1>
                             <div className="depLine"></div>
                         </div>
 
@@ -82,7 +94,7 @@ const Profile = () => {
                                 <div className="treatmentCard" key={index}>
                                     <div className="checkLogo">
                                         <img
-                                            src="/assets/dr/check.png"
+                                            src="/assets/dr/customcheck.jpg"
                                             alt="check"
                                         />
                                     </div>

@@ -1,0 +1,22 @@
+{
+    "top-emergency": "translated",
+    "nav_brandname": "AL-Osrah International Hospital",
+    "nav": {
+        "nav_home": "الصفحة الرئيسية",
+        "nav_about": "حول",
+        "nav_dept": "الإدارات",
+        "nav_clinic": "عيادات",
+        "nav_insurance": "تأمين",
+        "nav_media": "وسائط",
+        "nav_contact": "اتصل"
+    },
+    "slider": {
+        "home_slider1_a": "Trusted & Reliable",
+        "home_slider1_b": "Better Healthcare for the World",
+        "home_slider1_c": "We are dedicated to provide high quality, evidence-based and safe healthcare.",
+        "home_slider2_b": "Committed to Your Better Health",
+        "home_slider2_c": " 24 hours round the clock services through the Emergency Department also provides rehabilitation care",
+        "home_slider3_b": "Your Trust is Our Strength",
+        "home_slider3_c": "All our departments provide world-class healthcare services."
+    }
+}

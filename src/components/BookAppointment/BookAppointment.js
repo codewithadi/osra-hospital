@@ -14,7 +14,7 @@ import Loading from "../Loading/Loading";
 import { Link } from "react-router-dom";
 
 function BookAppointment() {
-    const[book,setBook]=useState(false)
+    const [book, setBook] = useState(false);
     const [loading, setloading] = useState(false);
     const [department, setDepartment] = useState("");
     const [doctor, setDoctor] = useState("");
@@ -79,8 +79,23 @@ function BookAppointment() {
         //console.log(patientdate);
         const patientslotbooked = patientdate.map((value) => value.slot);
         const docSlot = selectedDoc.slots;
-        const res = docSlot.filter((item) => !patientslotbooked.includes(item));
+
+        const availdocSlot=selectedDoc.availslot
+        const availdocSlotu=availdocSlot.filter(e=>e.dateav===datebook)
+        if(availdocSlotu.length>0){
+            //const availdocSlotu=availdocSlot.filter(e=>e.dateav===datebook)
+            console.log(availdocSlotu)
+       // const availosradocslot=(availdocSlotu.map(e=>e.availSloty))
+       const availosradocslot=availdocSlotu[0].availSloty
+        console.log(availosradocslot)
+        const res = availosradocslot.filter((item) => !patientslotbooked.includes(item));
+        console.log(res)
         setblankslot(res);
+        }else{
+            const res = docSlot.filter((item) => !patientslotbooked.includes(item));
+        setblankslot(res);
+        }
+        
 
         //console.log(dateb)
 
@@ -98,42 +113,56 @@ function BookAppointment() {
         //  console.log(selectedDoc.label)
         //console.log(selectedDept.label)
         // console.log(gender)
-        const patient = {
-            date: dateb,
-            doctorname: selectedDoc.label,
-            departmentname: selectedDept.label,
-            gender,
-            slot,
-            name,
-            age,
-            message,
-            phone,
-            department: selectedDept._id,
-            doctor: selectedDoc._id,
-            email,
-        };
-        console.log(patient);
-        setBook(true);
-        try {
-            const res = await axios.post(
-                "https://doctorappapi.herokuapp.com/api/patient",
-                patient
-            );
-            setBook(false);
-            alert(res.data.msg);
-            setDateB("");
-            setAge("");
-            setName("");
 
-            setMessage("");
-            setPhone("");
-            setSelectedDept("");
-            setSelectedDoc("");
-            window.location.reload();
-        } catch (error) {
+        if (
+            (dateb &&
+                selectedDoc.label &&
+                selectedDept.label &&
+                name &&
+                department &&
+                doctor &&
+                email) ||
+            phone
+        ) {
+            const patient = {
+                date: dateb,
+                doctorname: selectedDoc.label,
+                departmentname: selectedDept.label,
+                gender,
+                slot,
+                name,
+                age,
+                message,
+                phone,
+                department: selectedDept._id,
+                doctor: selectedDoc._id,
+                email,
+            };
+           // console.log(patient);
             setBook(true);
-            console.log(error);
-            setBook(false);
+            try {
+                const res = await axios.post(
+                    "https://doctorappapi.herokuapp.com/api/patient",
+                    patient
+                );
+                setBook(false);
+                alert(res.data.msg);
+                setDateB("");
+                setAge("");
+                setName("");
+
+                setMessage("");
+                setPhone("");
+                setSelectedDept("");
+                setSelectedDoc("");
+                window.location.reload();
+            } catch (error) {
+                setBook(true);
+                console.log(error);
+                setBook(false);
+            }
+        } else {
+            alert("Please fill all the field");
         }
     };
     return (
@@ -149,9 +178,14 @@ function BookAppointment() {
                         <h1 className="depMainText">Book Appointment</h1>
                     </div>
                 </div>
-                {book ? (<div className="w-full h-full flex justify-center items-center py-4">
-                        <h1 className="text-2xl m-4 p-4 ">Wait Booking your appointment and will send you message shortly.....</h1>
-                    </div>) : loading ? (
+                {book ? (
+                    <div className="w-full h-full flex justify-center items-center py-4">
+                        <h1 className="text-2xl m-4 p-4 ">
+                            Wait Booking your appointment and will send you
+                            message shortly.....
+                        </h1>
+                    </div>
+                ) : loading ? (
                     <div className="w-full h-full flex justify-center items-center py-4">
                         <Loading />
                     </div>
@@ -228,7 +262,15 @@ function BookAppointment() {
                                     Female
                                 </label>
                             </div>
-                            <div className="flex flex-col justify-center items-center md:flex-row gap-4">
+                            <div className="flex flex-col justify-center items-center md:flex-row gap-2">
+                            <PhoneInput
+                                    className="bookFormItem"
+                                    country="sa"
+                                    value={phone}
+                                    onChange={(phone) => setPhone(phone)}
+                                    placeholder="Enter phone number"
+                                    enableSearch
+                                />
                                 <input
                                     className="bookFormItem"
                                     type="email"
@@ -237,14 +279,7 @@ function BookAppointment() {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
-                                <PhoneInput
-                                    containerClass="w-full"
-                                    country="sa"
-                                    value={phone}
-                                    onChange={(phone) => setPhone(phone)}
-                                    placeholder="Enter phone number"
-                                    enableSearch
-                                />
+                               
                             </div>
                             {/* Services Check box below  */}
                             <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2">
@@ -279,6 +314,7 @@ function BookAppointment() {
                                             className="py-2 px-4 text-center mb-4 border-2 rounded-sm"
                                             selected={startDate}
                                             onChange={handleChangeDate}
+                                            minDate={moment(). toDate()}
                                         />
                                     </div>
                                 )}
@@ -297,8 +333,9 @@ function BookAppointment() {
                                                 value={slot}
                                                 onChange={handleChangeInput}
                                             >
+                                                
                                                 <option value="">
-                                                    ----Slot----
+                                                    {blankslot.length===0 ? "--No Slot--" :"--Choose Slot--"}
                                                 </option>
                                                 {blankslot.map((slot) => (
                                                     <option
@@ -322,18 +359,18 @@ function BookAppointment() {
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                             ></textarea>
-                            <div className="bookFormBtn flex flex-col gap-4 md:flex-row">
+                            <div className="bookFormBtn md:px-72">
                                 <input
                                     type="submit"
                                     className="bookFormButton "
                                     value="Book Appointment"
                                 />
-                                <Link
+                                {/* <Link
                                     to="/appointment"
                                     className="bookFormButton text-center"
                                 >
                                     Find Doctor
-                                </Link>
+                                </Link> */}
                             </div>
                         </form>
                     </div>

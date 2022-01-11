@@ -6,7 +6,10 @@ const AdminMem = () => {
     return (
         <>
             <div className="md:p-2 md:my-6 text-center">
-                <h2 className="mt-12 mb-4 text-4xl font-medium"style={{color: "#3f0f1e"}}>
+                <h2
+                    className="mt-12 mb-4 text-4xl font-medium"
+                    style={{ color: "#3f0f1e" }}
+                >
                     {" "}
                     Administration Members
                 </h2>
@@ -15,11 +18,14 @@ const AdminMem = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-3 px-2 md:px-10" style={{color: "#3f0f1e"}}>
+            <div
+                className="grid grid-cols-1 justify-center justify-items-center justify-self-start items-center gap-4 md:grid-cols-3 px-2 md:px-10"
+                style={{ color: "#3f0f1e" }}
+            >
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
                     name="Mr. Alla Adel Abdulrhman Bin Soufayan"
-                    position="General Manager"
+                    position="General Director"
                 />
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
@@ -31,15 +37,30 @@ const AdminMem = () => {
                     name="Dr. Feras Al-harbi"
                     position="Medical Director"
                 />
-                <SingleDoctor
+                {/* <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
-                    name="Dr.Adulrahman Sweyfi "
+                    name="Dr. Adulrahman Sweyfi "
                     position="Deputy Medical Director"
-                />
-                <SingleDoctor
+                /> */}
+                {/* <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
                     name="Mr. Alaa Awad"
                     position="Nursing Director"
+                /> */}
+                {/* <SingleDoctor
+                    imgUrl="/assets/dr/maledirector.png"
+                    name="Mr. Sameer Mohammed"
+                    position="Internal controller"
+                /> */}
+            </div>
+            <div
+                className="flex flex-col md:flex-row justify-center items-center gap-7 px-2 md:px-10"
+                style={{ color: "#3f0f1e" }}
+            >
+                <SingleDoctor
+                    imgUrl="/assets/dr/maledirector.png"
+                    name="Dr. Adulrahman Sweyfi "
+                    position="Deputy Medical Director"
                 />
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"

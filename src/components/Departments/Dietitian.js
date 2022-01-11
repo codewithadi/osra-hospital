@@ -36,7 +36,7 @@ function Dietitian() {
             <div className="depMainBack">
                 <img
                     className="depMainImg"
-                    src="/assets/department/depMain.jpg"
+                    src="/assets/department/2-min.png"
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
@@ -49,9 +49,12 @@ function Dietitian() {
                     <div className="depTextHead">
                         <h1 className="depDetailTitle">Dietitian Department</h1>
                         <div className="depDetailAbout">
-                            The department of a hospital responsible for the
-                            provision of medical and surgical care to patients
-                            arriving at the hospital in need of immediate care..
+                            The Clinical Nutrition & Dietetics department at
+                            Lifepoint Multispecialty Hospital is a one-stop
+                            solution for all therapeutic diet and nutrition
+                            queries when it comes to health and illness. We
+                            provide comprehensive nutrition and diet services to
+                            both in-patients and out-patients.
                             <br />
                             <br />A dietitian, medical dietitian, or dietician
                             is an expert in identifying and treating
@@ -65,7 +68,7 @@ function Dietitian() {
                     <div className="depImgWrapper">
                         <img
                             className="depDetailImg"
-                            src="/assets/images/earnose.jpg"
+                            src="/assets/department/diet.png"
                             alt="earnose"
                         />
                     </div>
@@ -76,9 +79,10 @@ function Dietitian() {
                 <div className="depMain">
                     <h1 className="depMainHead">Treatments Offered</h1>
                     <p className="depMainPara">
-                        Our department of dietitian is dedicated to exceeding
-                        expectations. We provide cutting edge treatment of
-                        disorders below
+                        Our clinical dietician is specialized is assessing the
+                        nutritional status of the patient, calculate individual
+                        nutritional requirements and plan the diet accordingly
+                        depending upon the patients health condition.
                     </p>
                     <div className="depLine"></div>
                 </div>
@@ -93,7 +97,7 @@ function Dietitian() {
                 </div> */}
                                 <div className="checkLogo">
                                     <img
-                                        src="/assets/dr/check.png"
+                                        src="/assets/dr/customcheck.jpg"
                                         alt="check"
                                     />
                                 </div>
@@ -136,7 +140,7 @@ function Dietitian() {
                 </div>
             </div>
 
-            <div className="depBanner">
+            {/* <div className="depBanner">
                 <img
                     class="depBannerImg"
                     src="/assets/department/depLastBack.jpg"
@@ -158,7 +162,7 @@ function Dietitian() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
