@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { withTranslation } from 'react-i18next';
+import { withTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import NavLinks from "./NavbarLinks";
 import "./navbarstyle.css";
@@ -62,7 +62,7 @@ function Navbar({ t }) {
                     // style={{ width: "27%" }}
                 >
                     <div className="md:inline-flex md:-mt-5 text-sm md:text-base pr-2 select-none font-semibold">
-                    {t('nav_brandname')}
+                        {t("nav_brandname")}
                     </div>
 
                     <div className="md:-mt-4 md:inline-flex bg-transparent">
@@ -106,4 +106,4 @@ function Navbar({ t }) {
     );
 }
 
-export default withTranslation()(Navbar)
+export default withTranslation()(Navbar);

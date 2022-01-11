@@ -6,6 +6,7 @@ import Slider from "../components/Home/Slider/Slider";
 import SearchDoctor from "../components/Home/SearchDoctor/SearchDoctor";
 import Dslider from "../components/Home/DepartmentSlider/Dslider";
 import Facts from "../components/Home/Facts";
+import { withTranslation } from "react-i18next";
 
 const Home = () => {
   return (
@@ -21,4 +22,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default withTranslation()(Home);

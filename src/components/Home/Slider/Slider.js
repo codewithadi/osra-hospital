@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import "./slider.css";
+import { withTranslation } from "react-i18next";
 
-const Slider = () => {
+const Slider = ({ t }) => {
     return (
         <div>
             <Carousel
@@ -27,15 +28,13 @@ const Slider = () => {
                     <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
                     <div className="main-text bg-transparent text-grey-300">
                         <p className="text-white text-left md:text-2xl bg-transparent mb-2">
-                            Trusted & Reliable
+                            {t("home_slider1_a")}
                         </p>
                         <h1 className=" text-white text-left font-semibold text-3xl md:text-6xl bg-transparent mb-4">
-                            Better Healthcare
-                            <br /> for the World
+                            {t("home_slider1_b")}
                         </h1>
                         <p className=" text-white text-left md:text-2xl bg-transparent mb-4">
-                            We are dedicated to provide high quality,
-                            evidence-based and safe healthcare.
+                            {t("home_slider1_c")}
                         </p>
                         {/* <div className="flex justify-start">
                             <Link
@@ -58,13 +57,10 @@ const Slider = () => {
                     <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
                     <div className="main-text bg-transparent text-grey-300">
                         <h1 className=" text-white text-left font-semibold text-3xl md:text-6xl bg-transparent mb-4">
-                            Committed to Your <br />
-                            Better Health
+                            {t("home_slider2_b")}
                         </h1>
                         <p className=" text-white text-left md:text-2xl bg-transparent mb-4">
-                            24 hours round the clock services through the
-                            Emergency Department also provides rehabilitation
-                            care
+                            {t("home_slider2_c")}
                         </p>
                         {/* <div className="flex justify-start">
                             <Link
@@ -87,15 +83,13 @@ const Slider = () => {
                     <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
                     <div className="main-text bg-transparent text-grey-300">
                         <p className="text-white text-left md:text-2xl bg-transparent mb-2">
-                            Trusted & Reliable
+                            {t("home_slider1_a")}
                         </p>
                         <h1 className=" text-white text-left font-semibold text-3xl md:text-6xl bg-transparent mb-4">
-                            Your Trust is
-                            <br /> Our Strength
+                            {t("home_slider3_b")}
                         </h1>
                         <p className=" text-white text-left md:text-2xl bg-transparent mb-4">
-                            All our departments provide world-class healthcare
-                            services.
+                            {t("home_slider3_c")}
                         </p>
                         {/* <div className="flex justify-start">
                             <Link
@@ -112,4 +106,4 @@ const Slider = () => {
     );
 };
 
-export default Slider;
+export default withTranslation()(Slider);
