@@ -7,29 +7,29 @@ const Contact = () => {
     const [email, setemail] = useState("");
     const [mailBody, setmailBody] = useState("");
     const [subject, setSubject] = useState("");
-    const [phone,setphone]=useState('')
+    const [phone, setphone] = useState("");
 
-  const handleContactSubmit = (e) => {
-    if (name === "" ||  mailBody === "" || subject === "") {
-      alert("fill all fields");
-      return;
-    }
-    e.preventDefault();
-    axios
-      .post("https://doctorappapi.herokuapp.com/api/postcontactmail", {
-         name,
-         email,
-         subject,
-         mailBody,
-         phone
-       }).catch((err) => console.log(err));
-    alert("Message sent successfully.")
-    setName("");
-    setemail("");
-    setmailBody("");
-    setSubject("");
-  };
-  
+    const handleContactSubmit = (e) => {
+        if (name === "" || mailBody === "" || subject === "") {
+            alert("fill all fields");
+            return;
+        }
+        e.preventDefault();
+        axios
+            .post("https://doctorappapi.herokuapp.com/api/postcontactmail", {
+                name,
+                email,
+                subject,
+                mailBody,
+                phone,
+            })
+            .catch((err) => console.log(err));
+        alert("Message sent successfully.");
+        setName("");
+        setemail("");
+        setmailBody("");
+        setSubject("");
+    };
 
     return (
         <div className="">
@@ -106,12 +106,12 @@ const Contact = () => {
                                         Phone : 0114311111
                                     </span>
                                 </a>
-                                <a href="tel:+94766300033">
+                                <a href="mailto:info@alosrah-hospital.com">
                                     <span
                                         style={{ color: "#778696" }}
                                         className="mt-2 mb-4 font-normal text-lg"
                                     >
-                                        Mail : hospital@example.com
+                                        Mail : info@alosrah-hospital.com
                                     </span>
                                 </a>
                             </div>

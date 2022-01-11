@@ -132,10 +132,10 @@ function Footer() {
                                                 <a
                                                     target="_blank"
                                                     rel="noreferrer"
-                                                    href="mailto:hospitalmail@gmail.com"
+                                                    href="mailto:info@alosrah-hospital.com"
                                                     className="bg-transparent"
                                                 >
-                                                    hospitalmail@gmail.com
+                                                   info@alosrah-hospital.com
                                                 </a>{" "}
                                             </div>
                                         </div>

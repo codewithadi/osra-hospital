@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-
+// style={{ height: "40vh" }}
 const Facts = () => {
     return (
         <div className="w-full relative">
