@@ -90,17 +90,17 @@
     "allclinics": {
         "a": {
             "name": "Pediatric",
-           "info": "A paediatrician is a child's physician who provides not only medical care for children who are acutely or chronically ill but also preventive health services for healthy children."
+            "info": "A paediatrician is a child's physician who provides not only medical care for children who are acutely or chronically ill but also preventive health services for healthy children."
         },
         "b": {
             "name": "OB/Gyne",
             "info": "OB-GYNs also historically have more cultural competency training around gender based issues.."
         },
-        "c":{
+        "c": {
             "name": "Ophthalmology",
             "info": "Ophthalmology is a branch of medicine dealing with the diagnosis, treatment and prevention of diseases of the eye and visual system."
         },
-        "d":{
+        "d": {
             "name": "Gastroenterology",
             "info": "Gastroenterology is a medical specialty dealing with the study of the digestive system and its disorders."
         },
@@ -109,7 +109,7 @@
             "info": "Cardiology is the study and treatment of disorders of the heart and the blood vessels."
         },
         "f": {
-           "name": "Dentistry",
+            "name": "Dentistry",
             "info": "Dentistry, the profession concerned with the prevention and treatment of oral disease, including diseases of the teeth and supporting structures and diseases of the soft tissues of the mouth."
         },
         "g": {
@@ -139,7 +139,6 @@
         "m": {
             "name": "Psychiatric",
             "info": "Psychiatry is the branch of medicine focused on the diagnosis, treatment and prevention of mental, emotional and behavioral disorders."
-            
         },
         "n": {
             "name": "Bariatric Surgery",
@@ -158,53 +157,89 @@
     "dm": "Diagnostic modalities",
     "tm": "Therapeutic modalities",
     "PediatricsDepartment": {
-         "dname": "Pediatrics Department",
-         "detail": "A paediatrician is a child's physician who provides not only medical care for children who are acutely or chronically ill but also preventive health services for healthy children. A paediatrician manages physical, mental, and emotional well-being of the children under their care at every stage of development, in both sickness and health. Pediatrics is the branch of medicine dealing with the health and ‎medical care of infants, children, and adolescents from birth up to the ‎age of 18.‎",
-         "treatment": "Dedicated to providing children under 14 years of age with the highest quality of care in a comforting environment, the Pediatrics department at Osra Hospital is one of the most trusted in the region.",
-         "dm1": "Blood sampling",
-         "dm2": "Pulse oxymetry ",
-         "dm3": "Throat swab and skin swab for Culture and Sensitivity studies",
-         "dm4": "Arterial blood gas sampling",
-         "dm5": "Radiological & Laboratory investigation",
-         "tm1": "Intravenous line cannulation",
-         "tm2": "Intravenous fluid administration ",
-         "tm3": "Gastric lavage",
-         "tm4": "Naso-gastric tube placement",
-         "tm5": "Umbilical vein catheterization",
-         "tm6": "Phototheraphy",
-         "tm7": "Chest tube placement",
-         "tm8": "Conventional mechanical ventilation",
-         "tm9": "Management of Neonatal diseases",
-         "tm10": "Management of Pediatric diseases as DKA, RSV, Bronchopneumonia, convulsions and other diseases",
-         "tm11":"Umbilical artery catheterization",
-         "tm12":"Neonatal resuscitation",
-         "tm13":"High frequency oscillatory ventilation."
+        "dname": "Pediatrics Department",
+        "detail": "A paediatrician is a child's physician who provides not only medical care for children who are acutely or chronically ill but also preventive health services for healthy children. A paediatrician manages physical, mental, and emotional well-being of the children under their care at every stage of development, in both sickness and health. Pediatrics is the branch of medicine dealing with the health and ‎medical care of infants, children, and adolescents from birth up to the ‎age of 18.‎",
+        "treatment": "Dedicated to providing children under 14 years of age with the highest quality of care in a comforting environment, the Pediatrics department at Osra Hospital is one of the most trusted in the region.",
+        "dm1": "Blood sampling",
+        "dm2": "Pulse oxymetry ",
+        "dm3": "Throat swab and skin swab for Culture and Sensitivity studies",
+        "dm4": "Arterial blood gas sampling",
+        "dm5": "Radiological & Laboratory investigation",
+        "tm1": "Intravenous line cannulation",
+        "tm2": "Intravenous fluid administration ",
+        "tm3": "Gastric lavage",
+        "tm4": "Naso-gastric tube placement",
+        "tm5": "Umbilical vein catheterization",
+        "tm6": "Phototheraphy",
+        "tm7": "Chest tube placement",
+        "tm8": "Conventional mechanical ventilation",
+        "tm9": "Management of Neonatal diseases",
+        "tm10": "Management of Pediatric diseases as DKA, RSV, Bronchopneumonia, convulsions and other diseases",
+        "tm11": "Umbilical artery catheterization",
+        "tm12": "Neonatal resuscitation",
+        "tm13": "High frequency oscillatory ventilation."
     },
     "Gastroenterology  Department": {
-         "dname": "Gastroenterology  Department",
-         "detail": "Gastroenterology is a medical specialty dealing with the study of the digestive system and its disorders. ... Gastrointestinal services incorporate a joint medical and surgical approach for the prevention, diagnosis and treatment of gastrointestinal, liver and pancreatic disorders including cancer.\u000d\u000a\u000d\u000a          The department is manned by esteemed and experienced gastroenterologists, efficient medical officers, skilled and compassionate paramedical staff, and well-trained technicians. The aim of the department is to provide a patient-focused approach.",
-         "treatment": "Our Gastroenterology Department is dedicated to exceeding expectations. We provide cutting edge treatment",
-         "tm1": "Herpetology and Endoscopy",
-         "tm2": "Diagnose and treating internal Medicine",
-         "tm3": "Liver Diseases",
-         "tm4": "Gastrointestinal",
-         "tm5": "Pancreatic Diseases"
+        "dname": "Gastroenterology  Department",
+        "detail": "Gastroenterology is a medical specialty dealing with the study of the digestive system and its disorders. ... Gastrointestinal services incorporate a joint medical and surgical approach for the prevention, diagnosis and treatment of gastrointestinal, liver and pancreatic disorders including cancer.\u000d\u000a\u000d\u000a          The department is manned by esteemed and experienced gastroenterologists, efficient medical officers, skilled and compassionate paramedical staff, and well-trained technicians. The aim of the department is to provide a patient-focused approach.",
+        "treatment": "Our Gastroenterology Department is dedicated to exceeding expectations. We provide cutting edge treatment",
+        "tm1": "Herpetology and Endoscopy",
+        "tm2": "Diagnose and treating internal Medicine",
+        "tm3": "Liver Diseases",
+        "tm4": "Gastrointestinal",
+        "tm5": "Pancreatic Diseases"
     },
     "Cardiology Department": {
-         "dname": "Cardiology Department",
-         "detail": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist. Cardiology is a branch of internal medicine.\u000d\u000a\u000d\u000a          A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery. A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system.",
-         "treatment": "Our department of Cardiology is dedicated to exceeding expectations. We provide cutting edge treatment of disorders below",
-         "tm1": "Internal medicine Cases",
-         "tm2": "Cardio Vascular System",
-         "tm3": "Trauma",
-         "tm4": "High Blood Pressure",
-         "tm5": "Diabetes",
-         "tm6": "Incision biopsy",
-         "tm7": "Excision Biopsy",
-         "tm8": "Diagnostic Laparoscopy",
-         "tm9": "Respiratory system",
-         "tm10": "Digestive system"
+        "dname": "Cardiology Department",
+        "detail": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist. Cardiology is a branch of internal medicine.\u000d\u000a\u000d\u000a          A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery. A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system.",
+        "treatment": "Our department of Cardiology is dedicated to exceeding expectations. We provide cutting edge treatment of disorders below",
+        "tm1": "Internal medicine Cases",
+        "tm2": "Cardio Vascular System",
+        "tm3": "Trauma",
+        "tm4": "High Blood Pressure",
+        "tm5": "Diabetes",
+        "tm6": "Incision biopsy",
+        "tm7": "Excision Biopsy",
+        "tm8": "Diagnostic Laparoscopy",
+        "tm9": "Respiratory system",
+        "tm10": "Digestive system"
     },
+    "dietitian": {
+        "title": "Dietitian",
+        "subTitle": "Dietitian Department",
+        "bodyPart1": "The Clinical Nutrition & Dietetics department at Lifepoint Multispecialty Hospital is a one-stop solution for all therapeutic diet and nutrition queries when it comes to health and illness. We provide comprehensive nutrition and diet services to both in-patients and out-patients.",
+        "bodyPart2": "A dietitian, medical dietitian, or dietician is an expert in identifying and treating disease-related malnutrition and in conducting medical nutrition therapy. A dietitian, medical dietitian, or dietician is an expert in identifying and treating disease-related malnutrition and in conducting medical nutrition therapy",
+        "treatmentHead": "Treatments Offered",
+        "treatmentBody": "Our clinical dietician is specialized is assessing the nutritional status of the patient, calculate individual nutritional requirements and plan the diet accordingly depending upon the patients health condition.",
+        "deptHead": "Department Doctors",
+        "deptSubHead": "Our expert team of dietitian specializes",
+        "treatment1": "Slimming and fitness programs",
+        "treatment2": "Obesity programs",
+        "treatment3": "Monitor the nutritional status of patients",
+        "treatment4": "Follow-up of the nutritional status of the patient after the operations"
+    },
+    "er": {
+        "title": "ER Department"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "name": "Name",
+        "yourname": "Your Name",
+        "phone": "Phone",
+        "yrph": "Your phone number",
+        "email":"Email",
+        "youremail":"Your email",
+        "msg":"Message",
+        "yurmsg": "Your Message",
+        "submit": "Submit"
+    },
+    "maintitle": "AlOsrah international Hospital is a Secondary level facility with 50 bed-Capacities situated in the middle of Riyadh city, Saudi Arabia.",
+    "quicklinks": "Quick Links",
+    "getsup": "Get Support",
+    "workinghrs": "Working Hours",
+    "allrihtres": "All rights reserved Developed by EnR Team",
+    "outpat": "Outside patient,",
+    "inpatfooter": "In patient visit times",
     "about": {
         "about_hist": "Our History"
     },
