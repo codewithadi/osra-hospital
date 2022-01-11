@@ -39,11 +39,9 @@ const BrandSlider = ({ t }) => {
                             alt="dept"
                         />
                     </div>
-                    <h1 className="depHead">Laboratory</h1>
+                    <h1 className="depHead">{t("departments.b.name")}</h1>
                     <p className="depDetailHome">
-                        Where tests are carried out on clinical specimens to
-                        obtain information about the health of a patient to aid
-                        in diagnosis, treatment, and prevention of disease
+                    {t("departments.b.info")}
                     </p>
                 </div>
             </div>
@@ -58,11 +56,9 @@ const BrandSlider = ({ t }) => {
                             alt="dept"
                         />
                     </div>
-                    <h1 className="depHead">Physiotherapy</h1>
+                    <h1 className="depHead">{t("departments.c.name")}</h1>
                     <p className="depDetailHome">
-                        Healthcare profession concerned with the assessment,
-                        maintenance, and restoration of the physical function
-                        and performance of the body by physical trainers.
+                    {t("departments.c.info")}
                     </p>
                 </div>
             </div>
@@ -77,11 +73,9 @@ const BrandSlider = ({ t }) => {
                             alt="dept"
                         />
                     </div>
-                    <h1 className="depHead">Out-Patient Clinics</h1>
+                    <h1 className="depHead">{t("departments.d.name")}</h1>
                     <p className="depDetailHome">
-                        An outpatient department or outpatient clinic is the
-                        part of a hospital designed for the treatment of
-                        outpatients.
+                    {t("departments.d.info")}
                     </p>
                 </div>
             </div>
@@ -96,11 +90,9 @@ const BrandSlider = ({ t }) => {
                             alt="dept"
                         />
                     </div>
-                    <h1 className="depHead">In-Patient</h1>
+                    <h1 className="depHead">{t("departments.e.name")}</h1>
                     <p className="depDetailHome">
-                        Inpatient care requires overnight hospitalization.
-                        Patients must stay at the medical facility where their
-                        procedure was done
+                    {t("departments.e.info")}
                     </p>
                 </div>
             </div>
@@ -115,13 +107,9 @@ const BrandSlider = ({ t }) => {
                             alt="dept"
                         />
                     </div>
-                    <h1 className="depHead">Home care</h1>
+                    <h1 className="depHead">{t("departments.g.name")}</h1>
                     <p className="depDetailHome">
-                        Skilled care delivered directly to a patient's home.
-                        This type of care is provided by licensed medical
-                        professionals including nurses, therapists, and aides
-                        for the purpose of treating or managing an illness,
-                        injury, or medical condition.
+                    {t("departments.g.name")}
                     </p>
                 </div>
             </div>
@@ -136,11 +124,9 @@ const BrandSlider = ({ t }) => {
                             alt="dept"
                         />
                     </div>
-                    <h1 className="depHead">Operations(OR)</h1>
+                    <h1 className="depHead">{t("departments.f.name")}</h1>
                     <p className="depDetailHome">
-                        The operating room, sometimes called the OR or surgery
-                        center, is where surgery (say: SUR-juh-ree) takes place
-                        in a hospital.
+                    {t("departments.f.name")}
                     </p>
                 </div>
             </div>
@@ -155,11 +141,9 @@ const BrandSlider = ({ t }) => {
                             alt="dept"
                         />
                     </div>
-                    <h1 className="depHead">Delivery</h1>
+                    <h1 className="depHead">{t("departments.i.name")}</h1>
                     <p className="depDetailHome">
-                        The care and treatment of women in childbirth and during
-                        the period before and after delivery. of or relating to
-                        childbirth or obstetrics.
+                    {t("departments.i.name")}
                     </p>
                 </div>
             </div>
@@ -174,11 +158,9 @@ const BrandSlider = ({ t }) => {
                             alt="dept"
                         />
                     </div>
-                    <h1 className="depHead">Pharmacy</h1>
+                    <h1 className="depHead">{t("departments.h.name")}</h1>
                     <p className="depDetailHome">
-                        Hospital pharmacists are experts in medicines who work
-                        as part of multidisciplinary healthcare teams to manage
-                        the use of medicines in hospitals.
+                    {t("departments.h.name")}
                     </p>
                 </div>
             </div>
@@ -193,13 +175,9 @@ const BrandSlider = ({ t }) => {
                             alt="dept"
                         />
                     </div>
-                    <h1 className="depHead">ICU</h1>
+                    <h1 className="depHead">{t("departments.j.name")}</h1>
                     <p className="depDetailHome">
-                        ICU unit in a hospital providing intensive care for
-                        critically ill or injured patients that is staffed by
-                        specially trained medical personnel and has equipment
-                        that allows for continuous monitoring and life support
-                        —abbreviation ICU. — called also critical care unit.
+                    {t("departments.j.name")}
                     </p>
                 </div>
             </div>
@@ -214,11 +192,9 @@ const BrandSlider = ({ t }) => {
                             alt="dept"
                         />
                     </div>
-                    <h1 className="depHead">ER</h1>
+                    <h1 className="depHead">{t("departments.k.name")}</h1>
                     <p className="depDetailHome">
-                        A hospital room or area staffed and equipped for the
-                        reception and treatment of persons with conditions (as
-                        illness or trauma) requiring immediate medical care.
+                    {t("departments.k.name")}
                     </p>
                 </div>
             </div>
@@ -232,12 +208,10 @@ const BrandSlider = ({ t }) => {
                     className="mt-12 text-4xl font-medium"
                     style={{ color: "#3f0f1e" }}
                 >
-                    Hospital Departments
+                    {t("departments.dtitle")}
                 </h2>
                 <p className="text-xl my-4" style={{ color: "#3f0f1e" }}>
-                    Patient care and getting CBAHI Reaccreditation with
-                    continues improvement and Enhancement in quality level and
-                    provided services
+                    {t("departments.dpara")}
                 </p>
                 <div className="flex justify-center items-center w-full">
                     <div className="h-1 w-16 bg-blue-500"></div>

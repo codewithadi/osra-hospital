@@ -40,6 +40,8 @@
         "facts_birth": "Birth Deliveries per Year"
     },
     "departments": {
+        "dtitle": "Hospital Departments",
+        "dpara": " Patient care and getting CBAHI Reaccreditation with continues improvement and Enhancement in quality level and provided services",
         "a": {
             "name": "Radiology",
             "info": "Radiology is a medical specialty that uses imaging to diagnose and treat diseases seen within the body. The radiology department may also be called the X-ray or imaging department"
@@ -51,6 +53,105 @@
         "c": {
             "name": "Physiotherapy",
             "info": "Healthcare profession concerned with the assessment, maintenance, and restoration of the physical function and performance of the body by physical trainers."
+        },
+        "d": {
+            "name": "Out-Patient Clinics",
+            "info": "An outpatient department or outpatient clinic is the part of a hospital designed for the treatment of outpatients"
+        },
+        "e": {
+            "name": "In-Patient",
+            "info": "Inpatient care requires overnight hospitalization. Patients must stay at the medical facility where their procedure was done"
+        },
+        "f": {
+            "name": "Operations (OR) department ",
+            "info": "The OR consists of individualized rooms with specific equipment for performing surgeries, including robotic systems."
+        },
+        "g": {
+            "name": "Home care",
+            "info": "Skilled care delivered directly to a patient's home. This type of care is provided by licensed medical professionals including nurses, therapists, and aides for the purpose of treating or managing an illness, injury, or medical condition"
+        },
+        "h": {
+            "name": "Pharmacy",
+            "info": "Hospital pharmacists are experts in medicines who work as part of multidisciplinary healthcare teams to manage the use of medicines in hospitals."
+        },
+        "i": {
+            "name": "Delivery",
+            "info": "The care and treatment of women in childbirth and during the period before and after delivery. of or relating to childbirth or obstetrics. Abbreviations"
+        },
+        "j": {
+            "name": "ICU (Intensive Care Unit)",
+            "info": "ICU unit in a hospital providing intensive care for critically ill or injured patients that is staffed by specially trained medical personnel and has equipment that allows for continuous monitoring and life support."
+        },
+        "k": {
+            "name": "ER",
+            "info": "A hospital room or area staffed and equipped for the reception and treatment of persons with conditions (as illness or trauma) requiring immediate medical care."
+        }
+    },
+    "allclinics": {
+        "a": {
+            "name": "Pediatric",
+           "info": "A paediatrician is a child's physician who provides not only medical care for children who are acutely or chronically ill but also preventive health services for healthy children."
+        },
+        "b": {
+            "name": "OB/Gyne",
+            "info": "OB-GYNs also historically have more cultural competency training around gender based issues.."
+        },
+        "c":{
+            "name": "Ophthalmology",
+            "info": "Ophthalmology is a branch of medicine dealing with the diagnosis, treatment and prevention of diseases of the eye and visual system."
+        },
+        "d":{
+            "name": "Gastroenterology",
+            "info": "Gastroenterology is a medical specialty dealing with the study of the digestive system and its disorders."
+        },
+        "e": {
+            "name": "Cardiology",
+            "info": "Cardiology is the study and treatment of disorders of the heart and the blood vessels."
+        },
+        "f": {
+           "name": "Dentistry",
+            "info": "Dentistry, the profession concerned with the prevention and treatment of oral disease, including diseases of the teeth and supporting structures and diseases of the soft tissues of the mouth."
+        },
+        "g": {
+            "name": "Dietitian",
+            "info": "The Clinical Nutrition & Dietetics department at Lifepoint Multispecialty Hospital is a one-stop solution for all therapeutic diet and nutrition queries when it comes to health and illness."
+        },
+        "h": {
+            "name": "Dermatology and Cosmetology",
+            "info": "Dermatology is the branch of medicine dealing with the skin. It is a speciality with both medical and surgical aspects."
+        },
+        "i": {
+            "name": "Orthopedics",
+            "info": " Orthopedics is the branch of medicine concerned with diseases, injuries and conditions of the musculoskeletal system or the body's muscles and skeleton."
+        },
+        "j": {
+            "name": "General Surgery",
+            "info": "General surgery are deal with diseases involving the skin, breast, soft tissue, trauma, Peripheral artery disease and hernias."
+        },
+        "k": {
+            "name": "Urology",
+            "info": "Urology is a part of health care that deals with diseases of the male and female urinary tract (kidneys, ureters, bladder and urethra)."
+        },
+        "l": {
+            "name": "Neuro",
+            "info": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system."
+        },
+        "m": {
+            "name": "Psychiatric",
+            "info": "Psychiatry is the branch of medicine focused on the diagnosis, treatment and prevention of mental, emotional and behavioral disorders."
+            
+        },
+        "n": {
+            "name": "Bariatric Surgery",
+            "info": "Bariatric surgery is an operation that is performed in order to help such individuals lose weight."
+        },
+        "o": {
+            "name": "Physiotherapy",
+            "info": "Healthcare profession concerned with the assessment, maintenance, and restoration of the physical function."
+        },
+        "p": {
+            "name": "ENT (Ear, Nose & Throat)",
+            "info": "If you have a health problem with your head or neck, your doctor might recommend that you see an otolaryngologist."
         }
     },
     "about": {

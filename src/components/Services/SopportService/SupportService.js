@@ -27,53 +27,53 @@ const SupportService = ({ t }) => {
                 />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/lab.png"
-                    title="Laboratory"
-                    desc="Where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease"
+                    title={t("departments.b.name")}
+                    desc={t("departments.b.info")}
                 />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/physio.png"
-                    title="Physiotherapy"
-                    desc="Healthcare profession concerned with the assessment, maintenance, and restoration of the physical function and performance of the body by physical trainers."
+                    title={t("departments.c.name")}
+                    desc={t("departments.c.info")}
                 />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/opc.png"
-                    title="Out-Patient Clinics"
-                    desc="An outpatient department or outpatient clinic is the part of a hospital designed for the treatment of outpatients"
+                    title={t("departments.d.name")}
+                    desc={t("departments.d.info")}
                 />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/ip.png"
-                    title="In-Patient "
-                    desc="Inpatient care requires overnight hospitalization. Patients must stay at the medical facility where their procedure was done"
+                    title={t("departments.e.name")}
+                    desc={t("departments.e.info")}
                 />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/or.png"
-                    title="Operations (OR) department "
-                    desc="The OR consists of individualized rooms with specific equipment for performing surgeries, including robotic systems."
+                    title={t("departments.f.name")}
+                    desc={t("departments.f.info")}
                 />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/hc.png"
-                    title="Home care"
-                    desc="Skilled care delivered directly to a patient's home. This type of care is provided by licensed medical professionals including nurses, therapists, and aides for the purpose of treating or managing an illness, injury, or medical condition"
+                    title={t("departments.g.name")}
+                    desc={t("departments.g.info")}
                 />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/phar.png"
-                    title="Pharmacy"
-                    desc="Hospital pharmacists are experts in medicines who work as part of multidisciplinary healthcare teams to manage the use of medicines in hospitals."
+                    title={t("departments.h.name")}
+                    desc={t("departments.h.info")}
                 />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/delivery.png"
-                    title="Delivery"
-                    desc="The care and treatment of women in childbirth and during the period before and after delivery. of or relating to childbirth or obstetrics. Abbreviations"
+                    title={t("departments.i.name")}
+                    desc={t("departments.i.info")}
                 />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/micu.png"
-                    title="ICU (Intensive Care Unit)"
-                    desc="ICU unit in a hospital providing intensive care for critically ill or injured patients that is staffed by specially trained medical personnel and has equipment that allows for continuous monitoring and life support."
+                    title={t("departments.j.name")}
+                    desc={t("departments.j.info")}
                 />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/er.png"
-                    title="ER"
-                    desc="A hospital room or area staffed and equipped for the reception and treatment of persons with conditions (as illness or trauma) requiring immediate medical care."
+                    title={t("departments.k.name")}
+                    desc={t("departments.k.info")}
                 />
             </div>
         </div>
