@@ -66,7 +66,7 @@ const SupportService = () => {
                 />
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/micu.png"
-                    title="ICU (Intermediate Care Unit)"
+                    title="ICU (Intensive Care Unit)"
                     desc="ICU unit in a hospital providing intensive care for critically ill or injured patients that is staffed by specially trained medical personnel and has equipment that allows for continuous monitoring and life support."
                 />
                 <SupportGrid
