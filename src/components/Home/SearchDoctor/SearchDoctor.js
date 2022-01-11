@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
+import { withTranslation } from "react-i18next";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
 // import CustomSelect from './CustomSelect'
@@ -34,7 +35,7 @@ const scrollToTop = () => {
     window.scrollTo(0, 0);
 };
 
-function SearchDoctor() {
+function SearchDoctor({ t }) {
     // const [selected, setSelected] = useState(people[0]);
     // const [selected1, setSelected1] = useState(people[0]);
     // const [dispDoc, setDispDoc] = useState(false);
@@ -61,13 +62,14 @@ function SearchDoctor() {
                     />
                     <div className="searchDoctorOverlay">
                         <div className="searchDoctorCol">
-                            <h1 className="searchDoctorHead">Find a Doctor</h1>
+                            <h1 className="searchDoctorHead">
+                                {t("find_doc.home_find_doc_a")}
+                            </h1>
                             <div className="searchDoctorAbout">
-                                40+ doctors on panel
+                                {t("find_doc.home_find_doc_b")}
                             </div>
                             <p className="searchDoctorPara">
-                                We are dedicated to provide high quality,
-                                evidence-based and safe healthcare.
+                                {t("find_doc.home_find_doc_c")}
                             </p>
                             {/* <div className='searchDoctorButton'>
                             <input className='searchDoctorInput' type="text" placeholder='Find A Doctor' />
@@ -174,7 +176,7 @@ function SearchDoctor() {
                                     className="text-white mt-5 rounded-sm py-3 px-4 uppercase font-light !hover:bg-green-400 text-sm md:text-base "
                                     style={{ backgroundColor: "#588325" }}
                                 >
-                                    Find Doctor
+                                    {t("find_doc.home_find_doc_btn")}
                                 </Link>
                             </div>
 
@@ -196,4 +198,4 @@ function SearchDoctor() {
     );
 }
 
-export default SearchDoctor;
+export default withTranslation()(SearchDoctor);

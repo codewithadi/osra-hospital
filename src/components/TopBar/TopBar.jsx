@@ -1,7 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { withTranslation } from "react-i18next";
 
-const TopBar = () => {
+const TopBar = ({ t }) => {
     const { i18n } = useTranslation();
     function changeLanguage(e) {
         i18n.changeLanguage(e.target.value);
@@ -14,7 +15,7 @@ const TopBar = () => {
                 href="tel:0114311111"
                 style={{ background: "#588325" }}
             >
-                Emergency: 011-431-1111
+                {t("top-emergency")}: 011-431-1111
             </a>
             <form className="px-4">
                 <select
@@ -29,4 +30,4 @@ const TopBar = () => {
     );
 };
 
-export default TopBar;
+export default withTranslation()(TopBar);

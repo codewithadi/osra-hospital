@@ -65,7 +65,7 @@ function NavLinks({ colorchange, t }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            {t("nav_home")}
+                            {t("nav.nav_home")}
                         </h1>
                     </Link>
                 </li>
@@ -81,7 +81,7 @@ function NavLinks({ colorchange, t }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            {t("nav_about")}
+                            {t("nav.nav_about")}
                         </h1>
                     </Link>
                 </li>
@@ -97,7 +97,7 @@ function NavLinks({ colorchange, t }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            {t("nav_dept")}
+                            {t("nav.nav_dept")}
                         </h1>
                     </Link>
                 </li>
@@ -113,7 +113,7 @@ function NavLinks({ colorchange, t }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            {t("nav_clinic")}
+                            {t("nav.nav_clinic")}
                         </h1>
                     </Link>
                 </li>
@@ -129,7 +129,7 @@ function NavLinks({ colorchange, t }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            {t("nav_insurance")}
+                            {t("nav.nav_insurance")}
                         </h1>
                     </Link>
                 </li>
@@ -188,7 +188,7 @@ function NavLinks({ colorchange, t }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            {t("nav_media")}
+                            {t("nav.nav_media")}
                         </h1>
                     </Link>
                 </li>
@@ -220,7 +220,7 @@ function NavLinks({ colorchange, t }) {
                         onClick={scrollToTop}
                     >
                         <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
-                            {t("nav_contact")}
+                            {t("nav.nav_contact")}
                         </h1>
                     </Link>
                 </li>

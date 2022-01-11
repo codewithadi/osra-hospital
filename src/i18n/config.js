@@ -12,6 +12,7 @@ i18n.use(initReactI18next).init({
             translations: require("./locales/ar/translations.json"),
         },
     },
+
     ns: ["translations"],
     defaultNS: "translations",
 });

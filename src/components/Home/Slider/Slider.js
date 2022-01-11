@@ -28,13 +28,13 @@ const Slider = ({ t }) => {
                     <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
                     <div className="main-text bg-transparent text-grey-300">
                         <p className="text-white text-left md:text-2xl bg-transparent mb-2">
-                            {t("home_slider1_a")}
+                            {t("slider.home_slider1_a")}
                         </p>
                         <h1 className=" text-white text-left font-semibold text-3xl md:text-6xl bg-transparent mb-4">
-                            {t("home_slider1_b")}
+                            {t("slider.home_slider1_b")}
                         </h1>
                         <p className=" text-white text-left md:text-2xl bg-transparent mb-4">
-                            {t("home_slider1_c")}
+                            {t("slider.home_slider1_c")}
                         </p>
                         {/* <div className="flex justify-start">
                             <Link
@@ -57,10 +57,10 @@ const Slider = ({ t }) => {
                     <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
                     <div className="main-text bg-transparent text-grey-300">
                         <h1 className=" text-white text-left font-semibold text-3xl md:text-6xl bg-transparent mb-4">
-                            {t("home_slider2_b")}
+                            {t("slider.home_slider2_b")}
                         </h1>
                         <p className=" text-white text-left md:text-2xl bg-transparent mb-4">
-                            {t("home_slider2_c")}
+                            {t("slider.home_slider2_c")}
                         </p>
                         {/* <div className="flex justify-start">
                             <Link
@@ -83,13 +83,13 @@ const Slider = ({ t }) => {
                     <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
                     <div className="main-text bg-transparent text-grey-300">
                         <p className="text-white text-left md:text-2xl bg-transparent mb-2">
-                            {t("home_slider1_a")}
+                            {t("slider.home_slider1_a")}
                         </p>
                         <h1 className=" text-white text-left font-semibold text-3xl md:text-6xl bg-transparent mb-4">
-                            {t("home_slider3_b")}
+                            {t("slider.home_slider3_b")}
                         </h1>
                         <p className=" text-white text-left md:text-2xl bg-transparent mb-4">
-                            {t("home_slider3_c")}
+                            {t("slider.home_slider3_c")}
                         </p>
                         {/* <div className="flex justify-start">
                             <Link
