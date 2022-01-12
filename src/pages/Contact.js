@@ -150,9 +150,9 @@ const Contact = ({ t }) => {
                                         style={{ color: "#778696" }}
                                         className="mb-1 font-normal text-sm"
                                     >
-                                        {t("morn")}: 9:00 a.m to 12:00 p.m,{" "}
+                                        {t("morn")} : 9:00 a.m to 12:00 p.m,{" "}
                                         <br />
-                                        {t("even")}: 4:00 p.m to 9:30 p.m
+                                        {t("even")} : 4:00 p.m to 9:30 p.m
                                     </span>
                                     <br />
                                     <span
