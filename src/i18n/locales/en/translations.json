@@ -324,6 +324,41 @@
         "tm1": "Evaluation of diseases",
         "tm2": "Psychological Assessment"
     },
+    "psyc": {
+        "head": "Pshyciatric Department",
+        "para1": "Psychiatry is the branch of medicine focused on the diagnosis, treatment and prevention of mental, emotional and behavioral disorders. A psychiatrist is a medical doctor (an M.D. or D.O.) who specializes in mental health, including substance use disorders. Psychiatrists are qualified to assess both the mental and physical aspects of psychological problems.",
+        "para2": "People seek psychiatric help for many reasons. The problems can be sudden, such as a panic attack, frightening hallucinations, thoughts of suicide, or hearing voices. Or they may be more long-term, such as feelings of sadness, hopelessness, or anxiousness that never seem to lift or problems functioning, causing everyday life to feel distorted or out of control.",
+        "topara": "Our department of Psychiatry is dedicated to exceeding expectations. We provide cutting edge treatment of disorders below",
+        "tm1": "Evaluation of diseases",
+        "tm2": "Psychological Assessment"
+    },
+    "bari": {
+        "head": "Bariatric Surgery Department",
+        "para1": "Exercise and diet alone often fails to effectively treat people with extreme and excessive obesity. Bariatric surgery is an operation that is performed in order to help such individuals lose weight. Evidence suggests that bariatric surgery may lower death rates for patients with severe obesity, especially when coupled with healthy eating and lifestyle changes after surgery.",
+        "para2": "These surgeries generally pose major risks and side effects and the patient has to make changes to their diet permanently and also schedule a fixed exercise regime so that they can ensure the lasting success of bariatric surgeries.",
+        "tohe": " Our department of Bariatric Surgery is dedicated to exceeding expectations. We provide cutting edge treatment",
+        "tm1": "Gastric Bypass",
+        "tm2": "Gastric Banding",
+        "tm3": "Gastrostomy Sleeve",
+        "tm4": "Tumor operations",
+        "tm5": "All types of obesity operations (re-obesity and morbid obesity)",
+        "tm6": "Laparoscopic sleeve gastrectomy",
+        "tm7": "SADI operation",
+        "tm8": "SASI process",
+        "tm9": "Oncology surgery",
+        "tm10": "General surgeries",
+        "tm11": "Mini gastric bypass"
+    },
+    "psyo": {
+        "head": "Physiotherapy Department",
+        "para1": "Healthcare profession concerned with the assessment, maintenance, and restoration of the physical function and performance of the body by physical trainers.",
+        "topara": "Our department of Physiotherapy is dedicated to exceeding expectations. We provide cutting edge treatment of disorders below",
+        "tm1": "Treating orthopedic and neurological diseases",
+        "tm2": "Sports injury rehabilitation",
+        "tm3": "Thromboembolism treatment",
+        "tm4": "Rehabilitation of handicapped children",
+        "tm5": "Facial nerve treatment"
+    },
     "about": {
         "about_hist": "Our History",
         "about_histpara": "AlOsrah international Hospital is a Secondary level facility with 50 bed-Capacities situated in the middle of Riyadh city, Saudi Arabia. It provides inpatient and outpatient services to Male and Female patients of all age groups, nationalities and 24 hours round the clock services through the Emergency Department also provides rehabilitation care",
@@ -343,6 +378,7 @@
         "email": "Email",
         "youremail": "Your email",
         "msg": "Message",
+        "sub": "Subject",
         "yurmsg": "Your Message",
         "submit": "Submit"
     },
@@ -353,6 +389,12 @@
     "allrihtres": "All rights reserved Developed by EnR Team",
     "outpat": "Outside patient,",
     "inpatfooter": "In patient visit times",
+    "getint": "Get in Touch",
+    "addr": "Address",
+    "morn": "Morning",
+    "even": "Evening",
+    "stt": "Saturday to Thursday",
+    "fr": "Friday",
     "clinic": {
         "test": "Gastric Bypass"
     }
