@@ -34,7 +34,7 @@ const WhyChooseUs = ({ t }) => {
                 </section>
                 {/* col 2  */}
                 <section className="md:px-5 flex flex-col justify-center items-center">
-                    <div className="mx-4 md:mt-4 mb-1">
+                    {/* <div className="mx-4 md:mt-4 mb-1">
                         <div className="flex justify-start">
                             <img
                                 className="h-10 w-10"
@@ -50,6 +50,25 @@ const WhyChooseUs = ({ t }) => {
                         </div>
                         <p className="text-xl my-2 text-gray-800">
                             {t("about.missionpara")}{" "}
+                        </p>
+                    </div> */}
+
+                    <div className="mx-4 md:mt-4 mb-1">
+                        <div className="flex justify-start">
+                            <img
+                                className="h-10 w-10"
+                                src="/assets/about/mission.png"
+                                alt="mission"
+                            />
+                            <h3
+                                className="font-medium px-3 text-2xl"
+                                style={{ color: "#3f0f1e" }}
+                            >
+                                {t("about.mission")}
+                            </h3>
+                        </div>
+                        <p className="text-xl my-2 text-gray-800">
+                            {t("about.missionpara")}
                         </p>
                     </div>
 
