@@ -1,8 +1,9 @@
 import React from "react";
 import SingleDoctor from "./Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
 import "./About.css";
 
-const BoD = () => {
+const BoD = ({t}) => {
     return (
         <>
             <div className="md:p-2 md:my-6 text-center">
@@ -11,7 +12,7 @@ const BoD = () => {
                     style={{ color: "#3f0f1e" }}
                 >
                     {" "}
-                    Board of Directors Members
+                    {t("about.board")}
                 </h2>
                 <div className="flex justify-center items-center w-full">
                     <div className="h-1 w-16 bg-primary-brown"></div>
@@ -47,4 +48,4 @@ const BoD = () => {
     );
 };
 
-export default BoD;
+export default withTranslation()(BoD);

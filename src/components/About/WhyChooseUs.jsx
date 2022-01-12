@@ -10,7 +10,7 @@ const WhyChooseUs = ({ t }) => {
                     className="mt-12 text-4xl font-medium"
                     style={{ color: "#3f0f1e" }}
                 >
-                    Why Choose Us
+                    {t("about.why")}
                 </h2>
                 {/* <p className="text-lg px:4 md:my-4 text-gray-500">
                     There live the blind texts separated they right at the coast

@@ -1,8 +1,9 @@
 import React from "react";
 import MediaImages from "../components/Media/MediaImages";
 // import MediaVideo from "../components/Media/MediaVideo";
+import { withTranslation } from "react-i18next";
 
-const Media = () => {
+const Media = ({ t }) => {
     // const [dispImg, setDispImg] = useState(true);
     // const [dispVideo, setDispVideo] = useState(false);
     return (
@@ -17,7 +18,7 @@ const Media = () => {
             >
                 <div className="flex items-center justify-center w-full h-full bg-gray-800 bg-opacity-50">
                     <div className="text-center font-semibold text-white text-4xl md:text-7xl">
-                        <h1 className="mb-7">Media</h1>
+                        <h1 className="mb-7">{t("media")}</h1>
                     </div>
                 </div>
             </div>
@@ -57,4 +58,4 @@ const Media = () => {
     );
 };
 
-export default Media;
+export default withTranslation()(Media);

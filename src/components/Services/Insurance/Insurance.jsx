@@ -1,7 +1,8 @@
 import React from "react";
 import InsuranceGrid from "./InsuranceGrid";
+import { withTranslation } from "react-i18next";
 
-const Insurance = () => {
+const Insurance = ({t}) => {
     return (
         <div>
             <div
@@ -14,7 +15,7 @@ const Insurance = () => {
             >
                 <div className="flex items-center justify-center w-full h-full bg-gray-800 bg-opacity-50">
                     <div className="text-center font-semibold text-white text-4xl md:text-7xl">
-                        <h1 className="mb-7">Insurance</h1>
+                        <h1 className="mb-7">{t("inc")}</h1>
                     </div>
                 </div>
             </div>
@@ -282,4 +283,4 @@ const Insurance = () => {
     );
 };
 
-export default Insurance;
+export default withTranslation()(Insurance);

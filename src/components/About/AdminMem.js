@@ -1,8 +1,9 @@
 import React from "react";
 import SingleDoctor from "./Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
 import "./About.css";
 
-const AdminMem = () => {
+const AdminMem = ({ t }) => {
     return (
         <>
             <div className="md:p-2 md:my-6 text-center">
@@ -11,7 +12,7 @@ const AdminMem = () => {
                     style={{ color: "#3f0f1e" }}
                 >
                     {" "}
-                    Administration Members
+                    {t("about.admin")}
                 </h2>
                 <div className="flex justify-center items-center w-full">
                     <div className="h-1 w-16 bg-primary-brown"></div>
@@ -72,4 +73,4 @@ const AdminMem = () => {
     );
 };
 
-export default AdminMem;
+export default withTranslation()(AdminMem);

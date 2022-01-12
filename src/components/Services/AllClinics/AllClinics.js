@@ -115,11 +115,8 @@ function AllClinics({ t }) {
     return (
         <div className="department py-6">
             <div className="depMain">
-                <h1 className="depMainHead">Hospital Clinics</h1>
-                <p className="depMainPara">
-                    No more illness!! We assure you! We care for your healthy
-                    well being. When health is at stake.
-                </p>
+                <h1 className="depMainHead">{t("hc")}</h1>
+                <p className="depMainPara">{t("hcpara")}</p>
                 <div className="depLine"></div>
             </div>
             <div className="depContainer">
