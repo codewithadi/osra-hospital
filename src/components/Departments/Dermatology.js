@@ -2,46 +2,46 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
 
-const treatmentsOffered = [
-    {
-        name: "Dermatopathology",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Peeling( Chemical Type)",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Cosmetology",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "PRP Plastic for hair removal",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Acne treatment",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Skin diseases",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Hyperpigmentation",
-        detail: "",
-        logo: "",
-    },
-];
-
-function Dermatology() {
+function Dermatology({ t }) {
+    const treatmentsOffered = [
+        {
+            name: `${t("Der1.one")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("Der1.two")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("Der1.three")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("Der1.four")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("Der1.five")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("Der1.six")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("Der1.seven")}`,
+            detail: "",
+            logo: "",
+        },
+    ]
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("dermatology")
     );
@@ -62,18 +62,12 @@ function Dermatology() {
                 <div className="depDetailContainer">
                     <div className="depTextHead">
                         <h1 className="depDetailTitle">
-                            Dermatology and Cosmetology Department
+                        {t("Der1.title")}
                         </h1>
                         <div className="depDetailAbout">
-                            Dermatology is the branch of medicine dealing with
-                            the skin. It is a speciality with both medical and
-                            surgical aspects. A dermatologist is a specialist
-                            medical doctor who manages diseases related to skin,
-                            hair, nails, and some cosmetic problems.
-                            <br /> <br />A dermatologist is a doctor who
-                            specializes in conditions involving the skin, hair,
-                            and nails. A dermatologist can identify and treat
-                            more than 3,000 conditions.
+                        {t("Der1.body1")}
+                            <br /> <br />
+                            {t("Der1.body2")}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -88,10 +82,11 @@ function Dermatology() {
 
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">Treatments Offered</h1>
+                    <h1 className="depMainHead">
+                    {t("Der1.Treatmenthead")}
+                        </h1>
                     <p className="depMainPara">
-                        Our dermatology and cosmetology specialists have
-                        expertise in
+                    {t("Der1.Treatmentbody")}
                     </p>
                     <div className="depLine"></div>
                 </div>
@@ -174,4 +169,4 @@ function Dermatology() {
     );
 }
 
-export default Dermatology;
+export default withTranslation()(Dermatology);

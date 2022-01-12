@@ -2,69 +2,71 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
+
+function Dentistry({ t }) {
 const treatmentsOffered = {
     DiagnosticModalities: [
         {
-            name: "Laboratory investigations include blood hematology",
+            name: `${t("Den1.one")}`,
             detail: "",
             logo: "",
         },
         {
-            name: "Periapical x-ray, panoramic , CT scan.",
+            name: `${t("Den1.two")}`,
             detail: "",
             logo: "",
         },
         {
-            name: "Excision biopsy",
+            name: `${t("Den1.three")}`,
             detail: "",
             logo: "",
         },
     ],
     TherapeuticModalities: [
         {
-            name: "Oral hygiene instruction.",
+            name: `${t("Den1.four")}`,
             detail: "",
             logo: "",
         },
         {
-            name: "Root Canals treatment",
+            name:  `${t("Den1.five")}`,
             detail: "",
             logo: "",
         },
         {
-            name: "Cosmetic fillings",
+            name: `${t("Den1.six")}`,
             detail: "",
             logo: "",
         },
         {
-            name: "Tooth extraction",
+            name: `${t("Den1.seven")}`,
             detail: "",
             logo: "",
         },
         {
-            name: "Removable prosthodontics",
+            name: `${t("Den1.eight")}`,
             detail: "",
             logo: "",
         },
         {
-            name: "Fixed prosthodontice",
+            name: `${t("Den1.nine")}`,
             detail: "",
             logo: "",
         },
         {
-            name: "Gum treatment",
+            name: `${t("Den1.ten")}`,
             detail: "",
             logo: "",
         },
         {
-            name: "Orthodontics",
+            name: `${t("Den1.eleven")}`,
             detail: "",
             logo: "",
         },
     ],
 };
 
-function Dentistry() {
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("dentist")
     );
@@ -84,22 +86,14 @@ function Dentistry() {
             <div className="depDetail">
                 <div className="depDetailContainer">
                     <div className="depTextHead">
-                        <h1 className="depDetailTitle">Dentistry Department</h1>
+                        <h1 className="depDetailTitle">
+                        {t("Den1.title")}
+                            </h1>
                         <div className="depDetailAbout">
-                            Dentistry, the profession concerned with the
-                            prevention and treatment of oral disease, including
-                            diseases of the teeth and supporting structures and
-                            diseases of the soft tissues of the mouth.
+                        {t("Den1.body1")}
                             <br />
                             <br />
-                            Dentistry is one of the best open access journals
-                            that aims to publish the most complete and reliable
-                            source of information on discoveries and current
-                            developments in the mode of original articles,
-                            review articles, case reports, short communications,
-                            etc. in this field and provide online access without
-                            any restrictions or subscriptions to researchers
-                            worldwide.
+                            {t("Den1.body2")}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -113,10 +107,11 @@ function Dentistry() {
             </div>
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">Treatments Offered</h1>
+                    <h1 className="depMainHead">
+                    {t("Den1.Treatmenthead")}
+                    </h1>
                     <p className="depMainPara">
-                        Our Dentistry Department is dedicated to exceeding
-                        expectations. We provide cutting edge treatment
+                    {t("Den1.Treatmentbody")}
                     </p>
                     <div className="depLine"></div>
                 </div>
@@ -220,4 +215,4 @@ function Dentistry() {
     );
 }
 
-export default Dentistry;
+export default withTranslation()(Dentistry);

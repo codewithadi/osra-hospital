@@ -2,51 +2,54 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
 
-const treatmentsOffered = [
-    {
-        name: "Joint Diseases",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Tumors",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Trauma closed and open reduction",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Local joint Injections",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Plaster cast (POP)",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Tendon repair",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Arthroplasty",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Sports Injury",
-        detail: "",
-        logo: "",
-    },
-];
 
-function Orthopedics() {
+function Orthopedics({ t }) {
+
+    const treatmentsOffered = [
+        {
+            name: `${t("Ortho1.one")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name:`${t("Ortho1.two")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("Ortho1.three")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("Ortho1.four")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("Ortho1.five")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name:`${t("Ortho1.six")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("Ortho1.seven")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("Ortho1.eight")}`,
+            detail: "",
+            logo: "",
+        },
+    ];
+    
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("orthopedics")
     );
@@ -67,19 +70,13 @@ function Orthopedics() {
                 <div className="depDetailContainer">
                     <div className="depTextHead">
                         <h1 className="depDetailTitle">
-                            Orthopedics Department
+                        {t("Ortho1.title")}
                         </h1>
                         <div className="depDetailAbout">
-                            Orthopedics is the branch of medicine concerned with
-                            diseases, injuries and conditions of the
-                            musculoskeletal system or the body's muscles and
-                            skeleton. This structure also includes the joints,
-                            tendons, ligaments and nerves.
-                            <br />
-                            <br />
-                            The vision of the Department of Orthopaedics is to
-                            achieve the goal to offer painless, total,
-                            functional recovery to patients
+                        {t("Ortho1.body1")}
+                        <br/>
+                        <br/>
+                        {t("Ortho1.body2")}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -93,11 +90,11 @@ function Orthopedics() {
             </div>
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">Treatments Offered</h1>
+                    <h1 className="depMainHead">
+                    {t("Ortho1.Treatmenthead")}
+                    </h1>
                     <p className="depMainPara">
-                        The Orthopaedic department at our hospitals delivers
-                        personalised care utilising the latest research and
-                        evidence-based medicine.
+                    {t("Ortho1.Treatmentbody")}
                     </p>
                     <div className="depLine"></div>
                 </div>
@@ -164,7 +161,7 @@ function Orthopedics() {
         />
         <div className="depBannerOverlay">
           <h3 className="depBannerText">Reliable & Trusted</h3>
-          <h1 className="depBannerHead">Get the Best Ortho Treatment</h1>
+          <h1 className="depBannerHead">Get the Best Ortho1Treatment</h1>
           <p className="depBannerPara">
             Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Excepteur sint, sunt in culpa qui officia deserunt mollit anim id
@@ -181,4 +178,4 @@ function Orthopedics() {
     );
 }
 
-export default Orthopedics;
+export default withTranslation()(Orthopedics);
