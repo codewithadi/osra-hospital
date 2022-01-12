@@ -350,29 +350,40 @@
      "clinic": {
           "test": "Gastric Bypass"
      },
-     "GeneralSurgery":{
-         "dname":"General Surgery",
-         "detail":"General surgery is a surgical specialty that focuses on abdominal contents including the esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.General surgery are deal with diseases involving the skin, breast, soft tissue, trauma, Peripheral artery disease and hernias and perform endoscopic procedures such as gastroscopy and colonoscopy.",
-         "treatment":"We use cutting edge technology to execute a wide range of general surgeries, including",
-         "dm1":"Incision biopsy",
-         "dm2":"Excision",
-         "dm3":"FNAC",
-         "dm4":"Diagnostic Laparoscopy",
-         "dm5":"Procto-sigmoidoscopy",
-         "tm1":"Appendectomy ( open and laproscopic)",
-         "tm2":"Inguinal, Umbilical and Femoral Hernioplasty ( open and laproscopic)",
-         "tm3":"Cholecystectomy ( open and laproscopic)",
-         "tm4":"Haemorrhoidectomy, Fissurectomy, Fistulectomy",
-         "tm5":"Thyroidectomy",
-         "tm6":"Pilonidal sinus excision & flap closure",
-         "tm7":"Peritonitis",
-         "tm8":"Ascities",
-         "tm9":"Peptic ulcer perforation",
-         "tm10":"Mastectomy",
-         "tm11":"Colorectal Surgery",
-         "tm12":"Laparotomy",
-         "tm13":"Bowel resection anastomosis",
-         "tm14":"Stoma creation and take down",
-         "tm15":"Exploratory lapatotomy"
+     "GeneralSurgery": {
+          "dname": "General Surgery",
+          "detail": "General surgery is a surgical specialty that focuses on abdominal contents including the esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.General surgery are deal with diseases involving the skin, breast, soft tissue, trauma, Peripheral artery disease and hernias and perform endoscopic procedures such as gastroscopy and colonoscopy.",
+          "treatment": "We use cutting edge technology to execute a wide range of general surgeries, including",
+          "dm1": "Incision biopsy",
+          "dm2": "Excision",
+          "dm3": "FNAC",
+          "dm4": "Diagnostic Laparoscopy",
+          "dm5": "Procto-sigmoidoscopy",
+          "tm1": "Appendectomy ( open and laproscopic)",
+          "tm2": "Inguinal, Umbilical and Femoral Hernioplasty ( open and laproscopic)",
+          "tm3": "Cholecystectomy ( open and laproscopic)",
+          "tm4": "Haemorrhoidectomy, Fissurectomy, Fistulectomy",
+          "tm5": "Thyroidectomy",
+          "tm6": "Pilonidal sinus excision & flap closure",
+          "tm7": "Peritonitis",
+          "tm8": "Ascities",
+          "tm9": "Peptic ulcer perforation",
+          "tm10": "Mastectomy",
+          "tm11": "Colorectal Surgery",
+          "tm12": "Laparotomy",
+          "tm13": "Bowel resection anastomosis",
+          "tm14": "Stoma creation and take down",
+          "tm15": "Exploratory lapatotomy"
+     },
+     "neuro": {
+          "head": "Neuro Department",
+          "para1": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities. A doctor who specializes in neurology is called a neurologist. The neurologist treats disorders that affect the brain, spinal cord, and nerves",
+          "para2": "The department offers the latest in neurological care with innovative therapies, new techniques and clinical trials developed by our world-class experts. Our neurologists help more than 100,000 adults and children each year, including those with complex or rare conditions.",
+          "topara": "Our Neurology Department is dedicated to exceeding expectations. We provide cutting edge treatment of disorders below",
+          "tm1": "Evaluation of diseases",
+          "tm2": "Psychological Assessment"
+     },
+     "Urology":{
+         
      }
 }
