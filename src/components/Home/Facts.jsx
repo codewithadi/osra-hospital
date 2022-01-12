@@ -4,7 +4,7 @@ import { withTranslation } from "react-i18next";
 
 const Facts = ({ t }) => {
     return (
-        <div className="w-full relative facts-container">
+        <div dir={t("direction")} className="w-full relative facts-container">
             <img
                 className="h-full w-full bg-cover bg-center"
                 style={{ objectFit: "cover" }}

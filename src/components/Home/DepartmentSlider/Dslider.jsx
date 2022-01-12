@@ -182,7 +182,7 @@ const BrandSlider = ({ t }) => {
     ];
 
     return (
-        <div className="bg-gray-200 w-full px-5">
+        <div dir={t("direction")} className="bg-gray-200 w-full px-5">
             <div className="p-2 text-center">
                 <h2
                     className="mt-12 text-4xl font-medium"

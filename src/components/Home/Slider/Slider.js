@@ -18,7 +18,7 @@ const Slider = ({ t }) => {
                 showStatus={false}
                 showThumbs={false}
             >
-                <div className="slider-height w-full">
+                <div dir={t("direction")} className="slider-height w-full">
                     <img
                         className="h-full w-full bg-cover bg-center"
                         style={{ objectFit: "cover" }}
@@ -47,7 +47,7 @@ const Slider = ({ t }) => {
                     </div>
                 </div>
 
-                <div className="slider-height w-full">
+                <div dir={t("direction")} className="slider-height w-full">
                     <img
                         className="h-full w-full bg-cover bg-center"
                         style={{ objectFit: "cover" }}
@@ -73,7 +73,7 @@ const Slider = ({ t }) => {
                     </div>
                 </div>
 
-                <div className="slider-height w-full">
+                <div dir={t("direction")} className="slider-height w-full">
                     <img
                         className="h-full w-full bg-cover bg-center"
                         style={{ objectFit: "cover" }}

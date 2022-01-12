@@ -61,7 +61,7 @@ function SearchDoctor({ t }) {
                         alt="hmsearch"
                     />
                     <div className="searchDoctorOverlay">
-                        <div className="searchDoctorCol">
+                        <div dir={t("direction")} className="searchDoctorCol">
                             <h1 className="searchDoctorHead">
                                 {t("find_doc.home_find_doc_a")}
                             </h1>
@@ -78,7 +78,7 @@ function SearchDoctor({ t }) {
 
                             {/* Custom select */}
 
-                            <div className="flex flex-col md:flex-row gap-4">
+                            <div className="">
                                 {/* <div className="searchDoctorButtonCustom w-full md:w-3/4">
                                     <Listbox
                                         value={selected}
@@ -171,6 +171,7 @@ function SearchDoctor({ t }) {
                                     Find Doctor
                                 </Link> */}
                                 <Link
+                                    dir={t("direction")}
                                     to="/doctor"
                                     onClick={scrollToTop}
                                     className="text-white mt-5 rounded-sm py-3 px-4 uppercase font-light !hover:bg-green-400 text-sm md:text-base "

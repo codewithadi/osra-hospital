@@ -8,7 +8,7 @@ import Dslider from "../components/Home/DepartmentSlider/Dslider";
 import Facts from "../components/Home/Facts";
 import { withTranslation } from "react-i18next";
 
-const Home = () => {
+const Home = ({t}) => {
   return (
     <div>
       <Slider />

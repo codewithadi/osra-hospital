@@ -1,4 +1,5 @@
 {
+    "direction": "ltr",
     "app": {
         "1": "Online Appointment Form",
         "2": "Now you can request an appointment in some simple steps Online",
@@ -18,12 +19,13 @@
     },
     "ujimages": {
         "journey": "/assets/about/OIH.Our.Journey.png",
-        "chart": "/assets/about/OIH.OrganizationalChart.png"
+        "chart": "/assets/about/OIH.OrganizationalChart.png",
+        "navlogo": "/assets/logo/logoen.png"
     },
     "bookapt": "Book Appointment",
     "book_btn_fixed1": "Book",
     "book_btn_fixed2": "Now",
-    "top-emergency": "Emergency",
+    "top-emergency": "Emergency: 011-431-1111",
     "nav_brandname": "AL-Osrah International Hospital",
     "nav": {
         "nav_home": "Home",

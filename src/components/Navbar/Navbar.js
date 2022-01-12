@@ -50,6 +50,7 @@ function Navbar({ t }) {
     };
     return (
         <div
+            dir={t("direction")}
             className={
                 !colorChange
                     ? `block headerText lg:px-12 md:px-8 px-4 lg:py-4 z-50 sticky top-0 md:bg-transparent bg-header shadow`
@@ -61,8 +62,6 @@ function Navbar({ t }) {
                     className="flex justify-center items-center md:pt-2 bg-transparent"
                     // style={{ width: "27%" }}
                 >
-                    
-
                     <div className="md:-mt-4 md:inline-flex bg-transparent">
                         <Link
                             className="w-full mr-1 bg-transparent flex justify-center items-center"
@@ -71,8 +70,7 @@ function Navbar({ t }) {
                         >
                             <img
                                 className="h-16 w-32 md:h-20 md:w-64 logoimages object-fill"
-                              
-                                src="/assets/logo/logo.png"
+                                src={t("ujimages.navlogo")}
                                 alt="brandlogo"
                             />
                         </Link>

@@ -1,4 +1,5 @@
 {
+    "direction": "rtl",
     "app": {
         "1": "نموذج حجز مواعيد الكترونية ",
         "2": "Now you can request an appointment in some simple steps Online",
@@ -18,12 +19,13 @@
     },
     "ujimages": {
         "journey": "/assets/about/journey.png",
-        "chart": "/assets/about/chart.png"
+        "chart": "/assets/about/chart.png",
+        "navlogo": "/assets/logo/logoar.png"
     },
     "bookapt": "أحجز موعد",
     "book_btn_fixed1": "احجز",
     "book_btn_fixed2": "الآن",
-    "top-emergency": " قسم الطوارئ ",
+    "top-emergency": " 011-431-1111 :قسم الطوارئ ",
     "nav_brandname": "AL-Osrah International Hospital",
     "nav": {
         "nav_home": " الرئيسية ",
