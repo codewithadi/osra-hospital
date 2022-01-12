@@ -101,7 +101,7 @@ function BariaticSurgery({ t }) {
                 </div>
             </div>
 
-            <div className="treatmentDetails">
+            {/* <div className="treatmentDetails">
                 <div className="depMain">
                     <h1 className="depMainHead">{t("to")}</h1>
                     <p className="depMainPara">{t("bari.tohe")}</p>
@@ -132,14 +132,14 @@ function BariaticSurgery({ t }) {
                         )
                     )}
                 </div>
-            </div>
+            </div> */}
 
             <div className="depDoctors">
                 <div className="depMain">
-                    <h1 className="depMainHead">Department Doctors</h1>
-                    <p className="depMainPara">
+                    <h1 className="depMainHead">{t("depdoc")}</h1>
+                    {/* <p className="depMainPara">
                         Our Bariatic surgeon at Osra Hospital you may know:
-                    </p>
+                    </p> */}
                     <div className="depLine"></div>
                 </div>
                 <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10">

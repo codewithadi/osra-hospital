@@ -68,9 +68,9 @@ function SearchDoctor({ t }) {
                             <div className="searchDoctorAbout">
                                 {t("find_doc.home_find_doc_b")}
                             </div>
-                            <p className="searchDoctorPara">
+                            {/* <p className="searchDoctorPara">
                                 {t("find_doc.home_find_doc_c")}
-                            </p>
+                            </p> */}
                             {/* <div className='searchDoctorButton'>
                             <input className='searchDoctorInput' type="text" placeholder='Find A Doctor' />
                             <a className='searchDoctorBtn' href="/contact">Find Doctor</a>

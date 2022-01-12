@@ -173,7 +173,7 @@ function Footer({ t }) {
                                                     rel="noreferrer"
                                                     href="https://www.google.com/maps?ll=24.584713,46.592886&z=16&t=m&hl=en&gl=IN&mapclient=embed&cid=8710480857477383593"
                                                 >
-                                                    Exit 29 - Riyadh
+                                                    {t("addressfull")}
                                                 </a>{" "}
                                             </div>
                                         </div>
@@ -195,10 +195,9 @@ function Footer({ t }) {
                                     </div>
 
                                     <div className="py-1 text-sm text-blue-300 uppercase">
-                                        Emergency, Pharmacy, Laboratory, Patient
-                                        Relations (in-duty manager):
+                                        {t("text-footer")}:
                                     </div>
-                                    <div>24 Hours</div>
+                                    <div>{t("hrs")}</div>
 
                                     <div className="py-1 text-sm text-blue-300 uppercase">
                                         {t("inpatfooter")}:
@@ -213,7 +212,7 @@ function Footer({ t }) {
                                 {/* ------------------------- */}
                                 <div className="bg-transparent">
                                     <h3 className=" font-semibold text-lg uppercase dark: bg-transparent cursor-default">
-                                        Find Us
+                                        {t("findus")}
                                     </h3>
                                     <div className="flex mt-4 -mx-2 bg-transparent">
                                         <a

@@ -4,69 +4,74 @@ import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
 import { withTranslation } from "react-i18next";
 
-function Gastroenterology({t}) {
-  const treatmentsOffered = [
-    {
-      name: `${t("GastroenterologyDepartment.tm1")}`,
-      detail: "",
-      logo: "",
-    },
-    {
-      name: `${t("GastroenterologyDepartment.tm2")}`,
-      detail: "",
-      logo: "",
-    },
-    {
-      name: `${t("GastroenterologyDepartment.tm3")}`,
-      detail: "",
-      logo: "",
-    },
-    {
-      name: `${t("GastroenterologyDepartment.tm4")}`,
-      detail: "",
-      logo: "",
-    },
-    {
-      name: `${t("GastroenterologyDepartment.tm5")}`,
-      detail: "",
-      logo: "",
-    },
-  ];
+function Gastroenterology({ t }) {
+    const treatmentsOffered = [
+        {
+            name: `${t("GastroenterologyDepartment.tm1")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("GastroenterologyDepartment.tm2")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("GastroenterologyDepartment.tm3")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("GastroenterologyDepartment.tm4")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("GastroenterologyDepartment.tm5")}`,
+            detail: "",
+            logo: "",
+        },
+    ];
 
-  const filterdDoc = demoData.filter((data) =>
-    data.department.includes("gastroenterology")
-  );
-  return (
-    <div className="departments">
-      <div className="depMainBack">
-        <img
-          className="depMainImg"
-          src="/assets/department/9-min.png"
-          alt="department Back"
-        />
-        <div className="depMainOverlay">
-          <h1 className="depMainText">{t("GastroenterologyDepartment.dname")}</h1>
-        </div>
-      </div>
-
-      <div className="depDetail">
-        <div className="depDetailContainer">
-          <div className="depTextHead">
-            <h1 className="depDetailTitle">{t("GastroenterologyDepartment.dname")}</h1>
-            <div className="depDetailAbout">
-            {t("GastroenterologyDepartment.detail")}
+    const filterdDoc = demoData.filter((data) =>
+        data.department.includes("gastroenterology")
+    );
+    return (
+        <div className="departments">
+            <div className="depMainBack">
+                <img
+                    className="depMainImg"
+                    src="/assets/department/9-min.png"
+                    alt="department Back"
+                />
+                <div className="depMainOverlay">
+                    <h1 className="depMainText">
+                        {t("GastroenterologyDepartment.dname")}
+                    </h1>
+                </div>
             </div>
-          </div>
-          <div className="depImgWrapper">
-            <img
-              className="depDetailImg"
-              src="/assets/images/gastroenterology.jpg"
-              alt="Gastroenterology"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="treatmentDetails">
+
+            <div className="depDetail">
+                <div className="depDetailContainer">
+                    <div className="depTextHead">
+                        <h1 className="depDetailTitle">
+                            {t("GastroenterologyDepartment.dname")}
+                        </h1>
+                        <div className="depDetailAbout">
+                            {t("GastroenterologyDepartment.detail")}
+                        </div>
+                    </div>
+                    <div className="depImgWrapper">
+                        <img
+                            className="depDetailImg"
+                            src="/assets/images/gastroenterology.jpg"
+                            alt="Gastroenterology"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            {/* <div className="treatmentDetails">
         <div className="depMain">
           <h1 className="depMainHead">{t("to")}</h1>
           <p className="depMainPara">
@@ -79,49 +84,42 @@ function Gastroenterology({t}) {
           {treatmentsOffered.map((item, index) => (
             <>
               <div className="treatmentCard" key={index}>
-                {/* for logo uncomment n remove check */}
-                {/* <div className="treatmentLogo">
-                  <img src="/assets/department/surgery.png" alt="anyimg" />
-                </div> */}
+                
                 <div className="checkLogo">
                   <img src="/assets/dr/customcheck.jpg" alt="check" />
                 </div>
                 <div className="treatmentText">
                   <h2 className="treatmentTitle">{item.name}</h2>
-                  {/* for content  */}
-                  {/* <p className="treatmentAbout">
-                    Dunt in culpa qui officia deserunt mollit anim id est
-                    laborum.
-                  </p> */}
+                 
                 </div>
               </div>
             </>
           ))}
         </div>
-      </div>
+      </div> */}
 
-      <div className="depDoctors">
-        <div className="depMain">
-          <h1 className="depMainHead">Department Doctors</h1>
-          <p className="depMainPara">Doctors in Gastroenterology are</p>
-          <div className="depLine"></div>
-        </div>
-        <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10">
-          {filterdDoc.map((doc, index) => (
-            <SingleDoctor
-              key={index}
-              imgUrl={doc.imgUrl}
-              name={doc.name}
-              position={doc.position}
-              mobno={doc.mobno}
-              email={doc.email}
-              linkto={doc.linkto}
-            />
-          ))}
-        </div>
-      </div>
+            <div className="depDoctors">
+                <div className="depMain">
+                    <h1 className="depMainHead">{t("depdoc")}</h1>
+                    {/* <p className="depMainPara">Doctors in Gastroenterology are</p> */}
+                    <div className="depLine"></div>
+                </div>
+                <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10">
+                    {filterdDoc.map((doc, index) => (
+                        <SingleDoctor
+                            key={index}
+                            imgUrl={doc.imgUrl}
+                            name={doc.name}
+                            position={doc.position}
+                            mobno={doc.mobno}
+                            email={doc.email}
+                            linkto={doc.linkto}
+                        />
+                    ))}
+                </div>
+            </div>
 
-      {/* <div className="depBanner">
+            {/* <div className="depBanner">
                 <img
                     class="depBannerImg"
                     src="/assets/department/depLastBack.jpg"
@@ -144,8 +142,8 @@ function Gastroenterology({t}) {
                     </div>
                 </div>
             </div> */}
-    </div>
-  );
+        </div>
+    );
 }
 
 export default withTranslation()(Gastroenterology);

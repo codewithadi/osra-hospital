@@ -27,9 +27,9 @@ const Slider = ({ t }) => {
                     />
                     <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
                     <div className="main-text bg-transparent text-grey-300">
-                        <p className="text-white text-left md:text-2xl bg-transparent mb-2">
+                        {/* <p className="text-white text-left md:text-2xl bg-transparent mb-2">
                             {t("slider.home_slider1_a")}
-                        </p>
+                        </p> */}
                         <h1 className=" text-white text-left font-semibold text-3xl md:text-6xl bg-transparent mb-4">
                             {t("slider.home_slider1_b")}
                         </h1>
@@ -82,9 +82,9 @@ const Slider = ({ t }) => {
                     />
                     <div className="w-full h-full main-dark-bg bg-black opacity-30"></div>
                     <div className="main-text bg-transparent text-grey-300">
-                        <p className="text-white text-left md:text-2xl bg-transparent mb-2">
+                        {/* <p className="text-white text-left md:text-2xl bg-transparent mb-2">
                             {t("slider.home_slider1_a")}
-                        </p>
+                        </p> */}
                         <h1 className=" text-white text-left font-semibold text-3xl md:text-6xl bg-transparent mb-4">
                             {t("slider.home_slider3_b")}
                         </h1>

@@ -108,9 +108,9 @@ function OBGyne({ t }) {
                         <h1 className="depDetailTitle">{t("OBGyne.title")}</h1>
                         <div className="depDetailAbout">
                             {t("OBGyne.body1")}
+                            {/* <br />
                             <br />
-                            <br />
-                            {t("OBGyne.body2")}
+                            {t("OBGyne.body2")} */}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -123,7 +123,7 @@ function OBGyne({ t }) {
                 </div>
             </div>
 
-            <div className="treatmentDetails">
+            {/* <div className="treatmentDetails">
                 <div className="depMain">
                     <h1 className="depMainHead">{t("OBGyne.treatmenthead")}</h1>
                     <p className="depMainPara">{t("OBGyne.treatmentbody")}</p>
@@ -179,14 +179,14 @@ function OBGyne({ t }) {
                         )
                     )}
                 </div>
-            </div>
+            </div> */}
 
             <div className="depDoctors">
                 <div className="depMain">
-                    <h1 className="depMainHead">Department Doctors</h1>
-                    <p className="depMainPara">
+                    <h1 className="depMainHead">{t("depdoc")}</h1>
+                    {/* <p className="depMainPara">
                         Doctors in Obstetrics and Gynecology
-                    </p>
+                    </p> */}
                     <div className="depLine"></div>
                 </div>
                 <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10">

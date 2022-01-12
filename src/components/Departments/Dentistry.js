@@ -103,7 +103,10 @@ function Dentistry({ t }) {
                     </div>
                 </div>
             </div>
-            <div className="treatmentDetails">
+
+
+
+            {/* <div className="treatmentDetails">
                 <div className="depMain">
                     <h1 className="depMainHead">{t("Den1.Treatmenthead")}</h1>
                     <p className="depMainPara">{t("Den1.Treatmentbody")}</p>
@@ -159,12 +162,12 @@ function Dentistry({ t }) {
                         )
                     )}
                 </div>
-            </div>
+            </div> */}
 
             <div className="depDoctors">
                 <div className="depMain">
-                    <h1 className="depMainHead">Department Doctors</h1>
-                    <p className="depMainPara">Doctors in Dermatology are</p>
+                    <h1 className="depMainHead">{t("depdoc")}</h1>
+                    {/* <p className="depMainPara">Doctors in Dermatology are</p> */}
                     <div className="depLine"></div>
                 </div>
                 <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10">

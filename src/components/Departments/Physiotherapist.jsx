@@ -4,11 +4,10 @@ import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
 import { withTranslation } from "react-i18next";
 
-
-function Physiotherapist({t}) {
+function Physiotherapist({ t }) {
     const treatmentsOffered = [
         {
-            name:   `${t("psyo.tm1")}`,
+            name: `${t("psyo.tm1")}`,
             detail: "",
             logo: "",
         },
@@ -45,19 +44,15 @@ function Physiotherapist({t}) {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">  {t("psyo.head")}</h1>
+                    <h1 className="depMainText"> {t("psyo.head")}</h1>
                 </div>
             </div>
 
             <div className="depDetail">
                 <div className="depDetailContainer">
                     <div className="depTextHead">
-                        <h1 className="depDetailTitle">
-                        {t("psyo.head")}
-                        </h1>
-                        <div className="depDetailAbout">
-                        {t("psyo.para1")}
-                        </div>
+                        <h1 className="depDetailTitle">{t("psyo.head")}</h1>
+                        <div className="depDetailAbout">{t("psyo.para1")}</div>
                         {/* <p className="depDetailPara">
               Physiotherapists have in-depth knowledge of how the body works and
               specialized hands-on clinical skills to assess, diagnose, and
@@ -78,7 +73,7 @@ function Physiotherapist({t}) {
                 </div>
             </div>
 
-            <div className="treatmentDetails">
+            {/* <div className="treatmentDetails">
                 <div className="depMain">
                     <h1 className="depMainHead">{t("to")}</h1>
                     <p className="depMainPara">
@@ -91,10 +86,7 @@ function Physiotherapist({t}) {
                     {treatmentsOffered.map((item, index) => (
                         <>
                             <div className="treatmentCard" key={index}>
-                                {/* for logo uncomment n remove check */}
-                                {/* <div className="treatmentLogo">
-                  <img src="/assets/department/surgery.png" alt="anyimg" />
-                </div> */}
+                                
                                 <div className="checkLogo">
                                     <img
                                         src="/assets/dr/customcheck.jpg"
@@ -105,25 +97,21 @@ function Physiotherapist({t}) {
                                     <h2 className="treatmentTitle">
                                         {item.name}
                                     </h2>
-                                    {/* for content  */}
-                                    {/* <p className="treatmentAbout">
-                    Dunt in culpa qui officia deserunt mollit anim id est
-                    laborum.
-                  </p> */}
+                                  
                                 </div>
                             </div>
                         </>
                     ))}
                 </div>
-            </div>
+            </div> */}
 
             <div className="depDoctors">
                 <div className="depMain">
-                    <h1 className="depMainHead">Department Doctors</h1>
-                    <p className="depMainPara">
+                    <h1 className="depMainHead">{t("depdoc")}</h1>
+                    {/* <p className="depMainPara">
                         There live the blind texts separated they right at the
                         coast of the Semantics.
-                    </p>
+                    </p> */}
                     <div className="depLine"></div>
                 </div>
                 <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10">
