@@ -14,7 +14,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import Loading from "../Loading/Loading";
 import { Link } from "react-router-dom";
 
-function BookAppointment({t}) {
+function BookAppointment({ t }) {
     const [book, setBook] = useState(false);
     const [loading, setloading] = useState(false);
     const [department, setDepartment] = useState("");
@@ -81,22 +81,25 @@ function BookAppointment({t}) {
         const patientslotbooked = patientdate.map((value) => value.slot);
         const docSlot = selectedDoc.slots;
 
-        const availdocSlot=selectedDoc.availslot
-        const availdocSlotu=availdocSlot.filter(e=>e.dateav===datebook)
-        if(availdocSlotu.length>0){
+        const availdocSlot = selectedDoc.availslot;
+        const availdocSlotu = availdocSlot.filter((e) => e.dateav === datebook);
+        if (availdocSlotu.length > 0) {
             //const availdocSlotu=availdocSlot.filter(e=>e.dateav===datebook)
-            console.log(availdocSlotu)
-       // const availosradocslot=(availdocSlotu.map(e=>e.availSloty))
-       const availosradocslot=availdocSlotu[0].availSloty
-        console.log(availosradocslot)
-        const res = availosradocslot.filter((item) => !patientslotbooked.includes(item));
-        console.log(res)
-        setblankslot(res);
-        }else{
-            const res = docSlot.filter((item) => !patientslotbooked.includes(item));
-        setblankslot(res);
+            console.log(availdocSlotu);
+            // const availosradocslot=(availdocSlotu.map(e=>e.availSloty))
+            const availosradocslot = availdocSlotu[0].availSloty;
+            console.log(availosradocslot);
+            const res = availosradocslot.filter(
+                (item) => !patientslotbooked.includes(item)
+            );
+            console.log(res);
+            setblankslot(res);
+        } else {
+            const res = docSlot.filter(
+                (item) => !patientslotbooked.includes(item)
+            );
+            setblankslot(res);
         }
-        
 
         //console.log(dateb)
 
@@ -139,7 +142,7 @@ function BookAppointment({t}) {
                 doctor: selectedDoc._id,
                 email,
             };
-           // console.log(patient);
+            // console.log(patient);
             setBook(true);
             try {
                 const res = await axios.post(
@@ -176,7 +179,7 @@ function BookAppointment({t}) {
                         alt="department Back"
                     />
                     <div className="depMainOverlay">
-                        <h1 className="depMainText">Book Appointment</h1>
+                        <h1 className="depMainText">{t("bookapt")}</h1>
                     </div>
                 </div>
                 {book ? (
@@ -193,12 +196,10 @@ function BookAppointment({t}) {
                 ) : (
                     <div className="bookWrapper">
                         <div className="appointmentText">
-                            <h1 className="appointmentHead">
-                            {t("app.1")}
-                            </h1>
-                            <p className="appointmentPara">
+                            <h1 className="appointmentHead">{t("app.1")}</h1>
+                            {/* <p className="appointmentPara">
                             {t("app.2")}
-                            </p>
+                            </p> */}
                         </div>
                         <form
                             className="appointmentForm"
@@ -241,7 +242,7 @@ function BookAppointment({t}) {
                                             setGender(e.target.value)
                                         }
                                     />
-                                   {t("app.6")}
+                                    {t("app.6")}
                                 </label>
 
                                 <label
@@ -259,11 +260,11 @@ function BookAppointment({t}) {
                                             setGender(e.target.value)
                                         }
                                     />
-                                   {t("app.7")}
+                                    {t("app.7")}
                                 </label>
                             </div>
                             <div className="flex flex-col justify-center items-center md:flex-row gap-2">
-                            <PhoneInput
+                                <PhoneInput
                                     className="bookFormItem"
                                     country="sa"
                                     value={phone}
@@ -279,13 +280,12 @@ function BookAppointment({t}) {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
-                               
                             </div>
                             {/* Services Check box below  */}
                             <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2">
                                 <div className="mb-2">
                                     <div className="serviceText">
-                                    {t("app.9")}:{" "}
+                                        {t("app.9")}:{" "}
                                     </div>
                                     <Select
                                         value={selectedDept}
@@ -296,7 +296,7 @@ function BookAppointment({t}) {
                                 {selectedDept && docArr && (
                                     <div className="mb-2">
                                         <div className="serviceText">
-                                        {t("app.10")}:{" "}
+                                            {t("app.10")}:{" "}
                                         </div>
                                         <Select
                                             value={selectedDoc}
@@ -308,13 +308,13 @@ function BookAppointment({t}) {
                                 {selectedDept && docArr && selectedDoc && (
                                     <div className="mb-2">
                                         <div className="serviceText mt-2">
-                                        {t("app.11")} :{" "}
+                                            {t("app.11")} :{" "}
                                         </div>
                                         <DatePicker
                                             className="py-2 px-4 text-center mb-4 border-2 rounded-sm"
                                             selected={startDate}
                                             onChange={handleChangeDate}
-                                            minDate={moment(). toDate()}
+                                            minDate={moment().toDate()}
                                         />
                                     </div>
                                 )}
@@ -325,7 +325,7 @@ function BookAppointment({t}) {
                                     blankslot && (
                                         <div className="mb-2">
                                             <div className="serviceText mt-2">
-                                            {t("app.12")} :{" "}
+                                                {t("app.12")} :{" "}
                                             </div>
                                             <select
                                                 className="py-2 px-4 text-center border-2 rounded-sm"
@@ -333,9 +333,10 @@ function BookAppointment({t}) {
                                                 value={slot}
                                                 onChange={handleChangeInput}
                                             >
-                                                
                                                 <option value="">
-                                                    {blankslot.length===0 ? "--No Slot--" :"--Choose Slot--"}
+                                                    {blankslot.length === 0
+                                                        ? "--No Slot--"
+                                                        : "--Choose Slot--"}
                                                 </option>
                                                 {blankslot.map((slot) => (
                                                     <option

@@ -20,6 +20,7 @@
         "journey": "/assets/about/OIH.Our.Journey.png",
         "chart": "/assets/about/OIH.OrganizationalChart.png"
     },
+    "bookapt": "Book Appointment",
     "book_btn_fixed1": "Book",
     "book_btn_fixed2": "Now",
     "top-emergency": "Emergency",
