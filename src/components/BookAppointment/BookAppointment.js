@@ -5,6 +5,7 @@ import DatePicker from "react-datepicker";
 import moment from "moment";
 import axios from "axios";
 import PhoneInput from "react-phone-input-2";
+import { withTranslation } from "react-i18next";
 
 // import "react-phone-input-2/lib/style.css";
 
@@ -13,7 +14,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import Loading from "../Loading/Loading";
 import { Link } from "react-router-dom";
 
-function BookAppointment() {
+function BookAppointment({t}) {
     const [book, setBook] = useState(false);
     const [loading, setloading] = useState(false);
     const [department, setDepartment] = useState("");
@@ -193,11 +194,10 @@ function BookAppointment() {
                     <div className="bookWrapper">
                         <div className="appointmentText">
                             <h1 className="appointmentHead">
-                                Online Appointment Form
+                            {t("app.1")}
                             </h1>
                             <p className="appointmentPara">
-                                Now you can request an appoinment in some simple
-                                steps Online
+                            {t("app.2")}
                             </p>
                         </div>
                         <form
@@ -208,7 +208,7 @@ function BookAppointment() {
                                 className="bookFormItem"
                                 type="text"
                                 name="name"
-                                placeholder="Your Full Name"
+                                placeholder={t("app.3")}
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                             />
@@ -216,7 +216,7 @@ function BookAppointment() {
                                 className="bookFormItem"
                                 type="number"
                                 name="age"
-                                placeholder="Your Age"
+                                placeholder={t("app.4")}
                                 min={1}
                                 max={100}
                                 value={age}
@@ -224,7 +224,7 @@ function BookAppointment() {
                             />
 
                             {/* gender radio box below  */}
-                            <div className="serviceText">Your Gender : </div>
+                            <div className="serviceText">{t("app.5")} </div>
                             <div className="bookFormItems">
                                 <label
                                     className="bookFormLabel "
@@ -237,11 +237,11 @@ function BookAppointment() {
                                         name="gender"
                                         value="male"
                                         id="male"
-                                        onChangle={(e) =>
+                                        onChange={(e) =>
                                             setGender(e.target.value)
                                         }
                                     />
-                                    Male
+                                   {t("app.6")}
                                 </label>
 
                                 <label
@@ -255,11 +255,11 @@ function BookAppointment() {
                                         name="gender"
                                         id="female"
                                         value="Female"
-                                        onChangle={(e) =>
+                                        onChange={(e) =>
                                             setGender(e.target.value)
                                         }
                                     />
-                                    Female
+                                   {t("app.7")}
                                 </label>
                             </div>
                             <div className="flex flex-col justify-center items-center md:flex-row gap-2">
@@ -275,7 +275,7 @@ function BookAppointment() {
                                     className="bookFormItem"
                                     type="email"
                                     name="email"
-                                    placeholder="Your Email"
+                                    placeholder={t("app.8")}
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
@@ -285,7 +285,7 @@ function BookAppointment() {
                             <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2">
                                 <div className="mb-2">
                                     <div className="serviceText">
-                                        Select Clinic :{" "}
+                                    {t("app.9")}:{" "}
                                     </div>
                                     <Select
                                         value={selectedDept}
@@ -296,7 +296,7 @@ function BookAppointment() {
                                 {selectedDept && docArr && (
                                     <div className="mb-2">
                                         <div className="serviceText">
-                                            Select Doctor :{" "}
+                                        {t("app.10")}:{" "}
                                         </div>
                                         <Select
                                             value={selectedDoc}
@@ -308,7 +308,7 @@ function BookAppointment() {
                                 {selectedDept && docArr && selectedDoc && (
                                     <div className="mb-2">
                                         <div className="serviceText mt-2">
-                                            Select Date :{" "}
+                                        {t("app.11")} :{" "}
                                         </div>
                                         <DatePicker
                                             className="py-2 px-4 text-center mb-4 border-2 rounded-sm"
@@ -325,7 +325,7 @@ function BookAppointment() {
                                     blankslot && (
                                         <div className="mb-2">
                                             <div className="serviceText mt-2">
-                                                Select Slot :{" "}
+                                            {t("app.12")} :{" "}
                                             </div>
                                             <select
                                                 className="py-2 px-4 text-center border-2 rounded-sm"
@@ -355,7 +355,7 @@ function BookAppointment() {
                                 name="message"
                                 rows={5}
                                 resize="none"
-                                placeholder="Your Message"
+                                placeholder={t("app.13")}
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                             ></textarea>
@@ -363,7 +363,7 @@ function BookAppointment() {
                                 <input
                                     type="submit"
                                     className="bookFormButton "
-                                    value="Book Appointment"
+                                    value={t("app.14")}
                                 />
                                 {/* <Link
                                     to="/appointment"
@@ -380,4 +380,4 @@ function BookAppointment() {
     );
 }
 
-export default BookAppointment;
+export default withTranslation()(BookAppointment);
