@@ -31,15 +31,7 @@ const About = ({ t }) => {
                         {t("about.about_hist")}
                     </h2>
                     <p className="mt-7 text-base md:text-xl w-4/5 text-gray-200 textColor">
-                        AlOsrah international Hospital is a Secondary level
-                        facility with 50 bed-Capacities situated in the middle
-                        of Riyadh city, Saudi Arabia.
-                        <br />
-                        <br />
-                        It provides inpatient and outpatient services to Male
-                        and Female patients of all age groups, nationalities and
-                        24 hours round the clock services through the Emergency
-                        Department also provides rehabilitation care
+                       {t("about.about_histpara")}
                     </p>
                     {/* <p className="mt-7 font-normal text-sm md:text-md w-4/5 text-gray-200 textColor">
             <ul class="list-inside sm:list-outside md:list-inside lg:list-outside xl:list-inside">

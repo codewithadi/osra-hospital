@@ -1,7 +1,8 @@
 import React from "react";
+import { withTranslation } from "react-i18next";
 import "./About.css";
 
-const WhyChooseUs = () => {
+const WhyChooseUs = ({ t }) => {
     return (
         <div>
             <div className="md:p-2 md:my-6 text-center">
@@ -26,7 +27,7 @@ const WhyChooseUs = () => {
                     <div className="hidden md:flex justify-center items-center md:px-6">
                         <img
                             className="w-3/4"
-                            src="/assets/dr/find.png"
+                            src="/assets/images/finddoc2.png"
                             alt="Doctors"
                         />
                     </div>
@@ -44,12 +45,11 @@ const WhyChooseUs = () => {
                                 className="font-medium px-3 text-2xl"
                                 style={{ color: "#3f0f1e" }}
                             >
-                                Mission
+                                {t("about.mission")}
                             </h3>
                         </div>
                         <p className="text-xl my-2 text-gray-800">
-                            We are dedicated to provide high quality,
-                            evidence-based and safe healthcare.{" "}
+                            {t("about.missionpara")}{" "}
                         </p>
                     </div>
 
@@ -64,12 +64,11 @@ const WhyChooseUs = () => {
                                 className="font-medium px-3 text-2xl"
                                 style={{ color: "#3f0f1e" }}
                             >
-                                Vision
+                                {t("about.vision")}
                             </h3>
                         </div>
                         <p className="text-xl my-2 text-gray-800">
-                            To be a benchmark in provision of quality healthcare
-                            services in the private sector in the Kingdom
+                            {t("about.visionpara")}
                         </p>
                     </div>
                     <div className="mx-4 md:mt-4 mb-1">
@@ -83,12 +82,11 @@ const WhyChooseUs = () => {
                                 className="font-medium px-3 text-2xl"
                                 style={{ color: "#3f0f1e" }}
                             >
-                                Values
+                                {t("about.values")}
                             </h3>
                         </div>
                         <p className="text-xl my-2 text-gray-800">
-                            Dignity and respect | Medical excellence |
-                            Transparency | Justice | Safety | Teamwork | Loyalty
+                            {t("about.valuespara")}
                         </p>
                     </div>
                 </section>
@@ -135,4 +133,4 @@ const WhyChooseUs = () => {
     );
 };
 
-export default WhyChooseUs;
+export default withTranslation()(WhyChooseUs);

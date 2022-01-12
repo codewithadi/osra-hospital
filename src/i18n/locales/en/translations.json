@@ -293,6 +293,16 @@
     "er": {
         "title": "ER Department"
     },
+    "about": {
+        "about_hist": "Our History",
+        "about_histpara": "AlOsrah international Hospital is a Secondary level facility with 50 bed-Capacities situated in the middle of Riyadh city, Saudi Arabia. It provides inpatient and outpatient services to Male and Female patients of all age groups, nationalities and 24 hours round the clock services through the Emergency Department also provides rehabilitation care",
+        "vision": "Vision",
+        "visionpara": "To be a benchmark in provision of quality healthcare services in the private sector in the Kingdom",
+        "mission": "Mission",
+        "missionpara": " We are dedicated to provide high quality, evidence-based and safe healthcare.",
+        "values": "Values",
+        "valuespara": "Dignity and respect | Medical excellence | Transparency | Justice | Safety | Teamwork | Loyalty"
+    },
     "contact": {
         "title": "Contact Us",
         "name": "Name",
@@ -312,9 +322,6 @@
     "allrihtres": "All rights reserved Developed by EnR Team",
     "outpat": "Outside patient,",
     "inpatfooter": "In patient visit times",
-    "about": {
-        "about_hist": "Our History"
-    },
     "clinic": {
         "test": "Gastric Bypass"
     }
