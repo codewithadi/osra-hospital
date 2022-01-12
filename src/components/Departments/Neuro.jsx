@@ -2,22 +2,23 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
-const treatmentsOffered = {
-    TherapeuticModalities: [
-        {
-            name: "Evaluation of diseases",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Psychological Assessment",
-            detail: "",
-            logo: "",
-        },
-    ],
-};
+import { withTranslation } from "react-i18next";
 
-function Neuro() {
+function Neuro({ t }) {
+    const treatmentsOffered = {
+        TherapeuticModalities: [
+            {
+                name: "Evaluation of diseases",
+                detail: "",
+                logo: "",
+            },
+            {
+                name: "Psychological Assessment",
+                detail: "",
+                logo: "",
+            },
+        ],
+    };
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("neuro")
     );
@@ -154,4 +155,4 @@ function Neuro() {
     );
 }
 
-export default Neuro;
+export default withTranslation()(Neuro);
