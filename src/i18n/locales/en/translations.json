@@ -383,7 +383,16 @@
           "tm1": "Evaluation of diseases",
           "tm2": "Psychological Assessment"
      },
-     "Urology":{
-         
+     "Urology": {
+          "dname": "Urology Department",
+          "detail": "Urology is a part of health care that deals with diseases of the male and female urinary tract (kidneys, ureters, bladder and urethra). It also deals with the male organs that are able to make babies (penis, testes, scrotum, prostate, etc.). Since health problems in these body parts can happen to everyone, urologic health is important.",
+          "treatment": "Due to the multi-faceted nature of urology, our physicians also boast exceptional knowledge in",
+          "dm1": "Urethro - cystocopy",
+          "dm2":"Diagnostic Laparoscopy",
+          "tm1": "Pyelolithotomy",
+          "tm2": "ESWL",
+          "tm3": "Andrology",
+          "tm4": "Laproscopic Procedures",
+          "tm5":"Folley Catherization"
      }
 }
