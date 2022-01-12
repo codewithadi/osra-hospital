@@ -238,7 +238,7 @@ const Contact = ({ t }) => {
                                     <div className="-ml-2 pt-2 md:flex">
                                         <div className="w-full mx-2">
                                             <label className="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-200">
-                                                {t("email")}
+                                                {t("contact.email")}
                                             </label>
 
                                             <input

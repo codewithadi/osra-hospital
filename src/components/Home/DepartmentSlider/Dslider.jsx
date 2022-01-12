@@ -40,9 +40,7 @@ const BrandSlider = ({ t }) => {
                         />
                     </div>
                     <h1 className="depHead">{t("departments.b.name")}</h1>
-                    <p className="depDetailHome">
-                    {t("departments.b.info")}
-                    </p>
+                    <p className="depDetailHome">{t("departments.b.info")}</p>
                 </div>
             </div>
         </div>,
@@ -57,9 +55,7 @@ const BrandSlider = ({ t }) => {
                         />
                     </div>
                     <h1 className="depHead">{t("departments.c.name")}</h1>
-                    <p className="depDetailHome">
-                    {t("departments.c.info")}
-                    </p>
+                    <p className="depDetailHome">{t("departments.c.info")}</p>
                 </div>
             </div>
         </div>,
@@ -74,9 +70,7 @@ const BrandSlider = ({ t }) => {
                         />
                     </div>
                     <h1 className="depHead">{t("departments.d.name")}</h1>
-                    <p className="depDetailHome">
-                    {t("departments.d.info")}
-                    </p>
+                    <p className="depDetailHome">{t("departments.d.info")}</p>
                 </div>
             </div>
         </div>,
@@ -91,9 +85,7 @@ const BrandSlider = ({ t }) => {
                         />
                     </div>
                     <h1 className="depHead">{t("departments.e.name")}</h1>
-                    <p className="depDetailHome">
-                    {t("departments.e.info")}
-                    </p>
+                    <p className="depDetailHome">{t("departments.e.info")}</p>
                 </div>
             </div>
         </div>,
@@ -108,9 +100,7 @@ const BrandSlider = ({ t }) => {
                         />
                     </div>
                     <h1 className="depHead">{t("departments.g.name")}</h1>
-                    <p className="depDetailHome">
-                    {t("departments.g.name")}
-                    </p>
+                    <p className="depDetailHome">{t("departments.g.info")}</p>
                 </div>
             </div>
         </div>,
@@ -125,9 +115,7 @@ const BrandSlider = ({ t }) => {
                         />
                     </div>
                     <h1 className="depHead">{t("departments.f.name")}</h1>
-                    <p className="depDetailHome">
-                    {t("departments.f.name")}
-                    </p>
+                    <p className="depDetailHome">{t("departments.f.info")}</p>
                 </div>
             </div>
         </div>,
@@ -142,9 +130,7 @@ const BrandSlider = ({ t }) => {
                         />
                     </div>
                     <h1 className="depHead">{t("departments.i.name")}</h1>
-                    <p className="depDetailHome">
-                    {t("departments.i.name")}
-                    </p>
+                    <p className="depDetailHome">{t("departments.i.info")}</p>
                 </div>
             </div>
         </div>,
@@ -159,9 +145,7 @@ const BrandSlider = ({ t }) => {
                         />
                     </div>
                     <h1 className="depHead">{t("departments.h.name")}</h1>
-                    <p className="depDetailHome">
-                    {t("departments.h.name")}
-                    </p>
+                    <p className="depDetailHome">{t("departments.h.info")}</p>
                 </div>
             </div>
         </div>,
@@ -176,9 +160,7 @@ const BrandSlider = ({ t }) => {
                         />
                     </div>
                     <h1 className="depHead">{t("departments.j.name")}</h1>
-                    <p className="depDetailHome">
-                    {t("departments.j.name")}
-                    </p>
+                    <p className="depDetailHome">{t("departments.j.info")}</p>
                 </div>
             </div>
         </div>,
@@ -193,9 +175,7 @@ const BrandSlider = ({ t }) => {
                         />
                     </div>
                     <h1 className="depHead">{t("departments.k.name")}</h1>
-                    <p className="depDetailHome">
-                    {t("departments.k.name")}
-                    </p>
+                    <p className="depDetailHome">{t("departments.k.info")}</p>
                 </div>
             </div>
         </div>,
