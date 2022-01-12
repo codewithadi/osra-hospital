@@ -2,35 +2,37 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
-const treatmentsOffered = [
-    {
-        name: "Treating orthopedic and neurological diseases",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Sports injury rehabilitation",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Thromboembolism treatment",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Rehabilitation of handicapped children",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Facial nerve treatment",
-        detail: "",
-        logo: "",
-    },
-];
+import { withTranslation } from "react-i18next";
 
-function Physiotherapist() {
+
+function Physiotherapist({t}) {
+    const treatmentsOffered = [
+        {
+            name:   `${t("psyo.tm1")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("psyo.tm2")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("psyo.tm3")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("psyo.tm4")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("psyo.tm5")}`,
+            detail: "",
+            logo: "",
+        },
+    ];
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("physiotherapist")
     );
@@ -43,7 +45,7 @@ function Physiotherapist() {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">Physiotherapy</h1>
+                    <h1 className="depMainText">  {t("psyo.head")}</h1>
                 </div>
             </div>
 
@@ -51,13 +53,10 @@ function Physiotherapist() {
                 <div className="depDetailContainer">
                     <div className="depTextHead">
                         <h1 className="depDetailTitle">
-                            Physiotherapy Department
+                        {t("psyo.head")}
                         </h1>
                         <div className="depDetailAbout">
-                            Healthcare profession concerned with the assessment,
-                            maintenance, and restoration of the physical
-                            function and performance of the body by physical
-                            trainers.
+                        {t("psyo.para1")}
                         </div>
                         {/* <p className="depDetailPara">
               Physiotherapists have in-depth knowledge of how the body works and
@@ -81,11 +80,9 @@ function Physiotherapist() {
 
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">Treatments Offered</h1>
+                    <h1 className="depMainHead">{t("to")}</h1>
                     <p className="depMainPara">
-                        Our department of Physiotherapy is dedicated to
-                        exceeding expectations. We provide cutting edge
-                        treatment of disorders below
+                    {t("psyo.topara")}
                     </p>
                     <div className="depLine"></div>
                 </div>
@@ -171,4 +168,4 @@ function Physiotherapist() {
     );
 }
 
-export default Physiotherapist;
+export default withTranslation()(Physiotherapist);

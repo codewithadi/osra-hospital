@@ -300,7 +300,28 @@
           "Treatmenthead": "Treatments Offered",
           "Treatmentbody": "The Orthopaedic department at our hospitals delivers personalised care utilising the latest research and evidence-based medicine."
      },
-
+     "OBGyne":{
+        "one":"Laboratory investigations include blood chemistry, hematology, serology, hormone assay, urinalysis, cytology",
+        "two":"Smears(e.g. pap smear)",
+        "three":"Biopsies",
+        "four":"Ultrasonographies",
+        "five":"CT Scan",
+        "six":"Conventional Diagnostic Radiology",
+        "seven":"D&C",
+        "eight":"Caesarean Section",
+        "nine":"Normal Deliveries/instrumental Deliveries/ Epidural Injection (Painless)",
+        "ten":"All other Gynecological operations",
+        "eleven":"Hysterectomy (Partial or Complete)",
+        "twelve":"Insertion & removal of IUD",
+        "thirteen":"Episiotomy",
+        "fourteen":"Perineal Repair",
+        "fifteen":"Vaginal Re-Construction Surgeries",
+        "title":"OB/Gyne Department",
+        "body1":" Obstetrics and gynecology is a field thought of astraditionally serving women because of it's focus on the female reproductive system, leading careproviders to make assumptions about patients' gender identity and expression in 'women's health clinics' when many transgender or nonbinary patients may also seek care from OB-GYNs.",
+        "body2":" OB-GYNs also historically have more cultural competency training around gender based issues..",
+        "treatmenthead":"Treatments Offered",
+        "treatmentbody":"Our physicians use a range of diverse treatments"
+    },
      "dietitian": {
           "title": "Dietitian",
           "subTitle": "Dietitian Department",

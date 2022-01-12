@@ -2,90 +2,91 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
 
-const treatmentsOffered = {
-    DiagnosticModalities: [
-        {
-            name: "Laboratory investigations include blood chemistry, hematology, serology, hormone assay, urinalysis, cytology, ",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Smears(e.g. pap smear)",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Biopsies",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Ultrasonographies",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "CT Scan",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Conventional Diagnostic Radiology",
-            detail: "",
-            logo: "",
-        },
-    ],
-    TherapeuticModalities: [
-        {
-            name: "D&C",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Caesarean Section",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Normal Deliveries/instrumental Deliveries/ Epidural Injection (Painless)",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "All other Gynecological operations",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Hysterectomy (Partial or Complete)",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Insertion & removal of IUD",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Episiotomy",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Perineal Repair",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Vaginal Re-Construction Surgeries",
-            detail: "",
-            logo: "",
-        },
-    ],
-};
+function OBGyne({ t }) {
 
-function OBGyne() {
+    const treatmentsOffered = {
+        DiagnosticModalities: [
+            {
+                name: `${t("OBGyne.one")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("OBGyne.two")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("OBGyne.three")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name:`${t("OBGyne.four")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name:`${t("OBGyne.five")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("OBGyne.six")}`,
+                detail: "",
+                logo: "",
+            },
+        ],
+        TherapeuticModalities: [
+            {
+                name: `${t("OBGyne.seven")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("OBGyne.eight")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name:`${t("OBGyne.nine")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name:`${t("OBGyne.ten")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name:`${t("OBGyne.eleven")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name:`${t("OBGyne.twelve")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("OBGyne.thirteen")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name:`${t("OBGyne.fourteen")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name:`${t("OBGyne.fifteen")}`,
+                detail: "",
+                logo: "",
+            },
+        ],
+    };
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("obgyna")
     );
@@ -105,19 +106,14 @@ function OBGyne() {
             <div className="depDetail">
                 <div className="depDetailContainer">
                     <div className="depTextHead">
-                        <h1 className="depDetailTitle">OB/Gyne Department</h1>
+                        <h1 className="depDetailTitle">
+                        {t("OBGyne.title")}
+                            </h1>
                         <div className="depDetailAbout">
-                            Obstetrics and gynecology is a field thought of as
-                            traditionally serving women because of it's focus on
-                            the female reproductive system, leading care
-                            providers to make assumptions about patients' gender
-                            identity and expression in "women's health clinics"
-                            when many transgender or nonbinary patients may also
-                            seek care from OB-GYNs.
+                        {t("OBGyne.body1")}
                             <br />
                             <br />
-                            OB-GYNs also historically have more cultural
-                            competency training around gender based issues..
+                         {t("OBGyne.body2")}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -132,9 +128,11 @@ function OBGyne() {
 
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">Treatments Offered</h1>
+                    <h1 className="depMainHead">
+                    {t("OBGyne.treatmenthead")}
+                        </h1>
                     <p className="depMainPara">
-                        Our physicians use a range of diverse treatments
+                    {t("OBGyne.treatmentbody")}
                     </p>
                     <div className="depLine"></div>
                 </div>
@@ -240,4 +238,4 @@ function OBGyne() {
     );
 }
 
-export default OBGyne;
+export default withTranslation()(OBGyne);
