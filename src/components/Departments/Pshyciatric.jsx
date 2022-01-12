@@ -2,23 +2,24 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
 
-const treatmentsOffered = {
-    TherapeuticModalities: [
-        {
-            name: "Evaluation of diseases",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Psychological Assessment",
-            detail: "",
-            logo: "",
-        },
-    ],
-};
 
-function Pshyciatric() {
+function Pshyciatric({t}) {
+    const treatmentsOffered = {
+        TherapeuticModalities: [
+            {
+                name: "Evaluation of diseases",
+                detail: "",
+                logo: "",
+            },
+            {
+                name: "Psychological Assessment",
+                detail: "",
+                logo: "",
+            },
+        ],
+    };
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("pshyciatric")
     );
@@ -85,7 +86,7 @@ function Pshyciatric() {
                 </div>
 
                 <div className="treatmentWrapper">
-                    <h1 className="depMainHead">Therapeutic Modalities: :</h1>
+                    <h1 className="depMainHead">{t("tm")} :</h1>
                 </div>
                 <div className="treatmentWrapper">
                     {treatmentsOffered.TherapeuticModalities.map(
@@ -160,4 +161,4 @@ function Pshyciatric() {
     );
 }
 
-export default Pshyciatric;
+export default withTranslation()(Pshyciatric);
