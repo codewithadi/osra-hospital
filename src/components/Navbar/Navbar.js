@@ -61,9 +61,7 @@ function Navbar({ t }) {
                     className="flex justify-center items-center md:pt-2 bg-transparent"
                     // style={{ width: "27%" }}
                 >
-                    <div className="md:inline-flex md:-mt-5 text-sm md:text-base pr-2 select-none font-semibold">
-                        {t("nav_brandname")}
-                    </div>
+                    
 
                     <div className="md:-mt-4 md:inline-flex bg-transparent">
                         <Link
@@ -72,8 +70,9 @@ function Navbar({ t }) {
                             onClick={scrollToTop}
                         >
                             <img
-                                className="h-10 w-10 md:h-18 md:w-18"
-                                src="/hospitalLogo.jpeg"
+                                className="h-16 w-32 md:h-20 md:w-64 logoimages object-fill"
+                              
+                                src="/assets/logo/logo.png"
                                 alt="brandlogo"
                             />
                         </Link>

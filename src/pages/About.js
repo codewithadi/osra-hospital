@@ -78,7 +78,7 @@ const About = ({ t }) => {
             <div className="w-full flex justify-center items-center">
                 <img
                     className="w-full md:w-4/6"
-                    src="/assets/about/OIH.Our.Journey.png"
+                    src={t("ujimages.journey")}
                     alt="chart"
                 />
             </div>
@@ -89,7 +89,7 @@ const About = ({ t }) => {
             <div className="w-full flex justify-center items-center">
                 <img
                     className="w-full md:w-4/6"
-                    src="/assets/about/OIH.OrganizationalChart.png"
+                    src={t("ujimages.chart")}
                     alt="chart"
                 />
             </div>
