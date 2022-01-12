@@ -180,7 +180,7 @@
          "tm12":"Neonatal resuscitation",
          "tm13":"High frequency oscillatory ventilation."
     },
-    "Gastroenterology  Department": {
+    "GastroenterologyDepartment": {
          "dname": "Gastroenterology  Department",
          "detail": "Gastroenterology is a medical specialty dealing with the study of the digestive system and its disorders. ... Gastrointestinal services incorporate a joint medical and surgical approach for the prevention, diagnosis and treatment of gastrointestinal, liver and pancreatic disorders including cancer.\u000d\u000a\u000d\u000a          The department is manned by esteemed and experienced gastroenterologists, efficient medical officers, skilled and compassionate paramedical staff, and well-trained technicians. The aim of the department is to provide a patient-focused approach.",
          "treatment": "Our Gastroenterology Department is dedicated to exceeding expectations. We provide cutting edge treatment",
@@ -190,7 +190,7 @@
          "tm4": "Gastrointestinal",
          "tm5": "Pancreatic Diseases"
     },
-    "Cardiology Department": {
+    "CardiologyDepartment": {
          "dname": "Cardiology Department",
          "detail": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist. Cardiology is a branch of internal medicine.\u000d\u000a\u000d\u000a          A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery. A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system.",
          "treatment": "Our department of Cardiology is dedicated to exceeding expectations. We provide cutting edge treatment of disorders below",
