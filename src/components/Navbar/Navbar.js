@@ -69,7 +69,7 @@ function Navbar({ t }) {
                             onClick={scrollToTop}
                         >
                             <img
-                                className="h-16 w-32 md:h-20 md:w-64 logoimages object-fill"
+                                className="h-10 w-32 md:h-20 md:w-64 logoimages object-fill"
                                 src={t("ujimages.navlogo")}
                                 alt="brandlogo"
                             />

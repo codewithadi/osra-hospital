@@ -42,9 +42,9 @@ function Pshyciatric({ t }) {
                         <h1 className="depDetailTitle">{t("psyc.head")}</h1>
                         <div className="depDetailAbout">
                             {t("psyc.para1")}
+                            {/* <br />
                             <br />
-                            <br />
-                            {t("psyc.para2")}
+                            {t("psyc.para2")} */}
                         </div>
                     </div>
                     <div className="depImgWrapper">

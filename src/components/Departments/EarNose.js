@@ -103,9 +103,9 @@ function EarNose({ t }) {
                         <h1 className="depDetailTitle">{t("En1.title")}</h1>
                         <div className="depDetailAbout">
                             {t("En1.body1")}
+                            {/* <br />
                             <br />
-                            <br />
-                            {t("En1.body2")}
+                            {t("En1.body2")} */}
                         </div>
                     </div>
                     <div className="depImgWrapper">

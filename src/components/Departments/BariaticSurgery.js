@@ -86,9 +86,9 @@ function BariaticSurgery({ t }) {
                         <h1 className="depDetailTitle">{t("bari.head")}</h1>
                         <div className="depDetailAbout">
                             {t("bari.para1")}
+                            {/* <br />
                             <br />
-                            <br />
-                            {t("bari.para2")}
+                            {t("bari.para2")} */}
                         </div>
                     </div>
                     <div className="depImgWrapper">

@@ -52,9 +52,9 @@ function Dietitian({ t }) {
                         </h1>
                         <div className="depDetailAbout">
                             {t("dietitian.bodyPart1")}
+                            {/* <br />
                             <br />
-                            <br />
-                            {t("dietitian.bodyPart2")}
+                            {t("dietitian.bodyPart2")} */}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -66,7 +66,7 @@ function Dietitian({ t }) {
                     </div>
                 </div>
             </div>
-{/* 
+            {/* 
             <div className="treatmentDetails">
                 <div className="depMain">
                     <h1 className="depMainHead">

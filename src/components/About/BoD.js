@@ -3,7 +3,7 @@ import SingleDoctor from "./Doctor/SingleDoctor";
 import { withTranslation } from "react-i18next";
 import "./About.css";
 
-const BoD = ({t}) => {
+const BoD = ({ t }) => {
     return (
         <>
             <div className="md:p-2 md:my-6 text-center">
@@ -25,23 +25,23 @@ const BoD = ({t}) => {
             >
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
-                    name="Mr. Hesham Abdulrahman Albajadi"
-                    position="Chairman of Board of Directors"
+                    name={t("bod.1.name")}
+                    position={t("bod.1.pos")}
                 />
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
-                    name="Mohammed Abdulrahman Al Olake"
-                    position="Deputy Chairman of the Board"
+                    name={t("bod.2.name")}
+                    position={t("bod.2.pos")}
                 />
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
-                    name="Mr. Faisal Abdulrahman Albajadi "
-                    position="Member of the Board of Directors"
+                    name={t("bod.3.name")}
+                    position={t("bod.3.pos")}
                 />
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
-                    name="Mr. Bader Abdulrahman Albajadi "
-                    position="Member of the Board of Directors"
+                    name={t("bod.4.name")}
+                    position={t("bod.4.pos")}
                 />
             </div>
         </>

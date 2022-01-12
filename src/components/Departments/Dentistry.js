@@ -89,9 +89,9 @@ function Dentistry({ t }) {
                         <h1 className="depDetailTitle">{t("Den1.title")}</h1>
                         <div className="depDetailAbout">
                             {t("Den1.body1")}
+                            {/* <br />
                             <br />
-                            <br />
-                            {t("Den1.body2")}
+                            {t("Den1.body2")} */}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -103,8 +103,6 @@ function Dentistry({ t }) {
                     </div>
                 </div>
             </div>
-
-
 
             {/* <div className="treatmentDetails">
                 <div className="depMain">

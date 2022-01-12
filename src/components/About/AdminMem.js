@@ -25,18 +25,18 @@ const AdminMem = ({ t }) => {
             >
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
-                    name="Mr. Alla Adel Abdulrhman Bin Soufayan"
-                    position="General Director"
+                    name={t("adminmem.1.name")}
+                    position={t("adminmem.1.pos")}
                 />
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
-                    name="Mr.ALI Saqer"
-                    position="Finance Director"
+                    name={t("adminmem.2.name")}
+                    position={t("adminmem.2.pos")}
                 />
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
-                    name="Dr. Feras Al-harbi"
-                    position="Medical Director"
+                    name={t("adminmem.3.name")}
+                    position={t("adminmem.3.pos")}
                 />
                 {/* <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
@@ -60,13 +60,13 @@ const AdminMem = ({ t }) => {
             >
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
-                    name="Dr. Adulrahman Sweyfi "
-                    position="Deputy Medical Director"
+                    name={t("adminmem.4.name")}
+                    position={t("adminmem.4.pos")}
                 />
                 <SingleDoctor
                     imgUrl="/assets/dr/maledirector.png"
-                    name="Mr. Sameer Mohammed"
-                    position="Internal controller"
+                    name={t("adminmem.5.name")}
+                    position={t("adminmem.5.pos")}
                 />
             </div>
         </>

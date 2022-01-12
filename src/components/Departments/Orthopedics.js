@@ -70,9 +70,9 @@ function Orthopedics({ t }) {
                         <h1 className="depDetailTitle">{t("Ortho1.title")}</h1>
                         <div className="depDetailAbout">
                             {t("Ortho1.body1")}
+                            {/* <br />
                             <br />
-                            <br />
-                            {t("Ortho1.body2")}
+                            {t("Ortho1.body2")} */}
                         </div>
                     </div>
                     <div className="depImgWrapper">

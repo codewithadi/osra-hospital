@@ -66,7 +66,7 @@ const SupportService = ({ t }) => {
                     desc={t("departments.i.info")}
                 />
                 <SupportGrid
-                    imgUrl="/assets/departmentlogos/micu.png"
+                    imgUrl="/assets/departmentlogos/icu2.png"
                     title={t("departments.j.name")}
                     desc={t("departments.j.info")}
                 />
@@ -74,6 +74,16 @@ const SupportService = ({ t }) => {
                     imgUrl="/assets/departmentlogos/er.png"
                     title={t("departments.k.name")}
                     desc={t("departments.k.info")}
+                />
+                <SupportGrid
+                    imgUrl="/assets/departmentlogos/intmed.png"
+                    title={t("departments.l.name")}
+                    desc={t("departments.l.info")}
+                />
+                <SupportGrid
+                    imgUrl="/assets/departmentlogos/nicu.png"
+                    title={t("departments.m.name")}
+                    desc={t("departments.m.info")}
                 />
             </div>
         </div>

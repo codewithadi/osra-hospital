@@ -104,11 +104,23 @@
         },
         "j": {
             "name": "ICU (Intensive Care Unit)",
-            "info": "ICU unit in a hospital providing intensive care for critically ill or injured patients that is staffed by specially trained medical personnel and has equipment that allows for continuous monitoring and life support."
+            "info": "Intermediate Intensive Care Unit in a hospital that provides intermediate care to partially critical ill or injured patients, staffed by specially trained medical staff and has equipment that allows for continuous monitoring and life support."
         },
         "k": {
             "name": "ER",
             "info": "A hospital room or area staffed and equipped for the reception and treatment of persons with conditions (as illness or trauma) requiring immediate medical care."
+        },
+        "l": {
+            "name": "Internal Medicine",
+            "info": "Internal medicine is a medical specialty in which physicians apply scientific knowledge and clinical expertise to diagnose and treat adults with a very broad range of health concerns and diseases"
+        },
+        "m": {
+            "name": "NICU (Neonatal Intensive Care Unit)",
+            "info": "Newborn babies who need intensive medical care are often put in a special area of the hospital called the neonatal intensive care unit (NICU). "
+        },
+        "n": {
+            "name": "Incubator Care Unit",
+            "info": "Newborn babies who need intensive medical care are often put in a special area of the hospital called the neonatal intensive care unit (NICU). The NICU has advanced technology and trained healthcare professionals to give special care for the tiniest patients."
         }
     },
     "allclinics": {
@@ -117,7 +129,7 @@
             "info": "A paediatrician is a child's physician who provides not only medical care for children who are acutely or chronically ill but also preventive health services for healthy children."
         },
         "b": {
-            "name": "OB/Gyne",
+            "name": "Gynecology and Obstetrics",
             "info": "OB-GYNs also historically have more cultural competency training around gender based issues.."
         },
         "c": {
@@ -515,5 +527,45 @@
         "tm3": "Thromboembolism treatment",
         "tm4": "Rehabilitation of handicapped children",
         "tm5": "Facial nerve treatment"
+    },
+    "adminmem": {
+        "1": {
+            "name": "Mr. Alla Adel Abdulrhman Bin Soufayan",
+            "pos": "General Director"
+        },
+        "2": {
+            "name": "Mr.ALI Saqer",
+            "pos": "Finance Director"
+        },
+        "3": {
+            "name": "Dr. Feras Al-harbi",
+            "pos": "Medical Director"
+        },
+        "4": {
+            "name": "Dr. Adulrahman Sweyfi",
+            "pos": "Deputy Medical Director"
+        },
+        "5": {
+            "name": "Mr. Sameer Mohammed",
+            "pos": "Internal controller"
+        }
+    },
+    "bod": {
+        "1": {
+            "name": "Mr. Hesham Abdulrahman Albajadi",
+            "pos": "Chairman of Board of Directors"
+        },
+        "2": {
+            "name": "Mohammed Abdulrahman Al Olake",
+            "pos": "Deputy Chairman of the Board"
+        },
+        "3": {
+            "name": "Mr. Faisal Abdulrahman Albajadi",
+            "pos": "Member of the Board of Directors"
+        },
+        "4": {
+            "name": "Mr. Bader Abdulrahman Albajadi",
+            "pos": "Member of the Board of Directors"
+        }
     }
 }

@@ -41,8 +41,8 @@ function Neuro({ t }) {
                         <h1 className="depDetailTitle">{t("neuro.head")}</h1>
                         <div className="depDetailAbout">
                             {t("neuro.para1")}
-                            <br /> <br />
-                            {t("neuro.para2")}
+                            {/* <br /> <br />
+                            {t("neuro.para2")} */}
                         </div>
                     </div>
                     <div className="depImgWrapper">
