@@ -2,84 +2,85 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
-const treatmentsOffered = {
-    DiagnosticModalities: [
-        {
-            name: "Laryngoscopy",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Flexible Nasoendoscopy",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Audiometer",
-            detail: "",
-            logo: "",
-        },
-    ],
-    TherapeuticModalities: [
-        {
-            name: "Tonsillectomy",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Adenoidectomy",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Turbinectomy",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Septoplasty",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Uvulva reconstruction",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Trachial intubation",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Bronchial Washing",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Tracheostomy",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Nasal polypectomy",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "FESS: functional endoscopic sinus surgery",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Fracture nasal bone fixation",
-            detail: "",
-            logo: "",
-        },
-    ],
-};
+import { withTranslation } from "react-i18next";
 
-function EarNose() {
+function EarNose({ t }) {
+    const treatmentsOffered = {
+        DiagnosticModalities: [
+            {
+                name: `${t("En1.one")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("En1.two")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("En1.three")}`,
+                detail: "",
+                logo: "",
+            },
+        ],
+        TherapeuticModalities: [
+            {
+                name: `${t("En1.four")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("En1.five")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("En1.six")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("En1.seven")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("En1.eight")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("En1.nine")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("En1.ten")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("En1.eleven")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("En1.twelve")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("En1.thirteen")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("En1.fourteen")}`,
+                detail: "",
+                logo: "",
+            },
+        ],
+    };
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("ENT")
     );
@@ -100,22 +101,13 @@ function EarNose() {
                 <div className="depDetailContainer">
                     <div className="depTextHead">
                         <h1 className="depDetailTitle">
-                            Ear, nose & throat Department
+                        {t("En1.title")}
                         </h1>
                         <div className="depDetailAbout">
-                            Surgical specialists who diagnose, evaluate and
-                            manage a wide range of diseases of the head and
-                            neck, including the ear, nose and throat regions are
-                            Otorhinolaryngologists (also known as
-                            otolaryngologists or ear, nose and throat or ENT
-                            Surgeons).
+                        {t("En1.body1")}
                             <br />
                             <br />
-                            If you have a health problem with your head or neck,
-                            your doctor might recommend that you see an
-                            otolaryngologist. That's someone who treats issues
-                            in your ears, nose, or throat as well as related
-                            areas in your head and neck.
+                     {t("En1.body2")}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -130,10 +122,11 @@ function EarNose() {
 
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">Treatments Offered</h1>
+                    <h1 className="depMainHead">
+                    {t("En1.Treatmenthead")}
+                        </h1>
                     <p className="depMainPara">
-                        The ENT Department is dedicated to exceeding
-                        expectations. We provide cutting edge treatment
+                    {t("En1.Treatmentbody")}
                     </p>
                     <div className="depLine"></div>
                 </div>
@@ -241,4 +234,4 @@ function EarNose() {
     );
 }
 
-export default EarNose;
+export default withTranslation()(EarNose);

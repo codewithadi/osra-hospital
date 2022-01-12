@@ -2,31 +2,31 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
 
-const treatmentsOffered = [
-    {
-        name: "Slimming and fitness programs",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Obesity programs",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Monitor the nutritional status of patients",
-        detail: "",
-        logo: "",
-    },
-    {
-        name: "Follow-up of the nutritional status of the patient after the operations",
-        detail: "",
-        logo: "",
-    },
-];
-
-function Dietitian() {
+function Dietitian({ t }) {
+    const treatmentsOffered = [
+        {
+            name: `${t("dietitian.treatment1")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("dietitian.treatment2")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("dietitian.treatment3")}`,
+            detail: "",
+            logo: "",
+        },
+        {
+            name: `${t("dietitian.treatment4")}`,
+            detail: "",
+            logo: "",
+        },
+    ];
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("dietitian")
     );
@@ -40,29 +40,21 @@ function Dietitian() {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">Dietitian</h1>
+                    <h1 className="depMainText">{t("dietitian.title")}</h1>
                 </div>
             </div>
 
             <div className="depDetail">
                 <div className="depDetailContainer">
                     <div className="depTextHead">
-                        <h1 className="depDetailTitle">Dietitian Department</h1>
+                        <h1 className="depDetailTitle">
+                            {t("dietitian.subTitle")}
+                        </h1>
                         <div className="depDetailAbout">
-                            The Clinical Nutrition & Dietetics department at
-                            Lifepoint Multispecialty Hospital is a one-stop
-                            solution for all therapeutic diet and nutrition
-                            queries when it comes to health and illness. We
-                            provide comprehensive nutrition and diet services to
-                            both in-patients and out-patients.
+                            {t("dietitian.bodyPart1")}
                             <br />
-                            <br />A dietitian, medical dietitian, or dietician
-                            is an expert in identifying and treating
-                            disease-related malnutrition and in conducting
-                            medical nutrition therapy. A dietitian, medical
-                            dietitian, or dietician is an expert in identifying
-                            and treating disease-related malnutrition and in
-                            conducting medical nutrition therapy
+                            <br />
+                            {t("dietitian.bodyPart2")}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -77,12 +69,11 @@ function Dietitian() {
 
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">Treatments Offered</h1>
+                    <h1 className="depMainHead">
+                        {t("dietitian.treatmentHead")}
+                    </h1>
                     <p className="depMainPara">
-                        Our clinical dietician is specialized is assessing the
-                        nutritional status of the patient, calculate individual
-                        nutritional requirements and plan the diet accordingly
-                        depending upon the patients health condition.
+                        {t("dietitian.treatmentBody")}
                     </p>
                     <div className="depLine"></div>
                 </div>
@@ -167,4 +158,4 @@ function Dietitian() {
     );
 }
 
-export default Dietitian;
+export default withTranslation()(Dietitian);

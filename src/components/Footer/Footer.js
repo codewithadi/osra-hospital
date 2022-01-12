@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { withTranslation } from "react-i18next";
 // linear-gradient(to right, #017439 0%, #3eac55 100%)
 
-function Footer() {
+function Footer({ t }) {
     const scrollToTop = () => {
         window.scrollTo(0, 0);
     };
@@ -33,10 +34,7 @@ function Footer() {
                                 </div>
 
                                 <div className="max-w-md mt-2 font-semibold dark:text-gray-800 bg-transparent px-2 md:pr-28 cursor-default ">
-                                    AlOsrah international Hospital is a
-                                    Secondary level facility with 50
-                                    bed-Capacities situated in the middle of
-                                    Riyadh city, Saudi Arabia.
+                                    {t("maintitle")}
                                 </div>
                             </div>
                         </div>
@@ -45,35 +43,49 @@ function Footer() {
                             <div className="grid grid-cols-1 md:gap-3 gap-2 sm:grid-cols-4 md:grid-cols-4 bg-transparent">
                                 <div className="bg-transparent font-semibold">
                                     <h3 className=" font-semibold text-lg uppercase dark: bg-transparent cursor-default">
-                                        Quick Links
+                                        {t("quicklinks")}
                                     </h3>
                                     <Link
                                         onClick={scrollToTop}
                                         to="/"
                                         className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-700 delay-100"
                                     >
-                                        Home
+                                        {t("nav.nav_home")}
                                     </Link>
                                     <Link
                                         onClick={scrollToTop}
                                         to="/about"
                                         className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-300"
                                     >
-                                        About
+                                        {t("nav.nav_about")}
                                     </Link>
                                     <Link
                                         onClick={scrollToTop}
-                                        to="/services"
+                                        to="/departments"
                                         className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-300"
                                     >
-                                        Services
+                                        {t("nav.nav_dept")}
+                                    </Link>
+                                    <Link
+                                        onClick={scrollToTop}
+                                        to="/clinics"
+                                        className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-300"
+                                    >
+                                        {t("nav.nav_clinic")}
+                                    </Link>
+                                    <Link
+                                        onClick={scrollToTop}
+                                        to="/insurance"
+                                        className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-300"
+                                    >
+                                        {t("nav.nav_insurance")}
                                     </Link>
                                     <Link
                                         onClick={scrollToTop}
                                         to="/media"
                                         className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-300"
                                     >
-                                        Media
+                                        {t("nav.nav_media")}
                                     </Link>
                                     {/* <Link
                                         onClick={scrollToTop}
@@ -87,13 +99,13 @@ function Footer() {
                                         to="/contact"
                                         className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-300"
                                     >
-                                        Contact
+                                        {t("nav.nav_contact")}
                                     </Link>
                                 </div>
 
                                 <div className="bg-transparent font-semibold">
                                     <h3 className=" font-semibold uppercase text-lg dark: bg-transparent cursor-default">
-                                        Get Support
+                                        {t("getsup")}
                                     </h3>
                                     <div className="block mt-2 text-sm  dark: bg-transparent">
                                         <div className="inline-flex md:pr-4 mb-2 hover:text-blue-400 transition-colors duration-700 delay-100">
@@ -170,10 +182,10 @@ function Footer() {
                                 {/* -------------------- */}
                                 <div className="font-semibold">
                                     <h3 className="pb-2 font-semibold text-lg uppercase dark: bg-transparent cursor-default">
-                                        Working Hours
+                                        {t("workinghrs")}
                                     </h3>
                                     <div className="py-1 text-sm text-blue-300 uppercase">
-                                        Outside patient,
+                                        {t("outpat")}
                                     </div>
                                     <div className="text-sm">
                                         Morning: 9:00 a.m to 12:00 p.m
@@ -189,7 +201,7 @@ function Footer() {
                                     <div>24 Hours</div>
 
                                     <div className="py-1 text-sm text-blue-300 uppercase">
-                                        In patient visit times:
+                                        {t("inpatfooter")}:
                                     </div>
                                     <div className="text-sm">
                                         Saturday to Thursday: 7:00 a.m to 12:00
@@ -256,8 +268,8 @@ function Footer() {
                     <div className="bg-transparent font-semibold cursor-default">
                         <div className="md:flex-row flex flex-col text-center  dark:text-white justify-center bg-transparent">
                             <p className="md:border-r-2 px-2 bg-transparent">
-                                © Al-Osrah International Hospital - All rights
-                                reserved
+                                © Al-Osrah International Hospital -{" "}
+                                {t("allrihtres")}
                             </p>{" "}
                             <p className="px-2 bg-transparent">
                                 {" "}
@@ -271,4 +283,4 @@ function Footer() {
     );
 }
 
-export default Footer;
+export default withTranslation()(Footer);

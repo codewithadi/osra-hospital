@@ -23,7 +23,7 @@ const TopBar = ({ t }) => {
                     className="text-center outline-none"
                 >
                     <option value="en">English</option>
-                    <option value="ar">Arabic</option>
+                    <option value="ar">العربية</option>
                 </select>
             </form>
         </div>

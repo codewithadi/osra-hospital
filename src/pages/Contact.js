@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { withTranslation } from "react-i18next";
 import "./contact.css";
 // import swal from "sweetalert";
 import axios from "axios";
-const Contact = () => {
+const Contact = ({ t }) => {
     const [name, setName] = useState("");
     const [email, setemail] = useState("");
     const [mailBody, setmailBody] = useState("");
@@ -43,7 +44,7 @@ const Contact = () => {
             >
                 <div className="flex items-center justify-center w-full h-full bg-gray-800 bg-opacity-50">
                     <div className="text-center font-semibold text-white text-4xl md:text-7xl">
-                        <h1 className="mb-7">Contact Us</h1>
+                        <h1 className="mb-7">{t("contact.title")}</h1>
                     </div>
                 </div>
             </div>
@@ -141,7 +142,7 @@ const Contact = () => {
                                         style={{ color: "#3f0f1e" }}
                                         className="mt-1 mb-1 font-normal text-lg"
                                     >
-                                        Outside patient,
+                                        {t("outpat")}
                                     </span>
                                     <br />
                                     <span
@@ -172,7 +173,7 @@ const Contact = () => {
                                         style={{ color: "#3f0f1e" }}
                                         className="mb-1 font-normal text-lg"
                                     >
-                                        In patient visit times:
+                                        {t("inpatfooter")}:
                                     </span>
                                     <br />
                                     <span
@@ -195,7 +196,7 @@ const Contact = () => {
                                     <div className="-ml-2 pt-2 md:flex">
                                         <div className="w-full mx-2">
                                             <label className="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-200">
-                                                Name
+                                                {t("contact.name")}
                                             </label>
 
                                             <input
@@ -207,7 +208,9 @@ const Contact = () => {
                                                 type="text"
                                                 name="name"
                                                 id="name"
-                                                placeholder="Your Name"
+                                                placeholder={t(
+                                                    "contact.yourname"
+                                                )}
                                                 required
                                             />
                                         </div>
@@ -215,7 +218,7 @@ const Contact = () => {
                                     <div className="-ml-2 pt-2 md:flex">
                                         <div className="w-full mx-2">
                                             <label className="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-200">
-                                                Phone no.
+                                                {t("contact.phone")} no.
                                             </label>
 
                                             <input
@@ -224,7 +227,7 @@ const Contact = () => {
                                                     setphone(e.target.value)
                                                 }
                                                 value={phone}
-                                                placeholder="Your Phone"
+                                                placeholder={t("contact.yrph")}
                                                 required
                                                 id="phone"
                                                 type="number"
@@ -235,7 +238,7 @@ const Contact = () => {
                                     <div className="-ml-2 pt-2 md:flex">
                                         <div className="w-full mx-2">
                                             <label className="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-200">
-                                                Email
+                                                {t("contact.email")}
                                             </label>
 
                                             <input
@@ -244,7 +247,9 @@ const Contact = () => {
                                                     setemail(e.target.value)
                                                 }
                                                 value={email}
-                                                placeholder="Your Email"
+                                                placeholder={t(
+                                                    "contact.youremail"
+                                                )}
                                                 required
                                                 id="email"
                                                 type="email"
@@ -276,7 +281,7 @@ const Contact = () => {
 
                                     <div className="w-full mt-4">
                                         <label className="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-800">
-                                            Message
+                                            {t("contact.msg")}
                                         </label>
 
                                         <textarea
@@ -286,7 +291,7 @@ const Contact = () => {
                                             value={mailBody}
                                             name="mailBody"
                                             id="mailBody"
-                                            placeholder="Message"
+                                            placeholder={t("contact.yurmsg")}
                                             required
                                             className="block w-full h-40 px-4 py-2 text-black shadow-md bg-gray-100 border-none rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-500 focus:outline-none focus:ring"
                                         ></textarea>
@@ -297,7 +302,7 @@ const Contact = () => {
                                             type="submit"
                                             className="px-9 py-4 contact-btn font-semibold text-white transform rounded focus:outline-none focus:bg-gray-700"
                                         >
-                                            Submit
+                                            {t("contact.submit")}
                                         </button>
                                     </div>
                                 </form>
@@ -325,4 +330,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default withTranslation()(Contact);

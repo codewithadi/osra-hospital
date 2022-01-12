@@ -1,36 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { withTranslation } from "react-i18next";
 import "./department.css";
 
-function AllClinics() {
+function AllClinics({ t }) {
     const demoClinic = [
         {
-            name: "Pediatric",
-            desc: "A paediatrician is a child's physician who provides not only medical care for children who are acutely or chronically ill but also preventive health services for healthy children.",
+            name: `${t("allclinics.a.name")}`,
+            desc: `${t("allclinics.a.info")}`,
             imgurl: "assets/department/Pediatrics.png",
             linkto: "/clinics/pediatrics",
         },
         {
-            name: "OB/Gyne",
-            desc: "OB-GYNs also historically have more cultural competency training around gender based issues..",
+            name: `${t("allclinics.b.name")}`,
+            desc: `${t("allclinics.b.info")}`,
             imgurl: "assets/department/ob.png",
             linkto: "/clinics/ob-gyne",
         },
         {
-            name: "Ophthalmology",
-            desc: "Ophthalmology is a branch of medicine dealing with the diagnosis, treatment and prevention of diseases of the eye and visual system.",
+            name: `${t("allclinics.c.name")}`,
+            desc: `${t("allclinics.c.info")}`,
             imgurl: "assets/department/bones.png",
             linkto: "/clinics/ophthalmology",
         },
         {
-            name: "Gastroenterology",
-            desc: "Gastroenterology is a medical specialty dealing with the study of the digestive system and its disorders.",
+            name: `${t("allclinics.d.name")}`,
+            desc: `${t("allclinics.d.info")}`,
             imgurl: "assets/department/gas.png",
             linkto: "/clinics/gastroenterology",
         },
         {
-            name: "Cardiology",
-            desc: "Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
+            name: `${t("allclinics.e.name")}`,
+            desc: `${t("allclinics.e.info")}`,
             imgurl: "assets/department/cardio.png",
             linkto: "/clinics/cardiologist",
         },
@@ -41,68 +42,68 @@ function AllClinics() {
         //     linkto: "/clinics/internal-medicine",
         // },
         {
-            name: "Dentistry",
-            desc: "Dentistry, the profession concerned with the prevention and treatment of oral disease, including diseases of the teeth and supporting structures and diseases of the soft tissues of the mouth.",
+            name: `${t("allclinics.f.name")}`,
+            desc: `${t("allclinics.f.info")}`,
             imgurl: "assets/department/dentist.png",
             linkto: "/clinics/dentistry",
         },
         {
-            name: "Dietitian",
-            desc: "The Clinical Nutrition & Dietetics department at Lifepoint Multispecialty Hospital is a one-stop solution for all therapeutic diet and nutrition queries when it comes to health and illness.",
+            name: `${t("allclinics.g.name")}`,
+            desc: `${t("allclinics.g.info")}`,
             imgurl: "assets/department/die.png",
             linkto: "/clinics/dietitian",
         },
         {
-            name: "Dermatology and Cosmetology",
-            desc: "Dermatology is the branch of medicine dealing with the skin. It is a speciality with both medical and surgical aspects.",
+            name: `${t("allclinics.h.name")}`,
+            desc: `${t("allclinics.h.info")}`,
             imgurl: "assets/department/derma.png",
             linkto: "/clinics/dermatology",
         },
         {
-            name: "Orthopedics",
-            desc: " Orthopedics is the branch of medicine concerned with diseases, injuries and conditions of the musculoskeletal system or the body's muscles and skeleton.",
+            name: `${t("allclinics.i.name")}`,
+            desc: `${t("allclinics.i.info")}`,
             imgurl: "assets/department/ortho.png",
             linkto: "/clinics/orthopedics",
         },
         {
-            name: "General Surgery",
-            desc: "General surgery are deal with diseases involving the skin, breast, soft tissue, trauma, Peripheral artery disease and hernias.",
+            name: `${t("allclinics.j.name")}`,
+            desc: `${t("allclinics.j.info")}`,
             imgurl: "assets/department/surgery.png",
             linkto: "/clinics/general-surgery",
         },
         {
-            name: "Urology",
-            desc: "Urology is a part of health care that deals with diseases of the male and female urinary tract (kidneys, ureters, bladder and urethra).",
+            name: `${t("allclinics.k.name")}`,
+            desc: `${t("allclinics.k.info")}`,
             imgurl: "assets/department/Urology.png",
             linkto: "/clinics/urology",
         },
         {
-            name: "Neuro",
-            desc: "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system.",
+            name: `${t("allclinics.l.name")}`,
+            desc: `${t("allclinics.l.info")}`,
             imgurl: "assets/department/neurology.png",
             linkto: "/clinics/neuro",
         },
         {
-            name: "Psychiatric",
-            desc: "Psychiatry is the branch of medicine focused on the diagnosis, treatment and prevention of mental, emotional and behavioral disorders.",
+            name: `${t("allclinics.m.name")}`,
+            desc: `${t("allclinics.m.info")}`,
             imgurl: "assets/department/Pshyciatric.png",
             linkto: "/clinics/pshyciatric",
         },
         {
-            name: "Bariatric Surgery",
-            desc: "Bariatric surgery is an operation that is performed in order to help such individuals lose weight.",
+            name: `${t("allclinics.n.name")}`,
+            desc: `${t("allclinics.n.info")}`,
             imgurl: "assets/department/Bariatic.png",
             linkto: "/clinics/bariatic-surgery",
         },
         {
-            name: "Physiotherapy",
-            desc: "Healthcare profession concerned with the assessment, maintenance, and restoration of the physical function.",
+            name: `${t("allclinics.o.name")}`,
+            desc: `${t("allclinics.o.info")}`,
             imgurl: "assets/department/physio.png",
             linkto: "/clinics/physiotherapist",
         },
         {
-            name: "ENT (Ear, Nose & Throat)",
-            desc: "If you have a health problem with your head or neck, your doctor might recommend that you see an otolaryngologist.",
+            name: `${t("allclinics.p.name")}`,
+            desc: `${t("allclinics.p.info")}`,
             imgurl: "assets/department/EarNoseThroat.png",
             linkto: "/clinics/ear-nose-throat",
         },
@@ -148,4 +149,4 @@ function AllClinics() {
     );
 }
 
-export default AllClinics;
+export default withTranslation()(AllClinics);
