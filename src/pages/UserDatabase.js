@@ -14,6 +14,7 @@ function UserDatabase() {
   const [loading, setloading] = useState(true);
   const [selectedDoc,setSelectedDoc]=useState("")
   const [startDate, setStartDate] = useState(new Date());
+  const[dateDoctor,setdateDoctor]=useState("")
     const [dateb, setDateB] = useState("");
   useEffect(() => {
     const getroom = async () => {
@@ -38,7 +39,7 @@ function UserDatabase() {
     setDateB(moment(date).format("DD-MM-YYYY").toString());
     const datebook = moment(date).format("DD-MM-YYYY").toString();
   //console.log(datebook);
-    const patientdate = patient.filter(
+    const patientdate = dateDoctor.filter(
         (item) => item.date === datebook
     );
     console.log(patientdate);
@@ -55,6 +56,7 @@ function UserDatabase() {
     const filterdocid=(selectedDoc._id)
     if(filterdocid){
 const res=patientall.filter(x=>x.doctor===filterdocid)
+setdateDoctor(res)
 setPatient(res)
     }
    else{
