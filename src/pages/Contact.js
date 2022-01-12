@@ -69,7 +69,7 @@ const Contact = ({ t }) => {
                                     style={{ color: "#3f0f1e" }}
                                     className="mt-2 mb-2 font-medium text-2xl"
                                 >
-                                    Address
+                                    {t("addr")}
                                 </span>
 
                                 <span
@@ -97,14 +97,14 @@ const Contact = ({ t }) => {
                                     style={{ color: "#3f0f1e" }}
                                     className="mt-2 mb-2 font-medium text-2xl"
                                 >
-                                    Get in Touch
+                                    {t("getint")}
                                 </span>
                                 <a href="tel:01143111111">
                                     <span
                                         style={{ color: "#778696" }}
                                         className="mt-2 mb-4 font-normal text-lg"
                                     >
-                                        Phone : 0114311111
+                                        {t("contact.phone")} : 0114311111
                                     </span>
                                 </a>
                                 <a href="mailto:info@alosrah-hospital.com">
@@ -112,7 +112,8 @@ const Contact = ({ t }) => {
                                         style={{ color: "#778696" }}
                                         className="mt-2 mb-4 font-normal text-lg"
                                     >
-                                        Mail : info@alosrah-hospital.com
+                                        {t("contact.email")} :
+                                        info@alosrah-hospital.com
                                     </span>
                                 </a>
                             </div>
@@ -134,7 +135,7 @@ const Contact = ({ t }) => {
                                     style={{ color: "#3f0f1e" }}
                                     className="mt-2 mb-2 font-medium text-2xl text-center"
                                 >
-                                    Work Hours
+                                    {t("workinghrs")}
                                 </span>
 
                                 <a href="/contact">
@@ -149,8 +150,9 @@ const Contact = ({ t }) => {
                                         style={{ color: "#778696" }}
                                         className="mb-1 font-normal text-sm"
                                     >
-                                        Morning: 9:00 a.m to 12:00 p.m, <br />
-                                        Evening: 4:00 p.m to 9:30 p.m
+                                        {t("morn")} : 9:00 a.m to 12:00 p.m,{" "}
+                                        <br />
+                                        {t("even")} : 4:00 p.m to 9:30 p.m
                                     </span>
                                     <br />
                                     <span
@@ -180,9 +182,9 @@ const Contact = ({ t }) => {
                                         style={{ color: "#778696" }}
                                         className="mb-1 font-normal text-sm"
                                     >
-                                        Saturday to Thursday: 7:00 a.m to 12:00
-                                        a.m, <br />
-                                        Friday: 2:00 p.m to 12:00 a.m
+                                        {t("stt")}: 7:00 a.m to 12:00 a.m,{" "}
+                                        <br />
+                                        {t("fr")}: 2:00 p.m to 12:00 a.m
                                     </span>
                                 </a>
                             </div>
@@ -218,7 +220,7 @@ const Contact = ({ t }) => {
                                     <div className="-ml-2 pt-2 md:flex">
                                         <div className="w-full mx-2">
                                             <label className="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-200">
-                                                {t("contact.phone")} no.
+                                                {t("contact.phone")}
                                             </label>
 
                                             <input
@@ -261,7 +263,7 @@ const Contact = ({ t }) => {
                                     <div className="-ml-2 pt-2 md:flex">
                                         <div className="w-full mx-2">
                                             <label className="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-200">
-                                                Subject
+                                                {t("contact.sub")}
                                             </label>
 
                                             <input
@@ -270,7 +272,7 @@ const Contact = ({ t }) => {
                                                     setSubject(e.target.value)
                                                 }
                                                 value={subject}
-                                                placeholder="Subject"
+                                                placeholder={t("contact.sub")}
                                                 required
                                                 id="subject"
                                                 type="text"

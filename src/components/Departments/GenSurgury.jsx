@@ -2,115 +2,115 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
 
-const treatmentOffered = {
-  DiagnosticModalities: [
-    {
-      name: "Incision biopsy",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Excision",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "FNAC",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Diagnostic Laparoscopy",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Procto-sigmoidoscopy",
-      detail: "",
-      logo: "",
-    },
-  ],
-  TherapeuticModalities: [
-    {
-      name: "Appendectomy  ( open and laproscopic)",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Inguinal, Umbilical and Femoral Hernioplasty ( open and laproscopic)",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Cholecystectomy ( open and laproscopic)",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Haemorrhoidectomy, Fissurectomy, Fistulectomy",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Thyroidectomy",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Pilonidal sinus excision & flap closure",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Peritonitis",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Ascities",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Peptic ulcer perforation",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Mastectomy",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Colorectal Surgery",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Laparotomy",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Bowel resection anastomosis",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Stoma creation and take down",
-      detail: "",
-      logo: "",
-    },
-    {
-      name: "Exploratory lapatotomy",
-      detail: "",
-      logo: "",
-    },
-  ],
-};
-
-function Gen_surgery() {
+function Gen_surgery({t}) {
+  const treatmentOffered = {
+    DiagnosticModalities: [
+      {
+        name: `${t("GeneralSurgery.dm1")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.dm2")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.dm3")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.dm4")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.dm5")}`,
+        detail: "",
+        logo: "",
+      },
+    ],
+    TherapeuticModalities: [
+      {
+        name: `${t("GeneralSurgery.tm1")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm2")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm3")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm4")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm5")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm6")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm7")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm8")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm9")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm10")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm11")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm12")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm13")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm14")}`,
+        detail: "",
+        logo: "",
+      },
+      {
+        name: `${t("GeneralSurgery.tm15")}`,
+        detail: "",
+        logo: "",
+      },
+    ],
+  };
   const filterdDoc = demoData.filter((data) =>
     data.department.includes("general_surgeon")
   );
@@ -123,24 +123,16 @@ function Gen_surgery() {
           alt="department Back"
         />
         <div className="depMainOverlay">
-          <h1 className="depMainText">General Surgery</h1>
+          <h1 className="depMainText">{t("GeneralSurgery.dname")}</h1>
         </div>
       </div>
 
       <div className="depDetail">
         <div className="depDetailContainer">
           <div className="depTextHead">
-            <h1 className="depDetailTitle">General Surgery Department</h1>
+            <h1 className="depDetailTitle">{t("GeneralSurgery.dname")}</h1>
             <div className="depDetailAbout">
-              General surgery is a surgical specialty that focuses on abdominal
-              contents including the esophagus, stomach, small intestine, large
-              intestine, liver, pancreas, gallbladder, appendix and bile ducts,
-              and often the thyroid gland.
-              <br />
-              <br />
-              General surgery are deal with diseases involving the skin, breast,
-              soft tissue, trauma, Peripheral artery disease and hernias and
-              perform endoscopic procedures such as gastroscopy and colonoscopy.
+              {t("GeneralSurgery.detail")}
             </div>
           </div>
           <div className="depImgWrapper">
@@ -155,16 +147,15 @@ function Gen_surgery() {
 
       <div className="treatmentDetails">
         <div className="depMain">
-          <h1 className="depMainHead">Treatments Offered</h1>
+          <h1 className="depMainHead">{t("to")}</h1>
           <p className="depMainPara">
-            We use cutting edge technology to execute a wide range of general
-            surgeries, including:
+          {t("GeneralSurgery.treatment")}
           </p>
           <div className="depLine"></div>
         </div>
 
         <div className="treatmentWrapper">
-          <h1 className="depMainHead">Diagnostic Modalities :</h1>
+          <h1 className="depMainHead">{t("dm")}</h1>
         </div>
         <div className="treatmentWrapper">
           {treatmentOffered.DiagnosticModalities.map((item, index) => (
@@ -182,7 +173,7 @@ function Gen_surgery() {
         </div>
 
         <div className="treatmentWrapper">
-          <h1 className="depMainHead">Therapeutic Modalities :</h1>
+          <h1 className="depMainHead">{t("tm")}</h1>
         </div>
         <div className="treatmentWrapper">
           {treatmentOffered.TherapeuticModalities.map((item, index) => (
@@ -251,4 +242,4 @@ function Gen_surgery() {
   );
 }
 
-export default Gen_surgery;
+export default withTranslation()(Gen_surgery);

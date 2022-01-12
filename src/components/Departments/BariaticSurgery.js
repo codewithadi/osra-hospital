@@ -8,57 +8,57 @@ function BariaticSurgery({ t }) {
     const treatmentsOffered = {
         TherapeuticModalities: [
             {
-                name: `${t("clinic.test")}`,
+                name: `${t("bari.tm1")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name: "Gastric Banding",
+                name: `${t("bari.tm2")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name: "Gastrostomy Sleeve",
+                name: `${t("bari.tm3")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name: "Tumor operations",
+                name: `${t("bari.tm4")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name: "All types of obesity operations (re-obesity and morbid obesity)",
+                name: `${t("bari.tm5")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name: "Laparoscopic sleeve gastrectomy",
+                name: `${t("bari.tm6")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name: "SADI operation",
+                name: `${t("bari.tm7")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name: "SASI process",
+                name: `${t("bari.tm8")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name: "Oncology surgery",
+                name: `${t("bari.tm9")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name: "General surgeries",
+                name: `${t("bari.tm10")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name: "Mini gastric bypass",
+                name: `${t("bari.tm11")}`,
                 detail: "",
                 logo: "",
             },
@@ -76,32 +76,19 @@ function BariaticSurgery({ t }) {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">Bariatric Surgery</h1>
+                    <h1 className="depMainText">{t("bari.head")}</h1>
                 </div>
             </div>
 
             <div className="depDetail">
                 <div className="depDetailContainer">
                     <div className="depTextHead">
-                        <h1 className="depDetailTitle">
-                            Bariatric Surgery Department
-                        </h1>
+                        <h1 className="depDetailTitle">{t("bari.head")}</h1>
                         <div className="depDetailAbout">
-                            Exercise and diet alone often fails to effectively
-                            treat people with extreme and excessive obesity.
-                            Bariatric surgery is an operation that is performed
-                            in order to help such individuals lose weight.
-                            Evidence suggests that bariatric surgery may lower
-                            death rates for patients with severe obesity,
-                            especially when coupled with healthy eating and
-                            lifestyle changes after surgery.
+                            {t("bari.para1")}
                             <br />
                             <br />
-                            These surgeries generally pose major risks and side
-                            effects and the patient has to make changes to their
-                            diet permanently and also schedule a fixed exercise
-                            regime so that they can ensure the lasting success
-                            of bariatric surgeries.
+                            {t("bari.para2")}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -116,17 +103,13 @@ function BariaticSurgery({ t }) {
 
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">Treatments Offered</h1>
-                    <p className="depMainPara">
-                        Our department of Bariatric Surgery is dedicated to
-                        exceeding expectations. We provide cutting edge
-                        treatment
-                    </p>
+                    <h1 className="depMainHead">{t("to")}</h1>
+                    <p className="depMainPara">{t("bari.tohe")}</p>
                     <div className="depLine"></div>
                 </div>
 
                 <div className="treatmentWrapper">
-                    <h1 className="depMainHead">Therapeutic Modalities: :</h1>
+                    <h1 className="depMainHead">{t("tm")} :</h1>
                 </div>
                 <div className="treatmentWrapper">
                     {treatmentsOffered.TherapeuticModalities.map(

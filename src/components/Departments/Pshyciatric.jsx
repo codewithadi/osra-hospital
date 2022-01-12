@@ -2,23 +2,23 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
 
-const treatmentsOffered = {
-    TherapeuticModalities: [
-        {
-            name: "Evaluation of diseases",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Psychological Assessment",
-            detail: "",
-            logo: "",
-        },
-    ],
-};
-
-function Pshyciatric() {
+function Pshyciatric({ t }) {
+    const treatmentsOffered = {
+        TherapeuticModalities: [
+            {
+                name: `${t("psyc.tm1")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("psyc.tm2")}`,
+                detail: "",
+                logo: "",
+            },
+        ],
+    };
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("pshyciatric")
     );
@@ -32,35 +32,19 @@ function Pshyciatric() {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">Pshyciatric</h1>
+                    <h1 className="depMainText">{t("psyc.head")}</h1>
                 </div>
             </div>
 
             <div className="depDetail">
                 <div className="depDetailContainer">
                     <div className="depTextHead">
-                        <h1 className="depDetailTitle">
-                            Pshyciatric Department
-                        </h1>
+                        <h1 className="depDetailTitle">{t("psyc.head")}</h1>
                         <div className="depDetailAbout">
-                            Psychiatry is the branch of medicine focused on the
-                            diagnosis, treatment and prevention of mental,
-                            emotional and behavioral disorders. A psychiatrist
-                            is a medical doctor (an M.D. or D.O.) who
-                            specializes in mental health, including substance
-                            use disorders. Psychiatrists are qualified to assess
-                            both the mental and physical aspects of
-                            psychological problems.
+                            {t("psyc.para1")}
                             <br />
                             <br />
-                            People seek psychiatric help for many reasons. The
-                            problems can be sudden, such as a panic attack,
-                            frightening hallucinations, thoughts of suicide, or
-                            hearing "voices." Or they may be more long-term,
-                            such as feelings of sadness, hopelessness, or
-                            anxiousness that never seem to lift or problems
-                            functioning, causing everyday life to feel distorted
-                            or out of control.
+                            {t("psyc.para2")}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -75,17 +59,13 @@ function Pshyciatric() {
 
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">Treatments Offered</h1>
-                    <p className="depMainPara">
-                        Our department of Psychiatry is dedicated to exceeding
-                        expectations. We provide cutting edge treatment of
-                        disorders below
-                    </p>
+                    <h1 className="depMainHead">{t("to")}</h1>
+                    <p className="depMainPara">{t("psyc.topara")}</p>
                     <div className="depLine"></div>
                 </div>
 
                 <div className="treatmentWrapper">
-                    <h1 className="depMainHead">Therapeutic Modalities: :</h1>
+                    <h1 className="depMainHead">{t("tm")} :</h1>
                 </div>
                 <div className="treatmentWrapper">
                     {treatmentsOffered.TherapeuticModalities.map(
@@ -160,4 +140,4 @@ function Pshyciatric() {
     );
 }
 
-export default Pshyciatric;
+export default withTranslation()(Pshyciatric);

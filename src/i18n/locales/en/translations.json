@@ -1,4 +1,25 @@
-{
+{ "app":{
+     "1":"Online Appointment Form",
+     "2":"Now you can request an appointment in some simple steps Online",
+     "3":"Your Full Name",
+     "4":"Your Age",
+     "5":"Gender",
+     "6":"Male",
+     "7":"Female",
+     "8":"Your Email",
+     "9":"Select Clinic",
+     "10":"Select doctor",
+     "11":"Select Date",
+     "12":"Select Slot",
+     "13":"Your Messsage",
+     "14":"Book Appointment",
+     "15":""
+ },
+ "ujimages":{
+     "journey":"/assets/about/OIH.Our.Journey.png",
+     "chart":"/assets/about/OIH.OrganizationalChart.png"
+     
+ },
      "book_btn_fixed1": "Book",
      "book_btn_fixed2": "Now",
      "top-emergency": "Emergency",
@@ -300,7 +321,28 @@
           "Treatmenthead": "Treatments Offered",
           "Treatmentbody": "The Orthopaedic department at our hospitals delivers personalised care utilising the latest research and evidence-based medicine."
      },
-
+     "OBGyne":{
+        "one":"Laboratory investigations include blood chemistry, hematology, serology, hormone assay, urinalysis, cytology",
+        "two":"Smears(e.g. pap smear)",
+        "three":"Biopsies",
+        "four":"Ultrasonographies",
+        "five":"CT Scan",
+        "six":"Conventional Diagnostic Radiology",
+        "seven":"D&C",
+        "eight":"Caesarean Section",
+        "nine":"Normal Deliveries/instrumental Deliveries/ Epidural Injection (Painless)",
+        "ten":"All other Gynecological operations",
+        "eleven":"Hysterectomy (Partial or Complete)",
+        "twelve":"Insertion & removal of IUD",
+        "thirteen":"Episiotomy",
+        "fourteen":"Perineal Repair",
+        "fifteen":"Vaginal Re-Construction Surgeries",
+        "title":"OB/Gyne Department",
+        "body1":" Obstetrics and gynecology is a field thought of astraditionally serving women because of it's focus on the female reproductive system, leading careproviders to make assumptions about patients' gender identity and expression in 'women's health clinics' when many transgender or nonbinary patients may also seek care from OB-GYNs.",
+        "body2":" OB-GYNs also historically have more cultural competency training around gender based issues..",
+        "treatmenthead":"Treatments Offered",
+        "treatmentbody":"Our physicians use a range of diverse treatments"
+    },
      "dietitian": {
           "title": "Dietitian",
           "subTitle": "Dietitian Department",
@@ -349,5 +391,50 @@
      "inpatfooter": "In patient visit times",
      "clinic": {
           "test": "Gastric Bypass"
+     },
+     "GeneralSurgery": {
+          "dname": "General Surgery",
+          "detail": "General surgery is a surgical specialty that focuses on abdominal contents including the esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.General surgery are deal with diseases involving the skin, breast, soft tissue, trauma, Peripheral artery disease and hernias and perform endoscopic procedures such as gastroscopy and colonoscopy.",
+          "treatment": "We use cutting edge technology to execute a wide range of general surgeries, including",
+          "dm1": "Incision biopsy",
+          "dm2": "Excision",
+          "dm3": "FNAC",
+          "dm4": "Diagnostic Laparoscopy",
+          "dm5": "Procto-sigmoidoscopy",
+          "tm1": "Appendectomy ( open and laproscopic)",
+          "tm2": "Inguinal, Umbilical and Femoral Hernioplasty ( open and laproscopic)",
+          "tm3": "Cholecystectomy ( open and laproscopic)",
+          "tm4": "Haemorrhoidectomy, Fissurectomy, Fistulectomy",
+          "tm5": "Thyroidectomy",
+          "tm6": "Pilonidal sinus excision & flap closure",
+          "tm7": "Peritonitis",
+          "tm8": "Ascities",
+          "tm9": "Peptic ulcer perforation",
+          "tm10": "Mastectomy",
+          "tm11": "Colorectal Surgery",
+          "tm12": "Laparotomy",
+          "tm13": "Bowel resection anastomosis",
+          "tm14": "Stoma creation and take down",
+          "tm15": "Exploratory lapatotomy"
+     },
+     "neuro": {
+          "head": "Neuro Department",
+          "para1": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities. A doctor who specializes in neurology is called a neurologist. The neurologist treats disorders that affect the brain, spinal cord, and nerves",
+          "para2": "The department offers the latest in neurological care with innovative therapies, new techniques and clinical trials developed by our world-class experts. Our neurologists help more than 100,000 adults and children each year, including those with complex or rare conditions.",
+          "topara": "Our Neurology Department is dedicated to exceeding expectations. We provide cutting edge treatment of disorders below",
+          "tm1": "Evaluation of diseases",
+          "tm2": "Psychological Assessment"
+     },
+     "Urology": {
+          "dname": "Urology Department",
+          "detail": "Urology is a part of health care that deals with diseases of the male and female urinary tract (kidneys, ureters, bladder and urethra). It also deals with the male organs that are able to make babies (penis, testes, scrotum, prostate, etc.). Since health problems in these body parts can happen to everyone, urologic health is important.",
+          "treatment": "Due to the multi-faceted nature of urology, our physicians also boast exceptional knowledge in",
+          "dm1": "Urethro - cystocopy",
+          "dm2":"Diagnostic Laparoscopy",
+          "tm1": "Pyelolithotomy",
+          "tm2": "ESWL",
+          "tm3": "Andrology",
+          "tm4": "Laproscopic Procedures",
+          "tm5":"Folley Catherization"
      }
 }

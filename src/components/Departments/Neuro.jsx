@@ -2,22 +2,23 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
-const treatmentsOffered = {
-    TherapeuticModalities: [
-        {
-            name: "Evaluation of diseases",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Psychological Assessment",
-            detail: "",
-            logo: "",
-        },
-    ],
-};
+import { withTranslation } from "react-i18next";
 
-function Neuro() {
+function Neuro({ t }) {
+    const treatmentsOffered = {
+        TherapeuticModalities: [
+            {
+                name: `${t("neuro.tm1")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("neuro.tm2")}`,
+                detail: "",
+                logo: "",
+            },
+        ],
+    };
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("neuro")
     );
@@ -30,30 +31,18 @@ function Neuro() {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">Neuro</h1>
+                    <h1 className="depMainText">{t("neuro.head")}</h1>
                 </div>
             </div>
 
             <div className="depDetail">
                 <div className="depDetailContainer">
                     <div className="depTextHead">
-                        <h1 className="depDetailTitle">Neuro Department</h1>
+                        <h1 className="depDetailTitle">{t("neuro.head")}</h1>
                         <div className="depDetailAbout">
-                            Neurology is the branch of medicine concerned with
-                            the study and treatment of disorders of the nervous
-                            system. The nervous system is a complex,
-                            sophisticated system that regulates and coordinates
-                            body activities.A doctor who specializes in
-                            neurology is called a neurologist. The neurologist
-                            treats disorders that affect the brain, spinal cord,
-                            and nerves
+                            {t("neuro.para1")}
                             <br /> <br />
-                            The deparment offers the latest in neurological care
-                            with innovative therapies, new techniques and
-                            clinical trials developed by our world-class
-                            experts. Our neurologists help more than 100,000
-                            adults and children each year, including those with
-                            complex or rare conditions.
+                            {t("neuro.para2")}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -68,17 +57,13 @@ function Neuro() {
 
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">Treatments Offered</h1>
-                    <p className="depMainPara">
-                        Our Neurology Department is dedicated to exceeding
-                        expectations. We provide cutting edge treatment of
-                        disorders below
-                    </p>
+                    <h1 className="depMainHead">{t("to")}</h1>
+                    <p className="depMainPara">{t("neuro.topara")}</p>
                     <div className="depLine"></div>
                 </div>
 
                 <div className="treatmentWrapper">
-                    <h1 className="depMainHead">Therapeutic Modalities :</h1>
+                    <h1 className="depMainHead">{t("tm")} :</h1>
                 </div>
                 <div className="treatmentWrapper">
                     {treatmentsOffered.TherapeuticModalities.map(
@@ -154,4 +139,4 @@ function Neuro() {
     );
 }
 
-export default Neuro;
+export default withTranslation()(Neuro);
