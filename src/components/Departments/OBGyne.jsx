@@ -5,7 +5,6 @@ import SingleDoctor from "../Doctor/SingleDoctor";
 import { withTranslation } from "react-i18next";
 
 function OBGyne({ t }) {
-
     const treatmentsOffered = {
         DiagnosticModalities: [
             {
@@ -24,12 +23,12 @@ function OBGyne({ t }) {
                 logo: "",
             },
             {
-                name:`${t("OBGyne.four")}`,
+                name: `${t("OBGyne.four")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name:`${t("OBGyne.five")}`,
+                name: `${t("OBGyne.five")}`,
                 detail: "",
                 logo: "",
             },
@@ -51,22 +50,22 @@ function OBGyne({ t }) {
                 logo: "",
             },
             {
-                name:`${t("OBGyne.nine")}`,
+                name: `${t("OBGyne.nine")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name:`${t("OBGyne.ten")}`,
+                name: `${t("OBGyne.ten")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name:`${t("OBGyne.eleven")}`,
+                name: `${t("OBGyne.eleven")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name:`${t("OBGyne.twelve")}`,
+                name: `${t("OBGyne.twelve")}`,
                 detail: "",
                 logo: "",
             },
@@ -76,12 +75,12 @@ function OBGyne({ t }) {
                 logo: "",
             },
             {
-                name:`${t("OBGyne.fourteen")}`,
+                name: `${t("OBGyne.fourteen")}`,
                 detail: "",
                 logo: "",
             },
             {
-                name:`${t("OBGyne.fifteen")}`,
+                name: `${t("OBGyne.fifteen")}`,
                 detail: "",
                 logo: "",
             },
@@ -99,21 +98,19 @@ function OBGyne({ t }) {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">OB/Gyne</h1>
+                    <h1 className="depMainText">{t("OBGyne.title")}</h1>
                 </div>
             </div>
 
             <div className="depDetail">
                 <div className="depDetailContainer">
                     <div className="depTextHead">
-                        <h1 className="depDetailTitle">
-                        {t("OBGyne.title")}
-                            </h1>
+                        <h1 className="depDetailTitle">{t("OBGyne.title")}</h1>
                         <div className="depDetailAbout">
-                        {t("OBGyne.body1")}
+                            {t("OBGyne.body1")}
                             <br />
                             <br />
-                         {t("OBGyne.body2")}
+                            {t("OBGyne.body2")}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -128,12 +125,8 @@ function OBGyne({ t }) {
 
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">
-                    {t("OBGyne.treatmenthead")}
-                        </h1>
-                    <p className="depMainPara">
-                    {t("OBGyne.treatmentbody")}
-                    </p>
+                    <h1 className="depMainHead">{t("OBGyne.treatmenthead")}</h1>
+                    <p className="depMainPara">{t("OBGyne.treatmentbody")}</p>
                     <div className="depLine"></div>
                 </div>
 

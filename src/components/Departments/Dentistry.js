@@ -5,67 +5,67 @@ import SingleDoctor from "../Doctor/SingleDoctor";
 import { withTranslation } from "react-i18next";
 
 function Dentistry({ t }) {
-const treatmentsOffered = {
-    DiagnosticModalities: [
-        {
-            name: `${t("Den1.one")}`,
-            detail: "",
-            logo: "",
-        },
-        {
-            name: `${t("Den1.two")}`,
-            detail: "",
-            logo: "",
-        },
-        {
-            name: `${t("Den1.three")}`,
-            detail: "",
-            logo: "",
-        },
-    ],
-    TherapeuticModalities: [
-        {
-            name: `${t("Den1.four")}`,
-            detail: "",
-            logo: "",
-        },
-        {
-            name:  `${t("Den1.five")}`,
-            detail: "",
-            logo: "",
-        },
-        {
-            name: `${t("Den1.six")}`,
-            detail: "",
-            logo: "",
-        },
-        {
-            name: `${t("Den1.seven")}`,
-            detail: "",
-            logo: "",
-        },
-        {
-            name: `${t("Den1.eight")}`,
-            detail: "",
-            logo: "",
-        },
-        {
-            name: `${t("Den1.nine")}`,
-            detail: "",
-            logo: "",
-        },
-        {
-            name: `${t("Den1.ten")}`,
-            detail: "",
-            logo: "",
-        },
-        {
-            name: `${t("Den1.eleven")}`,
-            detail: "",
-            logo: "",
-        },
-    ],
-};
+    const treatmentsOffered = {
+        DiagnosticModalities: [
+            {
+                name: `${t("Den1.one")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Den1.two")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Den1.three")}`,
+                detail: "",
+                logo: "",
+            },
+        ],
+        TherapeuticModalities: [
+            {
+                name: `${t("Den1.four")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Den1.five")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Den1.six")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Den1.seven")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Den1.eight")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Den1.nine")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Den1.ten")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Den1.eleven")}`,
+                detail: "",
+                logo: "",
+            },
+        ],
+    };
 
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("dentist")
@@ -79,18 +79,16 @@ const treatmentsOffered = {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">Dentistry</h1>
+                    <h1 className="depMainText">{t("Den1.title")}</h1>
                 </div>
             </div>
 
             <div className="depDetail">
                 <div className="depDetailContainer">
                     <div className="depTextHead">
-                        <h1 className="depDetailTitle">
-                        {t("Den1.title")}
-                            </h1>
+                        <h1 className="depDetailTitle">{t("Den1.title")}</h1>
                         <div className="depDetailAbout">
-                        {t("Den1.body1")}
+                            {t("Den1.body1")}
                             <br />
                             <br />
                             {t("Den1.body2")}
@@ -107,12 +105,8 @@ const treatmentsOffered = {
             </div>
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">
-                    {t("Den1.Treatmenthead")}
-                    </h1>
-                    <p className="depMainPara">
-                    {t("Den1.Treatmentbody")}
-                    </p>
+                    <h1 className="depMainHead">{t("Den1.Treatmenthead")}</h1>
+                    <p className="depMainPara">{t("Den1.Treatmentbody")}</p>
                     <div className="depLine"></div>
                 </div>
 

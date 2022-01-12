@@ -4,9 +4,7 @@ import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
 import { withTranslation } from "react-i18next";
 
-
 function Orthopedics({ t }) {
-
     const treatmentsOffered = [
         {
             name: `${t("Ortho1.one")}`,
@@ -14,7 +12,7 @@ function Orthopedics({ t }) {
             logo: "",
         },
         {
-            name:`${t("Ortho1.two")}`,
+            name: `${t("Ortho1.two")}`,
             detail: "",
             logo: "",
         },
@@ -34,7 +32,7 @@ function Orthopedics({ t }) {
             logo: "",
         },
         {
-            name:`${t("Ortho1.six")}`,
+            name: `${t("Ortho1.six")}`,
             detail: "",
             logo: "",
         },
@@ -49,7 +47,7 @@ function Orthopedics({ t }) {
             logo: "",
         },
     ];
-    
+
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("orthopedics")
     );
@@ -62,21 +60,19 @@ function Orthopedics({ t }) {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">Orthopedics</h1>
+                    <h1 className="depMainText">{t("Ortho1.title")}</h1>
                 </div>
             </div>
 
             <div className="depDetail">
                 <div className="depDetailContainer">
                     <div className="depTextHead">
-                        <h1 className="depDetailTitle">
-                        {t("Ortho1.title")}
-                        </h1>
+                        <h1 className="depDetailTitle">{t("Ortho1.title")}</h1>
                         <div className="depDetailAbout">
-                        {t("Ortho1.body1")}
-                        <br/>
-                        <br/>
-                        {t("Ortho1.body2")}
+                            {t("Ortho1.body1")}
+                            <br />
+                            <br />
+                            {t("Ortho1.body2")}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -90,12 +86,8 @@ function Orthopedics({ t }) {
             </div>
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">
-                    {t("Ortho1.Treatmenthead")}
-                    </h1>
-                    <p className="depMainPara">
-                    {t("Ortho1.Treatmentbody")}
-                    </p>
+                    <h1 className="depMainHead">{t("Ortho1.Treatmenthead")}</h1>
+                    <p className="depMainPara">{t("Ortho1.Treatmentbody")}</p>
                     <div className="depLine"></div>
                 </div>
 

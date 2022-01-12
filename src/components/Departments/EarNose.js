@@ -93,21 +93,19 @@ function EarNose({ t }) {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">Ear, Nose & Throat</h1>
+                    <h1 className="depMainText">{t("En1.title")}</h1>
                 </div>
             </div>
 
             <div className="depDetail">
                 <div className="depDetailContainer">
                     <div className="depTextHead">
-                        <h1 className="depDetailTitle">
-                        {t("En1.title")}
-                        </h1>
+                        <h1 className="depDetailTitle">{t("En1.title")}</h1>
                         <div className="depDetailAbout">
-                        {t("En1.body1")}
+                            {t("En1.body1")}
                             <br />
                             <br />
-                     {t("En1.body2")}
+                            {t("En1.body2")}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -122,12 +120,8 @@ function EarNose({ t }) {
 
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">
-                    {t("En1.Treatmenthead")}
-                        </h1>
-                    <p className="depMainPara">
-                    {t("En1.Treatmentbody")}
-                    </p>
+                    <h1 className="depMainHead">{t("En1.Treatmenthead")}</h1>
+                    <p className="depMainPara">{t("En1.Treatmentbody")}</p>
                     <div className="depLine"></div>
                 </div>
 

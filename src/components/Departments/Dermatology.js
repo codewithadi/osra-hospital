@@ -54,7 +54,7 @@ function Dermatology({ t }) {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">Dermatology and Cosmetology</h1>
+                    <h1 className="depMainText">{t("Der1.title")}</h1>
                 </div>
             </div>
 

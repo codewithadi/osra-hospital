@@ -87,7 +87,7 @@ function Ophthalmology({ t }) {
                     alt="department Back"
                 />
                 <div className="depMainOverlay">
-                    <h1 className="depMainText">Ophthalmology</h1>
+                    <h1 className="depMainText"> {t("Ophthalmology.title")}</h1>
                 </div>
             </div>
 
