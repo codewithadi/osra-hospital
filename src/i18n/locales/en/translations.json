@@ -300,6 +300,48 @@
           "Treatmenthead": "Treatments Offered",
           "Treatmentbody": "The Orthopaedic department at our hospitals delivers personalised care utilising the latest research and evidence-based medicine."
      },
+     "OBGyne":{
+        "one":"Laboratory investigations include blood chemistry, hematology, serology, hormone assay, urinalysis, cytology",
+        "two":"Smears(e.g. pap smear)",
+        "three":"Biopsies",
+        "four":"Ultrasonographies",
+        "five":"CT Scan",
+        "six":"Conventional Diagnostic Radiology",
+        "seven":"D&C",
+        "eight":"Caesarean Section",
+        "nine":"Normal Deliveries/instrumental Deliveries/ Epidural Injection (Painless)",
+        "ten":"All other Gynecological operations",
+        "eleven":"Hysterectomy (Partial or Complete)",
+        "twelve":"Insertion & removal of IUD",
+        "thirteen":"Episiotomy",
+        "fourteen":"Perineal Repair",
+        "fifteen":"Vaginal Re-Construction Surgeries",
+        "title":"OB/Gyne Department",
+        "body1":" Obstetrics and gynecology is a field thought of astraditionally serving women because of it's focus on the female reproductive system, leading careproviders to make assumptions about patients' gender identity and expression in 'women's health clinics' when many transgender or nonbinary patients may also seek care from OB-GYNs.",
+        "body2":" OB-GYNs also historically have more cultural competency training around gender based issues..",
+        "treatmenthead":"Treatments Offered",
+        "treatmentbody":"Our physicians use a range of diverse treatments"
+    },
+
+    "Ophthalmology":{
+        "one":"Ophthalmoscope",
+        "two":"Retino-scope",
+        "three":"Refraction",
+        "four":"Orthopedic Trauma",
+        "five":"Close & Open reduction procedures",
+        "six":"Plaster cast (POP)",
+        "seven":"Open reduction & internal fixation",
+        "eight":"Tendon repair",
+        "nine":"Reduction of Joint dislocation",
+        "ten":"Orthopedic joint reconstruction Surgery",
+        "eleven":"Arthroplasty",
+        "twelve":"Sports Injury",
+        "title":" Ophthalmology Department",
+        "body1":" Ophthalmology is a branch of medicine dealing with the diagnosis, treatment and prevention of diseases of the eye and visual system. The eye, its surrounding structures and the visual system can be affected by a number of clinical conditions.",
+        "body2":"A general practice doctor may refer someone to an ophthalmologist if they show symptoms of cataracts, eye infections,optic nerve problems, or other eye conditions.",
+        "treatmenthead":"Treatments Offered",
+        "treatmentbody":"The Ophthalmology clinic is specialized in :"
+    },
 
     "dietitian": {
         "title": "Dietitian",

@@ -2,75 +2,78 @@ import React from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
 import SingleDoctor from "../Doctor/SingleDoctor";
+import { withTranslation } from "react-i18next";
 
-const treatmentsOffered = {
-    DiagnosticModalities: [
-        {
-            name: "Ophthalmoscope",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Retino-scope",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Refraction",
-            detail: "",
-            logo: "",
-        },
-    ],
-    TherapeuticModalities: [
-        {
-            name: "Orthopedic Trauma",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Close & Open reduction procedures",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Plaster cast (POP)",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Open reduction & internal fixation",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Tendon repair",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Reduction of Joint dislocation",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Orthopedic joint reconstruction Surgery",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Arthroplasty",
-            detail: "",
-            logo: "",
-        },
-        {
-            name: "Sports Injury",
-            detail: "",
-            logo: "",
-        },
-    ],
-};
 
-function Ophthalmology() {
+function Ophthalmology({ t }) {
+
+    const treatmentsOffered = {
+        DiagnosticModalities: [
+            {
+                name: `${t("Ophthalmology.one")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Ophthalmology.two")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name:`${t("Ophthalmology.three")}`,
+                detail: "",
+                logo: "",
+            },
+        ],
+        TherapeuticModalities: [
+            {
+                name: `${t("Ophthalmology.four")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Ophthalmology.five")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Ophthalmology.six")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name:`${t("Ophthalmology.seven")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name:`${t("Ophthalmology.eight")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Ophthalmology.nine")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Ophthalmology.ten")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name:`${t("Ophthalmology.eleven")}`,
+                detail: "",
+                logo: "",
+            },
+            {
+                name: `${t("Ophthalmology.twelve")}`,
+                detail: "",
+                logo: "",
+            },
+        ],
+    };
+    
     const filterdDoc = demoData.filter((data) =>
         data.department.includes("ophthalmology")
     );
@@ -92,19 +95,13 @@ function Ophthalmology() {
                 <div className="depDetailContainer">
                     <div className="depTextHead">
                         <h1 className="depDetailTitle">
-                            Ophthalmology Department
+                        {t("Ophthalmology.title")}
                         </h1>
                         <div className="depDetailAbout">
-                            Ophthalmology is a branch of medicine dealing with
-                            the diagnosis, treatment and prevention of diseases
-                            of the eye and visual system. The eye, its
-                            surrounding structures and the visual system can be
-                            affected by a number of clinical conditions.
+                        {t("Ophthalmology.body1")}
                             <br />
-                            <br />A general practice doctor may refer someone to
-                            an ophthalmologist if they show symptoms of
-                            cataracts, eye infections, optic nerve problems, or
-                            other eye conditions.
+                            <br />
+                            {t("Ophthalmology.body2")}
                         </div>
                     </div>
                     <div className="depImgWrapper">
@@ -119,9 +116,9 @@ function Ophthalmology() {
 
             <div className="treatmentDetails">
                 <div className="depMain">
-                    <h1 className="depMainHead">Treatments Offered</h1>
+                    <h1 className="depMainHead">{t("Ophthalmology.treatmenthead")}</h1>
                     <p className="depMainPara">
-                        The Ophthalmology clinic is specialized in :
+                    {t("Ophthalmology.treatmentbody")}
                     </p>
                     <div className="depLine"></div>
                 </div>
@@ -229,4 +226,4 @@ function Ophthalmology() {
     );
 }
 
-export default Ophthalmology;
+export default withTranslation()(Ophthalmology);
