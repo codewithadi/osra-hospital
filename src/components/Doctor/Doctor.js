@@ -4,6 +4,7 @@ import Select from "react-select";
 import axios from "axios";
 import Loading from "../Loading/Loading";
 import { demoData } from "../DemoData/demodata";
+import { demoDatas } from "../DemoData/demodatas";
 import { demodept } from "../DemoData/demodept";
 
 const Doctor = () => {
@@ -42,9 +43,18 @@ const Doctor = () => {
                 "https://doctorappapi.herokuapp.com/api/department"
             );
             setDepartment(resp.data);
+            const language=localStorage.getItem("language")
+            console.log(language==="ar")
+            if(language==="ar"){
+                console.log("ar")
+                setDoctors(demoDatas)
+            }else{
+                console.log("en")
+                setDoctors(demoData)
+            }
 
             //setDepartment(demodept);
-            setDoctors(demoData);
+           
 
             setloading(false);
         };

@@ -21,10 +21,10 @@ const SingleDoctor = ({
             <div className="depDoctorImg1">
                 <img className="doctorImg1" src={imgUrl} alt="anyimg" />
             </div>
-            {/* <h2 className="depDoctorName1">{namear}</h2>
-            <p className="depDoctorAbout1">{positionar}</p> */}
-            <h2 className="depDoctorName1">{name}</h2>
-            <p className="depDoctorAbout1">{position}</p>
+             <h2 className="depDoctorName1">{namear}</h2>
+            <p className="depDoctorAbout1">{positionar}</p>
+            {/*<h2 className="depDoctorName1">{name}</h2>
+            <p className="depDoctorAbout1">{position}</p>*/}
             {/* <p className="depDoctorMob1">{mobno}</p>
             <p className="depDoctorMail1">{email}</p> */}
             <div className="depBtnWrapper1">

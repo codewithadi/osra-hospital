@@ -1,16 +1,15 @@
-export const demoData = [
+export const demoDatas = [
     {
         imgUrl: "/assets/real/14.png",
         name: "Dr. Eman Radwan",
-        positionar: "Nuoru Phsycstric Specialist ",
-        namear: "	Dr. Eman Radwan",
+        positionar: "	اخصائية نفسية",
+        namear: "	د. ايمان رضوان",
         Nationality: "Egyptian",
         Qualification: "Master's degree in Psychiatry and neurology",
         Experience: "47 years",
         position: "Nuoru Phsycstric Specialist ",
         department: ["neuro", "pshyciatric"],
         search: "Psychiatric Neuro Dermatology and Cosmetology ",
-        
         skills: [
             "Psychiatric analysis",
             "Personality disorders",
@@ -519,4 +518,4 @@ export const demoData = [
     },
 ];
 
-export default { demoData };
+export default { demoDatas };

@@ -1,12 +1,30 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import { useTranslation } from "react-i18next";
 import { withTranslation } from "react-i18next";
 
 const TopBar = ({ t }) => {
     const { i18n } = useTranslation();
-    function changeLanguage(e) {
-        i18n.changeLanguage(e.target.value);
-    }
+    const[load,setload]=useState(false)
+    const[langu,setLangu]=useState("en")
+    const[langug,setLangug]=useState("English")
+ 
+  useEffect(() => {
+     let lang=localStorage.getItem("language")
+     if(lang=="ar"){
+         setload(true)
+        
+        
+     }else{
+         setload(false)
+     
+     }
+  }, [])
+  const changeLanguage = (e) => {
+    localStorage.setItem("language", e.target.value);
+    i18n.changeLanguage(e.target.value);
+    window.location.reload()
+  };
+ 
 
     return (
         <div
@@ -20,15 +38,14 @@ const TopBar = ({ t }) => {
             >
                 {t("top-emergency")}
             </a>
-            <form className="px-4">
-                <select
-                    onClick={changeLanguage}
-                    className="text-center outline-none"
-                >
-                    <option value="en">English</option>
-                    <option value="ar">العربية</option>
-                </select>
-            </form>
+            <h1>{load ? "العربية": "English"}</h1>
+      <form className="px-4 ">
+        <select onChange={changeLanguage} style={{width:"20px"}} className="text-center outline-none">
+        <option value="" ></option>
+          <option value="en">English</option>
+          <option value="ar">العربية </option>
+        </select>
+      </form>
         </div>
     );
 };

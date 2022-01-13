@@ -1,5 +1,6 @@
 {
     "direction": "rtl",
+    "doctorurl":"{{demoDatas}}",
     "app": {
         "1": "نموذج حجز مواعيد الكترونية ",
         "2": "Now you can request an appointment in some simple steps Online",
