@@ -2,8 +2,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/14.png",
         name: "Dr. Eman Radwan",
-        positionar: "اضطرابات الوظيفة الجنسية",
-        namear: "التحليل النفسي",
+        positionar: "	اخصائية نفسية",
+        namear: "	د. ايمان رضوان",
         Nationality: "Egyptian",
         Qualification: "Master's degree in Psychiatry and neurology",
         Experience: "47 years",
@@ -26,8 +26,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/15.png",
         name: "Dr. Attif Bassas",
-        namear: "عمليات الورم",
-        positionar: "",
+        namear: "	د . عاطف بصاص",
+        positionar: "	استشاري الجراحة العامة والاورام وجراحات السمنة",
         Nationality: "Saudi",
         Qualification: "PhD in general surgery At the Royal Jordanian College",
         Experience: "30+ years",
@@ -58,8 +58,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/5.png",
         name: "Dr. Rehab Ammar",
-        namear: "",
-        positionar: "",
+        namear: "	د. رحاب عمار",
+        positionar: "	اخصائية جلدية",
         Nationality: "Egyptian",
         Qualification:
             "Bachelor Degree in general surgery ( Dermatology and cosmetology) ",
@@ -83,6 +83,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/13.png",
         name: "Dr. Mamdouh Oun Alsoud",
+        namear: "	د. ممدوح عيون السود",
+        positionar: "	استشاري جراحة عامة ومناظير",
         Nationality: "Syrian",
         Qualification: "Board in General Surgeries",
         Experience: "9 years",
@@ -108,8 +110,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/7.png",
         name: "Dr. Asma Salem",
-        namear: "",
-        positionar: "",
+        namear: "	د. أسماء سالم",
+        positionar: "	استشارية نساء وولادة",
         Nationality: "Yemeni",
         Qualification: "MBBS",
         Experience: " 15 years",
@@ -139,8 +141,8 @@ export const demoData = [
     {
         imgUrl: "/assets/dr/femaledoc.png",
         name: "Dr. Somaya Abbas",
-        namear: "",
-        positionar: "",
+        namear: "	د. سمية عباس",
+        positionar: "	استشارية نساء وولادة",
         Nationality: "Sudanese",
         Qualification: "Clinical Phd in Obstetrics and Gynecology",
         Experience: " 16 years",
@@ -156,10 +158,12 @@ export const demoData = [
         email: "roberto@medwise.com",
         linkto: "Somaya_Abbas",
     },
-    
+
     {
         imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Hansa Diyab",
+        namear: "	د. حسناء دياب",
+        positionar: "	اخصائية عيون",
         Nationality: "Egyptian",
         Qualification: "MSC Ophthalmology and bachelor medical and surgery",
         Experience: "15+ years",
@@ -184,6 +188,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/4.png",
         name: "Dr. Malek Hassan",
+        namear: "	د. مالك حسن",
+        positionar: "	طبيب عام",
         Nationality: "Syrian",
         Qualification: "Bachelor Degree in general Surgery ",
         Experience: "27 years",
@@ -207,6 +213,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/11.png",
         name: "Dr. Abdulfatah Ali",
+        namear: "	د. عبد اللطيف علي",
+        positionar: "	استشاري انف واذن وحنجرة",
         Nationality: "Egyptian",
         Qualification: " Fellowship of the Royal College of Surgery",
         Experience: "42 years",
@@ -233,6 +241,8 @@ export const demoData = [
     {
         imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Abeer Alotaibi",
+        namear: "	د. عبير العتيبي",
+        positionar: "	خبيرة تغذية",
         Nationality: "Saudi",
         Qualification: "Bachelor Degree of Clinical Nutrition",
         Experience: "6 Month",
@@ -253,6 +263,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/9.png",
         name: "Dr. Saleh Eid",
+        namear: "	د. صالح عيد",
+        positionar: "	اخصائي جراحة عامة",
         Nationality: "Egyptian",
         Qualification: "Bachelor in Medicine and surgery",
         Experience: "36 Years",
@@ -272,6 +284,8 @@ export const demoData = [
     {
         imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Mohammed Alnather",
+        namear: "	د. محمد الناظر",
+        positionar: "	اخصائي قلب",
         Nationality: "Egyptian",
         Qualification: "Master Degree in Cardiology",
         Experience: "44 Years",
@@ -293,6 +307,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/12.png",
         name: "Dr. Abdulrahman Alsouify",
+        namear: "	د. عبدالرحمن السويفي",
+        positionar: "	اخصائي جراحة المسالك البولية والتناسلية",
         Nationality: "Egyptian",
         Qualification: "Master degree in Urology",
         Experience: "14 Years",
@@ -314,6 +330,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/8.png",
         name: "Dr. Dania Bawadkji",
+        namear: "	د. دنيا باوادكجي",
+        positionar: "	طبيبة اسنان",
         Nationality: "Syrian",
         Qualification: "Bachelor's degree in dentistry",
         Experience: "3 Years",
@@ -341,6 +359,8 @@ export const demoData = [
     {
         imgUrl: "/assets/dr/maledoc.png",
         name: "Dr. Alaa Mohammed",
+        namear: "	د. علاء محمد",
+        positionar: "	اخصائي عظام",
         Nationality: "Egyptian",
         Qualification: "Master Degree",
         Experience: "10 Years",
@@ -364,6 +384,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/2.png",
         name: "Dr. Eman Mohammed",
+        namear: "	د. ايمان محمود",
+        positionar: "	اخصائية اطفال",
         Nationality: "Chinese",
         Qualification: "",
         Experience: "",
@@ -384,6 +406,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/3.png",
         name: "Dr. Mohammed Alsamamni",
+        namear: "	د. محمد السماني",
+        positionar: "	اخصائي علاج طبيعي",
         Nationality: "Sudanese",
         Qualification: "Bachelor Degree in Physiotherapy",
         Experience: "",
@@ -405,6 +429,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/10.png",
         name: "Dr. Ahmed Ali",
+        namear: "	د. أحمد علي",
+        positionar: "	استشاري باطنية وجهاز هضمي",
         Nationality: "Egyptian",
         Qualification: "PhD in internal medicine",
         Experience: "30 Years",
@@ -432,6 +458,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/6.png",
         name: "Dr. Ibrahim Rushdi",
+        namear: "	د. إبراهيم رشدي",
+        positionar: "	اخصائي اطفال",
         Nationality: "Egyptian",
         Qualification: "Master's degree in pediatrics",
         Experience: "30 Years",
@@ -460,6 +488,8 @@ export const demoData = [
     {
         imgUrl: "/assets/real/1.png",
         name: "Dr. Ahmed Nader",
+        namear: "	د. أحمد نادر",
+        positionar: "	اخصائي اول جراحة عامة",
         Nationality: "Palastnian",
         Qualification: "Jordanian Board of General Surgery",
         Experience: "7 Years",
