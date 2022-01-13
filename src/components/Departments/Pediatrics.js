@@ -1,10 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
+import { demoDatas } from "../DemoData/demodatas";
 import SingleDoctor from "../Doctor/SingleDoctor";
 import { withTranslation } from "react-i18next";
+import Loading from "../Loading/Loading";
 
 function Pediatrics({ t }) {
+  const [data, setData] = useState();
+  const [loading, setloading] = useState(true);
+
+  // const filterdDoc = data.filter((data1) =>
+  //     data1.department.includes("bariatic")
+  // );
+  useEffect(() => {
+    setloading(true);
+    const getDept = () => {
+      const language = localStorage.getItem("language");
+      console.log(language === "ar");
+      if (language === "ar") {
+        console.log("ar");
+        const filterdDoc = demoDatas.filter((data1) =>
+          data1.department.includes("pediatrics")
+        );
+        setData(filterdDoc);
+      } else {
+        console.log("en");
+        const filterdDoc = demoData.filter((data1) =>
+          data1.department.includes("pediatrics")
+        );
+        setData(filterdDoc);
+      }
+
+      //setDepartment(demodept);
+    };
+    getDept();
+    setloading(false);
+  }, []);
   const treatmentsOffered = {
     DiagnosticModalities: [
       {
@@ -106,37 +138,45 @@ function Pediatrics({ t }) {
     data.department.includes("pediatrics")
   );
   return (
-    <div className="departments">
-      <div className="depMainBack">
-        <img
-          className="depMainImg"
-          src="/assets/department/2-min.png"
-          alt="department Back"
-        />
-        <div className="depMainOverlay">
-          <h1 className="depMainText">{t("PediatricsDepartment.dname")}</h1>
+    <>
+      {loading ? (
+        <div className="w-full h-full flex justify-center items-center py-4">
+          <Loading />
         </div>
-      </div>
-
-      <div className="depDetail">
-        <div className="depDetailContainer">
-          <div className="depTextHead">
-            <h1 className="depDetailTitle">{t("PediatricsDepartment.dname")}</h1>
-            <div className="depDetailAbout">
-            {t("PediatricsDepartment.detail")}
+      ) : (
+        <div className="departments">
+          <div className="depMainBack">
+            <img
+              className="depMainImg"
+              src="/assets/department/2-min.png"
+              alt="department Back"
+            />
+            <div className="depMainOverlay">
+              <h1 className="depMainText">{t("PediatricsDepartment.dname")}</h1>
             </div>
           </div>
-          <div className="depImgWrapper">
-            <img
-              className="depDetailImg"
-              src="/assets/images/pediatrics.jpg"
-              alt="pediatrics"
-            />
-          </div>
-        </div>
-      </div>
 
-      {/* <div className="treatmentDetails">
+          <div className="depDetail">
+            <div className="depDetailContainer">
+              <div className="depTextHead">
+                <h1 className="depDetailTitle">
+                  {t("PediatricsDepartment.dname")}
+                </h1>
+                <div className="depDetailAbout">
+                  {t("PediatricsDepartment.detail")}
+                </div>
+              </div>
+              <div className="depImgWrapper">
+                <img
+                  className="depDetailImg"
+                  src="/assets/images/pediatrics.jpg"
+                  alt="pediatrics"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="treatmentDetails">
         <div className="depMain">
           <h1 className="depMainHead">{t("to")}</h1>
           <p className="depMainPara">
@@ -182,30 +222,30 @@ function Pediatrics({ t }) {
         </div>
       </div> */}
 
-      <div className="depDoctors">
-        <div className="depMain">
-          <h1 className="depMainHead">{t("depdoc")}</h1>
-          {/* <p className="depMainPara">
+          <div className="depDoctors">
+            <div className="depMain">
+              <h1 className="depMainHead">{t("depdoc")}</h1>
+              {/* <p className="depMainPara">
             Specialist paediatrician in pediatrics department are
           </p> */}
-          <div className="depLine"></div>
-        </div>
-        <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10">
-          {filterdDoc.map((doc, index) => (
-            <SingleDoctor
-              key={index}
-              imgUrl={doc.imgUrl}
-              name={doc.name}
-              position={doc.position}
-              mobno={doc.mobno}
-              email={doc.email}
-              linkto={doc.linkto}
-            />
-          ))}
-        </div>
-      </div>
+              <div className="depLine"></div>
+            </div>
+            <div className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10">
+              {data.map((doc, index) => (
+                <SingleDoctor
+                  key={index}
+                  imgUrl={doc.imgUrl}
+                  namear={doc.namear}
+                  positionar={doc.positionar}
+                  mobno={doc.mobno}
+                  email={doc.email}
+                  linkto={doc.linkto}
+                />
+              ))}
+            </div>
+          </div>
 
-      {/* <div className="depBanner">
+          {/* <div className="depBanner">
                 <img
                     class="depBannerImg"
                     src="/assets/department/depLastBack.jpg"
@@ -228,7 +268,9 @@ function Pediatrics({ t }) {
                     </div>
                 </div>
             </div> */}
-    </div>
+        </div>
+      )}
+    </>
   );
 }
 
