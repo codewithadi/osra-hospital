@@ -3,7 +3,11 @@
     "view_profile":"عرض الصفحة الشخصية",
     "book_appoi":"موعد الكتاب",
     "directionc": "rtl",
+    "qualification":"المؤهل",
     "doctorurl":"{{demoDatas}}",
+    "License":"رخصة",
+    "yearsofex":"سنوات من الخبرة",
+    "Procedures":"إجراءات",
     "app": {
         "1": "نموذج حجز مواعيد الكترونية ",
         "2": "Now you can request an appointment in some simple steps Online",

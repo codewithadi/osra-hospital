@@ -4,6 +4,10 @@
     "view_profile":"View Profile",
     "book_appoi":"Book Appointment",
     "doctorurl":"{{demoData}}",
+    "qualification":"Qualification",
+    "License":"License",
+    "Procedures":"Procedures",
+    "yearsofex":"Years of experience",
     "app": {
         "1": "Online Appointment Form",
         "2": "Now you can request an appointment in some simple steps Online",
