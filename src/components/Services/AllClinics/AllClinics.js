@@ -116,7 +116,9 @@ function AllClinics({ t }) {
         <div className="department py-6">
             <div className="depMain">
                 <h1 className="depMainHead">{t("hc")}</h1>
-                <p className="depMainPara">{t("hcpara")}</p>
+                <p style={{ color: "#3f0f1e" }} className="depMainPara">
+                    {t("hcpara")}
+                </p>
                 <div className="depLine"></div>
             </div>
             <div className="depContainer">
