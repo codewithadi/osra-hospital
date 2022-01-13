@@ -1,10 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./departments.css";
 import { demoData } from "../DemoData/demodata";
+// import { demoDatas } from "../DemoData/demodatas";
 import SingleDoctor from "../Doctor/SingleDoctor";
 import { withTranslation } from "react-i18next";
 
 function BariaticSurgery({ t }) {
+    const filterdDoc = demoData.filter((data1) =>
+        data1.department.includes("bariatic")
+    );
+    // const [data, setData] = useState();
+    // const [loading, setloading] = useState(true);
+
+    // useEffect(() => {
+    //     setloading(true);
+    //     const getDept = async () => {
+    //         const language = await localStorage.getItem("language");
+    //         console.log(language === "ar");
+    //         if (language === "ar") {
+    //             console.log("ar");
+    //             const filterdDoc = demoDatas.filter((data1) =>
+    //                 data1.department.includes("bariatic")
+    //             );
+    //             setData(filterdDoc);
+    //         } else {
+    //             console.log("en");
+    //             const filterdDoc = demoData.filter((data1) =>
+    //                 data1.department.includes("bariatic")
+    //             );
+    //             setData(filterdDoc);
+    //         }
+
+    //         //setDepartment(demodept);
+    //     };
+    //     getDept();
+    //     setloading(false);
+    // }, []);
+
     const treatmentsOffered = {
         TherapeuticModalities: [
             {
@@ -64,9 +96,7 @@ function BariaticSurgery({ t }) {
             },
         ],
     };
-    const filterdDoc = demoData.filter((data) =>
-        data.department.includes("bariatic")
-    );
+
     return (
         <div className="departments">
             <div className="depMainBack">
