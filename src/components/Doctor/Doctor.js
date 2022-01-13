@@ -6,8 +6,9 @@ import Loading from "../Loading/Loading";
 import { demoData } from "../DemoData/demodata";
 import { demoDatas } from "../DemoData/demodatas";
 import { demodept } from "../DemoData/demodept";
+import { withTranslation } from "react-i18next";
 
-const Doctor = () => {
+const Doctor = ({t}) => {
     const [loading, setloading] = useState(true);
     const [search, setSearch] = useState("");
     const [department, setDepartment] = useState();
@@ -91,7 +92,7 @@ const Doctor = () => {
     };
 
     return (
-        <div className="py-2 px-2 flex flex-col justify-center items-center">
+        <div dir={t("directionc")} className="py-2 px-2 flex flex-col justify-center items-center">
             {loading ? (
                 <div className="w-full h-full flex justify-center items-center py-4">
                     <Loading />
@@ -154,4 +155,4 @@ const Doctor = () => {
     );
 };
 
-export default Doctor;
+export default withTranslation()(Doctor);

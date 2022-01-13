@@ -171,7 +171,7 @@ function BookAppointment({ t }) {
     };
     return (
         <>
-            <div className="book-appointment">
+            <div className="book-appointment" dir={t("directionc")}>
                 <div className="depMainBack">
                     <img
                         className="depMainImg"
@@ -204,6 +204,7 @@ function BookAppointment({ t }) {
                         <form
                             className="appointmentForm"
                             onSubmit={handleSubmit}
+                            
                         >
                             <input
                                 className="bookFormItem"

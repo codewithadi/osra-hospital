@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./doctor.css";
+import { withTranslation } from "react-i18next";
 
 const scrollToTop = () => {
     window.scrollTo(0, 0);
 };
 
-const SingleDoctor = ({
+const SingleDoctor = ({t,
     imgUrl,
     name,
     position,
@@ -33,18 +34,18 @@ const SingleDoctor = ({
                     className="depDoctorBtn1"
                     to={`/doctor/${linkto}`}
                 >
-                    View Profile
+                   {t("view_profile")}
                 </Link>
                 <Link
                     onClick={scrollToTop}
                     className="depDoctorBtn1"
                     to={`/appointment`}
                 >
-                    Book Appointment
+                    {t("book_appoi")}
                 </Link>
             </div>
         </div>
     );
 };
 
-export default SingleDoctor;
+export default withTranslation()(SingleDoctor);
