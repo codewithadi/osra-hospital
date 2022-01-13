@@ -6,7 +6,7 @@ import "./About.css";
 const BoD = ({ t }) => {
     return (
         <>
-            <div className="md:p-2 md:my-6 text-center">
+            <div dir={t("direction")} className="md:p-2 md:my-6 text-center">
                 <h2
                     className="mt-12 mb-4 text-4xl font-medium"
                     style={{ color: "#3f0f1e" }}
@@ -20,6 +20,7 @@ const BoD = ({ t }) => {
             </div>
 
             <div
+                dir={t("direction")}
                 className="grid grid-cols-1 justify-center justify-items-center items-center gap-4 md:grid-cols-4 px-2 md:px-10"
                 style={{ color: "#3f0f1e" }}
             >

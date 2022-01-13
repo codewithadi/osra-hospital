@@ -4,7 +4,7 @@ import "./About.css";
 
 const WhyChooseUs = ({ t }) => {
     return (
-        <div>
+        <div dir={t("direction")}>
             <div className="md:p-2 md:my-6 text-center">
                 <h2
                     className="mt-12 text-4xl font-medium"

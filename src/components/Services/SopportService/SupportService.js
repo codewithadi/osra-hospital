@@ -4,7 +4,7 @@ import { withTranslation } from "react-i18next";
 
 const SupportService = ({ t }) => {
     return (
-        <div>
+        <div dir={t("direction")}>
             <div
                 className="bg-center bg-cover"
                 style={{

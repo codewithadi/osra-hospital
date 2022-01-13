@@ -114,7 +114,7 @@ function AllClinics({ t }) {
     };
     return (
         <div className="department py-6">
-            <div className="depMain">
+            <div dir={t("direction")} className="depMain">
                 <h1 className="depMainHead">{t("hc")}</h1>
                 <p style={{ color: "#3f0f1e" }} className="depMainPara">
                     {t("hcpara")}
@@ -123,7 +123,13 @@ function AllClinics({ t }) {
             </div>
             <div className="depContainer">
                 {demoClinic.map((clinic, index) => (
-                    <Link to={clinic.linkto} key={index} className="depCard">
+                    <Link
+                        dir={t("direction")}
+                        to={clinic.linkto}
+                        key={index}
+                        onClick={scrollToTop}
+                        className="depCard"
+                    >
                         <div className="depIcon">
                             <img
                                 className="depIconImg"

@@ -21,13 +21,13 @@ function Physiotherapist({ t }) {
       if (language === "ar") {
         console.log("ar");
         const filterdDoc = demoDatas.filter((data1) =>
-          data1.department.includes("urology")
+          data1.department.includes("physiotherapist")
         );
         setData(filterdDoc);
       } else {
         console.log("en");
         const filterdDoc = demoData.filter((data1) =>
-          data1.department.includes("urology")
+          data1.department.includes("physiotherapist")
         );
         setData(filterdDoc);
       }
@@ -74,7 +74,7 @@ function Physiotherapist({ t }) {
           <Loading />
         </div>
       ) : (
-        <div className="departments">
+        <div dir={t("direction")} className="departments">
           <div className="depMainBack">
             <img
               className="depMainImg"

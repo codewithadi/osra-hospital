@@ -3,7 +3,7 @@ import "./About.css";
 // style={{ height: "40vh" }}
 const Facts = () => {
     return (
-        <div className="w-full relative">
+        <div  className="w-full relative">
             <img
                 className="h-full w-full bg-cover bg-center"
                 style={{ objectFit: "cover" }}

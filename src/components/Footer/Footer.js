@@ -33,7 +33,10 @@ function Footer({ t }) {
                                     </Link>
                                 </div>
 
-                                <div className="max-w-md mt-2 font-semibold dark:text-gray-800 bg-transparent px-2 md:pr-28 cursor-default ">
+                                <div
+                                    dir={t("direction")}
+                                    className="max-w-md mt-2 font-semibold dark:text-gray-800 bg-transparent px-2 md:pr-28 cursor-default "
+                                >
                                     {t("maintitle")}
                                 </div>
                             </div>
@@ -41,7 +44,10 @@ function Footer({ t }) {
 
                         <div className="mt-6 lg:mt-0 lg:flex-1 lg:ml-4 bg-transparent">
                             <div className="grid grid-cols-1 md:gap-3 gap-2 sm:grid-cols-4 md:grid-cols-4 bg-transparent">
-                                <div className="bg-transparent font-semibold">
+                                <div
+                                    dir={t("direction")}
+                                    className="bg-transparent font-semibold"
+                                >
                                     <h3 className=" font-semibold text-lg uppercase dark: bg-transparent cursor-default">
                                         {t("quicklinks")}
                                     </h3>
@@ -103,7 +109,10 @@ function Footer({ t }) {
                                     </Link>
                                 </div>
 
-                                <div className="bg-transparent font-semibold">
+                                <div
+                                    dir={t("direction")}
+                                    className="bg-transparent font-semibold"
+                                >
                                     <h3 className=" font-semibold uppercase text-lg dark: bg-transparent cursor-default">
                                         {t("getsup")}
                                     </h3>
@@ -180,7 +189,10 @@ function Footer({ t }) {
                                     </div>
                                 </div>
                                 {/* -------------------- */}
-                                <div className="font-semibold">
+                                <div
+                                    dir={t("direction")}
+                                    className="font-semibold"
+                                >
                                     <h3 className="pb-2 font-semibold text-lg uppercase dark: bg-transparent cursor-default">
                                         {t("workinghrs")}
                                     </h3>
@@ -210,7 +222,10 @@ function Footer({ t }) {
                                     </div>
                                 </div>
                                 {/* ------------------------- */}
-                                <div className="bg-transparent">
+                                <div
+                                    dir={t("direction")}
+                                    className="bg-transparent"
+                                >
                                     <h3 className=" font-semibold text-lg uppercase dark: bg-transparent cursor-default">
                                         {t("findus")}
                                     </h3>
@@ -265,7 +280,10 @@ function Footer({ t }) {
 
                     <div className="bg-transparent font-semibold cursor-default">
                         <div className="md:flex-row flex flex-col text-center  dark:text-white justify-center bg-transparent">
-                            <p className="md:border-r-2 px-2 bg-transparent">
+                            <p
+                                dir={t("direction")}
+                                className="md:border-r-2 px-2 bg-transparent"
+                            >
                                 © Al-Osrah International Hospital -{" "}
                                 {t("allrihtres")}
                             </p>{" "}

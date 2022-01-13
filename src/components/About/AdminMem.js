@@ -6,7 +6,7 @@ import "./About.css";
 const AdminMem = ({ t }) => {
     return (
         <>
-            <div className="md:p-2 md:my-6 text-center">
+            <div dir={t("direction")} className="md:p-2 md:my-6 text-center">
                 <h2
                     className="mt-12 mb-4 text-4xl font-medium"
                     style={{ color: "#3f0f1e" }}
@@ -20,6 +20,7 @@ const AdminMem = ({ t }) => {
             </div>
 
             <div
+            dir={t("direction")}
                 className="grid grid-cols-1 justify-center justify-items-center justify-self-start items-center gap-4 md:grid-cols-3 px-2 md:px-10"
                 style={{ color: "#3f0f1e" }}
             >
@@ -55,6 +56,7 @@ const AdminMem = ({ t }) => {
                 /> */}
             </div>
             <div
+            dir={t("direction")}
                 className="flex flex-col md:flex-row justify-center items-center gap-7 px-2 md:px-10"
                 style={{ color: "#3f0f1e" }}
             >

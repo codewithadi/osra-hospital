@@ -3,7 +3,7 @@ import "./doctor.css";
 
 const SingleDoctor = ({ imgUrl, name, position }) => {
     return (
-        <div className="depDoctorCard1">
+        <div  className="depDoctorCard1">
             <div className="depDoctorImg1">
                 <img className="doctorImg1" src={imgUrl} alt="anyimg" />
             </div>

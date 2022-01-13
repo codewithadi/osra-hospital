@@ -17,7 +17,7 @@ const About = ({ t }) => {
         <>
             <AboutHead />
             {/*About Content  */}
-            <div className="p-5 flex flex-col md:flex-row">
+            <div dir={t("direction")} className="p-5 flex flex-col md:flex-row">
                 <img
                     className="p-2 md:p-20 abmain-img"
                     src="/assets/about/12-min.png"
@@ -31,7 +31,7 @@ const About = ({ t }) => {
                         {t("about.about_hist")}
                     </h2>
                     <p className="mt-7 text-base md:text-xl w-4/5 text-gray-200 textColor">
-                       {t("about.about_histpara")}
+                        {t("about.about_histpara")}
                     </p>
                     {/* <p className="mt-7 font-normal text-sm md:text-md w-4/5 text-gray-200 textColor">
             <ul class="list-inside sm:list-outside md:list-inside lg:list-outside xl:list-inside">

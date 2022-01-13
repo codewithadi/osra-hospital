@@ -109,7 +109,7 @@ function Dentistry({ t }) {
                     <Loading />
                 </div>
             ) : (
-                <div className="departments">
+                <div dir={t("direction")} className="departments">
                     <div className="depMainBack">
                         <img
                             className="depMainImg"
