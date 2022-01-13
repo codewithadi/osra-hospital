@@ -1,30 +1,30 @@
-import React,{useEffect,useState} from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { withTranslation } from "react-i18next";
 
 const TopBar = ({ t }) => {
     const { i18n } = useTranslation();
-    const[load,setload]=useState(false)
-    const[langu,setLangu]=useState("en")
-    const[langug,setLangug]=useState("English")
- 
-  useEffect(() => {
-     let lang=localStorage.getItem("language")
-     if(lang=="ar"){
-         setload(true)
-        
-        
-     }else{
-         setload(false)
-     
-     }
-  }, [])
-  const changeLanguage = (e) => {
-    localStorage.setItem("language", e.target.value);
-    i18n.changeLanguage(e.target.value);
-    window.location.reload()
-  };
- 
+    const [load, setload] = useState(false);
+    const [langu, setLangu] = useState("en");
+    const [langug, setLangug] = useState("English");
+    const options = [
+        { value: "en", label: "English" },
+        { value: "ar", label: "العربية" },
+    ];
+
+    useEffect(() => {
+        let lang = localStorage.getItem("language");
+        if (lang == "ar") {
+            setload(true);
+        } else {
+            setload(false);
+        }
+    }, []);
+    const changeLanguage = (e) => {
+        localStorage.setItem("language", e.target.value);
+        i18n.changeLanguage(e.target.value);
+        window.location.reload();
+    };
 
     return (
         <div
@@ -38,14 +38,25 @@ const TopBar = ({ t }) => {
             >
                 {t("top-emergency")}
             </a>
-            <h1>{load ? "العربية": "English"}</h1>
-      <form className="px-4 ">
-        <select onChange={changeLanguage} style={{width:"20px"}} className="text-center outline-none">
-        <option value="" ></option>
-          <option value="en">English</option>
-          <option value="ar">العربية </option>
-        </select>
-      </form>
+            <div className="relative flex px-8">
+                <h1>{load ? "العربية" : "English"}</h1>
+
+                <form className="px-1 absolute top-0 right-12 opacity-0 cursor-pointer">
+                    <select
+                        onChange={changeLanguage}
+                        style={{ width: "20px" }}
+                        className="w-full h-full text-center outline-none cursor-pointer"
+                    >
+                        <option className="" value=""></option>
+                        <option className="" value="en">
+                            English
+                        </option>
+                        <option className="" value="ar">
+                            العربية{" "}
+                        </option>
+                    </select>
+                </form>
+            </div>
         </div>
     );
 };
