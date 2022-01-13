@@ -33,7 +33,7 @@ const Contact = ({ t }) => {
     };
 
     return (
-        <div className="">
+        <div className="" dir={t("directionc")}>
             <div
                 className="bg-center bg-cover"
                 style={{

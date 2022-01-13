@@ -1,5 +1,8 @@
 {
     "direction": "ltr",
+    "directionc": "ltr",
+    "view_profile":"View Profile",
+    "book_appoi":"Book Appointment",
     "doctorurl":"{{demoData}}",
     "app": {
         "1": "Online Appointment Form",

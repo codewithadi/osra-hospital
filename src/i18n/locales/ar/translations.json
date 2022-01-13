@@ -1,5 +1,8 @@
 {
     "direction": "rtl",
+    "view_profile":"عرض الصفحة الشخصية",
+    "book_appoi":"موعد الكتاب",
+    "directionc": "rtl",
     "doctorurl":"{{demoDatas}}",
     "app": {
         "1": "نموذج حجز مواعيد الكترونية ",
