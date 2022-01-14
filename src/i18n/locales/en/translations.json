@@ -8,6 +8,8 @@
     "License":"License",
     "Procedures":"Procedures",
     "yearsofex":"Years of experience",
+    "doctorapiurl":"https://doctorappapi.herokuapp.com/api/doctor",
+    "departmentapiurl":"https://doctorappapi.herokuapp.com/api/department",
     "app": {
         "1": "Online Appointment Form",
         "2": "Now you can request an appointment in some simple steps Online",

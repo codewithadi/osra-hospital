@@ -8,6 +8,8 @@
     "License":"رخصة",
     "yearsofex":"سنوات من الخبرة",
     "Procedures":"إجراءات",
+    "doctorapiurl":"https://doctorappapi.herokuapp.com/api/doctorar",
+    "departmentapiurl":"https://doctorappapi.herokuapp.com/api/departmentar",
     "app": {
         "1": "نموذج حجز مواعيد الكترونية ",
         "2": "Now you can request an appointment in some simple steps Online",

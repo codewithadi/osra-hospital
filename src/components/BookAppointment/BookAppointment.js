@@ -33,6 +33,7 @@ function BookAppointment({ t }) {
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
     const [gender, setGender] = useState("male");
+    const [seldoc,setseldoc]=useState()
 
     //console.log(moment(date).format('DD-MM-YYYY').toString())
     useEffect(() => {
@@ -43,8 +44,12 @@ function BookAppointment({ t }) {
             );
             setDoctor(res.data);
             const resp = await axios.get(
-                "https://doctorappapi.herokuapp.com/api/department"
+                `${t("departmentapiurl")}`
             );
+            const resps = await axios.get(
+                `${t("doctorapiurl")}`
+            );
+            setseldoc(resps)
             setDepartment(resp.data);
             const respo = await axios.get(
                 "https://doctorappapi.herokuapp.com/api/patient"
