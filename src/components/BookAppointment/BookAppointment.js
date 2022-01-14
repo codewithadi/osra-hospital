@@ -49,7 +49,8 @@ function BookAppointment({ t }) {
             const resps = await axios.get(
                 `${t("doctorapiurl")}`
             );
-            setseldoc(resps)
+            setseldoc(resps.data)
+            
             setDepartment(resp.data);
             const respo = await axios.get(
                 "https://doctorappapi.herokuapp.com/api/patient"
@@ -64,7 +65,8 @@ function BookAppointment({ t }) {
         let tempArr = [];
         setDocArr(null);
         setSelectedDoc(null);
-        tempArr = doctor.filter((doc) =>
+        
+        tempArr = seldoc.filter((doc) =>
             doc.department.includes(selectedDept._id)
         );
 
