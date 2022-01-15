@@ -8,7 +8,7 @@ import { demoDatas } from "../DemoData/demodatas";
 import { demodept } from "../DemoData/demodept";
 import { withTranslation } from "react-i18next";
 
-const Doctor = ({t}) => {
+const Doctor = ({ t }) => {
     const [loading, setloading] = useState(true);
     const [search, setSearch] = useState("");
     const [department, setDepartment] = useState();
@@ -44,25 +44,32 @@ const Doctor = ({t}) => {
                 `${t("departmentapiurl")}`
             );
             setDepartment(resp.data);
-            const language=localStorage.getItem("language")
-            console.log(language==="ar")
-            if(language==="ar"){
-                console.log("ar")
-                setDoctors(demoDatas)
-            }else{
-                console.log("en")
-                setDoctors(demoData)
+            const language = localStorage.getItem("language");
+            console.log(language === "ar");
+            if (language === "ar") {
+                console.log("ar");
+                setDoctors(demoDatas);
+            } else {
+                console.log("en");
+                setDoctors(demoData);
             }
 
             //setDepartment(demodept);
-           
 
             setloading(false);
         };
         getDept();
     }, []);
     const handleSubmit = () => {
-        setDoctors(demoData);
+        // setDoctors(demoData);
+        const language = localStorage.getItem("language");
+        if (language === "ar") {
+            console.log("ar");
+            setDoctors(demoDatas);
+        } else {
+            console.log("en");
+            setDoctors(demoData);
+        }
 
         if (search !== "") {
             const searcheddoctor = doctors.filter((doctor) => {
@@ -73,26 +80,55 @@ const Doctor = ({t}) => {
             });
             if (searcheddoctor.length === 0) {
                 setNodoctor(true);
-                setDoctors(demoData);
+
+                console.log(language === "ar");
+                if (language === "ar") {
+                    console.log("ar");
+                    setDoctors(demoDatas);
+                } else {
+                    console.log("en");
+                    setDoctors(demoData);
+                }
+                // setDoctors(demoData);
             } else {
                 setNodoctor(false);
+
                 setDoctors(searcheddoctor);
             }
         } else {
-            setDoctors(demoData);
+            if (language === "ar") {
+                console.log("ar");
+                setDoctors(demoDatas);
+            } else {
+                console.log("en");
+                setDoctors(demoData);
+            }
+            // setDoctors(demoData);
         }
     };
     const handleSearch = (e) => {
         setSearch(e.target.value);
         let searchvalue = e.target.value;
         if (searchvalue.length === 0) {
-            setDoctors(demoData);
+            const language = localStorage.getItem("language");
+            console.log(language === "ar");
+            if (language === "ar") {
+                console.log("ar");
+                setDoctors(demoDatas);
+            } else {
+                console.log("en");
+                setDoctors(demoData);
+            }
+            // setDoctors(demoData);
             setNodoctor(false);
         }
     };
 
     return (
-        <div dir={t("directionc")} className="py-2 px-2 flex flex-col justify-center items-center">
+        <div
+            dir={t("directionc")}
+            className="py-2 px-2 flex flex-col justify-center items-center"
+        >
             {loading ? (
                 <div className="w-full h-full flex justify-center items-center py-4">
                     <Loading />
