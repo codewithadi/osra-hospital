@@ -200,10 +200,12 @@ function Footer({ t }) {
                                         {t("outpat")}
                                     </div>
                                     <div className="text-sm">
-                                        {t("morn")} : 9:00 a.m to 12:00 p.m
+                                        {t("morn")} : 9:00 a.m &#x202b; to
+                                        &#x202c; 12:00 p.m
                                     </div>
                                     <div className="text-sm">
-                                        {t("even")}: 4:00 p.m to 9:30 p.m
+                                        {t("even")}: 4:00 p.m &#x202b; to
+                                        &#x202c; 9:30 p.m
                                     </div>
 
                                     <div className="py-1 text-sm text-blue-300 uppercase">
@@ -215,10 +217,12 @@ function Footer({ t }) {
                                         {t("inpatfooter")}:
                                     </div>
                                     <div className="text-sm">
-                                        {t("stt")} : 7:00 a.m to 12:00 a.m
+                                        {t("stt")} : 7:00 a.m &#x202b; to
+                                        &#x202c; 12:00 a.m
                                     </div>
                                     <div className="text-sm">
-                                        {t("fr")} : 2:00 p.m to 12:00 a.m
+                                        {t("fr")} : 2:00 p.m &#x202b; to
+                                        &#x202c; 12:00 a.m
                                     </div>
                                 </div>
                                 {/* ------------------------- */}

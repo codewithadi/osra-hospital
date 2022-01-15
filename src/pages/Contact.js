@@ -64,7 +64,7 @@ const Contact = ({ t }) => {
                                 />
                             </div>
 
-                            <div className="flex flex-col pl-2 md:pl-4">
+                            <div className="flex flex-col px-2 md:pl-4">
                                 <span
                                     style={{ color: "#3f0f1e" }}
                                     className="mt-2 mb-2 font-medium text-2xl"
@@ -92,7 +92,7 @@ const Contact = ({ t }) => {
                                 />
                             </div>
 
-                            <div className="flex flex-col pl-2 md:pl-4">
+                            <div className="flex flex-col px-2 md:pl-4">
                                 <span
                                     style={{ color: "#3f0f1e" }}
                                     className="mt-2 mb-2 font-medium text-2xl"
@@ -122,7 +122,7 @@ const Contact = ({ t }) => {
                             style={{ boxShadow: "0 0 10px grey" }}
                             className="flex flex-col xl:flex-row cursor-pointer items-center p-8 px-10 text-black shadow-md border border-gray-100 rounded-md dark:text-gray-800 hover:shadow-2xl hover:bg-green-200"
                         >
-                            <div className="w-1/5 flex justify-center items-center">
+                            <div className="w-2/5 flex justify-center items-center">
                                 <img
                                     className="w-24 h-24"
                                     src="https://cdn-icons-png.flaticon.com/512/546/546394.png"
@@ -130,10 +130,10 @@ const Contact = ({ t }) => {
                                 />
                             </div>
 
-                            <div className="flex flex-col pl-2 md:pl-4">
+                            <div className="flex flex-col px-2 md:pl-4">
                                 <span
                                     style={{ color: "#3f0f1e" }}
-                                    className="mt-2 mb-2 font-medium text-2xl text-center"
+                                    className="mt-2 mb-2 font-medium text-2xl"
                                 >
                                     {t("workinghrs")}
                                 </span>
@@ -150,25 +150,25 @@ const Contact = ({ t }) => {
                                         style={{ color: "#778696" }}
                                         className="mb-1 font-normal text-sm"
                                     >
-                                        {t("morn")} : 9:00 a.m to 12:00 p.m,{" "}
+                                        {t("morn")} : 9:00 a.m &#x202b; to
+                                        &#x202c; 12:00 p.m,
                                         <br />
-                                        {t("even")} : 4:00 p.m to 9:30 p.m
+                                        {t("even")} : 4:00 p.m &#x202b; to
+                                        &#x202c; 9:30 p.m
                                     </span>
                                     <br />
                                     <span
                                         style={{ color: "#3f0f1e" }}
                                         className="mb-1 font-normal text-lg"
                                     >
-                                        Emergency, Pharmacy, Laboratory, Patient
-                                        <br />
-                                        Relations (in-duty manager):
+                                        {t("text-footer")}:
                                     </span>
                                     <br />
                                     <span
                                         style={{ color: "#778696" }}
                                         className="mb-1 font-normal text-sm"
                                     >
-                                        24 Hours
+                                        {t("hrs")}
                                     </span>
                                     <br />
                                     <span
@@ -182,9 +182,11 @@ const Contact = ({ t }) => {
                                         style={{ color: "#778696" }}
                                         className="mb-1 font-normal text-sm"
                                     >
-                                        {t("stt")}: 7:00 a.m to 12:00 a.m,{" "}
+                                        {t("stt")} : 7:00 a.m &#x202b; to
+                                        &#x202c; 12:00 a.m,
                                         <br />
-                                        {t("fr")}: 2:00 p.m to 12:00 a.m
+                                        {t("fr")} : 2:00 p.m &#x202b; to
+                                        &#x202c; 12:00 a.m
                                     </span>
                                 </a>
                             </div>
