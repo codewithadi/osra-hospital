@@ -41,7 +41,7 @@ const Doctor = ({t}) => {
         const getDept = async () => {
             setloading(true);
             const resp = await axios.get(
-                "https://doctorappapi.herokuapp.com/api/department"
+                `${t("departmentapiurl")}`
             );
             setDepartment(resp.data);
             const language=localStorage.getItem("language")
