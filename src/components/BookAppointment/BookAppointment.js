@@ -173,7 +173,7 @@ function BookAppointment({ t }) {
                 setBook(false);
             }
         } else {
-            alert("Please fill all the field");
+            alert(`${t("success_message")}`);
         }
     };
     return (
@@ -192,8 +192,7 @@ function BookAppointment({ t }) {
                 {book ? (
                     <div className="w-full h-full flex justify-center items-center py-4">
                         <h1 className="text-2xl m-4 p-4 ">
-                            Wait Booking your appointment and will send you
-                            message shortly.....
+                           {t("wait_till")}
                         </h1>
                     </div>
                 ) : loading ? (

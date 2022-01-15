@@ -22,16 +22,14 @@ const Doctor = ({ t }) => {
 
         setSelectedDept(selectedDept);
         if (selectedDept) {
-            var searchdept = selectedDept.label.toLowerCase().replace(/ /g, "");
-            if (searchdept == "") {
+           // var searchdept = selectedDept.label.toLowerCase().replace(/ /g, "");
+           var searchdeptid=selectedDept._id
+            if (searchdeptid == "") {
                 setDoctors(alldoctors);
             } else {
-                console.log(searchdept);
+                console.log(searchdeptid);
                 const searcheddoctor = alldoctors.filter((doctor) => {
-                    return doctor.search
-                        .toLowerCase()
-                        .replace(/ /g, "")
-                        .includes(searchdept);
+                    return doctor.searchid.includes(searchdeptid);
                 });
                 setDoctors(searcheddoctor);
             }
@@ -39,29 +37,36 @@ const Doctor = ({ t }) => {
     };
 
     useEffect(() => {
+        setloading(true);
         const getDept = async () => {
-            setloading(true);
+            
             const resp = await axios.get(
-                `${t("departmentapiurl")}`
+                "https://doctorappapi.herokuapp.com/api/departmentar"
             );
-            setDepartment(resp.data);
+            const respo = await axios.get(
+                "https://doctorappapi.herokuapp.com/api/department"
+            );
+            
             const language = localStorage.getItem("language");
             console.log(language === "ar");
             if (language === "ar") {
                 console.log("ar");
                 setDoctors(demoDatas);
                 setallDoctors(demoDatas)
+                setDepartment(resp.data);
             } else {
                 console.log("en");
                 setDoctors(demoData);
                 setallDoctors(demoData)
+                setDepartment(respo.data);
             }
 
             //setDepartment(demodept);
 
-            setloading(false);
+            
         };
         getDept();
+        setloading(false);
     }, []);
     const handleSubmit = () => {
         // setDoctors(demoData);
@@ -146,7 +151,7 @@ const Doctor = ({ t }) => {
                             type="text"
                             name="search"
                             id="search"
-                            placeholder="Enter Doctor Name"
+                            placeholder={t("enter_doctor")}
                             required
                         />
                         <div className="flex justify-center">
@@ -155,7 +160,7 @@ const Doctor = ({ t }) => {
                                 type="submit"
                                 className="px-4 py-2 transition-colors duration-700 ease-in-out font-semibold text-white transform bg-blue-500 rounded hover:bg-gray-900 hover:text-white focus:outline-none focus:bg-gray-700"
                             >
-                                Search
+                               {t("searcht")}
                             </button>
                         </div>
                         <div className="w-full md:w-1/3 mb-2 ml-2 flex justify-center items-center">
@@ -163,13 +168,13 @@ const Doctor = ({ t }) => {
                                 value={selectedDept}
                                 onChange={handleChangeDept}
                                 options={department}
-                                placeholder="Select Department"
+                                placeholder={t("select_dept")}
                             />
                         </div>
                     </div>
                     {nodoctor && (
                         <div>
-                            <h1>No Doctors of your searched name</h1>
+                            <h1>{t("no_doctor")}</h1>
                         </div>
                     )}
                     <div className="grid grid-cols-1 justify-center items-center justify-items-center px-2 md:px-10 gap-4 md:grid-cols-4">

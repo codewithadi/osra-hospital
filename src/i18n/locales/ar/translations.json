@@ -10,6 +10,13 @@
     "Procedures":"إجراءات",
     "doctorapiurl":"https://doctorappapi.herokuapp.com/api/doctorar",
     "departmentapiurl":"https://doctorappapi.herokuapp.com/api/departmentar",
+    "searcht":"بحث",
+    "enter_doctor":"أدخل اسم الطبيب",
+    "no_doctor":"لا يوجد أطباء بالاسم الذي تبحث عنه",
+    "select_dept":"حدد القسم",
+    "wait_till":"انتظر حجز موعدك وسوف نرسل لك رسالة قريبا .....",
+    "success_message":"الرجاء ملء كل الحقول",
+    "contact_msg":"",
     "app": {
         "1": "نموذج حجز مواعيد الكترونية ",
         "2": "Now you can request an appointment in some simple steps Online",
