@@ -14,19 +14,20 @@ const Doctor = ({ t }) => {
     const [department, setDepartment] = useState();
     const [selectedDept, setSelectedDept] = useState(null);
     const [doctors, setDoctors] = useState();
+    const [alldoctors, setallDoctors] = useState();
     const [nodoctor, setNodoctor] = useState(false);
 
     const handleChangeDept = (selectedDept) => {
-        setDoctors(demoData);
+        setDoctors(alldoctors);
 
         setSelectedDept(selectedDept);
         if (selectedDept) {
             var searchdept = selectedDept.label.toLowerCase().replace(/ /g, "");
             if (searchdept == "") {
-                setDoctors(demoData);
+                setDoctors(alldoctors);
             } else {
                 console.log(searchdept);
-                const searcheddoctor = demoData.filter((doctor) => {
+                const searcheddoctor = alldoctors.filter((doctor) => {
                     return doctor.search
                         .toLowerCase()
                         .replace(/ /g, "")
@@ -49,9 +50,11 @@ const Doctor = ({ t }) => {
             if (language === "ar") {
                 console.log("ar");
                 setDoctors(demoDatas);
+                setallDoctors(demoDatas)
             } else {
                 console.log("en");
                 setDoctors(demoData);
+                setallDoctors(demoData)
             }
 
             //setDepartment(demodept);
@@ -73,7 +76,7 @@ const Doctor = ({ t }) => {
 
         if (search !== "") {
             const searcheddoctor = doctors.filter((doctor) => {
-                return doctor.name
+                return doctor.namear
                     .toLowerCase()
                     .replace(/ /g, "")
                     .includes(search.toLowerCase().replace(/ /g, ""));
