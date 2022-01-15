@@ -178,15 +178,15 @@ function BookAppointment({ t }) {
     };
     return (
         <>
-            <div className="book-appointment" dir={t("directionc")}>
+            <div className="book-appointment" >
                 <div className="depMainBack">
                     <img
                         className="depMainImg"
                         src="assets/department/depMain.jpg"
                         alt="department Back"
                     />
-                    <div className="depMainOverlay">
-                        <h1 className="depMainText">{t("bookapt")}</h1>
+                    <div className="depMainOverlay" dir={t("directionc")}>
+                        <h1 className="depMainText" >{t("bookapt")}</h1>
                     </div>
                 </div>
                 {book ? (
@@ -201,7 +201,7 @@ function BookAppointment({ t }) {
                     </div>
                 ) : (
                     <div className="bookWrapper">
-                        <div className="appointmentText">
+                        <div className="appointmentText" dir={t("directionc")}>
                             <h1 className="appointmentHead">{t("app.1")}</h1>
                             {/* <p className="appointmentPara">
                             {t("app.2")}
@@ -219,6 +219,7 @@ function BookAppointment({ t }) {
                                 placeholder={t("app.3")}
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
+                                dir={t("directionc")}
                             />
                             <input
                                 className="bookFormItem"
@@ -229,11 +230,12 @@ function BookAppointment({ t }) {
                                 max={100}
                                 value={age}
                                 onChange={(e) => setAge(e.target.value)}
+                                dir={t("directionc")}
                             />
 
                             {/* gender radio box below  */}
-                            <div className="serviceText">{t("app.5")} </div>
-                            <div className="bookFormItems">
+                            <div className="serviceText" dir={t("directionc")}>{t("app.5")} </div>
+                            <div className="bookFormItems" dir={t("directionc")}>
                                 <label
                                     className="bookFormLabel "
                                     htmlFor="
@@ -270,7 +272,7 @@ function BookAppointment({ t }) {
                                     {t("app.7")}
                                 </label>
                             </div>
-                            <div className="flex flex-col justify-center items-center md:flex-row gap-2">
+                            <div  className="flex flex-col justify-center items-center md:flex-row gap-2">
                                 <PhoneInput
                                     className="bookFormItem"
                                     country="sa"
@@ -278,6 +280,7 @@ function BookAppointment({ t }) {
                                     onChange={(phone) => setPhone(phone)}
                                     placeholder="Enter phone number"
                                     enableSearch
+                                    dir={t("directionc")}
                                 />
                                 <input
                                     className="bookFormItem"
@@ -286,10 +289,11 @@ function BookAppointment({ t }) {
                                     placeholder={t("app.8")}
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
+                                    dir={t("directionc")}
                                 />
                             </div>
                             {/* Services Check box below  */}
-                            <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2">
+                            <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2" dir={t("directionc")}>
                                 <div className="mb-2">
                                     <div className="serviceText">
                                         {t("app.9")}:{" "}
@@ -359,6 +363,7 @@ function BookAppointment({ t }) {
                             </div>
 
                             <textarea
+                            dir={t("directionc")}
                                 className="bookFormItem"
                                 name="message"
                                 rows={5}
@@ -372,6 +377,7 @@ function BookAppointment({ t }) {
                                     type="submit"
                                     className="bookFormButton "
                                     value={t("app.14")}
+                                    dir={t("directionc")}
                                 />
                                 {/* <Link
                                     to="/appointment"
