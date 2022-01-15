@@ -76,7 +76,7 @@ const Contact = ({ t }) => {
                                     style={{ color: "#778696" }}
                                     className="mt-2 mb-4 font-normal text-lg"
                                 >
-                                    Exit 29 - Riyadh
+                                    {t("addressfull")}
                                 </span>
                             </div>
                         </div>
@@ -101,10 +101,12 @@ const Contact = ({ t }) => {
                                 </span>
                                 <a href="tel:01143111111">
                                     <span
+                                        dir="ltr"
                                         style={{ color: "#778696" }}
                                         className="mt-2 mb-4 font-normal text-lg"
                                     >
-                                        {t("contact.phone")} : 0114311111
+                                        {t("contact.phone")} :
+                                        &#x202b; 011-431-1111 &#x202c;
                                     </span>
                                 </a>
                                 <a href="mailto:info@alosrah-hospital.com">
