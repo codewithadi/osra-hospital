@@ -289,12 +289,12 @@ function Footer({ t }) {
                                 dir={t("direction")}
                                 className="md:border-r-2 px-2 bg-transparent"
                             >
-                                © Al-Osrah International Hospital -{" "}
+                              
                                 {t("allrihtres")}
                             </p>{" "}
                             <p className="px-2 bg-transparent">
                                 {" "}
-                                Developed by EnR Team
+                                {t("devby")}
                             </p>
                         </div>
                     </div>
