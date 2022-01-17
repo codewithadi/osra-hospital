@@ -3,7 +3,7 @@ import AboutHead from "../components/About/AboutHead";
 import { withTranslation } from "react-i18next";
 // import BrandSlider from "../components/About/BrandSlider";
 import WhyChooseUs from "../components/About/WhyChooseUs";
-import BoD from "../components/About/BoD";
+// import BoD from "../components/About/BoD";
 import AdminMem from "../components/About/AdminMem";
 // import AboutFacts from "../components/About/AboutFacts";
 import Facts from "../components/Home/Facts";
@@ -85,7 +85,7 @@ const About = ({ t }) => {
             {/* <Journey /> */}
             <Facts />
             <WhyChooseUs />
-            <BoD />
+            {/* <BoD /> */}
             <div className="w-full flex justify-center items-center">
                 <img
                     className="w-full md:w-4/6"

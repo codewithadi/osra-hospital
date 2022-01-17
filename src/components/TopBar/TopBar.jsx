@@ -4,9 +4,9 @@ import { withTranslation } from "react-i18next";
 
 const TopBar = ({ t }) => {
     const { i18n } = useTranslation();
-    const [load, setload] = useState(false);
-    const [langu, setLangu] = useState("en");
-    const [langug, setLangug] = useState("English");
+    const [load, setload] = useState(true);
+    const [langu, setLangu] = useState("ar");
+    const [langug, setLangug] = useState("العربية");
     const options = [
         { value: "en", label: "English" },
         { value: "ar", label: "العربية" },
@@ -48,11 +48,11 @@ const TopBar = ({ t }) => {
                         className="w-full h-full text-center outline-none cursor-pointer"
                     >
                         <option className="" value=""></option>
-                        <option className="" value="en">
-                            English
-                        </option>
                         <option className="" value="ar">
                             العربية{" "}
+                        </option>
+                        <option className="" value="en">
+                            English
                         </option>
                     </select>
                 </form>
