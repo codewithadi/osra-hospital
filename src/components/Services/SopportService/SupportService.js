@@ -75,11 +75,11 @@ const SupportService = ({ t }) => {
                     title={t("departments.k.name")}
                     desc={t("departments.k.info")}
                 />
-                <SupportGrid
+                {/* <SupportGrid
                     imgUrl="/assets/departmentlogos/intmed.png"
                     title={t("departments.l.name")}
                     desc={t("departments.l.info")}
-                />
+                /> */}
                 <SupportGrid
                     imgUrl="/assets/departmentlogos/nicu.png"
                     title={t("departments.m.name")}

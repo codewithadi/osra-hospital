@@ -1,22 +1,22 @@
 {
     "direction": "ltr",
     "directionc": "ltr",
-    "view_profile":"View Profile",
-    "book_appoi":"Book Appointment",
-    "doctorurl":"{{demoData}}",
-    "qualification":"Qualification",
-    "License":"License",
-    "Procedures":"Procedures",
-    "yearsofex":"Years of experience",
-    "doctorapiurl":"https://doctorappapi.herokuapp.com/api/doctor",
-    "departmentapiurl":"https://doctorappapi.herokuapp.com/api/department",
-    "searcht":"search",
-    "enter_doctor":"Enter Doctor Name",
-    "no_doctor":"No Doctors of your searched name",
-    "select_dept":"Select Department",
-    "wait_till":" Wait Booking your appointment and will send you a message shortly.....",
-    "success_message":"Please fill all the field",
-    "contact_msg":"",
+    "view_profile": "View Profile",
+    "book_appoi": "Book Appointment",
+    "doctorurl": "{{demoData}}",
+    "qualification": "Qualification",
+    "License": "License",
+    "Procedures": "Procedures",
+    "yearsofex": "Years of experience",
+    "doctorapiurl": "https://doctorappapi.herokuapp.com/api/doctor",
+    "departmentapiurl": "https://doctorappapi.herokuapp.com/api/department",
+    "searcht": "search",
+    "enter_doctor": "Enter Doctor Name",
+    "no_doctor": "No Doctors of your searched name",
+    "select_dept": "Select Department",
+    "wait_till": " Wait Booking your appointment and will send you a message shortly.....",
+    "success_message": "Please fill all the field",
+    "contact_msg": "",
     "app": {
         "1": "Online Appointment Form",
         "2": "Now you can request an appointment in some simple steps Online",
@@ -585,5 +585,9 @@
             "name": "Mr. Bader Abdulrahman Albajadi",
             "pos": "Member of the Board of Directors"
         }
+    },
+    "intimeds": {
+        "title": "Internal Medicine Department",
+        "desc": "Internal medicine or general internal medicine is the medical specialty dealing with the prevention, diagnosis, and treatment of internal diseases."
     }
 }

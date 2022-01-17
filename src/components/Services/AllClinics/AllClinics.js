@@ -96,6 +96,12 @@ function AllClinics({ t }) {
             linkto: "/clinics/bariatic-surgery",
         },
         {
+            name: `${t("departments.l.name")}`,
+            desc: `${t("departments.l.info")}`,
+            imgurl: "/assets/departmentlogos/intmeds.jpg",
+            linkto: "/clinics/internal-medicine",
+        },
+        {
             name: `${t("allclinics.o.name")}`,
             desc: `${t("allclinics.o.info")}`,
             imgurl: "assets/department/physio.png",

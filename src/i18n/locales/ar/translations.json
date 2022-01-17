@@ -573,5 +573,9 @@
             "name": "أ. بدر عبدالرحمن البجادي ",
             "pos": "عضو مجلس الإدارة"
         }
+    },
+    "intimeds": {
+        "title": "Internal Medicine Department",
+        "desc": "Internal medicine or general internal medicine is the medical specialty dealing with the prevention, diagnosis, and treatment of internal diseases."
     }
 }

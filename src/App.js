@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { withTranslation } from "react-i18next";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
@@ -58,14 +58,13 @@ function App({ t }) {
     const { i18n } = useTranslation();
     const [visible, setVisible] = useState(false);
     useEffect(() => {
-        const lang=localStorage.getItem("language")
-        if(lang){
+        const lang = localStorage.getItem("language");
+        if (lang) {
             i18n.changeLanguage(lang);
-        }else{
+        } else {
             i18n.changeLanguage("en");
         }
-       
-    }, [])
+    }, []);
 
     function onChange(isVisible) {
         if (isVisible) {
