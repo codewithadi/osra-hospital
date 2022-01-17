@@ -4,7 +4,7 @@ import { withTranslation } from "react-i18next";
 
 const TopBar = ({ t }) => {
     const { i18n } = useTranslation();
-    const [load, setload] = useState(true);
+    const [load, setload] = useState(false);
     const [langu, setLangu] = useState("ar");
     const [langug, setLangug] = useState("العربية");
     const options = [
@@ -14,7 +14,7 @@ const TopBar = ({ t }) => {
 
     useEffect(() => {
         let lang = localStorage.getItem("language");
-        if (lang == "ar") {
+        if (lang == "en") {
             setload(true);
         } else {
             setload(false);
@@ -39,7 +39,7 @@ const TopBar = ({ t }) => {
                 {t("top-emergency")}
             </a>
             <div className="relative flex px-8">
-                <h1>{load ? "العربية" : "English"}</h1>
+                <h1>{!load ? "العربية" : "English"}</h1>
 
                 <form className="px-1 absolute top-0 right-12 opacity-0 cursor-pointer">
                     <select

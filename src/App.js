@@ -62,7 +62,8 @@ function App({ t }) {
         if (lang) {
             i18n.changeLanguage(lang);
         } else {
-            i18n.changeLanguage("en");
+            localStorage.setItem("language", "ar");
+            i18n.changeLanguage("ar");
         }
     }, []);
 
