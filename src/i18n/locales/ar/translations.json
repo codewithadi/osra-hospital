@@ -33,7 +33,11 @@
         "13": "ادخل ملاحظاتك ",
         "14": "احجز موعد ",
         "15": "New Patient",
-        "16": "Old Patient"
+        "16": "Old Patient",
+        "17": "Enter Patient Id",
+        "18": "Enter File Number",
+        "19": "New Patient Form",
+        "20": "Old Patient Form"
     },
     "ujimages": {
         "journey": "/assets/about/journey.png",
