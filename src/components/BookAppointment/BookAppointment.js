@@ -204,7 +204,7 @@ function BookAppointment({ t }) {
                             {t("app.2")}
                             </p> */}
                         </div>
-                        <div className="w-2/3 flex justify-center gap-3 md:gap-9 mx-2">
+                        <div className="w-full md:w-2/3 flex justify-center gap-3 md:gap-9 mx-2">
                             <button
                                 onClick={(e) => {
                                     e.preventDefault();
