@@ -33,7 +33,10 @@ function BookAppointment({ t }) {
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
     const [gender, setGender] = useState("male");
-    const [seldoc,setseldoc]=useState()
+    const [seldoc, setseldoc] = useState();
+    const [oldPatient, setOldPatient] = useState(false);
+    const [patientId, setPatientId] = useState("");
+    const [fileNo, setFileNo] = useState("");
 
     //console.log(moment(date).format('DD-MM-YYYY').toString())
     useEffect(() => {
@@ -43,14 +46,10 @@ function BookAppointment({ t }) {
                 "https://doctorappapi.herokuapp.com/api/doctor"
             );
             setDoctor(res.data);
-            const resp = await axios.get(
-                `${t("departmentapiurl")}`
-            );
-            const resps = await axios.get(
-                `${t("doctorapiurl")}`
-            );
-            setseldoc(resps.data)
-            
+            const resp = await axios.get(`${t("departmentapiurl")}`);
+            const resps = await axios.get(`${t("doctorapiurl")}`);
+            setseldoc(resps.data);
+
             setDepartment(resp.data);
             const respo = await axios.get(
                 "https://doctorappapi.herokuapp.com/api/patient"
@@ -65,7 +64,7 @@ function BookAppointment({ t }) {
         let tempArr = [];
         setDocArr(null);
         setSelectedDoc(null);
-        
+
         tempArr = seldoc.filter((doc) =>
             doc.department.includes(selectedDept._id)
         );
@@ -178,7 +177,7 @@ function BookAppointment({ t }) {
     };
     return (
         <>
-            <div className="book-appointment" >
+            <div className="book-appointment">
                 <div className="depMainBack">
                     <img
                         className="depMainImg"
@@ -186,14 +185,12 @@ function BookAppointment({ t }) {
                         alt="department Back"
                     />
                     <div className="depMainOverlay" dir={t("directionc")}>
-                        <h1 className="depMainText" >{t("bookapt")}</h1>
+                        <h1 className="depMainText">{t("bookapt")}</h1>
                     </div>
                 </div>
                 {book ? (
                     <div className="w-full h-full flex justify-center items-center py-4">
-                        <h1 className="text-2xl m-4 p-4 ">
-                           {t("wait_till")}
-                        </h1>
+                        <h1 className="text-2xl m-4 p-4 ">{t("wait_till")}</h1>
                     </div>
                 ) : loading ? (
                     <div className="w-full h-full flex justify-center items-center py-4">
@@ -207,11 +204,74 @@ function BookAppointment({ t }) {
                             {t("app.2")}
                             </p> */}
                         </div>
+                        <div className="w-2/3 flex justify-center gap-3 md:gap-9 mx-2">
+                            <button
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setOldPatient(false);
+                                }}
+                                className="bookFormButton "
+                                dir={t("directionc")}
+                            >
+                                {t("app.15")}
+                            </button>
+                            <button
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setOldPatient(true);
+                                }}
+                                className="bookFormButton "
+                                dir={t("directionc")}
+                            >
+                                {t("app.16")}
+                            </button>
+                        </div>
                         <form
                             className="appointmentForm"
                             onSubmit={handleSubmit}
-                            
                         >
+                            <div
+                                className="appointmentText"
+                                dir={t("directionc")}
+                            >
+                                {!oldPatient && (
+                                    <h1 className="appointmentHead">
+                                        {t("app.19")}
+                                    </h1>
+                                )}
+
+                                {oldPatient && (
+                                    <h1 className="appointmentHead">
+                                        {t("app.20")}
+                                    </h1>
+                                )}
+                            </div>
+                            {oldPatient && (
+                                <div className="flex flex-col md:flex-row gap-4">
+                                    <input
+                                        className="bookFormItem"
+                                        type="text"
+                                        name="patientid"
+                                        placeholder={t("app.17")}
+                                        value={patientId}
+                                        onChange={(e) =>
+                                            setPatientId(e.target.value)
+                                        }
+                                        dir={t("directionc")}
+                                    />
+                                    <input
+                                        className="bookFormItem"
+                                        type="text"
+                                        name="name"
+                                        placeholder={t("app.18")}
+                                        value={fileNo}
+                                        onChange={(e) =>
+                                            setFileNo(e.target.value)
+                                        }
+                                        dir={t("directionc")}
+                                    />
+                                </div>
+                            )}
                             <input
                                 className="bookFormItem"
                                 type="text"
@@ -234,8 +294,13 @@ function BookAppointment({ t }) {
                             />
 
                             {/* gender radio box below  */}
-                            <div className="serviceText" dir={t("directionc")}>{t("app.5")} </div>
-                            <div className="bookFormItems" dir={t("directionc")}>
+                            <div className="serviceText" dir={t("directionc")}>
+                                {t("app.5")}{" "}
+                            </div>
+                            <div
+                                className="bookFormItems"
+                                dir={t("directionc")}
+                            >
                                 <label
                                     className="bookFormLabel "
                                     htmlFor="
@@ -272,7 +337,7 @@ function BookAppointment({ t }) {
                                     {t("app.7")}
                                 </label>
                             </div>
-                            <div  className="flex flex-col justify-center items-center md:flex-row gap-2">
+                            <div className="flex flex-col justify-center items-center md:flex-row gap-2">
                                 <PhoneInput
                                     className="bookFormItem"
                                     country="sa"
@@ -293,7 +358,10 @@ function BookAppointment({ t }) {
                                 />
                             </div>
                             {/* Services Check box below  */}
-                            <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2" dir={t("directionc")}>
+                            <div
+                                className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2"
+                                dir={t("directionc")}
+                            >
                                 <div className="mb-2">
                                     <div className="serviceText">
                                         {t("app.9")}:{" "}
@@ -363,7 +431,7 @@ function BookAppointment({ t }) {
                             </div>
 
                             <textarea
-                            dir={t("directionc")}
+                                dir={t("directionc")}
                                 className="bookFormItem"
                                 name="message"
                                 rows={5}

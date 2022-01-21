@@ -32,7 +32,8 @@
         "12": "اختر الوقت ",
         "13": "ادخل ملاحظاتك ",
         "14": "احجز موعد ",
-        "15": ""
+        "15": "New Patient",
+        "16": "Old Patient"
     },
     "ujimages": {
         "journey": "/assets/about/journey.png",
