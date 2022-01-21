@@ -210,7 +210,11 @@ function BookAppointment({ t }) {
                                     e.preventDefault();
                                     setOldPatient(false);
                                 }}
-                                className="bookFormButton "
+                                className={
+                                    oldPatient
+                                        ? "bookFormButton"
+                                        : "bookFormButton active"
+                                }
                                 dir={t("directionc")}
                             >
                                 {t("app.15")}
@@ -220,7 +224,11 @@ function BookAppointment({ t }) {
                                     e.preventDefault();
                                     setOldPatient(true);
                                 }}
-                                className="bookFormButton "
+                                className={
+                                    !oldPatient
+                                        ? "bookFormButton"
+                                        : "bookFormButton active"
+                                }
                                 dir={t("directionc")}
                             >
                                 {t("app.16")}

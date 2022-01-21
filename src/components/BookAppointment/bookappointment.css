@@ -85,6 +85,11 @@ textarea {
 .bookFormButton:hover {
     background-color: #2b5180;
 }
+.active {
+    background-color: #a0c9fa;
+    color: #000;
+    font-weight: 600;
+}
 
 @media (max-width: 650px) {
     .bookWrapper {
