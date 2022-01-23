@@ -43,6 +43,8 @@ import SpecialTests from "./components/Departments/SpecialTests";
 import Serology from "./components/Departments/Serology";
 import Insurance from "./components/Services/Insurance/Insurance";
 import AppointmentBtn from "./components/AppointmentBtn/AppointmentBtn";
+import OldPatient from "./components/BookAppointment/OldPatient";
+import NewPatient from "./components/BookAppointment/NewPatient";
 
 //Dr profile
 import Profile from "./components/DoctorProfile/Profile";
@@ -153,6 +155,8 @@ function App({ t }) {
                 <Route path="/clinics/ob-gyne" element={<OBGyne />} />
                 {/* <Route path="/blog" element={<BlogList />} /> */}
                 <Route path="/appointment" element={<BookAppointment />} />
+                <Route path="/oldpatient" element={<OldPatient />} />
+                <Route path="/newpatient" element={<NewPatient />} />
                 <Route path="/doctor/:doc" element={<Profile />} />
             </Routes>
             <VisibilitySensor onChange={onChange} partialVisibility={true}>
