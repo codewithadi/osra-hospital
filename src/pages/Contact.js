@@ -56,7 +56,7 @@ const Contact = ({ t }) => {
                             style={{ boxShadow: "0 0 10px grey" }}
                             className="flex xl:flex-row flex-col cursor-pointer items-center p-8 px-10 text-black shadow-md border border-gray-100 rounded-md dark:text-gray-800 hover:shadow-2xl hover:bg-green-200"
                         >
-                            <div className="w-1/5 flex justify-center items-center">
+                            <div className="w-full mb-3 md:mb-0 md:w-2/5 flex justify-center items-center">
                                 <img
                                     className="w-24 h-24"
                                     src="https://cdn-icons-png.flaticon.com/512/535/535239.png"
@@ -64,27 +64,34 @@ const Contact = ({ t }) => {
                                 />
                             </div>
 
-                            <div className="flex flex-col px-2 md:pl-4">
-                                <span
-                                    style={{ color: "#3f0f1e" }}
-                                    className="mt-2 mb-2 font-medium text-2xl"
+                            <div>
+                                <a
+                                    className="flex flex-col px-2 md:pl-4"
+                                    href="https://www.google.com/maps?ll=24.584713,46.592886&z=16&t=m&hl=en&gl=IN&mapclient=embed&cid=8710480857477383593"
+                                    target="_blank"
+                                    rel="noreferrer"
                                 >
-                                    {t("addr")}
-                                </span>
+                                    <span
+                                        style={{ color: "#3f0f1e" }}
+                                        className="mt-2 mb-2 font-medium text-2xl"
+                                    >
+                                        {t("addr")}
+                                    </span>
 
-                                <span
-                                    style={{ color: "#778696" }}
-                                    className="mt-2 mb-4 font-normal text-lg"
-                                >
-                                    {t("addressfull")}
-                                </span>
+                                    <span
+                                        style={{ color: "#778696" }}
+                                        className="mt-2 mb-4 font-normal text-lg"
+                                    >
+                                        {t("addressfull")}
+                                    </span>
+                                </a>
                             </div>
                         </div>
                         <div
                             style={{ boxShadow: "0 0 10px grey" }}
                             className="flex xl:flex-row flex-col cursor-pointer items-center p-8 px-10 text-black shadow-md border border-gray-100 rounded-md dark:text-gray-800 hover:shadow-2xl hover:bg-green-200"
                         >
-                            <div className="w-1/5 flex justify-center items-center">
+                            <div className="w-full mb-3 md:mb-0 md:w-2/5 flex justify-center items-center">
                                 <img
                                     className="w-24 h-24"
                                     src="https://cdn-icons-png.flaticon.com/512/126/126509.png"
@@ -105,8 +112,8 @@ const Contact = ({ t }) => {
                                         style={{ color: "#778696" }}
                                         className="mt-2 mb-4 font-normal text-lg"
                                     >
-                                        {t("contact.phone")} :
-                                        &#x202b; 011-431-1111 &#x202c;
+                                        {t("contact.phone")} : &#x202b;
+                                        011-431-1111 &#x202c;
                                     </span>
                                 </a>
                                 <a href="mailto:info@alosrah-hospital.com">
@@ -124,10 +131,10 @@ const Contact = ({ t }) => {
                             style={{ boxShadow: "0 0 10px grey" }}
                             className="flex flex-col xl:flex-row cursor-pointer items-center p-8 px-10 text-black shadow-md border border-gray-100 rounded-md dark:text-gray-800 hover:shadow-2xl hover:bg-green-200"
                         >
-                            <div className="w-2/5 flex justify-center items-center">
+                            <div className="w-full mb-3 md:mb-0 md:w-3/5 flex justify-center items-center">
                                 <img
                                     className="w-24 h-24"
-                                    src="https://cdn-icons-png.flaticon.com/512/546/546394.png"
+                                    src="https://cdn-icons-png.flaticon.com/512/833/833593.png"
                                     alt="mail-icon"
                                 />
                             </div>
