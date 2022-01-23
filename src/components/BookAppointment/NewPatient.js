@@ -169,7 +169,7 @@ function NewPatient({ t }) {
                 window.location.reload();
             } catch (error) {
                 setBook(true);
-                console.log(error);
+                alert("You have not entered correct details")
                 setBook(false);
             }
         } else {
@@ -201,13 +201,13 @@ function NewPatient({ t }) {
                     </div>
                 ) : loading ? (
                     <div className="w-full h-full flex flex-col justify-center items-center py-4">
-                         <h1 className="appointmentHead">{t("app.1")} for {t("app.15")}</h1>
+                         <h1 className="appointmentHead">{t("app.15")} {t("app.1")}</h1>
                         <Loading />
                     </div>
                 ) : (
                     <div className="bookWrapper">
                         <div className="appointmentText" dir={t("directionc")}>
-                            <h1 className="appointmentHead">{t("app.1")} for {t("app.15")}</h1>
+                            <h1 className="appointmentHead">{t("app.15")} {t("app.1")}</h1>
                             {/* <p className="appointmentPara">
                             {t("app.2")}
                             </p> */}
