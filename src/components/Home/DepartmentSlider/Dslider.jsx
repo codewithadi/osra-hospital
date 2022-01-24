@@ -155,7 +155,7 @@ const BrandSlider = ({ t }) => {
                     <div className="adepIcon">
                         <img
                             className="adepIconImg"
-                            src="/assets/departmentlogos/icu.png"
+                            src="/assets/departmentlogos/icu2.png"
                             alt="dept"
                         />
                     </div>
@@ -176,6 +176,36 @@ const BrandSlider = ({ t }) => {
                     </div>
                     <h1 className="depHead">{t("departments.k.name")}</h1>
                     <p className="depDetailHome">{t("departments.k.info")}</p>
+                </div>
+            </div>
+        </div>,
+        <div className="p-2">
+            <div className="border-2 rounded" data-value="1">
+                <div className="adepCard">
+                    <div className="adepIcon">
+                        <img
+                            className="adepIconImg"
+                            src="/assets/departmentlogos/nicu.png"
+                            alt="dept"
+                        />
+                    </div>
+                    <h1 className="depHead">{t("departments.m.name")}</h1>
+                    <p className="depDetailHome">{t("departments.m.info")}</p>
+                </div>
+            </div>
+        </div>,
+        <div className="p-2">
+            <div className="border-2 rounded" data-value="1">
+                <div className="adepCard">
+                    <div className="adepIcon">
+                        <img
+                            className="adepIconImg"
+                            src="/assets/departmentlogos/icu.png"
+                            alt="dept"
+                        />
+                    </div>
+                    <h1 className="depHead">{t("departments.n.name")}</h1>
+                    <p className="depDetailHome">{t("departments.n.info")}</p>
                 </div>
             </div>
         </div>,

@@ -44,7 +44,7 @@ const Contact = ({ t }) => {
             >
                 <div className="flex items-center justify-center w-full h-full bg-gray-800 bg-opacity-50">
                     <div className="text-center font-semibold text-white text-4xl md:text-7xl">
-                        <h1 className="mb-7">{t("contact.title")}</h1>
+                        {/* <h1 className="mb-7">{t("contact.title")}</h1> */}
                     </div>
                 </div>
             </div>

@@ -85,6 +85,11 @@ const SupportService = ({ t }) => {
                     title={t("departments.m.name")}
                     desc={t("departments.m.info")}
                 />
+                <SupportGrid
+                    imgUrl="/assets/departmentlogos/icu.png"
+                    title={t("departments.n.name")}
+                    desc={t("departments.n.info")}
+                />
             </div>
         </div>
     );

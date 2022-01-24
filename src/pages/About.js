@@ -7,7 +7,7 @@ import WhyChooseUs from "../components/About/WhyChooseUs";
 import AdminMem from "../components/About/AdminMem";
 // import AboutFacts from "../components/About/AboutFacts";
 import Facts from "../components/Home/Facts";
-import Journey from "../components/About/Journey";
+// import Journey from "../components/About/Journey";
 // import Testimonials from "../components/About/Testimonials";
 // import { Link } from "react-router-dom";
 import "../components/About/About.css";

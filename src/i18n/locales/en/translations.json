@@ -125,8 +125,8 @@
             "info": "The care and treatment of women in childbirth and during the period before and after delivery. of or relating to childbirth or obstetrics. Abbreviations"
         },
         "j": {
-            "name": "ICU (Intensive Care Unit)",
-            "info": "Intermediate Intensive Care Unit in a hospital that provides intermediate care to partially critical ill or injured patients, staffed by specially trained medical staff and has equipment that allows for continuous monitoring and life support."
+            "name": "ICU (Intermidiate Care Unit)",
+            "info": "Intermidiate Care Unit in a hospital that provides intermediate care to partially critical ill or injured patients, staffed by specially trained medical staff and has equipment that allows for continuous monitoring and life support."
         },
         "k": {
             "name": "ER",
@@ -141,6 +141,10 @@
             "info": "Newborn babies who need intensive medical care are often put in a special area of the hospital called the neonatal intensive care unit (NICU). "
         },
         "n": {
+            "name": "Intensive Care Unit",
+            "info": "Intensive care refers to the specialised treatment given to patients who are acutely unwell and require critical medical care. An intensive care unit (ICU) provides the critical care and life support for acutely ill and injured patients."
+        },
+        "o": {
             "name": "Incubator Care Unit",
             "info": "Newborn babies who need intensive medical care are often put in a special area of the hospital called the neonatal intensive care unit (NICU). The NICU has advanced technology and trained healthcare professionals to give special care for the tiniest patients."
         }
