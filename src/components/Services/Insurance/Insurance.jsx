@@ -2,7 +2,7 @@ import React from "react";
 import InsuranceGrid from "./InsuranceGrid";
 import { withTranslation } from "react-i18next";
 
-const Insurance = ({t}) => {
+const Insurance = ({ t }) => {
     return (
         <div>
             <div
@@ -19,31 +19,31 @@ const Insurance = ({t}) => {
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-10 justify-center items-center py-10 px-2 md:px-20">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-7 justify-center items-center py-10 px-2 md:px-20">
                 <div className="w-full flex justify-center items-center">
                     <img
-                        className="w-full md:w-4/6"
+                        className="w-full md:w-6/6"
                         src="/assets/insurance/bupa.png"
                         alt="chart"
                     />
                 </div>
                 <div className="w-full flex justify-center items-center">
                     <img
-                        className="w-full md:w-4/6"
+                        className="w-full md:w-6/6"
                         src="/assets/insurance/Tuwuniya.png"
                         alt="chart"
                     />
                 </div>
                 <div className="w-full flex justify-center items-center">
                     <img
-                        className="w-full md:w-4/6"
+                        className="w-full md:w-6/6"
                         src="/assets/insurance/mednet.png"
                         alt="chart"
                     />
                 </div>
                 <div className="w-full flex justify-center items-center">
                     <img
-                        className="w-full md:w-4/6"
+                        className="w-full md:w-6/6"
                         src="/assets/insurance/Malath.jpg"
                         alt="chart"
                     />
@@ -71,8 +71,15 @@ const Insurance = ({t}) => {
                 </div>
                 <div className="w-full flex justify-center items-center">
                     <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/ALSAQER.png"
+                        className="w-full md:w-6/6"
+                        src="/assets/insurance/allianz.jpg"
+                        alt="chart"
+                    />
+                </div>
+                <div className="w-full flex justify-center items-center">
+                    <img
+                        className="w-full md:w-6/6"
+                        src="/assets/insurance/buruj.png"
                         alt="chart"
                     />
                 </div>
@@ -85,7 +92,14 @@ const Insurance = ({t}) => {
                 </div>
                 <div className="w-full flex justify-center items-center">
                     <img
-                        className="w-full md:w-4/6"
+                        className="w-full md:w-6/6"
+                        src="/assets/insurance/walaa.jpg"
+                        alt="chart"
+                    />
+                </div>
+                <div className="w-full flex justify-center items-center">
+                    <img
+                        className="w-full md:w-6/6"
                         src="/assets/insurance/ARABIANSHEILD.png"
                         alt="chart"
                     />
@@ -107,7 +121,21 @@ const Insurance = ({t}) => {
                 <div className="w-full flex justify-center items-center">
                     <img
                         className="w-full md:w-4/6"
-                        src="/assets/insurance/GLOBMED.jpg"
+                        src="/assets/insurance/globemed.png"
+                        alt="chart"
+                    />
+                </div>
+                <div className="w-full flex justify-center items-center">
+                    <img
+                        className="w-full md:w-6/6"
+                        src="/assets/insurance/ALSAQER.png"
+                        alt="chart"
+                    />
+                </div>
+                <div className="w-full flex justify-center items-center">
+                    <img
+                        className="w-full md:w-4/6"
+                        src="/assets/insurance/alahlia1.jpg"
                         alt="chart"
                     />
                 </div>
@@ -134,8 +162,15 @@ const Insurance = ({t}) => {
                 </div>
                 <div className="w-full flex justify-center items-center">
                     <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/alahlia.png"
+                        className="w-full md:w-6/6"
+                        src="/assets/insurance/wt.png"
+                        alt="chart"
+                    />
+                </div>
+                <div className="w-full flex justify-center items-center">
+                    <img
+                        className="w-full md:w-6/6"
+                        src="/assets/insurance/uca.jpg"
                         alt="chart"
                     />
                 </div>
@@ -160,13 +195,13 @@ const Insurance = ({t}) => {
                         alt="chart"
                     />
                 </div>
-                <div className="w-full flex justify-center items-center">
+                {/* <div className="w-full flex justify-center items-center">
                     <img
                         className="w-full md:w-4/6"
                         src="/assets/insurance/GLOBAL-NET.jpg"
                         alt="chart"
                     />
-                </div>
+                </div> */}
             </div>
             {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center py-10 px-2 md:px-20">
                 <InsuranceGrid
