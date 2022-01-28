@@ -20,5 +20,13 @@ export const del = [
         email: "roberto@medwise.com",
         linkto: "Muhammed_Farouq",
     },
+    {
+        name: "Dr. Ibrahim Rushdi",
+        License: [
+            "Membership of the Jordanian Medical Council",
+            "Colon and gastrointestinal tumors",
+            "Doctors Membership ",
+        ],
+    },
 ];
 export default { del };

@@ -540,7 +540,7 @@ export const demoData = [
         namear: "Dr. Eman Mohammed",
         positionar: "Pediatric Specialist",
         Nationality: "Chinese",
-        Qualification: "",
+        Qualification: "Saudi board  Pediatric registrar",
         Experience: "6 Years",
         position: "Pediatric Specialist",
         department: ["pediatrics"],
@@ -651,11 +651,6 @@ export const demoData = [
         department: ["pediatrics"],
         search: "pediatric",
         searchid: ["61dc0c29b24354b161efe86a"],
-        License: [
-            "Membership of the Jordanian Medical Council",
-            "Colon and gastrointestinal tumors",
-            "Doctors Membership ",
-        ],
         skills: [
             "Gastrointestinal diseases",
             "Lung disease (asthma)",
