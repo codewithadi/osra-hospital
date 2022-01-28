@@ -12,7 +12,7 @@ export default function Whatsapp() {
                     >
                         <img
                             className="w-16 h-16 rounded-full "
-                            src="/whasapp.jfif"
+                            src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
                             alt="Call_Us1"
                         />
                     </a>
@@ -25,7 +25,7 @@ export default function Whatsapp() {
                     >
                         <img
                             className="w-16 h-16 rounded-full "
-                            src="/whasapp.jfif"
+                            src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
                             alt="Call_Us2"
                         />
                     </a>
