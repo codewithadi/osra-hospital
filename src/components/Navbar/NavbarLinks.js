@@ -85,7 +85,7 @@ function NavLinks({ colorchange, t }) {
                         </h1>
                     </Link>
                 </li>
-                {/* <li className="inline-block bg-transparent border-none-c">
+                <li className="inline-block bg-transparent border-none-c">
                     <Link
                         exact
                         to="/doctor"
@@ -100,7 +100,7 @@ function NavLinks({ colorchange, t }) {
                             {t("nav.nav_doctor")}
                         </h1>
                     </Link>
-                </li> */}
+                </li>
                 <li className="inline-block bg-transparent border-none-c">
                     <Link
                         exact
