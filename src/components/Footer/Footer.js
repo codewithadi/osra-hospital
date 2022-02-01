@@ -12,12 +12,13 @@ function Footer({ t }) {
         <div
             className="md:pt-8 pt-4"
             style={{ background: "#431423", color: "#fff" }}
+            dir={t("direction")}
         >
             <footer className="dark:bg-gray-300">
                 <div className="container px-6 py-2 mx-auto bg-transparent">
                     <div className="lg:flex bg-transparent">
                         <div className="w-full -mx-7 lg:w-2/5 bg-transparent">
-                            <div className="px-6 bg-transparent">
+                            <div className="px-6 md:px-16 bg-transparent">
                                 <div className="bg-transparent">
                                     <Link
                                         onClick={scrollToTop}
@@ -25,8 +26,8 @@ function Footer({ t }) {
                                         className="text-xl font-bold bg-transparent hover:text-blue-400 dark:hover:text-gray-700"
                                     >
                                         <img
-                                            className="h-24 w-44 md:h-28 md:w-48 bg-transparent"
-                                            src="/OIH.logo.011.png"
+                                            className="h-36 w-36 md:h-44 md:w-44 bg-transparent"
+                                            src="/assets/logo/19.png"
                                             alt="brandlogofooter"
                                         />
                                         {/* Company Name */}
@@ -35,7 +36,7 @@ function Footer({ t }) {
 
                                 <div
                                     dir={t("direction")}
-                                    className="max-w-md mt-2 font-semibold dark:text-gray-800 bg-transparent px-2 md:pr-28 cursor-default "
+                                    className="max-w-md mt-2 font-semibold dark:text-gray-800 bg-transparent px-2 cursor-default "
                                 >
                                     {t("maintitle")}
                                 </div>
@@ -113,10 +114,10 @@ function Footer({ t }) {
                                     dir={t("direction")}
                                     className="bg-transparent font-semibold"
                                 >
-                                    <h3 className=" font-semibold uppercase text-lg dark: bg-transparent cursor-default">
+                                    <h3 className=" font-semibold uppercase text-lg bg-transparent cursor-default">
                                         {t("getsup")}
                                     </h3>
-                                    <div className="block mt-2 text-sm  dark: bg-transparent">
+                                    {/* <div className="block mt-2 text-sm bg-transparent">
                                         <div className="inline-flex md:pr-4 mb-2 hover:text-blue-400 transition-colors duration-700 delay-100">
                                             <svg
                                                 className="w-4 h-4 rounded-md bg-transparent"
@@ -128,7 +129,28 @@ function Footer({ t }) {
                                             </svg>{" "}
                                             <div className="pl-1 bg-transparent">
                                                 <a
-                                                
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                    href="tel: 011-431-11111"
+                                                    className="bg-transparent"
+                                                >
+                                                    011-431-1111
+                                                </a>{" "}
+                                            </div>
+                                        </div>
+                                    </div> */}
+                                    <div className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-700 delay-100">
+                                        <div className="inline-flex bg-transparent">
+                                            <svg
+                                                className="w-5 h-5 rounded-md bg-transparent"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20"
+                                                fill="currentColor"
+                                            >
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                            </svg>
+                                            <div className="pl-1 bg-transparent">
+                                                <a
                                                     target="_blank"
                                                     rel="noreferrer"
                                                     href="tel: 011-431-11111"
@@ -139,6 +161,7 @@ function Footer({ t }) {
                                             </div>
                                         </div>
                                     </div>
+
                                     <div className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-700 delay-100">
                                         <div className="inline-flex bg-transparent">
                                             <svg
@@ -200,14 +223,10 @@ function Footer({ t }) {
                                     <div className="py-1 text-sm text-blue-300 uppercase">
                                         {t("outpat")}
                                     </div>
-                                    <div className="text-sm">
-                                        {t("morn")} : 9:00 a.m &#x202b; to
-                                        &#x202c; 12:00 p.m
-                                    </div>
-                                    <div className="text-sm">
-                                        {t("even")}: 4:00 p.m &#x202b; to
-                                        &#x202c; 9:30 p.m
-                                    </div>
+                                    <div className="text-sm">{t("morn")} :</div>
+                                    <div className="text-sm">{t("time1")}</div>
+                                    <div className="text-sm">{t("even")}:</div>
+                                    <div className="text-sm">{t("time2")}</div>
 
                                     <div className="py-1 text-sm text-blue-300 uppercase">
                                         {t("text-footer")}:
@@ -217,14 +236,10 @@ function Footer({ t }) {
                                     <div className="py-1 text-sm text-blue-300 uppercase">
                                         {t("inpatfooter")}:
                                     </div>
-                                    <div className="text-sm">
-                                        {t("stt")} : 7:00 a.m &#x202b; to
-                                        &#x202c; 12:00 a.m
-                                    </div>
-                                    <div className="text-sm">
-                                        {t("fr")} : 2:00 p.m &#x202b; to
-                                        &#x202c; 12:00 a.m
-                                    </div>
+                                    <div className="text-sm">{t("stt")} :</div>
+                                    <div className="text-sm">{t("time3")}</div>
+                                    <div className="text-sm">{t("fr")} :</div>
+                                    <div className="text-sm">{t("time4")}</div>
                                 </div>
                                 {/* ------------------------- */}
                                 <div
@@ -244,7 +259,7 @@ function Footer({ t }) {
                                         >
                                             <img
                                                 className="w-10 h-10 bg-transparent"
-                                                src="/assets/logo/tt.png"
+                                                src="/assets/logo/tt1.png"
                                                 alt="twitter"
                                             />
                                         </a>
@@ -258,7 +273,7 @@ function Footer({ t }) {
                                         >
                                             <img
                                                 className="w-10 h-10 bg-transparent"
-                                                src="/assets/logo/ig.png"
+                                                src="/assets/logo/ig1.png"
                                                 alt="instagram"
                                             />
                                         </a>
@@ -271,7 +286,7 @@ function Footer({ t }) {
                                         >
                                             <img
                                                 className="w-10 h-10 bg-transparent"
-                                                src="/assets/logo/fb.png"
+                                                src="/assets/logo/fb1.png"
                                                 alt="facebook"
                                             />
                                         </a>
@@ -289,13 +304,9 @@ function Footer({ t }) {
                                 dir={t("direction")}
                                 className="md:border-r-2 px-2 bg-transparent"
                             >
-                              
                                 {t("allrihtres")}
                             </p>{" "}
-                            <p className="px-2 bg-transparent">
-                                {" "}
-                                {t("devby")}
-                            </p>
+                            <p className="px-2 bg-transparent"> {t("devby")}</p>
                         </div>
                     </div>
                 </div>

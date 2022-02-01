@@ -2,6 +2,7 @@
     "direction": "rtl",
     "view_profile": "عرض الصفحة الشخصية",
     "book_appoi": "احجز موعد ",
+    "booklogo": "/assets/logo/22.png",
     "directionc": "rtl",
     "qualification": "المؤهل",
     "doctorurl": "{{demoDatas}}",
@@ -17,6 +18,10 @@
     "wait_till": "انتظر حجز موعدك وسوف نرسل لك رسالة قريبا .....",
     "success_message": "الرجاء ملء كل الحقول",
     "contact_msg": "",
+    "time1": "9:00 ص حتى 12:00 م",
+    "time2": "4:00 مساءً حتى 9:30 مساءً",
+    "time3": "7:00 صباحًا حتى 12:00 صباحًا",
+    "time4": "2:00 مساءً حتى 12:00 صباحًا",
     "title": "اللقب",
     "docprofile": {
         "title": "اللقب",

@@ -1,6 +1,7 @@
 {
     "direction": "ltr",
     "directionc": "ltr",
+    "booklogo": "/assets/logo/21.png",
     "view_profile": "View Profile",
     "book_appoi": "Book Appointment",
     "doctorurl": "{{demoData}}",
@@ -17,6 +18,10 @@
     "wait_till": " Wait Booking your appointment and will send you a message shortly.....",
     "success_message": "Please fill all the field",
     "contact_msg": "",
+    "time1": "9:00 a.m to 12:00 p.m",
+    "time2": "4:00 p.m to 9:30 p.m",
+    "time3": "7:00 a.m to 12:00 a.m",
+    "time4": "2:00 p.m to 12:00 a.m",
     "app": {
         "1": "Online Appointment Form",
         "2": "Now you can request an appointment in some simple steps Online",

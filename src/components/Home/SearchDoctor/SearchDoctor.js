@@ -186,7 +186,7 @@ function SearchDoctor({ t }) {
                         <div className="searchDoctorCol">
                             <img
                                 className="seachDoctorImg"
-                                src="/assets/images/finddoc2.png"
+                                src="/assets/images/finddocbanner.png"
                                 // src="assets/images/findDoctor.png"
                                 alt="hmsearch"
                             />

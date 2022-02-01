@@ -13,7 +13,7 @@ const SocialIcons = () => {
                 >
                     <img
                         className="w-10 h-10 bg-transparent"
-                        src="/assets/logo/tt.png"
+                        src="/assets/logo/tt1.png"
                         alt="twitter"
                     />
                 </a>
@@ -27,7 +27,7 @@ const SocialIcons = () => {
                 >
                     <img
                         className="w-10 h-10 bg-transparent"
-                        src="/assets/logo/ig.png"
+                        src="/assets/logo/ig1.png"
                         alt="instagram"
                     />
                 </a>
@@ -40,7 +40,7 @@ const SocialIcons = () => {
                 >
                     <img
                         className="w-10 h-10 bg-transparent"
-                        src="/assets/logo/fb.png"
+                        src="/assets/logo/fb1.png"
                         alt="facebook"
                     />
                 </a>
