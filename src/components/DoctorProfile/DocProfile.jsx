@@ -50,10 +50,13 @@ const DocProfile = ({ t }) => {
                     <Loading />
                 </div>
             ) : (
-                <div className="flex justify-center py-4">
+                <div className="flex flex-col md:flex-row justify-center py-4">
                     {doctors.map((doc) => (
                         <div className="w-full md:w-5/6 flex font-medium">
-                            <div className="w-full md:w-2/3 pt-7 px-2 md:px-4" dir={t("directionc")}>
+                            <div
+                                className="w-full md:w-2/3 pt-7 px-2 md:px-4"
+                                dir={t("directionc")}
+                            >
                                 <h2 className="text-3xl font-bold text-gray-600">
                                     {doc.namear}
                                 </h2>
@@ -112,13 +115,15 @@ const DocProfile = ({ t }) => {
                                     <h4 className="mt-1 text-lg">
                                         {t("docprofile.lic")}:
                                     </h4>
-                                    {!doc.License < 1 && ( <div>
-                                        {doc.License.map((lic) => (
-                                            <h4 className="mt-1 text-lg">
-                                                {lic}
-                                            </h4>
-                                        ))}
-                                    </div>)}
+                                    {!doc.License < 1 && (
+                                        <div>
+                                            {doc.License.map((lic) => (
+                                                <h4 className="mt-1 text-lg">
+                                                    {lic}
+                                                </h4>
+                                            ))}
+                                        </div>
+                                    )}
                                 </div>
                                 <div
                                     className="flex gap-4"
