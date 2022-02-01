@@ -67,7 +67,7 @@ const DocProfile = ({ t }) => {
                                     className="flex gap-4"
                                     style={{ color: "#3c0c1c" }}
                                 >
-                                    <h4 className="mt-1 text-lg">
+                                    <h4 className="mt-1 text-lg font-semibold">
                                         {t("docprofile.title")}:
                                     </h4>
                                     <h4 className="mt-1 text-lg">
@@ -78,7 +78,7 @@ const DocProfile = ({ t }) => {
                                     className="flex gap-4"
                                     style={{ color: "#3c0c1c" }}
                                 >
-                                    <h4 className="mt-1 text-lg">
+                                    <h4 className="mt-1 text-lg font-semibold">
                                         {t("docprofile.name")}:
                                     </h4>
                                     <h4 className="mt-1 text-lg">
@@ -89,7 +89,7 @@ const DocProfile = ({ t }) => {
                                     className="flex gap-4"
                                     style={{ color: "#3c0c1c" }}
                                 >
-                                    <h4 className="mt-1 text-lg">
+                                    <h4 className="mt-1 text-lg font-semibold">
                                         {t("docprofile.pos")}:
                                     </h4>
                                     <h4 className="mt-1 text-lg">
@@ -100,7 +100,7 @@ const DocProfile = ({ t }) => {
                                     className="flex gap-4"
                                     style={{ color: "#3c0c1c" }}
                                 >
-                                    <h4 className="mt-1 text-lg">
+                                    <h4 className="mt-1 text-lg font-semibold">
                                         {t("docprofile.qual")}:
                                     </h4>
                                     <h4 className="mt-1 text-lg">
@@ -112,7 +112,7 @@ const DocProfile = ({ t }) => {
                                     className="flex gap-4"
                                     style={{ color: "#3c0c1c" }}
                                 >
-                                    <h4 className="mt-1 text-lg">
+                                    <h4 className="mt-1 text-lg font-semibold">
                                         {t("docprofile.lic")}:
                                     </h4>
                                     {!doc.License < 1 && (
@@ -129,7 +129,7 @@ const DocProfile = ({ t }) => {
                                     className="flex gap-4"
                                     style={{ color: "#3c0c1c" }}
                                 >
-                                    <h4 className="mt-1 text-lg">
+                                    <h4 className="mt-1 text-lg font-semibold">
                                         {t("docprofile.exp")}:
                                     </h4>
                                     <h4 className="mt-1 text-lg">
@@ -140,14 +140,14 @@ const DocProfile = ({ t }) => {
                                     className="flex gap-4"
                                     style={{ color: "#3c0c1c" }}
                                 >
-                                    <h4 className="mt-1 text-lg">
+                                    <h4 className="mt-1 text-lg font-semibold">
                                         {t("docprofile.nat")}:
                                     </h4>
                                     <h4 className="mt-1 text-lg">
                                         {doc.Nationality}
                                     </h4>
                                 </div>
-                                <h4 className="mt-2 text-lg text-gray-600">
+                                <h4 className="mt-2 text-lg text-gray-600 font-semibold">
                                     {t("docprofile.procedure")}:
                                 </h4>
                                 {doc.skillsar.map((skill, index) => (
