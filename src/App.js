@@ -47,7 +47,8 @@ import OldPatient from "./components/BookAppointment/OldPatient";
 import NewPatient from "./components/BookAppointment/NewPatient";
 
 //Dr profile
-import Profile from "./components/DoctorProfile/Profile";
+// import Profile from "./components/DoctorProfile/Profile";
+import Profile from "./components/DoctorProfile/DocProfile";
 import SocialIcons from "./components/SocialIcons/SocialIcons";
 import UserDatabase from "./pages/UserDatabase";
 import Test from "./pages/Test";

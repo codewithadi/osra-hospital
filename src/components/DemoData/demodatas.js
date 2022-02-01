@@ -118,7 +118,7 @@ export const demoDatas = [
         name: "Dr. Mamdouh Oun Alsoud",
         namear: "	د. ممدوح عيون السود",
         positionar: "	استشاري جراحة عامة ومناظير",
-        Nationality: "Syrian",
+        Nationality: "السوري",
         Qualification: "البورد في الجراحات العامة",
         Experience: "9 سنوات",
         position: " Head of General Surgery and OR",

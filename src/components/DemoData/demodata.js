@@ -119,7 +119,8 @@ export const demoData = [
         imgUrl: "/assets/real/13.png",
         name: "Dr. Mamdouh Oun Alsoud",
         namear: "Dr. Mamdouh Oun Alsoud",
-        positionar: "Head of General Surgery and OR",
+        positionar:
+            "Surgery & Laparoscopic Consultant and Head of General Surgery and OR",
         Nationality: "Syrian",
         Qualification: "Board in General Surgeries",
         Experience: "9 years",

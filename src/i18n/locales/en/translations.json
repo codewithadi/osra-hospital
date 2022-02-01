@@ -438,6 +438,16 @@
         "yurmsg": "Your Message",
         "submit": "Submit"
     },
+    "docprofile": {
+        "title": "Title",
+        "name": "Name",
+        "pos": "Position",
+        "qual": "Certification",
+        "lic": "Qualification",
+        "exp": "Years of Experience",
+        "nat": "Nationality",
+        "procedure": "Procedures"
+    },
     "maintitle": "AlOsrah international Hospital is a Secondary level facility with 50 bed-Capacities situated in the middle of Riyadh city, Saudi Arabia.",
     "quicklinks": "Quick Links",
     "getsup": "Get Support",

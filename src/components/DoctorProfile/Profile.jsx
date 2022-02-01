@@ -51,14 +51,13 @@ const Profile = ({ t }) => {
                 </div>
             ) : (
                 <div>
-                    {" "}
                     {doctors.map((doc) => (
-                        <div className="departments">
-                            <div className="depDetail">
-                                <div className="depProfileDetailContainer">
-                                    <div className="drTextHead">
-                                        <div className="drDetailAbout8">
-                                            <div className="my-24 ml-10">
+                        <div className="">
+                            <div className="">
+                                <div className="">
+                                    <div className="">
+                                        <div className="">
+                                            <div className="my-24 ml-10 mr-2">
                                                 <div className="my-2 flex">
                                                     <img
                                                         className="w-7 h-6"
@@ -85,14 +84,12 @@ const Profile = ({ t }) => {
                                                     {doc.positionar}
                                                 </h4>
                                                 <div className="mt-20">
-                                                    <h5 className="flex mb-2">
+                                                    <h5
+                                                        className="flex mb-2"
+                                                        dir={t("directionc")}
+                                                    >
                                                         {t("qualification")} :
-                                                        <p
-                                                            className="ml-1"
-                                                            dir={t(
-                                                                "directionc"
-                                                            )}
-                                                        >
+                                                        <p className="ml-1">
                                                             {doc.Qualification}
                                                         </p>
                                                     </h5>
@@ -137,20 +134,53 @@ const Profile = ({ t }) => {
                                                         </p>
                                                     </h4>
                                                 </div>
-                                                <button
+                                                <h4
+                                                    className="flex"
+                                                    dir={t("directionc")}
+                                                >
+                                                    {t("Procedures")}
+                                                </h4>
+                                                <div className="">
+                                                    {doc.skillsar.map(
+                                                        (skill, index) => (
+                                                            <div
+                                                                className="treatmentCard"
+                                                                key={index}
+                                                            >
+                                                                <div className="checkLogo">
+                                                                    <img
+                                                                        src="/assets/dr/customcheck.jpg"
+                                                                        alt="check"
+                                                                    />
+                                                                </div>
+                                                                <div className="treatmentText">
+                                                                    <h2
+                                                                        className="drskillTitle"
+                                                                        dir={t(
+                                                                            "directionc"
+                                                                        )}
+                                                                    >
+                                                                        {skill}
+                                                                    </h2>
+                                                                </div>
+                                                            </div>
+                                                        )
+                                                    )}
+                                                </div>
+                                                {/* <button
                                                     dir={t("directionc")}
                                                     className="border-white border-2 px-4 py-2 rounded-full mt-4 transition-all duration-500 hover:bg-white hover:text-black"
                                                 >
                                                     <Link to="/appointment">
                                                         {t("book_appoi")}
                                                     </Link>
-                                                </button>
+                                                </button> */}
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="docProfileImgWrapper">
+                                    <div className="">
                                         <img
-                                            className="depDetailImg"
+                                            className=""
                                             src={doc.imgUrl}
                                             alt="dermatology"
                                         />
@@ -158,7 +188,7 @@ const Profile = ({ t }) => {
                                 </div>
                             </div>
 
-                            <div className="treatmentDetails">
+                            {/* <div className="">
                                 <div className="depMain">
                                     <h1
                                         className="depMainHead"
@@ -169,30 +199,8 @@ const Profile = ({ t }) => {
                                     <div className="depLine"></div>
                                 </div>
 
-                                <div className="treatmentWrapper">
-                                    {doc.skillsar.map((skill, index) => (
-                                        <div
-                                            className="treatmentCard"
-                                            key={index}
-                                        >
-                                            <div className="checkLogo">
-                                                <img
-                                                    src="/assets/dr/customcheck.jpg"
-                                                    alt="check"
-                                                />
-                                            </div>
-                                            <div className="treatmentText">
-                                                <h2
-                                                    className="drskillTitle"
-                                                    dir={t("directionc")}
-                                                >
-                                                    {skill}
-                                                </h2>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
+                                
+                            </div> */}
                         </div>
                     ))}
                 </div>
