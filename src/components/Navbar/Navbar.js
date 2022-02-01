@@ -78,7 +78,7 @@ function Navbar({ t }) {
                 </div>
 
                 <div
-                    className="hidden sm:flex text-base md:text-lg py-1 md:pr-10 bg-transparent"
+                    className="hidden sm:flex text-base md:text-lg py-1 bg-transparent"
                     id=""
                 >
                     <NavLinks />
@@ -88,9 +88,9 @@ function Navbar({ t }) {
                     id="nav_parent"
                     onClick={handleClick}
                 >
-                    <div id="div1" className="h-1 w-6 m-1 bg-blue-500"></div>
-                    <div id="div2" className="h-1 w-6 m-1 bg-blue-500"></div>
-                    <div id="div3" className="h-1 w-6 m-1 bg-blue-500"></div>
+                    <div id="div1" className="h-1 w-6 m-1 bg-blue-600"></div>
+                    <div id="div2" className="h-1 w-6 m-1 bg-blue-600"></div>
+                    <div id="div3" className="h-1 w-6 m-1 bg-blue-600"></div>
                 </div>
             </div>
             <div

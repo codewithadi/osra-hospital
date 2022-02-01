@@ -57,6 +57,7 @@
     "nav": {
         "nav_home": "Home",
         "nav_about": "About",
+        "nav_doctor": "Doctors",
         "nav_dept": "Departments",
         "nav_clinic": "Clinics",
         "nav_insurance": "Insurance",

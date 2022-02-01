@@ -52,7 +52,7 @@ function NavLinks({ colorchange, t }) {
 
     return (
         <div className="">
-            <ul className="flex flex-col justify-center items-center md:bg-transparent md:inline-block bg-transparent">
+            <ul className="flex flex-col gap-2 md:gap-0 justify-center items-center md:bg-transparent md:inline-block bg-transparent">
                 <li className="inline-block bg-transparent border-none-c">
                     <Link
                         exact
@@ -85,6 +85,22 @@ function NavLinks({ colorchange, t }) {
                         </h1>
                     </Link>
                 </li>
+                {/* <li className="inline-block bg-transparent border-none-c">
+                    <Link
+                        exact
+                        to="/doctor"
+                        className={
+                            splitLocation[1] === "doctor"
+                                ? "activeLink navbar-link-hover font-medium bg-transparent border-none-c"
+                                : "navbar-link-hover font-medium bg-transparent border-none-c"
+                        }
+                        onClick={scrollToTop}
+                    >
+                        <h1 className="uppercase border-none-c mx-2 md:px-1 lg:mx-2 bg-transparent hoverColor block sm:inline-block navbar-link">
+                            {t("nav.nav_doctor")}
+                        </h1>
+                    </Link>
+                </li> */}
                 <li className="inline-block bg-transparent border-none-c">
                     <Link
                         exact
