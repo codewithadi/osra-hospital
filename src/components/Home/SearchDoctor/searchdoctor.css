@@ -178,7 +178,7 @@
     .searchDoctorCol {
         width: 100%;
         display: flex;
-        text-align: left;
+        text-align: center;
         flex-direction: column;
         justify-content: center;
     }
@@ -186,7 +186,7 @@
 
 @media (max-width: 500px) {
     .searchDoctorWrapper {
-        height: 600px;
+        height: 400px;
     }
     .searchDoctorHead {
         font-size: 25px;
@@ -199,6 +199,14 @@
     .searchDoctorPara {
         width: 90%;
         color: #3f0f1e;
+    }
+    .searchDoctorCol {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .seachDoctorImg {
         width: 100%;
