@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 function OldPatient({ t }) {
     const [book, setBook] = useState(false);
     const [loading, setloading] = useState(false);
-    const [department, setDepartment] = useState("");
+    const [department, setDepartment] = useState([{ select: "" }]);
     const [doctor, setDoctor] = useState("");
     const [patient, setPatient] = useState("");
     const [slot, setSlot] = useState("");
@@ -33,7 +33,7 @@ function OldPatient({ t }) {
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
     const [gender, setGender] = useState("male");
-    const [seldoc,setseldoc]=useState()
+    const [seldoc, setseldoc] = useState();
     const [patientId, setPatientId] = useState("");
     const [fileNo, setFileNo] = useState("");
 
@@ -45,14 +45,10 @@ function OldPatient({ t }) {
                 "https://doctorappapi.herokuapp.com/api/doctor"
             );
             setDoctor(res.data);
-            const resp = await axios.get(
-                `${t("departmentapiurl")}`
-            );
-            const resps = await axios.get(
-                `${t("doctorapiurl")}`
-            );
-            setseldoc(resps.data)
-            
+            const resp = await axios.get(`${t("departmentapiurl")}`);
+            const resps = await axios.get(`${t("doctorapiurl")}`);
+            setseldoc(resps.data);
+
             setDepartment(resp.data);
             const respo = await axios.get(
                 "https://doctorappapi.herokuapp.com/api/patient"
@@ -67,7 +63,7 @@ function OldPatient({ t }) {
         let tempArr = [];
         setDocArr(null);
         setSelectedDoc(null);
-        
+
         tempArr = seldoc.filter((doc) =>
             doc.department.includes(selectedDept._id)
         );
@@ -128,13 +124,13 @@ function OldPatient({ t }) {
         // console.log(gender)
 
         if (
-            (patientId && fileNo && dateb &&
-                selectedDoc.label &&
-                selectedDept.label &&
-               
-                department &&
-                doctor 
-            )
+            patientId &&
+            fileNo &&
+            dateb &&
+            selectedDoc.label &&
+            selectedDept.label &&
+            department &&
+            doctor
         ) {
             const patient = {
                 date: dateb,
@@ -142,15 +138,14 @@ function OldPatient({ t }) {
                 departmentname: selectedDept.label,
                 gender,
                 slot,
-               
+
                 message,
-          
+
                 department: selectedDept._id,
                 doctor: selectedDoc._id,
-             
-               fileid:fileNo,
-               patientid:patientId
 
+                fileid: fileNo,
+                patientid: patientId,
             };
             // console.log(patient);
             setBook(true);
@@ -172,7 +167,7 @@ function OldPatient({ t }) {
                 window.location.reload();
             } catch (error) {
                 setBook(true);
-                alert("You have not entered correct details")
+                alert("You have not entered correct details");
                 setBook(false);
             }
         } else {
@@ -184,7 +179,7 @@ function OldPatient({ t }) {
     };
     return (
         <>
-            <div className="book-appointment" >
+            <div className="book-appointment">
                 <div className="depMainBack">
                     <img
                         className="depMainImg"
@@ -192,24 +187,26 @@ function OldPatient({ t }) {
                         alt="department Back"
                     />
                     <div className="depMainOverlay" dir={t("directionc")}>
-                        <h1 className="depMainText" >{t("bookapt")}</h1>
+                        <h1 className="depMainText">{t("bookapt")}</h1>
                     </div>
                 </div>
                 {book ? (
                     <div className="w-full h-full flex flex-col justify-center items-center py-4">
-                        <h1 className="text-2xl m-4 p-4 ">
-                           {t("wait_till")}
-                        </h1>
+                        <h1 className="text-2xl m-4 p-4 ">{t("wait_till")}</h1>
                     </div>
                 ) : loading ? (
                     <div className="w-full h-full flex flex-col justify-center items-center py-4">
-                         <h1 className="appointmentHead">{t("app.16")} {t("app.1")}</h1>
+                        <h1 className="appointmentHead">
+                            {t("app.16")} {t("app.1")}
+                        </h1>
                         <Loading />
                     </div>
                 ) : (
                     <div className="bookWrapper">
                         <div className="appointmentText" dir={t("directionc")}>
-                            <h1 className="appointmentHead">{t("app.16")} {t("app.1")}</h1>
+                            <h1 className="appointmentHead">
+                                {t("app.16")} {t("app.1")}
+                            </h1>
                             {/* <p className="appointmentPara">
                             {t("app.2")}
                             </p> */}
@@ -217,34 +214,34 @@ function OldPatient({ t }) {
                         <form
                             className="appointmentForm"
                             onSubmit={handleSubmit}
-                            
                         >
-                              <div className="flex flex-col md:flex-row gap-4">
-                                    <input
-                                        className="bookFormItem"
-                                        type="text"
-                                        name="patientid"
-                                        placeholder={t("app.17")}
-                                        value={patientId}
-                                        onChange={(e) =>
-                                            setPatientId(e.target.value)
-                                        }
-                                        dir={t("directionc")}
-                                    />
-                                    <input
-                                        className="bookFormItem"
-                                        type="text"
-                                        name="name"
-                                        placeholder={t("app.18")}
-                                        value={fileNo}
-                                        onChange={(e) =>
-                                            setFileNo(e.target.value)
-                                        }
-                                        dir={t("directionc")}
-                                    />
-                                </div>
+                            <div className="flex flex-col md:flex-row gap-4">
+                                <input
+                                    className="bookFormItem"
+                                    type="text"
+                                    name="patientid"
+                                    placeholder={t("app.17")}
+                                    value={patientId}
+                                    onChange={(e) =>
+                                        setPatientId(e.target.value)
+                                    }
+                                    dir={t("directionc")}
+                                />
+                                <input
+                                    className="bookFormItem"
+                                    type="text"
+                                    name="name"
+                                    placeholder={t("app.18")}
+                                    value={fileNo}
+                                    onChange={(e) => setFileNo(e.target.value)}
+                                    dir={t("directionc")}
+                                />
+                            </div>
                             {/* Services Check box below  */}
-                            <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2" dir={t("directionc")}>
+                            <div
+                                className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2"
+                                dir={t("directionc")}
+                            >
                                 <div className="mb-2">
                                     <div className="serviceText">
                                         {t("app.9")}:{" "}
@@ -253,6 +250,7 @@ function OldPatient({ t }) {
                                         value={selectedDept}
                                         onChange={handleChangeDept}
                                         options={department}
+                                        placeholder={t("app.21")}
                                     />
                                 </div>
                                 {selectedDept && docArr && (
@@ -264,6 +262,7 @@ function OldPatient({ t }) {
                                             value={selectedDoc}
                                             onChange={handleChangeDoc}
                                             options={docArr}
+                                            placeholder={t("app.21")}
                                         />
                                     </div>
                                 )}
@@ -314,7 +313,7 @@ function OldPatient({ t }) {
                             </div>
 
                             <textarea
-                            dir={t("directionc")}
+                                dir={t("directionc")}
                                 className="bookFormItem"
                                 name="message"
                                 rows={5}

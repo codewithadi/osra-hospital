@@ -53,8 +53,9 @@
         "16": "مريض مسجل",
         "17": "ادخل رقم الهوية",
         "18": "ادخل رقم الملف",
-        "19": "New Patient Form",
-        "20": "Registered Patient Form"
+        "19": "نموذج لمريض مسجل",
+        "20": "نموذج لمريض جديد",
+        "21": "اختار"
     },
     "ujimages": {
         "journey": "/assets/about/journey.png",

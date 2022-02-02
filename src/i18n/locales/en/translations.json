@@ -43,7 +43,8 @@
         "17": "Enter ID number",
         "18": "Enter File Number",
         "19": "New Patient Form",
-        "20": "Registered Patient Form"
+        "20": "Registered Patient Form",
+        "21": "Select"
     },
     "ujimages": {
         "journey": "/assets/about/OIH.Our.Journey.png",

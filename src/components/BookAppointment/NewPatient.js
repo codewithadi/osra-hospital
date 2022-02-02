@@ -318,6 +318,7 @@ function NewPatient({ t }) {
                                             value={selectedDoc}
                                             onChange={handleChangeDoc}
                                             options={docArr}
+                                            placeholder={t("app.21")}
                                         />
                                     </div>
                                 )}
