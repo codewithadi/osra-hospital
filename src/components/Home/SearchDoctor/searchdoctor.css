@@ -1,16 +1,15 @@
 .searchDoctorWrapper {
     width: 100%;
-    height: 400px;
+    height: 600px;
     position: relative;
 }
 .searchDoctorBack {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 .searchDoctorOverlay {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -19,23 +18,41 @@
     justify-content: center;
     /* align-items: flex-end; */
     align-items: center !important;
+    z-index: 5;
+}
+.searchDoctorOverlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(182, 182, 182);
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: flex-end; */
+    align-items: center !important;
+    z-index: 2;
 }
 .searchDoctorCol {
-    width: 40%;
+    width: 100%;
     display: flex;
-    text-align: left;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .searchDoctorHead {
     color: #3f0f1e;
-    font-size: 30px;
+    font-size: 45px;
     width: 90%;
     font-weight: 700;
+    margin-top: 2rem;
 }
 .searchDoctorAbout {
     color: #3f0f1e;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 500;
     margin: 20px 0;
 }
@@ -175,21 +192,15 @@
         justify-content: flex-end;
         align-items: center;
     }
-    .searchDoctorCol {
-        width: 100%;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-    }
 }
 
 @media (max-width: 500px) {
     .searchDoctorWrapper {
-        height: 400px;
+        height: 400px !important;
     }
     .searchDoctorHead {
         font-size: 25px;
+        margin-top: 0;
     }
     .searchDoctorAbout {
         font-size: 18px;

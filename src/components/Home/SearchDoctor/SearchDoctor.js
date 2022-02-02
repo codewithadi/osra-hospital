@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { withTranslation } from "react-i18next";
 import { Listbox, Transition } from "@headlessui/react";
@@ -36,6 +36,19 @@ const scrollToTop = () => {
 };
 
 function SearchDoctor({ t }) {
+    const [dispImg, setDispImg] = useState(true);
+    useEffect(() => {
+        const resizeEve = () => {
+            if (window.innerWidth < 768) {
+                setDispImg(true);
+            } else {
+                setDispImg(false);
+            }
+        };
+        window.addEventListener("resize", resizeEve);
+        resizeEve();
+        return () => window.removeEventListener("resize", resizeEve);
+    }, []);
     // const [selected, setSelected] = useState(people[0]);
     // const [selected1, setSelected1] = useState(people[0]);
     // const [dispDoc, setDispDoc] = useState(false);
@@ -57,9 +70,14 @@ function SearchDoctor({ t }) {
                 <div className="searchDoctorWrapper">
                     <img
                         class="searchDoctorBack"
-                        src="/assets/department/whitebg.jpg"
+                        src={
+                            dispImg
+                                ? "/assets/department/whitebg.jpg"
+                                : "/assets/images/finddocbanner.png"
+                        }
                         alt="hmsearch"
                     />
+                    {!dispImg && <div className="searchDoctorOverlay1"></div>}
                     <div className="searchDoctorOverlay">
                         <div dir={t("direction")} className="searchDoctorCol">
                             <h1 className="searchDoctorHead">
@@ -183,14 +201,16 @@ function SearchDoctor({ t }) {
 
                             {/* custom select */}
                         </div>
-                        <div className="searchDoctorCol">
-                            <img
-                                className="seachDoctorImg"
-                                src="/assets/images/finddocbanner.png"
-                                // src="assets/images/findDoctor.png"
-                                alt="hmsearch"
-                            />
-                        </div>
+                        {dispImg && (
+                            <div className="searchDoctorCol">
+                                <img
+                                    className="seachDoctorImg"
+                                    src="/assets/images/finddocbanner.png"
+                                    // src="assets/images/findDoctor.png"
+                                    alt="hmsearch"
+                                />
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
