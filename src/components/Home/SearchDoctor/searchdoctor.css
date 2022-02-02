@@ -176,7 +176,7 @@
         align-items: center;
     }
     .searchDoctorCol {
-        width: 90%;
+        width: 100%;
         display: flex;
         text-align: left;
         flex-direction: column;
@@ -201,7 +201,8 @@
         color: #3f0f1e;
     }
     .seachDoctorImg {
-        width: 300px;
+        width: 100%;
+        margin-bottom: 1rem;
     }
     .searchDoctorButton {
         margin-top: 30px;
