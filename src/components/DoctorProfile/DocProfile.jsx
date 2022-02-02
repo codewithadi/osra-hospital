@@ -52,7 +52,7 @@ const DocProfile = ({ t }) => {
             ) : (
                 <div className="flex justify-center py-4">
                     {doctors.map((doc) => (
-                        <div className="w-full md:w-5/6 flex flex-col md:flex-row font-medium">
+                        <div className="w-full md:w-5/6 flex flex-col-reverse md:flex-row font-medium">
                             <div
                                 className="w-full md:w-2/3 pt-7 px-2 md:px-4"
                                 dir={t("directionc")}

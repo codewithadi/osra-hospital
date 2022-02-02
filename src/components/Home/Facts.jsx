@@ -4,7 +4,10 @@ import { withTranslation } from "react-i18next";
 
 const Facts = ({ t }) => {
     return (
-        <div dir={t("direction")} className="w-full relative facts-container">
+        <div
+            dir={t("direction")}
+            className={`w-full relative ${t("css_class")}`}
+        >
             <img
                 className="h-full w-full bg-cover bg-center"
                 style={{ objectFit: "cover" }}
@@ -18,7 +21,7 @@ const Facts = ({ t }) => {
                     <i>{t("home_facts.facts_heading2")}</i>
                 </h1>
 
-                <div className="flex justify-center items-center flex-wrap gap-4 justify-items-center md:gap-x-16 md:grid-cols-3 lg:grid-cols-4 my-2 md:px-20 md:my-4">
+                <div className="flex justify-center items-center flex-wrap gap-9 md:gap-x-16 my-4 md:px-20 md:my-4">
                     <div className="text-lg">
                         <h2 className="text-center text-white font-bold text-xl md:text-3xl">
                             30+

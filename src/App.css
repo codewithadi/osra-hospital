@@ -20,6 +20,9 @@
 .facts-container {
     height: 65vh;
 }
+.facts-container-en {
+    height: 75vh;
+}
 
 .main-text-fact {
     position: absolute;
@@ -35,6 +38,9 @@
 
 @media (min-width: 768px) {
     .facts-container {
+        height: 50vh !important;
+    }
+    .facts-container-en {
         height: 50vh !important;
     }
 }
