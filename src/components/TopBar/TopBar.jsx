@@ -32,16 +32,35 @@ const TopBar = ({ t }) => {
             className="w-full h-7 flex justify-end items-center px-3 md:px-6 z-100 shadow-md"
         >
             <a
-                className="p-1 md:py-1 md:px-6 mr-4 text-sm md:text-base text-white font-semibold uppercase"
+                className="p-1 md:py-1 md:px-6 mr-4 ml-4 text-sm md:text-base text-white font-semibold uppercase"
                 href="tel:0114311111"
                 style={{ background: "#588325" }}
             >
                 {t("top-emergency")}
             </a>
-            <div className="relative flex px-8">
-                <h1>{!load ? "العربية" : "English"}</h1>
+            <div className="relative flex gap-4">
+                {/* <h1>{!load ? "العربية" : "English"}</h1> */}
+                {/* <h1>{!load ? "العربية" : "English"}</h1> */}
+                <option
+                    onClick={changeLanguage}
+                    className={`cursor-pointer p-1 md:py-1 md:px-6 text-sm md:text-base font-semibold uppercase ${
+                        !load ? "text-white bg-blue-700" : "text-black"
+                    }`}
+                    value="ar"
+                >
+                    العربية{" "}
+                </option>
+                <option
+                    onClick={changeLanguage}
+                    className={`cursor-pointer p-1 md:py-1 md:px-6 text-sm md:text-base font-semibold uppercase ${
+                        load ? "text-white bg-blue-700" : "text-black"
+                    }`}
+                    value="en"
+                >
+                    English
+                </option>
 
-                <form className="px-1 absolute top-0 right-12 opacity-0 cursor-pointer">
+                {/* <form className="px-1 absolute top-0 right-12 opacity-0 cursor-pointer">
                     <select
                         onChange={changeLanguage}
                         style={{ width: "20px" }}
@@ -55,7 +74,7 @@ const TopBar = ({ t }) => {
                             English
                         </option>
                     </select>
-                </form>
+                </form> */}
             </div>
         </div>
     );

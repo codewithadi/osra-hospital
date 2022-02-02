@@ -49,12 +49,12 @@
         "12": "اختر الوقت ",
         "13": "ادخل ملاحظاتك ",
         "14": "احجز موعد ",
-        "15": "New Patient",
-        "16": "Old Patient",
+        "15": "مريض جديد",
+        "16": "مريض مسجل",
         "17": "Enter Patient Id",
         "18": "Enter File Number",
         "19": "New Patient Form",
-        "20": "Old Patient Form"
+        "20": "Registered Patient Form"
     },
     "ujimages": {
         "journey": "/assets/about/journey.png",
