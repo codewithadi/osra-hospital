@@ -38,7 +38,7 @@ export const demoData = [
         imgUrl: "/assets/real/15.png",
         name: "Dr. Attif Bassas",
         namear: "Dr. Attif Bassas",
-        positionar: "Bariatric Surgeon and General Specialist Surgeon",
+        positionar: "Consultant General, Oncology and Bariatric Surgery",
         Nationality: "Saudi",
         Qualification: "PhD in general surgery At the Royal Jordanian College",
         Experience: "30+ years",
