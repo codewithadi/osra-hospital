@@ -9,7 +9,7 @@ import { withTranslation } from "react-i18next";
 // import { ChevronUpIcon } from "@heroicons/react/solid";
 // import ServicesDisclosure from "./ServicesDisclosure";
 
-function NavLinks({ colorchange, t }) {
+function NavLinks({ colorchange, closeMenu, t }) {
     // const [dropdown, setDropdown] = useState(false);
     // const [showApt, setShowApt] = useState(false);
     //assigning location variable
@@ -48,6 +48,7 @@ function NavLinks({ colorchange, t }) {
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);
+        closeMenu();
     };
 
     return (

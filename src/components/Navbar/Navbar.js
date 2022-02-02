@@ -33,6 +33,11 @@ const handleClick = () => {
     const x = document.getElementById("nav_parent").children;
     isOpen ? Toggle1(y, x) : Toggle2(y, x);
 };
+const closeMenu = () => {
+    const y = document.getElementById("drop-down");
+    const x = document.getElementById("nav_parent").children;
+    Toggle1(y, x)
+};
 
 function Navbar({ t }) {
     const [colorChange, setColorchange] = useState(false);
@@ -81,7 +86,7 @@ function Navbar({ t }) {
                     className="hidden sm:flex text-base md:text-lg py-1 bg-transparent"
                     id=""
                 >
-                    <NavLinks />
+                    <NavLinks closeMenu={closeMenu} />
                 </div>
                 <div
                     className="sm:hidden py-1 cursor-pointer bg-transparent"
@@ -97,7 +102,7 @@ function Navbar({ t }) {
                 className="hidden sm:hidden text-blue-600 text-sm py-3 bg-transparent"
                 id="drop-down"
             >
-                <NavLinks />
+                <NavLinks closeMenu={closeMenu} />
             </div>
         </div>
     );
