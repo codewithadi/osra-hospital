@@ -86,6 +86,7 @@ function SearchDoctor({ t }) {
                             <div className="searchDoctorAbout">
                                 {t("find_doc.home_find_doc_b")}
                             </div>
+                            <p className="searchDoctorPara"></p>
                             {/* <p className="searchDoctorPara">
                                 {t("find_doc.home_find_doc_c")}
                             </p> */}
