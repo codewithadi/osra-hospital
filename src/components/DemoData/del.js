@@ -1,3 +1,5 @@
+// dr atef = 15
+// dr hasan = 4
 export const del = [
     {
         imgUrl: "/assets/dr/maledoc.png",

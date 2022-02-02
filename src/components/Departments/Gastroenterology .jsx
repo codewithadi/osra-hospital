@@ -65,9 +65,9 @@ function Gastroenterology({ t }) {
         },
     ];
 
-    const filterdDoc = demoData.filter((data) =>
-        data.department.includes("gastroenterology")
-    );
+    // const filterdDoc = demoData.filter((data) =>
+    //     data.department.includes("gastroenterology")
+    // );
     return (
         <>
             {loading ? (
