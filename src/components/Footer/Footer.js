@@ -251,7 +251,7 @@ function Footer({ t }) {
                                     </h3>
                                     <div className="flex mt-4 -mx-2 bg-transparent">
                                         <a
-                                            href="https://twitter.com/alosrahhospital"
+                                            href="https://twitter.com/osrahhospital"
                                             target="_blank"
                                             rel="noreferrer"
                                             className="mx-2 bg-transparent cursor-pointer text-gray-200 dark:text-gray-200 hover:text-gray-200 dark:hover:text-gray-400"

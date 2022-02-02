@@ -5,7 +5,7 @@ const SocialIcons = () => {
         <div className="fixed flex flex-col top-64 right-2 z-1000">
             <div className="flex flex-col gap-5 mt-4 -mx-2 bg-transparent">
                 <a
-                    href="https://twitter.com/alosrahhospital"
+                    href="https://twitter.com/osrahhospital"
                     target="_blank"
                     rel="noreferrer"
                     className="mx-2 bg-transparent cursor-pointer text-gray-200 dark:text-gray-200 hover:text-gray-200 dark:hover:text-gray-400"
