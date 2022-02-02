@@ -29,16 +29,16 @@ const TopBar = ({ t }) => {
     return (
         <div
             dir={t("direction")}
-            className="w-full h-7 flex justify-end items-center px-3 md:px-6 z-100 shadow-md"
+            className="w-full h-7 flex justify-end items-center px-1 md:px-6 z-100 shadow-md"
         >
             <a
-                className="p-1 md:py-1 md:px-6 mr-2 ml-2 md:mr-4 md:ml-4 text-sm md:text-base text-white font-semibold uppercase"
+                className="p-1 md:py-1 md:px-6 mr-1 ml-1 md:mr-4 md:ml-4 text-sm md:text-base text-white font-semibold uppercase"
                 href="tel:0114311111"
                 style={{ background: "#588325" }}
             >
                 {t("top-emergency")}
             </a>
-            <div className="relative flex gap-2 md:gap-4">
+            <div className="relative flex gap-1 md:gap-4">
                 {/* <h1>{!load ? "العربية" : "English"}</h1> */}
                 {/* <h1>{!load ? "العربية" : "English"}</h1> */}
                 <option

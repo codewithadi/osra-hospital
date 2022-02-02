@@ -33,7 +33,7 @@ function NewPatient({ t }) {
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
     const [gender, setGender] = useState("male");
-    const [seldoc,setseldoc]=useState()
+    const [seldoc, setseldoc] = useState();
 
     //console.log(moment(date).format('DD-MM-YYYY').toString())
     useEffect(() => {
@@ -43,14 +43,10 @@ function NewPatient({ t }) {
                 "https://doctorappapi.herokuapp.com/api/doctor"
             );
             setDoctor(res.data);
-            const resp = await axios.get(
-                `${t("departmentapiurl")}`
-            );
-            const resps = await axios.get(
-                `${t("doctorapiurl")}`
-            );
-            setseldoc(resps.data)
-            
+            const resp = await axios.get(`${t("departmentapiurl")}`);
+            const resps = await axios.get(`${t("doctorapiurl")}`);
+            setseldoc(resps.data);
+
             setDepartment(resp.data);
             const respo = await axios.get(
                 "https://doctorappapi.herokuapp.com/api/patient"
@@ -65,7 +61,7 @@ function NewPatient({ t }) {
         let tempArr = [];
         setDocArr(null);
         setSelectedDoc(null);
-        
+
         tempArr = seldoc.filter((doc) =>
             doc.department.includes(selectedDept._id)
         );
@@ -169,7 +165,7 @@ function NewPatient({ t }) {
                 window.location.reload();
             } catch (error) {
                 setBook(true);
-                alert("You have not entered correct details")
+                alert("You have not entered correct details");
                 setBook(false);
             }
         } else {
@@ -182,7 +178,7 @@ function NewPatient({ t }) {
     };
     return (
         <>
-            <div className="book-appointment" >
+            <div className="book-appointment">
                 <div className="depMainBack">
                     <img
                         className="depMainImg"
@@ -190,24 +186,26 @@ function NewPatient({ t }) {
                         alt="department Back"
                     />
                     <div className="depMainOverlay" dir={t("directionc")}>
-                        <h1 className="depMainText" >{t("bookapt")} </h1>
+                        <h1 className="depMainText">{t("bookapt")} </h1>
                     </div>
                 </div>
                 {book ? (
                     <div className="w-full h-full flex justify-center items-center py-4">
-                        <h1 className="text-2xl m-4 p-4 ">
-                           {t("wait_till")}
-                        </h1>
+                        <h1 className="text-2xl m-4 p-4 ">{t("wait_till")}</h1>
                     </div>
                 ) : loading ? (
                     <div className="w-full h-full flex flex-col justify-center items-center py-4">
-                         <h1 className="appointmentHead">{t("app.15")} {t("app.1")}</h1>
+                        <h1 className="appointmentHead">
+                            {t("app.15")} {t("app.1")}
+                        </h1>
                         <Loading />
                     </div>
                 ) : (
                     <div className="bookWrapper">
                         <div className="appointmentText" dir={t("directionc")}>
-                            <h1 className="appointmentHead">{t("app.15")} {t("app.1")}</h1>
+                            <h1 className="appointmentHead">
+                                {t("app.15")} {t("app.1")}
+                            </h1>
                             {/* <p className="appointmentPara">
                             {t("app.2")}
                             </p> */}
@@ -215,7 +213,6 @@ function NewPatient({ t }) {
                         <form
                             className="appointmentForm"
                             onSubmit={handleSubmit}
-                            
                         >
                             <input
                                 className="bookFormItem"
@@ -239,8 +236,13 @@ function NewPatient({ t }) {
                             />
 
                             {/* gender radio box below  */}
-                            <div className="serviceText" dir={t("directionc")}>{t("app.5")} </div>
-                            <div className="bookFormItems" dir={t("directionc")}>
+                            <div className="serviceText" dir={t("directionc")}>
+                                {t("app.5")}{" "}
+                            </div>
+                            <div
+                                className="bookFormItems"
+                                dir={t("directionc")}
+                            >
                                 <label
                                     className="bookFormLabel "
                                     htmlFor="
@@ -277,7 +279,7 @@ function NewPatient({ t }) {
                                     {t("app.7")}
                                 </label>
                             </div>
-                            <div  className="flex flex-col justify-center items-center md:flex-row gap-2">
+                            <div className="flex flex-col justify-center items-center md:flex-row gap-2">
                                 <PhoneInput
                                     className="bookFormItem"
                                     country="sa"
@@ -298,7 +300,10 @@ function NewPatient({ t }) {
                                 />
                             </div>
                             {/* Services Check box below  */}
-                            <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2" dir={t("directionc")}>
+                            <div
+                                className="w-full grid grid-cols-1 gap-3 md:grid-cols-4 mb-2"
+                                dir={t("directionc")}
+                            >
                                 <div className="mb-2">
                                     <div className="serviceText">
                                         {t("app.9")}:{" "}
@@ -307,6 +312,7 @@ function NewPatient({ t }) {
                                         value={selectedDept}
                                         onChange={handleChangeDept}
                                         options={department}
+                                        placeholder={t("app.21")}
                                     />
                                 </div>
                                 {selectedDept && docArr && (
@@ -369,7 +375,7 @@ function NewPatient({ t }) {
                             </div>
 
                             <textarea
-                            dir={t("directionc")}
+                                dir={t("directionc")}
                                 className="bookFormItem"
                                 name="message"
                                 rows={5}
@@ -378,13 +384,12 @@ function NewPatient({ t }) {
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                             ></textarea>
-                            <div  className="bookFormBtn md:px-72">
+                            <div className="bookFormBtn md:px-72">
                                 <input
                                     type="submit"
                                     className="bookFormButton "
                                     value={t("app.14")}
                                     dir={t("directionc")}
-                                    
                                 />
                                 {/* <Link
                                     to="/appointment"
