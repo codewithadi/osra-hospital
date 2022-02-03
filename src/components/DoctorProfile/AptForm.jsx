@@ -20,6 +20,8 @@ const AptForm = ({ t }) => {
     const [loading, setloading] = useState(false);
     const [startDate, setStartDate] = useState(new Date());
     const [message, setMessage] = useState("");
+    const [book, setBook] = useState(false);
+    
 
     const location = useLocation();
     //destructuring pathname from location
@@ -99,14 +101,70 @@ const AptForm = ({ t }) => {
         
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(singleDoc[0].name)
+        //  console.log(selectedDoc.label)
+        //console.log(selectedDept.label)
+        // console.log(gender)
+
+        if (
+            patientId &&
+            fileNo &&
+            dateb &&
+            selectedDoc.label 
+        ) {
+            const patient = {
+                date: dateb,
+                doctorname: selectedDoc.label,
+                departmentname: singleDoc[0].search,
+               
+                slot,
+
+                message,
+
+                department: selectedDoc.department[0],
+                doctor: selectedDoc._id,
+
+                fileid: fileNo,
+                patientid: patientId,
+            };
+            // console.log(patient);
+            setBook(true);
+            try {
+                const res = await axios.post(
+                    "https://doctorappapi.herokuapp.com/api/oldpatient",
+                    patient
+                );
+                setBook(false);
+                alert(res.data.msg);
+                setDateB("");
+               
+                setPatientId("");
+                setFileNo("")
+
+                setMessage("");
+              
+               
+              
+                window.location.reload();
+            } catch (error) {
+                setBook(true);
+                alert("You have not entered correct details");
+                setBook(false);
+            }
+        } else {
+            alert(`${t("success_message")}`);
+        }
     };
 
     return (
         <div>
-            <form className="w-full" onSubmit={handleSubmit}>
+            {book ? (
+                    <div className="w-full h-full flex flex-col justify-center items-center py-4">
+                        <h1 className="text-2xl m-4 p-4 ">{t("wait_till")}</h1>
+                    </div>
+                ) : 
+            (<form className="w-full" onSubmit={handleSubmit}>
                 <h1 className="font-semibold text-center text-xl py-4">
                     {t("app.16")} {t("app.1")}
                 </h1>
@@ -195,7 +253,7 @@ const AptForm = ({ t }) => {
                         dir={t("directionc")}
                     />
                 </div>
-            </form>
+            </form>)}
         </div>
     );
 };
