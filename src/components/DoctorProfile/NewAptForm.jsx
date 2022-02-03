@@ -39,7 +39,7 @@ const NewAptForm = ({ t}) => {
     const singleDoc = demoData.filter(
         (data) => data.linkto === splitLocation[2]
     );
-const id="61dc0edbb24354b161f1730f"
+const id=singleDoc[0].moid
 const handleChangeDate = (date) => {
     setDateB(moment(date).format("DD-MM-YYYY").toString());
     const datebook = moment(date).format("DD-MM-YYYY").toString();

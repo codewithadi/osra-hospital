@@ -32,10 +32,11 @@ const AptForm = ({ t }) => {
     );
     
 
-    const id="61dc0edbb24354b161f1730f"
+    const id=singleDoc[0].moid
     const handleChangeDate = (date) => {
         setDateB(moment(date).format("DD-MM-YYYY").toString());
         const datebook = moment(date).format("DD-MM-YYYY").toString();
+        console.log(selectedDoc)
         //console.log(datebook);
         const patientdate = patient.filter(
             (item) => item.date === datebook && item.doctor === selectedDoc._id
