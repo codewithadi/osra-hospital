@@ -29,6 +29,7 @@ const NewAptForm = ({ t}) => {
     const [department, setDepartment] = useState("");
     const [doctor, setDoctor] = useState("");
     const [seldoc, setseldoc] = useState();
+    const [book, setBook] = useState(false);
     
     const location = useLocation();
     //destructuring pathname from location
@@ -104,15 +105,70 @@ const handleChangeDate = (date) => {
         setSlot(e.target.value);
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(singleDoc[0].position)
-        console.log(patient)
-        
+        //  console.log(selectedDoc.label)
+        //console.log(selectedDept.label)
+        // console.log(gender)
+
+        if (
+            (dateb &&
+               
+                
+                name &&
+               
+               
+                email) ||
+            phone
+        ) {
+            const patient = {
+                date: dateb,
+                doctorname: selectedDoc.label,
+                departmentname:singleDoc[0].search,
+                gender,
+                slot,
+                name,
+                age,
+                message,
+                phone,
+                department: selectedDoc.department[0],
+                doctor: selectedDoc._id,
+                email,
+            };
+            // console.log(patient);
+            setBook(true);
+            try {
+                const res = await axios.post(
+                    "https://doctorappapi.herokuapp.com/api/patient",
+                    patient
+                );
+                setBook(false);
+                alert(res.data.msg);
+                setDateB("");
+                setAge("");
+                setName("");
+
+                setMessage("");
+                setPhone("");
+             
+                window.location.reload();
+            } catch (error) {
+                setBook(true);
+                alert("You have not entered correct details");
+                setBook(false);
+            }
+        } else {
+            alert(`${t("success_message")}`);
+        }
     };
 
     return (
         <div>
+            {book ? (
+                    <div className="w-full h-full flex flex-col justify-center items-center py-4">
+                        <h1 className="text-2xl m-4 p-4 ">{t("wait_till")}</h1>
+                    </div>
+                ) : (
             <form className="w-full" onSubmit={handleSubmit}>
                 <h1 className="font-semibold text-center text-xl py-4">
                     {t("app.15")} {t("app.1")}
@@ -258,7 +314,7 @@ const handleChangeDate = (date) => {
                         dir={t("directionc")}
                     />
                 </div>
-            </form>
+            </form>)}
         </div>
     );
 };
