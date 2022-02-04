@@ -41,10 +41,10 @@ const Doctor = ({ t }) => {
         const getDept = async () => {
             
             const resp = await axios.get(
-                "https://doctorappapi.herokuapp.com/api/departmentar"
+                "http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/departmentar"
             );
             const respo = await axios.get(
-                "https://doctorappapi.herokuapp.com/api/department"
+                "http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/department"
             );
             
             const language = localStorage.getItem("language");

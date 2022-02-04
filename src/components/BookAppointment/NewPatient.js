@@ -40,7 +40,7 @@ function NewPatient({ t }) {
         const getroom = async () => {
             setloading(true);
             const res = await axios.get(
-                "https://doctorappapi.herokuapp.com/api/doctor"
+                "http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/doctor"
             );
             setDoctor(res.data);
             const resp = await axios.get(`${t("departmentapiurl")}`);
@@ -49,7 +49,7 @@ function NewPatient({ t }) {
 
             setDepartment(resp.data);
             const respo = await axios.get(
-                "https://doctorappapi.herokuapp.com/api/patient"
+                "http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/patient"
             );
             setPatient(respo.data);
 
@@ -149,7 +149,7 @@ function NewPatient({ t }) {
             setBook(true);
             try {
                 const res = await axios.post(
-                    "https://doctorappapi.herokuapp.com/api/patient",
+                    "http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/patient",
                     patient
                 );
                 setBook(false);

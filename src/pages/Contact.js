@@ -17,7 +17,7 @@ const Contact = ({ t }) => {
         }
         e.preventDefault();
         axios
-            .post("https://doctorappapi.herokuapp.com/api/postcontactmail", {
+            .post("http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/postcontactmail", {
                 name,
                 email,
                 subject,
