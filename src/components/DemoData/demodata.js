@@ -11,7 +11,10 @@ export const demoData = [
         position: "Neuru Psychiatric Specialist ",
         department: ["neuro", "pshyciatric"],
         search: "Psychiatric Neuro",
-        searchid: ["61dc0c29b24354b161efe874", "61dc0c29b24354b161efe875"],
+        searchid:  [
+            "61dc0c29b24354b161efe874",
+            "61dc0c29b24354b161efe875"
+          ],
 
         skills: [
             "Psychiatric analysis",
@@ -48,7 +51,9 @@ export const demoData = [
         position: "Dermatology resident",
         department: ["dermatology"],
         search: "Dermatology and Cosmetology",
-        searchid: ["61dc0c29b24354b161efe871"],
+        searchid: [
+            "61dc0c29b24354b161efe871"
+          ],
         skills: [
             "Dermatopathology ",
             "Peeling( Chemical Type)",
@@ -84,7 +89,9 @@ export const demoData = [
         position: " Head of General Surgery and OR",
         department: ["or", "general_surgeon"],
         search: "General Surgery",
-        searchid: ["61dc10a8b24354b161f2f8e2"],
+        searchid: [
+            "61dc10a8b24354b161f2f8e2"
+          ],
         License: ["Jordanian Board and Sweden Board"],
         skills: [
             "Appendectomy ( open and laproscopic)",
@@ -124,7 +131,11 @@ export const demoData = [
         position: "Bariatric Surgeon and General Specialist Surgeon",
         department: ["bariatic", "general_surgeon", "gastroenterology"],
         search: "Bariatic Surgery",
-        searchid: ["61dc0c29b24354b161efe876"],
+        searchid: [
+            "61dc0c29b24354b161efe876",
+            "61dc10a8b24354b161f2f8e2",
+            "61dc0c29b24354b161efe86d"
+          ],
         License: [
             "World Obesity Association (IFSD) - American Society of Hepatology",
             "Followership of the Royal College of Surgeons in Ireland",
@@ -171,7 +182,9 @@ export const demoData = [
         position: "Consultant Gynecology and Obstetrics",
         department: ["obgyna"],
         search: "ob/Gyne",
-        searchid: ["61dc0c29b24354b161efe86b"],
+        searchid: [
+            "61dc0c29b24354b161efe86b"
+          ],
         License: [
             "Jordanian Board on obstetric and Gynecology",
             "Arab Board on obstetrics and Gynecology",
@@ -215,7 +228,9 @@ export const demoData = [
         position: "Consultant Gynecology and Obstetrics",
         department: ["obgyna"],
         search: "ob/Gyne",
-        searchid: ["61dc0c29b24354b161efe86b"],
+        searchid: [
+            "61dc0c29b24354b161efe86b"
+          ],
         skills: [
             "Pregnancy diagnoses and pregnancy Care",
             "Birth delivery and Surgical delivery",
@@ -243,7 +258,9 @@ export const demoData = [
         position: "Ophthalmology Specialist",
         department: ["ophthalmology"],
         search: "Ophthalmology",
-        searchid: ["61dc0c29b24354b161efe86c"],
+        searchid:  [
+            "61dc0c29b24354b161efe86c"
+          ],
         skills: [
             "Ophthalmoscope",
             "Retino-scope",
@@ -282,7 +299,9 @@ export const demoData = [
         position: "General Practitioner (Head of ER department)",
         department: ["er"],
         search: "General Surgery",
-        searchid: ["61dc10a8b24354b161f2f8e2"],
+        searchid: [
+            "61efcbc89e4660080341bd9d"
+          ],
         skills: [
             "Critical cases ",
             "Sutures",
@@ -320,7 +339,9 @@ export const demoData = [
         License: ["Membership of the American Nose and Throat Association"],
         department: ["ENT"],
         search: "ENT(Ear, Nose & Throat)",
-        searchid: ["61dc0c29b24354b161efe878"],
+        searchid: [
+            "61dc0c29b24354b161efe878"
+          ],
         skills: [
             "Sinus view surgeries",
             "Diagnose ENT children's problems",
@@ -362,7 +383,9 @@ export const demoData = [
         License: ["Certified Diabetes Education for diabetes Center"],
         department: ["dietitian"],
         search: "Dietitian",
-        searchid: ["61dc0c29b24354b161efe870"],
+        searchid:   [
+            "61dc0c29b24354b161efe870"
+          ],
         skills: [
             "Slimming and fitness programs",
             "Obesity programs",
@@ -391,7 +414,9 @@ export const demoData = [
         position: "General Surgeon Specialist",
         department: ["general_surgeon"],
         search: "General Surgery",
-        searchid: ["61dc10a8b24354b161f2f8e2"],
+        searchid: [
+            "61dc10a8b24354b161f2f8e2"
+          ],
         skills: [
             "hernia, appendix",
             "Hemorrhoids",
@@ -420,7 +445,10 @@ export const demoData = [
         position: " Cardiologist and Internal Medicine Consultant",
         department: ["cardiologist", "internalmeds"],
         search: "Cardiologist",
-        searchid: ["61dc0c29b24354b161efe86e"],
+        searchid: [
+            "61dc0c29b24354b161efe86e",
+            "61de40bca391f298f2fa8a32"
+          ],
         License: ["internal medicine British followership"],
         skills: [
             "Internal medicine Cases",
@@ -453,7 +481,9 @@ export const demoData = [
         position: "Registrar Urology - Medical Director",
         department: ["urology"],
         search: "Urology",
-        searchid: ["61dc0c29b24354b161efe873"],
+        searchid: [
+            "61dc0c29b24354b161efe873"
+          ],
         skills: [
             "Prostate diseases and infections",
             "Infertility and delayed childbearing",
@@ -486,7 +516,9 @@ export const demoData = [
         position: "General Dentist",
         department: ["dentist"],
         search: "Dentistry",
-        searchid: ["61dc0c29b24354b161efe86f"],
+        searchid: [
+            "61dc0c29b24354b161efe86f"
+          ],
         skills: [
             "Periapical x-ray, panoramic, CT scan",
             "Excision biopsy",
@@ -526,7 +558,9 @@ export const demoData = [
         position: "Orthopedics Specialist",
         department: ["orthopedics"],
         search: "Orthopedics",
-        searchid: ["61dc0c29b24354b161efe872"],
+        searchid: [
+            "61dc0c29b24354b161efe872"
+          ],
         skills: [
             "Joint Diseases",
             "Tumors",
@@ -595,7 +629,9 @@ export const demoData = [
         department: ["physiotherapist"],
         License: ["Czech Republic Studies"],
         search: "Physiotherapy",
-        searchid: ["61dc0c29b24354b161efe877"],
+        searchid: [
+            "61dc0c29b24354b161efe877"
+          ],
         skills: [
             "Treating orthopedic and neurological diseases",
             "Sports injury rehabilitation",
@@ -628,7 +664,9 @@ export const demoData = [
             "Consultant and Professor of Internal Medicine / Head of Internal Medicine Dept.",
         department: ["internalmeds"],
         search: "internalmeds",
-        searchid: ["61de40bca391f298f2fa8a32"],
+        searchid:[
+            "61dc10a8b24354b161f2f8e2"
+          ],
         skills: [
             "Chest allergy",
             "High blood pressure",
@@ -671,7 +709,9 @@ export const demoData = [
         position: "Head of the Department of Pediatrics and Neonatology",
         department: ["pediatrics"],
         search: "pediatric",
-        searchid: ["61dc0c29b24354b161efe86a"],
+        searchid: [
+            "61dc0c29b24354b161efe86a"
+          ],
         skills: [
             "Gastrointestinal diseases",
             "Lung disease (asthma)",
@@ -708,7 +748,9 @@ export const demoData = [
         position: "Senior registrar General Surgery",
         department: ["general_surgeon"],
         search: "General Surgery",
-        searchid: ["61dc10a8b24354b161f2f8e2"],
+        searchid: [
+            "61dc10a8b24354b161f2f8e2"
+          ],
         License: [
             "Membership of the Jordanian Medical Council",
             "Doctors Membership of Mutah University",
@@ -751,7 +793,9 @@ export const demoData = [
         position: "Dermatology and cosmetic consultant",
         department: ["dermatology"],
         search: "dermatology",
-        searchid: [""],
+        searchid: [
+            "61dc0c29b24354b161efe871"
+          ],
         skills: ["Laser", "Botox", "fillers", "Plasma", "Cleansing "],
         skillsar: ["Laser", "Botox", "fillers", "Plasma", "Cleansing "],
         mobno: "+00 0000 0000 00",
