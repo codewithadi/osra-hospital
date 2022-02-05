@@ -74,11 +74,11 @@ const AptForm = ({ t }) => {
         const getroom = async () => {
             setloading(true);
             const res = await axios.get(
-                `http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/patient/doctor/${id}`
+                `https://www.alosrahhospital.com/api/patient/doctor/${id}`
             );
             setPatient(res.data.data);
             const resp = await axios.get(
-                `http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/doctor/${id}`
+                `https://www.alosrahhospital.com/api/doctor/${id}`
             );
 
             setSelectedDoc(resp.data[0]);
@@ -118,7 +118,7 @@ const AptForm = ({ t }) => {
             setBook(true);
             try {
                 const res = await axios.post(
-                    "http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/oldpatient",
+                    "https://www.alosrahhospital.com/api/oldpatient",
                     patient
                 );
                 setBook(false);

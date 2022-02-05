@@ -22,8 +22,8 @@ const Doctor = ({ t }) => {
 
         setSelectedDept(selectedDept);
         if (selectedDept) {
-           // var searchdept = selectedDept.label.toLowerCase().replace(/ /g, "");
-           var searchdeptid=selectedDept._id
+            // var searchdept = selectedDept.label.toLowerCase().replace(/ /g, "");
+            var searchdeptid = selectedDept._id;
             if (searchdeptid == "") {
                 setDoctors(alldoctors);
             } else {
@@ -39,31 +39,28 @@ const Doctor = ({ t }) => {
     useEffect(() => {
         setloading(true);
         const getDept = async () => {
-            
             const resp = await axios.get(
-                "http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/departmentar"
+                "https://www.alosrahhospital.com/api/departmentar"
             );
             const respo = await axios.get(
-                "http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/department"
+                "https://www.alosrahhospital.com/api/department"
             );
-            
+
             const language = localStorage.getItem("language");
             console.log(language === "ar");
             if (language === "ar") {
                 console.log("ar");
                 setDoctors(demoDatas);
-                setallDoctors(demoDatas)
+                setallDoctors(demoDatas);
                 setDepartment(resp.data);
             } else {
                 console.log("en");
                 setDoctors(demoData);
-                setallDoctors(demoData)
+                setallDoctors(demoData);
                 setDepartment(respo.data);
             }
 
             //setDepartment(demodept);
-
-            
         };
         getDept();
         setloading(false);
@@ -160,7 +157,7 @@ const Doctor = ({ t }) => {
                                 type="submit"
                                 className="px-4 py-2 transition-colors duration-700 ease-in-out font-semibold text-white transform bg-blue-500 rounded hover:bg-gray-900 hover:text-white focus:outline-none focus:bg-gray-700"
                             >
-                               {t("searcht")}
+                                {t("searcht")}
                             </button>
                         </div>
                         <div className="w-full md:w-1/3 mb-2 ml-2 flex justify-center items-center">

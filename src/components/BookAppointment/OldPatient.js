@@ -42,7 +42,7 @@ function OldPatient({ t }) {
         const getroom = async () => {
             setloading(true);
             const res = await axios.get(
-                "http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/doctor"
+                "https://www.alosrahhospital.com/api/doctor"
             );
             setDoctor(res.data);
             const resp = await axios.get(`${t("departmentapiurl")}`);
@@ -51,7 +51,7 @@ function OldPatient({ t }) {
 
             setDepartment(resp.data);
             const respo = await axios.get(
-                "http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/patient"
+                "https://www.alosrahhospital.com/api/patient"
             );
             setPatient(respo.data);
 
@@ -151,7 +151,7 @@ function OldPatient({ t }) {
             setBook(true);
             try {
                 const res = await axios.post(
-                    "http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/oldpatient",
+                    "https://www.alosrahhospital.com/api/oldpatient",
                     patient
                 );
                 setBook(false);
