@@ -81,12 +81,12 @@ const handleChangeDate = (date) => {
         const getroom = async () => {
             setloading(true);
             const res = await axios.get(
-                `https://doctorappapi.herokuapp.com/api/patient/doctor/${id}`
+                `http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/patient/doctor/${id}`
 
             );
             setPatient(res.data.data);
             const resp = await axios.get(
-                `https://doctorappapi.herokuapp.com/api/doctor/${id}`
+                `http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/doctor/${id}`
 
             )
            
@@ -139,7 +139,7 @@ const handleChangeDate = (date) => {
             setBook(true);
             try {
                 const res = await axios.post(
-                    "https://doctorappapi.herokuapp.com/api/patient",
+                    "http://ec2-54-172-196-69.compute-1.amazonaws.com:5000/api/patient",
                     patient
                 );
                 setBook(false);
