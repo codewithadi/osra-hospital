@@ -40,10 +40,10 @@ const Doctor = ({ t }) => {
         setloading(true);
         const getDept = async () => {
             const resp = await axios.get(
-                "https://www.alosrahhospital.com/api/departmentar"
+                "https://api.alosrahhospital.com/api/departmentar"
             );
             const respo = await axios.get(
-                "https://www.alosrahhospital.com/api/department"
+                "https://api.alosrahhospital.com/api/department"
             );
 
             const language = localStorage.getItem("language");

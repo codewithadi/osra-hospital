@@ -14,12 +14,12 @@ function Test() {
         const getroom = async () => {
             setloading(true);
             const res = await axios.get(
-                "https://www.alosrahhospital.com/api/doctor"
+                "https://api.alosrahhospital.com/api/doctor"
             );
             setDoctor(res.data);
 
             const respo = await axios.get(
-                "https://www.alosrahhospital.com/api/patient"
+                "https://api.alosrahhospital.com/api/patient"
             );
             setPatient(respo.data);
             console.log(respo.data);

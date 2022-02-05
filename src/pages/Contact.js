@@ -17,7 +17,7 @@ const Contact = ({ t }) => {
         }
         e.preventDefault();
         axios
-            .post("https://www.alosrahhospital.com/api/postcontactmail", {
+            .post("https://api.alosrahhospital.com/api/postcontactmail", {
                 name,
                 email,
                 subject,

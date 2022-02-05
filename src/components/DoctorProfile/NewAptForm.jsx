@@ -81,11 +81,11 @@ const NewAptForm = ({ t }) => {
         const getroom = async () => {
             setloading(true);
             const res = await axios.get(
-                `https://www.alosrahhospital.com/api/patient/doctor/${id}`
+                `https://api.alosrahhospital.com/api/patient/doctor/${id}`
             );
             setPatient(res.data.data);
             const resp = await axios.get(
-                `https://www.alosrahhospital.com/api/doctor/${id}`
+                `https://api.alosrahhospital.com/api/doctor/${id}`
             );
 
             setseldoc(resp.data);
@@ -125,7 +125,7 @@ const NewAptForm = ({ t }) => {
             setBook(true);
             try {
                 const res = await axios.post(
-                    "https://www.alosrahhospital.com/api/patient",
+                    "https://api.alosrahhospital.com/api/patient",
                     patient
                 );
                 setBook(false);
