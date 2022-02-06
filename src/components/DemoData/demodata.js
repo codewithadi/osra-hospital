@@ -297,7 +297,7 @@ export const demoData = [
         Qualification: "Bachelor Degree in Medicine and  general Surgery",
         Experience: "27 years",
         position: "General Practitioner (Head of ER department)",
-        department: ["er"],
+        department: ["er", "genprac"],
         search: "General Surgery",
         searchid: [
             "61efcbc89e4660080341bd9d"

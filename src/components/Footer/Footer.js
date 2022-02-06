@@ -68,6 +68,13 @@ function Footer({ t }) {
                                     </Link>
                                     <Link
                                         onClick={scrollToTop}
+                                        to="/doctor"
+                                        className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-300"
+                                    >
+                                        {t("nav.nav_doctor")}
+                                    </Link>
+                                    <Link
+                                        onClick={scrollToTop}
                                         to="/departments"
                                         className="block mt-2 text-sm hover:text-blue-400 transition-colors duration-300"
                                     >

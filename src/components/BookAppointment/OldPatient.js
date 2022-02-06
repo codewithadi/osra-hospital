@@ -194,13 +194,6 @@ function OldPatient({ t }) {
                     <div className="w-full h-full flex flex-col justify-center items-center py-4">
                         <h1 className="text-2xl m-4 p-4 ">{t("wait_till")}</h1>
                     </div>
-                ) : loading ? (
-                    <div className="w-full h-full flex flex-col justify-center items-center py-4">
-                        <h1 className="appointmentHead">
-                            {t("app.16")} {t("app.1")}
-                        </h1>
-                        <Loading />
-                    </div>
                 ) : (
                     <div className="bookWrapper">
                         <div className="appointmentText" dir={t("directionc")}>

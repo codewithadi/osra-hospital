@@ -41,7 +41,7 @@ const TopBar = ({ t }) => {
             <div className="relative flex gap-1 md:gap-4">
                 {/* <h1>{!load ? "العربية" : "English"}</h1> */}
                 {/* <h1>{!load ? "العربية" : "English"}</h1> */}
-                <option
+                <button
                     onClick={changeLanguage}
                     className={`cursor-pointer p-1 md:py-1 md:px-6 text-sm md:text-base font-semibold uppercase ${
                         !load ? "text-white bg-blue-700" : "text-black"
@@ -49,8 +49,8 @@ const TopBar = ({ t }) => {
                     value="ar"
                 >
                     العربية{" "}
-                </option>
-                <option
+                </button>
+                <button
                     onClick={changeLanguage}
                     className={`cursor-pointer p-1 md:py-1 md:px-6 text-sm md:text-base font-semibold uppercase ${
                         load ? "text-white bg-blue-700" : "text-black"
@@ -58,7 +58,7 @@ const TopBar = ({ t }) => {
                     value="en"
                 >
                     English
-                </option>
+                </button>
 
                 {/* <form className="px-1 absolute top-0 right-12 opacity-0 cursor-pointer">
                     <select

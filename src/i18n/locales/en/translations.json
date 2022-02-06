@@ -221,11 +221,19 @@
         "p": {
             "name": "ENT (Ear, Nose & Throat)",
             "info": "If you have a health problem with your head or neck, your doctor might recommend that you see an otolaryngologist."
+        },
+        "q": {
+            "name": "General Practitioner",
+            "info": "A general practitioner (GP) is a doctor who is also qualified in general medical practice. GPs are often the first point of contact for someone, of any age, who feels sick or has a health concern."
         }
     },
     "to": "Treatmemt Offered",
     "dm": "Diagnostic modalities",
     "tm": "Therapeutic modalities",
+    "genprac": {
+        "dname": "General Practitioner",
+        "detail":"A general practitioner (GP) is a doctor who is also qualified in general medical practice. GPs are often the first point of contact for someone, of any age, who feels sick or has a health concern. They treat a wide range of medical conditions and health issues."
+    },
     "PediatricsDepartment": {
         "dname": "Pediatrics Department",
         "detail": "A paediatrician is a child's physician who provides not only medical care for children who are acutely or chronically ill but also preventive health services for healthy children. A paediatrician manages physical, mental, and emotional well-being of the children under their care at every stage of development, in both sickness and health. Pediatrics is the branch of medicine dealing with the health and ‎medical care of infants, children, and adolescents from birth up to the ‎age of 18.‎",

@@ -28,6 +28,7 @@ import Pshyciatric from "./components/Departments/Pshyciatric";
 import Physiotherapist from "./components/Departments/Physiotherapist";
 import GenSurgery from "./components/Departments/GenSurgury";
 import OBGyne from "./components/Departments/OBGyne";
+import GenPrac from "./components/Departments/GenPrac";
 // departments and its routes finished
 // import BlogList from "./components/BlogList/BlogList";
 import Services from "./pages/Services";
@@ -152,6 +153,10 @@ function App({ t }) {
                 <Route
                     path="/clinics/general-surgery"
                     element={<GenSurgery />}
+                />
+                <Route
+                    path="/clinics/general-practitioner"
+                    element={<GenPrac />}
                 />
                 <Route path="/clinics/ob-gyne" element={<OBGyne />} />
                 {/* <Route path="/blog" element={<BlogList />} /> */}

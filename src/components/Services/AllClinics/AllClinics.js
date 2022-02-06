@@ -113,6 +113,12 @@ function AllClinics({ t }) {
             imgurl: "assets/department/EarNoseThroat.png",
             linkto: "/clinics/ear-nose-throat",
         },
+        {
+            name: `${t("allclinics.q.name")}`,
+            desc: `${t("allclinics.q.info")}`,
+            imgurl: "assets/department/genprac.png",
+            linkto: "/clinics/general-practitioner",
+        },
     ];
 
     const scrollToTop = () => {
