@@ -37,7 +37,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/dr/maledoc.png",
-        moid: "61dc0edbb24354b161f1730f",
+        moid: "62021964ba2749636b331470",
         name: "Dr. Feras Alharbi",
         namear: "Dr. Feras Alharbi",
         positionar: "Urology and Andrology Consultant",
@@ -58,7 +58,7 @@ export const demoData = [
         position: "Urology and Andrology Conultant",
         department: ["urology"],
         search: "Urology",
-        searchid: ["61dc0c29b24354b161efe86c"],
+        searchid: ["61dc0c29b24354b161efe873"],
         skills: [
             "All Urinary Stones problems",
             "Prostate problems",
@@ -85,7 +85,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/dr/maledoc.png",
-        moid: "61dc0edbb24354b161f1730f",
+        moid: "6202182aba2749636b331461",
         name: "Dr. Mohammed Alnujaym",
         namear: "Dr. Mohammed Alnujaym",
         positionar: "General Dentist",
@@ -96,7 +96,7 @@ export const demoData = [
         position: "General Dentist",
         department: ["dentist"],
         search: "Dentistry",
-        searchid: ["61dc0c29b24354b161efe86c"],
+        searchid: ["61dc0c29b24354b161efe86f"],
         skills: [
             "Dental Restorations Endodontic Treatments",
             "Pedodontic Treatments",
