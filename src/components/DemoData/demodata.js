@@ -1,7 +1,7 @@
 export const demoData = [
     {
-        imgUrl: "/assets/real/14.png",
-        moid:"61dc1244b24354b161f481aa",
+        imgUrl: "/assets/real/eman_radwan.png",
+        moid: "61dc1244b24354b161f481aa",
         name: "Dr. Eman Radwan",
         positionar: "Nuoru Phsycstric Specialist ",
         namear: "	Dr. Eman Radwan",
@@ -11,10 +11,7 @@ export const demoData = [
         position: "Neuru Psychiatric Specialist ",
         department: ["neuro", "pshyciatric"],
         search: "Psychiatric Neuro",
-        searchid:  [
-            "61dc0c29b24354b161efe874",
-            "61dc0c29b24354b161efe875"
-          ],
+        searchid: ["61dc0c29b24354b161efe874", "61dc0c29b24354b161efe875"],
 
         skills: [
             "Psychiatric analysis",
@@ -39,8 +36,8 @@ export const demoData = [
         linkto: "Eman_Radwan",
     },
     {
-        imgUrl: "/assets/real/5.png",
-        moid:"61de43cca391f298f2fa8a45",
+        imgUrl: "/assets/real/rehab_ammar.png",
+        moid: "61de43cca391f298f2fa8a45",
         name: "Dr. Rehab Ammar",
         namear: "Dr. Rehab Ammar",
         positionar: "Dermatology resident",
@@ -51,9 +48,7 @@ export const demoData = [
         position: "Dermatology resident",
         department: ["dermatology"],
         search: "Dermatology and Cosmetology",
-        searchid: [
-            "61dc0c29b24354b161efe871"
-          ],
+        searchid: ["61dc0c29b24354b161efe871"],
         skills: [
             "Dermatopathology ",
             "Peeling( Chemical Type)",
@@ -77,8 +72,8 @@ export const demoData = [
         linkto: "Rehab_Ammar",
     },
     {
-        imgUrl: "/assets/real/13.png",
-        moid:"61efc9d49e4660080341bd86",
+        imgUrl: "/assets/real/mamdouh_oun_alsoud.png",
+        moid: "61efc9d49e4660080341bd86",
         name: "Dr. Mamdouh Oun Alsoud",
         namear: "Dr. Mamdouh Oun Alsoud",
         positionar:
@@ -89,9 +84,7 @@ export const demoData = [
         position: " Head of General Surgery and OR",
         department: ["or", "general_surgeon"],
         search: "General Surgery",
-        searchid: [
-            "61dc10a8b24354b161f2f8e2"
-          ],
+        searchid: ["61dc10a8b24354b161f2f8e2"],
         License: ["Jordanian Board and Sweden Board"],
         skills: [
             "Appendectomy ( open and laproscopic)",
@@ -120,8 +113,8 @@ export const demoData = [
         linkto: "Mamdouh_Oun_Alsoud",
     },
     {
-        imgUrl: "/assets/real/15.png",
-        moid:"61dc119eb24354b161f3c8dc",
+        imgUrl: "/assets/real/atef_bassas.png",
+        moid: "61dc119eb24354b161f3c8dc",
         name: "Dr. Attef Bassas",
         namear: "Dr. Attef Bassas",
         positionar: "Consultant General, Oncology and Bariatric Surgery",
@@ -134,8 +127,8 @@ export const demoData = [
         searchid: [
             "61dc0c29b24354b161efe876",
             "61dc10a8b24354b161f2f8e2",
-            "61dc0c29b24354b161efe86d"
-          ],
+            "61dc0c29b24354b161efe86d",
+        ],
         License: [
             "World Obesity Association (IFSD) - American Society of Hepatology",
             "Followership of the Royal College of Surgeons in Ireland",
@@ -171,8 +164,8 @@ export const demoData = [
         linkto: "Attif_Bassas",
     },
     {
-        imgUrl: "/assets/real/7.png",
-        moid:"61dc0ddcb24354b161f0e709",
+        imgUrl: "/assets/real/asma_saleem.png",
+        moid: "61dc0ddcb24354b161f0e709",
         name: "Dr. Asma Salem",
         namear: "Dr. Asma Salem Bahartha",
         positionar: "Gynecology and Obstetrics Consultant",
@@ -182,9 +175,7 @@ export const demoData = [
         position: "Consultant Gynecology and Obstetrics",
         department: ["obgyna"],
         search: "ob/Gyne",
-        searchid: [
-            "61dc0c29b24354b161efe86b"
-          ],
+        searchid: ["61dc0c29b24354b161efe86b"],
         License: [
             "Jordanian Board on obstetric and Gynecology",
             "Arab Board on obstetrics and Gynecology",
@@ -218,7 +209,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/dr/femaledoc.png",
-        moid:"61dc0ddcb24354b161f0e70a",
+        moid: "61dc0ddcb24354b161f0e70a",
         name: "Dr. Somaya Abbas",
         namear: "Dr. Somaya Abbas",
         positionar: "Gynecology and Obstetrics Consultant",
@@ -228,9 +219,7 @@ export const demoData = [
         position: "Consultant Gynecology and Obstetrics",
         department: ["obgyna"],
         search: "ob/Gyne",
-        searchid: [
-            "61dc0c29b24354b161efe86b"
-          ],
+        searchid: ["61dc0c29b24354b161efe86b"],
         skills: [
             "Pregnancy diagnoses and pregnancy Care",
             "Birth delivery and Surgical delivery",
@@ -248,7 +237,7 @@ export const demoData = [
 
     {
         imgUrl: "/assets/dr/maledoc.png",
-        moid:"61dc0edbb24354b161f1730f",
+        moid: "61dc0edbb24354b161f1730f",
         name: "Dr. Hansa Diyab",
         namear: "Dr. Hansa Diyab",
         positionar: "Ophthalmology Specialist",
@@ -258,9 +247,7 @@ export const demoData = [
         position: "Ophthalmology Specialist",
         department: ["ophthalmology"],
         search: "Ophthalmology",
-        searchid:  [
-            "61dc0c29b24354b161efe86c"
-          ],
+        searchid: ["61dc0c29b24354b161efe86c"],
         skills: [
             "Ophthalmoscope",
             "Retino-scope",
@@ -288,8 +275,8 @@ export const demoData = [
         linkto: "Hansa_Diyab",
     },
     {
-        imgUrl: "/assets/real/4.png",
-        moid:"61efcb629e4660080341bd99",
+        imgUrl: "/assets/real/malek_hasan.png",
+        moid: "61efcb629e4660080341bd99",
         name: "Dr. Malek Hassan",
         namear: "Dr. Malek Hassan",
         positionar: "General Practitioner (Head of ER department)",
@@ -299,9 +286,7 @@ export const demoData = [
         position: "General Practitioner (Head of ER department)",
         department: ["er", "genprac"],
         search: "General Surgery",
-        searchid: [
-            "61efcbc89e4660080341bd9d"
-          ],
+        searchid: ["61efcbc89e4660080341bd9d"],
         skills: [
             "Critical cases ",
             "Sutures",
@@ -327,8 +312,8 @@ export const demoData = [
         linkto: "Malek_Hassan",
     },
     {
-        imgUrl: "/assets/real/11.png",
-        moid:"61dc119eb24354b161f3c8de",
+        imgUrl: "/assets/real/abdulfatah_ali.png",
+        moid: "61dc119eb24354b161f3c8de",
         name: "Dr. Abdulfatah Ali",
         namear: "Dr. Abdulfatah Ali",
         positionar: "Ear, Nose and Throat Consultant",
@@ -339,9 +324,7 @@ export const demoData = [
         License: ["Membership of the American Nose and Throat Association"],
         department: ["ENT"],
         search: "ENT(Ear, Nose & Throat)",
-        searchid: [
-            "61dc0c29b24354b161efe878"
-          ],
+        searchid: ["61dc0c29b24354b161efe878"],
         skills: [
             "Sinus view surgeries",
             "Diagnose ENT children's problems",
@@ -372,7 +355,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/dr/maledoc.png",
-        moid:"61dc0fa8b24354b161f22f51",
+        moid: "61dc0fa8b24354b161f22f51",
         name: "Dr. Abeer Alotaibi",
         namear: "Dr. Abeer Alotaibi",
         positionar: "Dietitian Specialist",
@@ -383,9 +366,7 @@ export const demoData = [
         License: ["Certified Diabetes Education for diabetes Center"],
         department: ["dietitian"],
         search: "Dietitian",
-        searchid:   [
-            "61dc0c29b24354b161efe870"
-          ],
+        searchid: ["61dc0c29b24354b161efe870"],
         skills: [
             "Slimming and fitness programs",
             "Obesity programs",
@@ -403,8 +384,8 @@ export const demoData = [
         linkto: "Abeer_Alotaibi",
     },
     {
-        imgUrl: "/assets/real/9.png",
-        moid:"61dc10efb24354b161f34d79",
+        imgUrl: "/assets/real/saleh_eid.png",
+        moid: "61dc10efb24354b161f34d79",
         name: "Dr. Saleh Eid",
         namear: "Dr. Saleh Eid",
         positionar: "General Surgeon Specialist",
@@ -414,9 +395,7 @@ export const demoData = [
         position: "General Surgeon Specialist",
         department: ["general_surgeon"],
         search: "General Surgery",
-        searchid: [
-            "61dc10a8b24354b161f2f8e2"
-          ],
+        searchid: ["61dc10a8b24354b161f2f8e2"],
         skills: [
             "Hernia, appendix",
             "Hemorrhoids",
@@ -435,7 +414,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/dr/maledoc.png",
-        moid:"61dc0edbb24354b161f17311",
+        moid: "61dc0edbb24354b161f17311",
         name: "Dr. Mohammed Alnather",
         namear: "Dr. Mohammed Alnather",
         positionar: "Cardiologist and Internal Medicine Consultant",
@@ -445,10 +424,7 @@ export const demoData = [
         position: " Cardiologist and Internal Medicine Consultant",
         department: ["cardiologist", "internalmeds"],
         search: "Cardiologist",
-        searchid: [
-            "61dc0c29b24354b161efe86e",
-            "61de40bca391f298f2fa8a32"
-          ],
+        searchid: ["61dc0c29b24354b161efe86e", "61de40bca391f298f2fa8a32"],
         License: ["internal medicine British followership"],
         skills: [
             "Internal medicine Cases",
@@ -469,8 +445,8 @@ export const demoData = [
         linkto: "Mohammed_Alnather",
     },
     {
-        imgUrl: "/assets/real/12.png",
-        moid:"61dc10efb24354b161f34d7b",
+        imgUrl: "/assets/real/abdulrahman_alsouify.png",
+        moid: "61dc10efb24354b161f34d7b",
         name: "Dr. Abdulrahman Alsouify",
         namear: "Dr. Abdulrahman Alsouify",
         positionar: "Urology and Andrology specialist",
@@ -481,9 +457,7 @@ export const demoData = [
         position: "Registrar Urology - Medical Director",
         department: ["urology"],
         search: "Urology",
-        searchid: [
-            "61dc0c29b24354b161efe873"
-          ],
+        searchid: ["61dc0c29b24354b161efe873"],
         skills: [
             "Prostate diseases and infections",
             "Infertility and delayed childbearing",
@@ -505,8 +479,8 @@ export const demoData = [
         linkto: "Abdulrahman_Alsouify",
     },
     {
-        imgUrl: "/assets/real/8.png",
-        moid:"61dc0fa8b24354b161f22f50",
+        imgUrl: "/assets/real/dania_bawadkji.png",
+        moid: "61dc0fa8b24354b161f22f50",
         name: "Dr. Dania Bawadkji",
         namear: "Dr. Dania Bawadkji",
         positionar: "General Dentist",
@@ -516,9 +490,7 @@ export const demoData = [
         position: "General Dentist",
         department: ["dentist"],
         search: "Dentistry",
-        searchid: [
-            "61dc0c29b24354b161efe86f"
-          ],
+        searchid: ["61dc0c29b24354b161efe86f"],
         skills: [
             "Periapical x-ray, panoramic, CT scan",
             "Excision biopsy",
@@ -548,7 +520,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/dr/maledoc.png",
-        moid:"61dc0fa8b24354b161f22f52",
+        moid: "61dc0fa8b24354b161f22f52",
         name: "Dr. Alaa Mohammed",
         namear: "Dr. Alaa Mohammed",
         positionar: "Orthopedics Specialist",
@@ -558,9 +530,7 @@ export const demoData = [
         position: "Orthopedics Specialist",
         department: ["orthopedics"],
         search: "Orthopedics",
-        searchid: [
-            "61dc0c29b24354b161efe872"
-          ],
+        searchid: ["61dc0c29b24354b161efe872"],
         skills: [
             "Joint Diseases",
             "Tumors",
@@ -586,8 +556,8 @@ export const demoData = [
         linkto: "Alaa_Mohammed",
     },
     {
-        imgUrl: "/assets/real/2.png",
-        moid:"61dc0cf5b24354b161f060f0",
+        imgUrl: "/assets/real/eman_mohammad.png",
+        moid: "61dc0cf5b24354b161f060f0",
         name: "Dr. Eman Mohammed",
         namear: "Dr. Eman Mohammed",
         positionar: "Pediatric Specialist",
@@ -618,7 +588,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/real/3.png",
-        moid:"61dc119eb24354b161f3c8dd",
+        moid: "61dc119eb24354b161f3c8dd",
         name: "Dr. Mohammed Alsamamni",
         namear: "Dr. Mohammed Alsamamni",
         positionar: "Physiotherapist Specialist",
@@ -629,9 +599,7 @@ export const demoData = [
         department: ["physiotherapist"],
         License: ["Czech Republic Studies"],
         search: "Physiotherapy",
-        searchid: [
-            "61dc0c29b24354b161efe877"
-          ],
+        searchid: ["61dc0c29b24354b161efe877"],
         skills: [
             "Treating orthopedic and neurological diseases",
             "Sports injury rehabilitation",
@@ -651,8 +619,8 @@ export const demoData = [
         linkto: "Mohammed_Alsamamni",
     },
     {
-        imgUrl: "/assets/real/10.png",
-        moid:"61de41dca391f298f2fa8a3b",
+        imgUrl: "/assets/real/ahmad_ali.png",
+        moid: "61de41dca391f298f2fa8a3b",
         name: "Dr. Ahmed Ali",
         namear: "Dr. Ahmed Ali",
         positionar:
@@ -664,9 +632,7 @@ export const demoData = [
             "Consultant and Professor of Internal Medicine / Head of Internal Medicine Dept.",
         department: ["internalmeds"],
         search: "internalmeds",
-        searchid:[
-            "61dc10a8b24354b161f2f8e2"
-          ],
+        searchid: ["61dc10a8b24354b161f2f8e2"],
         skills: [
             "Chest allergy",
             "High blood pressure",
@@ -698,8 +664,8 @@ export const demoData = [
         linkto: "Ahmed_Ali",
     },
     {
-        imgUrl: "/assets/real/6.png",
-        moid:"61dc0ddcb24354b161f0e708",
+        imgUrl: "/assets/real/ibrahim_rusidi.png",
+        moid: "61dc0ddcb24354b161f0e708",
         name: "Dr. Ibrahim Rushdi",
         namear: "Dr. Ibrahim Rushdi",
         positionar: "Head of the Department of Pediatrics and Neonatology",
@@ -709,9 +675,7 @@ export const demoData = [
         position: "Head of the Department of Pediatrics and Neonatology",
         department: ["pediatrics"],
         search: "pediatric",
-        searchid: [
-            "61dc0c29b24354b161efe86a"
-          ],
+        searchid: ["61dc0c29b24354b161efe86a"],
         skills: [
             "Gastrointestinal diseases",
             "Lung disease (asthma)",
@@ -737,8 +701,8 @@ export const demoData = [
         linkto: "Ibrahim_Rushdi",
     },
     {
-        imgUrl: "/assets/real/1.png",
-        moid:"61dc10efb24354b161f34d7a",
+        imgUrl: "/assets/real/almad_nader.png",
+        moid: "61dc10efb24354b161f34d7a",
         name: "Dr. Ahmed Nader",
         namear: "Dr. Ahmed Nader",
         positionar: "Senior registrar General Surgery",
@@ -748,9 +712,7 @@ export const demoData = [
         position: "Senior registrar General Surgery",
         department: ["general_surgeon"],
         search: "General Surgery",
-        searchid: [
-            "61dc10a8b24354b161f2f8e2"
-          ],
+        searchid: ["61dc10a8b24354b161f2f8e2"],
         License: [
             "Membership of the Jordanian Medical Council",
             "Doctors Membership of Mutah University",
@@ -783,7 +745,7 @@ export const demoData = [
     },
     {
         imgUrl: "/assets/dr/femaledoc.png",
-        moid:"61efcf909e4660080341bddb",
+        moid: "61efcf909e4660080341bddb",
         name: "Dr. Moza ",
         namear: "Dr. Moza ",
         positionar: "Dermatology and cosmetic consultant",
@@ -793,9 +755,7 @@ export const demoData = [
         position: "Dermatology and cosmetic consultant",
         department: ["dermatology"],
         search: "dermatology",
-        searchid: [
-            "61dc0c29b24354b161efe871"
-          ],
+        searchid: ["61dc0c29b24354b161efe871"],
         skills: ["Laser", "Botox", "Fillers", "Plasma", "Cleansing "],
         skillsar: ["Laser", "Botox", "Fillers", "Plasma", "Cleansing "],
         mobno: "+00 0000 0000 00",

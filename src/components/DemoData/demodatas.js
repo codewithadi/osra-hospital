@@ -1,6 +1,6 @@
 export const demoDatas = [
     {
-        imgUrl: "/assets/real/14.png",
+        imgUrl: "/assets/real/eman_radwan.png",
         name: "Dr. Eman Radwan",
         positionar: "	اخصائية نفسيةاخصائية نفسية وعصبية",
         namear: "	د. ايمان رضوان",
@@ -34,7 +34,7 @@ export const demoDatas = [
         linkto: "Eman_Radwan",
     },
     {
-        imgUrl: "/assets/real/5.png",
+        imgUrl: "/assets/real/rehab_ammar.png",
         name: "Dr. Rehab Ammar",
         namear: "	د. رحاب عمار",
         positionar: "	اخصائية جلدية",
@@ -68,7 +68,7 @@ export const demoDatas = [
         linkto: "Rehab_Ammar",
     },
     {
-        imgUrl: "/assets/real/13.png",
+        imgUrl: "/assets/real/mamdouh_oun_alsoud.png",
         name: "Dr. Mamdouh Oun Alsoud",
         namear: "	د. ممدوح عيون السود",
         positionar: "	استشاري جراحة عامة ومناظير",
@@ -107,7 +107,7 @@ export const demoDatas = [
         linkto: "Mamdouh_Oun_Alsoud",
     },
     {
-        imgUrl: "/assets/real/15.png",
+        imgUrl: "/assets/real/atef_bassas.png",
         name: "Dr. Attif Bassas",
         namear: "	د . عاطف بصاص",
         positionar: "استشاري الجراحة العامة والاورام وجراحات السمنه",
@@ -157,7 +157,7 @@ export const demoDatas = [
         linkto: "Attif_Bassas",
     },
     {
-        imgUrl: "/assets/real/7.png",
+        imgUrl: "/assets/real/asma_saleem.png",
         name: "Dr. Asma Salem",
         namear: "د. اسماء سالم باحارثة",
         positionar: "	استشارية نساء وولادة",
@@ -265,7 +265,7 @@ export const demoDatas = [
         linkto: "Hansa_Diyab",
     },
     {
-        imgUrl: "/assets/real/4.png",
+        imgUrl: "/assets/real/malek_hasan.png",
         name: "Dr. Malek Hassan",
         namear: "	د. مالك حسن",
         positionar: "	طبيب عام",
@@ -301,7 +301,7 @@ export const demoDatas = [
         linkto: "Malek_Hassan",
     },
     {
-        imgUrl: "/assets/real/11.png",
+        imgUrl: "/assets/real/abdulfatah_ali.png",
         name: "Dr. Abdulfatah Ali",
         namear: "	د. عبد اللطيف علي",
         positionar: "استشاري الأنف والأذن والحنجرة",
@@ -371,7 +371,7 @@ export const demoDatas = [
         linkto: "Abeer_Alotaibi",
     },
     {
-        imgUrl: "/assets/real/9.png",
+        imgUrl: "/assets/real/saleh_eid.png",
         name: "Dr. Saleh Eid",
         namear: "	د. صالح عيد",
         positionar: "	اخصائي جراحة عامة",
@@ -425,7 +425,7 @@ export const demoDatas = [
         linkto: "Mohammed_Alnather",
     },
     {
-        imgUrl: "/assets/real/12.png",
+        imgUrl: "/assets/real/abdulrahman_alsouify.png",
         name: "Dr. Abdulrahman Alsouify",
         namear: "	د. عبدالرحمن السويفي",
         positionar: "أخصائي أمراض الذكورة والمسالك البولية",
@@ -458,7 +458,7 @@ export const demoDatas = [
         linkto: "Abdulrahman_Alsouify",
     },
     {
-        imgUrl: "/assets/real/8.png",
+        imgUrl: "/assets/real/dania_bawadkji.png",
         name: "Dr. Dania Bawadkji",
         namear: "	د. دنيا باوادكجي",
         positionar: "	طبيبة اسنان",
@@ -534,7 +534,7 @@ export const demoDatas = [
         linkto: "Alaa_Mohammed",
     },
     {
-        imgUrl: "/assets/real/2.png",
+        imgUrl: "/assets/real/eman_mohammad.png",
         name: "Dr. Eman Mohammed",
         namear: "	د. ايمان محمود",
         positionar: "	اخصائية اطفال",
@@ -595,7 +595,7 @@ export const demoDatas = [
         linkto: "Mohammed_Alsamamni",
     },
     {
-        imgUrl: "/assets/real/10.png",
+        imgUrl: "/assets/real/ahmad_ali.png",
         name: "Dr. Ahmed Ali",
         namear: "	د. أحمد علي",
         positionar: "	استشاري باطنية وجهاز هضمي",
@@ -633,7 +633,7 @@ export const demoDatas = [
         linkto: "Ahmed_Ali",
     },
     {
-        imgUrl: "/assets/real/6.png",
+        imgUrl: "/assets/real/ibrahim_rusidi.png",
         name: "Dr. Ibrahim Rushdi",
         namear: "	د. إبراهيم رشدي",
         positionar: "	اخصائي اطفال",
@@ -663,7 +663,7 @@ export const demoDatas = [
         linkto: "Ibrahim_Rushdi",
     },
     {
-        imgUrl: "/assets/real/1.png",
+        imgUrl: "/assets/real/almad_nader.png",
         name: "Dr. Ahmed Nader",
         namear: "	د. أحمد نادر",
         positionar: "	اخصائي اول جراحة عامة",
