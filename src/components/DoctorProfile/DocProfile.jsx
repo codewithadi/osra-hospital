@@ -114,7 +114,7 @@ const DocProfile = ({ t }) => {
                                             {doc.positionar}
                                         </h4>
                                     </div>
-                                    <div
+                                    {/* <div
                                         className="flex gap-4"
                                         style={{ color: "#3c0c1c" }}
                                     >
@@ -124,6 +124,26 @@ const DocProfile = ({ t }) => {
                                         <h4 className="mt-1 text-lg">
                                             {doc.Qualification}
                                         </h4>
+                                    </div> */}
+
+                                    <div
+                                        className="flex gap-4"
+                                        style={{ color: "#3c0c1c" }}
+                                    >
+                                        <h4 className="mt-1 text-lg font-semibold">
+                                            {t("docprofile.qual")}:
+                                        </h4>
+                                        {!doc.Qualification < 1 && (
+                                            <div>
+                                                {doc.Qualification.map(
+                                                    (qual) => (
+                                                        <h4 className="mt-1 text-lg">
+                                                            {qual}
+                                                        </h4>
+                                                    )
+                                                )}
+                                            </div>
+                                        )}
                                     </div>
 
                                     <div
