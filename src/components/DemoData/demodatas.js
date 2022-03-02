@@ -424,35 +424,7 @@ export const demoDatas = [
         email: "roberto@medwise.com",
         linkto: "Abdulfatah_Ali",
     },
-    {
-        imgUrl: "/assets/dr/maledoc.png",
-        name: "Dr. Abeer Alotaibi",
-        namear: "	د. عبير العتيبي",
-        positionar: "	خبيرة تغذية",
-        Nationality: "السعودية",
-        Qualification: ["درجة البكالوريوس في التغذية العلاجية"],
-        Experience: "6 شهور",
-        position: "Dietitian Specialist",
-        License: ["التثقيف المعتمد لمرض السكري لمركز السكري"],
-        department: ["dietitian"],
-        search: "Dietitian",
-        searchid: ["61dc0c29b24354b161efe870"],
-        skills: [
-            "Slimming and fitness programs",
-            "Obesity programs",
-            "Monitor the nutritional status of patients",
-            "Follow-up of the nutritional status of the patient after the operations",
-        ],
-        skillsar: [
-            " برامج التخسيس واللياقة البدنية",
-            " برامج السمنة",
-            " مراقبة الحالة الغذائية للمرضى",
-            "متابعة الحالة الغذائية للمريض بعد العمليات",
-        ],
-        mobno: "+00 0000 0000 00",
-        email: "roberto@medwise.com",
-        linkto: "Abeer_Alotaibi",
-    },
+    
     {
         imgUrl: "/assets/real/saleh_eid.png",
         name: "Dr. Saleh Eid",
@@ -779,24 +751,7 @@ export const demoDatas = [
         email: "roberto@medwise.com",
         linkto: "Ahmed_Nader",
     },
-    {
-        imgUrl: "/assets/dr/femaledoc.png",
-        name: "Dr. Moza ",
-        namear: "د. موزة المزروعي",
-        positionar: "استشارية جلدية وتجميل",
-        Nationality: "الامارات العربية المتحدة",
-        Qualification: ["البورد الأردني في الجراحة العامة"],
-        Experience: " 20 سنة",
-        position: "Dermatology and cosmetic consultant",
-        department: ["dermatology"],
-        search: "dermatology",
-        searchid: ["61dc0c29b24354b161efe871"],
-        skills: ["Laser", "Botox", "fillers", "Plasma", "Cleansing "],
-        skillsar: ["فلر", "بوتوكس", "بلازما", "تنظيف بشرة ", "ليزر"],
-        mobno: "+00 0000 0000 00",
-        email: "roberto@medwise.com",
-        linkto: "dr_mosa",
-    },
+    
 ];
 
 export default { demoDatas };
