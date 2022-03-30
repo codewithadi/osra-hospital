@@ -3,207 +3,207 @@ import InsuranceGrid from "./InsuranceGrid";
 import { withTranslation } from "react-i18next";
 
 const Insurance = ({ t }) => {
-    return (
-        <div>
-            <div
-                className="bg-center bg-cover"
-                style={{
-                    backgroundImage: `url("/assets/insurance/3-min.png")`,
-                    width: "100%",
-                    height: "55vh",
-                }}
-            >
-                <div className="flex items-center justify-center w-full h-full bg-gray-800 bg-opacity-50">
-                    <div className="text-center font-semibold text-white text-4xl md:text-7xl">
-                        <h1 className="mb-7">{t("inc")}</h1>
-                    </div>
-                </div>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-7 justify-center items-center py-10 px-2 md:px-20">
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-6/6"
-                        src="/assets/insurance/bupa.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-6/6"
-                        src="/assets/insurance/Tuwuniya.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-6/6"
-                        src="/assets/insurance/mednet.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-6/6"
-                        src="/assets/insurance/Malath.jpg"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/Medgulf.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/Alrajhi-Takaful.jpg"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/tcs.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-6/6"
-                        src="/assets/insurance/allianz.jpg"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-6/6"
-                        src="/assets/insurance/buruj.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/aletihad.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-6/6"
-                        src="/assets/insurance/walaa.jpg"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-6/6"
-                        src="/assets/insurance/ARABIANSHEILD.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/sncinc.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/Gulf-Union.jpg"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/globemed.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-6/6"
-                        src="/assets/insurance/ALSAQER.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/alahlia1.jpg"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/senya.jpg"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/ALARABIYA.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/alsalama.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-6/6"
-                        src="/assets/insurance/wt.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-6/6"
-                        src="/assets/insurance/uca.jpg"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/SOLIDARITY.png"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/amana.jpg"
-                        alt="chart"
-                    />
-                </div>
-                <div className="w-full flex justify-center items-center">
-                    <img
-                        className="w-full md:w-4/6"
-                        src="/assets/insurance/aljazeera.jpg"
-                        alt="chart"
-                    />
-                </div>
-                {/* <div className="w-full flex justify-center items-center">
+  return (
+    <div>
+      <div
+        className="bg-center bg-cover"
+        style={{
+          backgroundImage: `url("/assets/insurance/3-min.png")`,
+          width: "100%",
+          height: "55vh",
+        }}
+      >
+        <div className="flex items-center justify-center w-full h-full bg-gray-800 bg-opacity-50">
+          <div className="text-center font-semibold text-white text-4xl md:text-7xl">
+            <h1 className="mb-7">{t("inc")}</h1>
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-7 justify-center items-center py-10 px-2 md:px-20">
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-6/6"
+            src="/assets/insurance/bupa.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-6/6"
+            src="/assets/insurance/Tuwuniya.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-6/6"
+            src="/assets/insurance/mednet.jpeg"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-6/6"
+            src="/assets/insurance/Malath.jpg"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/Medgulf.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/Alrajhi-Takaful.jpg"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/tcs.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-6/6"
+            src="/assets/insurance/allianz.jpg"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-6/6"
+            src="/assets/insurance/buruj.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/aletihad.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-6/6"
+            src="/assets/insurance/walaa.jpg"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-6/6"
+            src="/assets/insurance/ARABIANSHEILD.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/sncinc.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/Gulf-Union.jpg"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/globemed.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-6/6"
+            src="/assets/insurance/ALSAQER.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/alahlia1.jpg"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/senya.jpg"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/ALARABIYA.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/alsalama.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-6/6"
+            src="/assets/insurance/wt.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-6/6"
+            src="/assets/insurance/uca.jpg"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/SOLIDARITY.png"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/amana.jpg"
+            alt="chart"
+          />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <img
+            className="w-full md:w-4/6"
+            src="/assets/insurance/aljazeera.jpg"
+            alt="chart"
+          />
+        </div>
+        {/* <div className="w-full flex justify-center items-center">
                     <img
                         className="w-full md:w-4/6"
                         src="/assets/insurance/GLOBAL-NET.jpg"
                         alt="chart"
                     />
                 </div> */}
-            </div>
-            {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center py-10 px-2 md:px-20">
+      </div>
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center py-10 px-2 md:px-20">
                 <InsuranceGrid
                     imgUrl="/assets/insurance/bupa.png"
                     title="Bupa"
@@ -314,8 +314,8 @@ const Insurance = ({ t }) => {
                     desc="Globalnet Insurance LLC builds policies with both you and your vehicle in mind, customizing the types and levels of coverage to fit."
                 />
             </div> */}
-        </div>
-    );
+    </div>
+  );
 };
 
 export default withTranslation()(Insurance);
