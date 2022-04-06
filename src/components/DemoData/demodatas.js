@@ -442,7 +442,7 @@ export const demoDatas = [
     linkto: "Saleh_Eid",
   },
   {
-    imgUrl: "/assets/dr/maledoc.png",
+    imgUrl: "/assets/real/Mohammed_Alnather.png",
     name: "Dr. Mohammed Alnather",
     namear: "	د. محمد الناظر",
     positionar: "	اخصائي قلب",
@@ -507,7 +507,7 @@ export const demoDatas = [
     linkto: "Abdulrahman_Alsouify",
   },
   {
-    imgUrl: "/assets/real/dania_bawadkji.png",
+    imgUrl: "/assets/real/dania_new.png",
     name: "Dr. Dania Bawadkji",
     namear: "د. دانيا باوادكجي",
     positionar: "	طبيبة اسنان",
@@ -547,7 +547,7 @@ export const demoDatas = [
     linkto: "Dania_Bawadkji",
   },
   {
-    imgUrl: "/assets/dr/maledoc.png",
+    imgUrl: "/assets/real/dralaa_new.png",
     name: "Dr. Alaa Mohammed",
     namear: "	د. علاء محمد",
     positionar: "	اخصائي عظام",

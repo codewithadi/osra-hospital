@@ -462,7 +462,7 @@ export const demoData = [
     linkto: "Saleh_Eid",
   },
   {
-    imgUrl: "/assets/dr/maledoc.png",
+    imgUrl: "/assets/real/Mohammed_Alnather.png",
     moid: "61dc0edbb24354b161f17311",
     name: "Dr. Mohammed Alnather",
     namear: "Dr. Mohammed Alnather",
@@ -529,7 +529,7 @@ export const demoData = [
     linkto: "Abdulrahman_Alsouify",
   },
   {
-    imgUrl: "/assets/real/dania_bawadkji.png",
+    imgUrl: "/assets/real/dania_new.png",
     moid: "61dc0fa8b24354b161f22f50",
     name: "Dr. Dania Bawadkji",
     namear: "Dr. Dania Bawadkji",
@@ -569,7 +569,7 @@ export const demoData = [
     linkto: "Dania_Bawadkji",
   },
   {
-    imgUrl: "/assets/dr/maledoc.png",
+    imgUrl: "/assets/real/dralaa_new.png",
     moid: "61dc0fa8b24354b161f22f52",
     name: "Dr. Alaa Mohammed",
     namear: "Dr. Alaa Mohammed",
