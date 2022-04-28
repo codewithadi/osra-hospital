@@ -57,121 +57,109 @@ import Test from "./pages/Test";
 // visibility sensor for social icons
 import VisibilitySensor from "react-visibility-sensor";
 import { useTranslation } from "react-i18next";
+import Maintenance from "./pages/Maintenance";
+const maintenancePage = false;
 
 function App({ t }) {
-    const { i18n } = useTranslation();
-    const [visible, setVisible] = useState(false);
-    useEffect(() => {
-        const lang = localStorage.getItem("language");
-        if (lang) {
-            i18n.changeLanguage(lang);
-        } else {
-            localStorage.setItem("language", "ar");
-            i18n.changeLanguage("ar");
-        }
-    }, []);
-
-    function onChange(isVisible) {
-        if (isVisible) {
-            setVisible(true);
-        } else {
-            setVisible(false);
-        }
+  const { i18n } = useTranslation();
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const lang = localStorage.getItem("language");
+    if (lang) {
+      i18n.changeLanguage(lang);
+    } else {
+      localStorage.setItem("language", "ar");
+      i18n.changeLanguage("ar");
     }
-    // const [showApt, setShowApt] = useState(false);
-    // useEffect(() => {
-    //     const resizeEve = () => {
-    //         if (window.innerWidth < 768) {
-    //             setShowApt(false);
-    //         } else {
-    //             setShowApt(true);
-    //         }
-    //     };
-    //     window.addEventListener("resize", resizeEve);
-    //     resizeEve();
-    //     return () => window.removeEventListener();
-    // }, []);
-    return (
-        <div className="relative">
-            <TopBar />
-            <AppointmentBtn />
-            <Navbar />
-            <Routes>
-                <Route path="/" exact element={<Home />} />
-                <Route path="/services" element={<Services />} />
-                <Route path="/media" element={<Media />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/doctor" element={<Doctor />} />
-                <Route path="/departments" element={<SupportService />} />
-                <Route path="/insurance" element={<Insurance />} />
+  }, []);
 
-                <Route path="/clinics" element={<AllClinics />} />
-                <Route path="/patientfilter" element={<UserDatabase />} />
-                <Route path="/patients" element={<Test />} />
-                <Route
-                    path="/clinics/ophthalmology"
-                    element={<Ophthalmology />}
-                />
-                <Route path="/clinics/urology" element={<Urology />} />
-                <Route
-                    path="/clinics/bariatic-surgery"
-                    element={<BariaticSurgery />}
-                />
-                <Route path="/clinics/pediatrics" element={<Pediatrics />} />
-                <Route path="/clinics/dentistry" element={<Dentistry />} />
-                <Route path="/clinics/dermatology" element={<Dermatology />} />
-                <Route path="/clinics/ear-nose-throat" element={<EarNose />} />
-                {/* <Route path="/clinics/er" element={<ER />} /> */}
-                <Route path="/clinics/dietitian" element={<Dietitian />} />
-                <Route
-                    path="/clinics/cardiologist"
-                    element={<Cardiologist />}
-                />
-                <Route
-                    path="/clinics/internal-medicine"
-                    element={<InternalMeds />}
-                />
-                <Route path="/clinics/orthopedics" element={<Orthopedics />} />
-                <Route path="/clinics/laboratory" element={<Laboratory />} />
-                <Route
-                    path="/clinics/special-tests"
-                    element={<SpecialTests />}
-                />
-                <Route path="/clinics/serology" element={<Serology />} />
-                <Route path="/clinics/radiologic" element={<Radiology />} />
-                <Route
-                    path="/clinics/gastroenterology"
-                    element={<Gastroenterology />}
-                />
-                <Route path="/clinics/neuro" element={<Neuro />} />
-                <Route path="/clinics/pshyciatric" element={<Pshyciatric />} />
-                <Route
-                    path="/clinics/physiotherapist"
-                    element={<Physiotherapist />}
-                />
-                <Route
-                    path="/clinics/general-surgery"
-                    element={<GenSurgery />}
-                />
-                <Route
-                    path="/clinics/general-practitioner"
-                    element={<GenPrac />}
-                />
-                <Route path="/clinics/ob-gyne" element={<OBGyne />} />
-                {/* <Route path="/blog" element={<BlogList />} /> */}
-                <Route path="/appointment" element={<BookAppointment />} />
-                <Route path="/oldpatient" element={<OldPatient />} />
-                <Route path="/newpatient" element={<NewPatient />} />
-                <Route path="/doctor/:doc" element={<Profile />} />
-            </Routes>
-            <VisibilitySensor onChange={onChange} partialVisibility={true}>
-                <Footer />
-            </VisibilitySensor>
-            {!visible && <SocialIcons />}
-            <Whatsapp />
-        </div>
+  function onChange(isVisible) {
+    if (isVisible) {
+      setVisible(true);
+    } else {
+      setVisible(false);
+    }
+  }
+  // const [showApt, setShowApt] = useState(false);
+  // useEffect(() => {
+  //     const resizeEve = () => {
+  //         if (window.innerWidth < 768) {
+  //             setShowApt(false);
+  //         } else {
+  //             setShowApt(true);
+  //         }
+  //     };
+  //     window.addEventListener("resize", resizeEve);
+  //     resizeEve();
+  //     return () => window.removeEventListener();
+  // }, []);
+
+  if (maintenancePage) {
+    return (
+      <div className="relative">
+        <TopBar />
+        <Maintenance />
+      </div>
     );
+  }
+
+  return (
+    <div className="relative">
+      <TopBar />
+      <AppointmentBtn />
+      <Navbar />
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/media" element={<Media />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/doctor" element={<Doctor />} />
+        <Route path="/departments" element={<SupportService />} />
+        <Route path="/insurance" element={<Insurance />} />
+
+        <Route path="/clinics" element={<AllClinics />} />
+        <Route path="/patientfilter" element={<UserDatabase />} />
+        <Route path="/patients" element={<Test />} />
+        <Route path="/clinics/ophthalmology" element={<Ophthalmology />} />
+        <Route path="/clinics/urology" element={<Urology />} />
+        <Route path="/clinics/bariatic-surgery" element={<BariaticSurgery />} />
+        <Route path="/clinics/pediatrics" element={<Pediatrics />} />
+        <Route path="/clinics/dentistry" element={<Dentistry />} />
+        <Route path="/clinics/dermatology" element={<Dermatology />} />
+        <Route path="/clinics/ear-nose-throat" element={<EarNose />} />
+        {/* <Route path="/clinics/er" element={<ER />} /> */}
+        <Route path="/clinics/dietitian" element={<Dietitian />} />
+        <Route path="/clinics/cardiologist" element={<Cardiologist />} />
+        <Route path="/clinics/internal-medicine" element={<InternalMeds />} />
+        <Route path="/clinics/orthopedics" element={<Orthopedics />} />
+        <Route path="/clinics/laboratory" element={<Laboratory />} />
+        <Route path="/clinics/special-tests" element={<SpecialTests />} />
+        <Route path="/clinics/serology" element={<Serology />} />
+        <Route path="/clinics/radiologic" element={<Radiology />} />
+        <Route
+          path="/clinics/gastroenterology"
+          element={<Gastroenterology />}
+        />
+        <Route path="/clinics/neuro" element={<Neuro />} />
+        <Route path="/clinics/pshyciatric" element={<Pshyciatric />} />
+        <Route path="/clinics/physiotherapist" element={<Physiotherapist />} />
+        <Route path="/clinics/general-surgery" element={<GenSurgery />} />
+        <Route path="/clinics/general-practitioner" element={<GenPrac />} />
+        <Route path="/clinics/ob-gyne" element={<OBGyne />} />
+        {/* <Route path="/blog" element={<BlogList />} /> */}
+        <Route path="/appointment" element={<BookAppointment />} />
+        <Route path="/oldpatient" element={<OldPatient />} />
+        <Route path="/newpatient" element={<NewPatient />} />
+        <Route path="/doctor/:doc" element={<Profile />} />
+      </Routes>
+      <VisibilitySensor onChange={onChange} partialVisibility={true}>
+        <Footer />
+      </VisibilitySensor>
+      {!visible && <SocialIcons />}
+      <Whatsapp />
+    </div>
+  );
 }
 
 export default withTranslation()(App);

@@ -1,0 +1,42 @@
+.maintenance-sec {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  background: #eeeef4;
+  font-weight: 100;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.maintenance-container {
+  height: 100%;
+  display: flex;
+  margin: 0 20px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.maintenance-container h1 {
+  font-size: 3em;
+  font-weight: 100;
+  color: #3f0f1e;
+  margin: 0;
+}
+.maintenance-container h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+.maintenance-container h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-top: 0;
+}
+.maintenance-container a {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #3f0f1e;
+  text-decoration: none;
+}
