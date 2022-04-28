@@ -58,7 +58,7 @@ import Test from "./pages/Test";
 import VisibilitySensor from "react-visibility-sensor";
 import { useTranslation } from "react-i18next";
 import Maintenance from "./pages/Maintenance";
-const maintenancePage = false;
+const maintenancePage = true;
 
 function App({ t }) {
   const { i18n } = useTranslation();
@@ -97,7 +97,7 @@ function App({ t }) {
   if (maintenancePage) {
     return (
       <div className="relative">
-        <TopBar />
+        {/* <TopBar /> */}
         <Maintenance />
       </div>
     );

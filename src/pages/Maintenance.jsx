@@ -4,8 +4,14 @@ import "./maintenance.css";
 
 const Maintenance = ({ t }) => {
   return (
-    <section className="maintenance-sec">
-      <main dir={t("direction")} className="maintenance-container">
+    <section className="maintenance-sec flex justify-center items-center">
+      <img
+        className="maintenance-img"
+        src="assets/maintenance.jpg"
+        alt="under_maintenance"
+      />
+      {/* <section className="maintenance-sec"> */}
+      {/* <main dir={t("direction")} className="maintenance-container">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100"
@@ -91,7 +97,7 @@ const Maintenance = ({ t }) => {
             />
           </a>
         </div>
-      </main>
+      </main> */}
     </section>
   );
 };

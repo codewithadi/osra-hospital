@@ -2,7 +2,7 @@
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   height: 100vh;
-  background: #eeeef4;
+  background: rgba(253, 242, 224, 255);
   font-weight: 100;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -39,4 +39,14 @@
   font-weight: 300;
   color: #3f0f1e;
   text-decoration: none;
+}
+.maintenance-img {
+  width: 100%;
+  height: 100vh;
+}
+@media (max-width: 764px) {
+  .maintenance-img {
+    width: 100%;
+    height: 40vh;
+  }
 }
