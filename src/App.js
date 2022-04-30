@@ -58,7 +58,7 @@ import Test from "./pages/Test";
 import VisibilitySensor from "react-visibility-sensor";
 import { useTranslation } from "react-i18next";
 import Maintenance from "./pages/Maintenance";
-const maintenancePage = true;
+const maintenancePage = false;
 
 function App({ t }) {
   const { i18n } = useTranslation();
